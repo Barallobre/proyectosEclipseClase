@@ -10,19 +10,27 @@ public class File123 {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		System.out.println("Introduzca una ruta.");
-		String ruta = sc.nextLine();
-		File fichero1 = new File(ruta);
-		for (int i = 0; i < fichero1.list().length; i++) {
-			File fichero2 = new File(ruta + "\\" + fichero1.list()[i]);
-			fichero2.isDirectory();
-			fichero2.isFile();
-			if (fichero2.isDirectory()) {
-				System.out.println(fichero1.list()[i] + " es un direcotorio");
-			} else {
-				System.out.println(fichero1.list()[i] + " es un archivo");
+		boolean rutaNoValida = false;
+		do{
+			System.out.println("Introduzca una ruta.");
+			String ruta = sc.nextLine();
+			File fichero1 = new File(ruta);
+			try {
+				for (int i = 0; i < fichero1.list().length; i++) {
+					File fichero2 = new File(ruta + "\\" + fichero1.list()[i]);
+					fichero2.isDirectory();
+					fichero2.isFile();
+					if (fichero2.isDirectory()) {
+						System.out.println(fichero1.list()[i] + " es un direcotorio");
+					} else {
+						System.out.println(fichero1.list()[i] + " es un archivo");
+					}
+				}
+			} catch (NullPointerException e) {
+				rutaNoValida = true;
+				System.out.println("La ruta no es válida.");
 			}
-		}
+		}while(rutaNoValida);
 	}
 
 }
