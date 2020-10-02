@@ -18,8 +18,7 @@ public class File123 {
 			try {
 				for (int i = 0; i < fichero1.list().length; i++) {
 					File fichero2 = new File(ruta + "\\" + fichero1.list()[i]);
-					fichero2.isDirectory();
-					fichero2.isFile();
+					
 					if (fichero2.isDirectory()) {
 						System.out.println(fichero1.list()[i] + " es un direcotorio");
 					} else {
