@@ -20,7 +20,7 @@ public class File123 {
 					File fichero2 = new File(ruta + "\\" + fichero1.list()[i]);
 					
 					if (fichero2.isDirectory()) {
-						System.out.println(fichero1.list()[i] + " es un direcotorio");
+						System.out.println(fichero1.list()[i] + " es un directorio");
 					} else {
 						System.out.println(fichero1.list()[i] + " es un archivo");
 					}

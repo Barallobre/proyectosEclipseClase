@@ -10,10 +10,10 @@ public class File121 {
 		// creamos los dos directorios/carpetas con mkdirs()
 		new File("./ejerciciosFile/ficheros").mkdirs();
 
-		// con estoy solo declaramos los ficheros no los creamos
+		// con esto solo declaramos los ficheros no los creamos
 		File fich1 = new File("./ejerciciosFile/ficheros/Fichero1.txt");
 		File fich2 = new File("./ejerciciosFile/ficheros/Fichero2.txt");
-		File File2 = new File("./ejerciciosFile/ficheros/File2.txt");
+		File file2 = new File("./ejerciciosFile/ficheros/File2.txt");
 		
 		// ahora creamos los ficheros con el método createNewFile()
 		try {
@@ -38,7 +38,7 @@ public class File121 {
 		System.out.println(fich1.exists()+" -El fichero1 ha sido borrado");
 
 		// renombramos el Fichero2
-		fich2.renameTo(File2);
+		fich2.renameTo(file2);
 	}
 
 }
