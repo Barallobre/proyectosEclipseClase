@@ -31,6 +31,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Principal {
@@ -40,7 +41,7 @@ public class Principal {
 	/* Menú principal de la aplicación */
 	public static void menu() {
 		int opc = 0;
-		final int topeOpc = 4;
+		final int topeOpc = 5;
 		do {
 			System.out.println("1. Alta de socio");
 			System.out.println("2. Mostrar listado de socios");
@@ -142,6 +143,8 @@ public class Principal {
 			telefonoValido = socioAux.validarTelefono(telefono1);
 			if (telefonoValido) {
 				telefono = telefono1;
+			} else {
+				System.out.println("Introduzca un número de teléfono correcto.");
 			}
 		} while (!telefonoValido);
 		do {
@@ -150,6 +153,8 @@ public class Principal {
 			emailValido = socioAux.validarEmail(email1);
 			if (emailValido) {
 				email = email1;
+			} else {
+				System.out.println("Introduzca un email con un formato válido.");
 			}
 		} while (!emailValido);
 		System.out.println("Introduzca fecha de alta: ");
@@ -165,6 +170,7 @@ public class Principal {
 				correcto = true;
 			} catch (ParseException e) {
 				System.out.println("=>Error la fecha introducida es incorrecta : " + e.getMessage());
+				System.out.println("Introduzca una fecha válida.");
 			}
 		} while (!correcto);
 		System.out.println("Introduzca tarifa: ");
@@ -195,46 +201,37 @@ public class Principal {
 
 		try {
 			BufferedReader ficheroEntrada = new BufferedReader(new FileReader(nombreFichero));
-
-			// Leemos una línea entera
 			String linea = ficheroEntrada.readLine();
-			int contadorLinea = 1;
-			// Bucle que se repite hasta que linea sea null, que es el valor de final de
-			// fichero o fichero vacío
 			while (linea != null) {
-
-				// Saltamos la primera linea del fichero porque contiene los titulos de los
-				// campos
-				if (contadorLinea > 1) {
-					// gestionar cada producto que se encuentra en una linea
-					// del fichero leo un tipo de dato String -> linea
-					// y lo guardo ArrayList<Producto> -> listaProductos
-					convertirStringAProducto(linea);
-				}
-				// Leemos una línea entera
+				convertirStringASocio(linea);
 				linea = ficheroEntrada.readLine();
-				contadorLinea++;
 			}
 
-			// Al acabar de leer, se cierra el fichero
 			ficheroEntrada.close();
 
-		} catch (EOFException eof) { // control de error al abrir el fichero
+		} catch (EOFException eof) {
 			System.out.println("No se puede abrir el fichero " + nombreFichero);
 			System.out.println(eof.getMessage());
-		} catch (IOException e) { // control de error en lectura o escritura
+		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
 	}
 
 	/* Método para convertir los String del fichero en un arrayList */
-	public static void convertirStringAProducto(String linea) {
+	public static void convertirStringASocio(String linea) {
 		String campos[] = linea.split(";");
 		String numero = campos[0];
 		String nombre = campos[1];
 		String telefono = campos[2];
 		String email = campos[3];
-		Date fechaAlta = ParseFecha(campos[4]);
+		SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.ENGLISH);
+		Date fechaAlta = null;
+		try {
+			fechaAlta = sdf.parse(campos[4]);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+
 		int tarifa = Integer.parseInt(campos[5]);
 
 		Socio socioAux = new Socio(numero, nombre, telefono, email, fechaAlta, tarifa);
@@ -242,23 +239,81 @@ public class Principal {
 		listaSocios.add(socioAux);
 	}
 
-	/* Método para convertir un String a un Date */
-	public static Date ParseFecha(String fecha) {
-		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
-		Date fechaDate = null;
-		try {
-			fechaDate = formato.parse(fecha);
-		} catch (ParseException e) {
-			System.out.println(e);
-		}
-		return fechaDate;
-	}
-
+//TODO
+	/* Método para editar el telefono buscando por el número de socio */
 	public static void editarTelefonoSocio() {
+		leerFichero();
+		String numeroSocio;
+		System.out.println("Escriba el número de socio cuyo telefono quiere editar");
+		numeroSocio = sc.nextLine();
+		String linea;
+		try {
+			BufferedReader ficheroEntrada = new BufferedReader(new FileReader("socios.txt"));
+			boolean encontrado = false;
+			do {
+				linea = ficheroEntrada.readLine();
+				String campos[] = linea.split(";");
+
+				if (campos[0].equals(numeroSocio)) {
+					System.out.println("El número de socio es: " + campos[0] + " perteneciente al socio: " + campos[1]);
+					System.out.println("Introduzca el nuevo número de telefono");
+					String telefonoNuevo = sc.nextLine();
+					for (int i = 0; i < campos.length; i++) {
+						linea += campos[i] + ";";
+					}
+					System.out.println(linea);
+					encontrado = true;
+				} else {
+					System.out.println("No se encuentra ese número de socio.");
+				}
+
+			} while (linea != null & !encontrado);
+
+			ficheroEntrada.close();
+
+		} catch (EOFException eof) {
+			System.out.println("No se puede abrir el fichero ");
+			System.out.println(eof.getMessage());
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
 
 	}
 
+	/* Método para buscar un socio por su número de socio */
 	public static void mostrarFichaPorNumeroSocio() {
+		leerFichero();
+		String numeroSocio;
+		System.out.println("Escriba el número de socio cuyo telefono quiere editar");
+		numeroSocio = sc.nextLine();
+		String linea;
+		try {
+			BufferedReader ficheroEntrada = new BufferedReader(new FileReader("socios.txt"));
+			boolean encontrado = false;
+			do {
+				linea = ficheroEntrada.readLine();
+				String campos[] = linea.split(";");
+
+				if (campos[0].equals(numeroSocio)) {
+					System.out.println("El número de socio es: " + campos[0] + " perteneciente al socio: " + campos[1]);
+					System.out.println("Introduzca el nuevo número de telefono");
+					for (int i = 0; i < campos.length; i++)
+						System.out.println(campos[i]);
+					encontrado = true;
+				} else {
+					System.out.println("No se encuentra ese número de socio.");
+				}
+
+			} while (linea != null & !encontrado);
+
+			ficheroEntrada.close();
+
+		} catch (EOFException eof) {
+			System.out.println("No se puede abrir el fichero ");
+			System.out.println(eof.getMessage());
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
 
 	}
 
