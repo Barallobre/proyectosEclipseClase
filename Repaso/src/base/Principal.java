@@ -239,73 +239,77 @@ public class Principal {
 		listaSocios.add(socioAux);
 	}
 
-//TODO
+
 	/* Método para editar el telefono buscando por el número de socio */
 	public static void editarTelefonoSocio() {
+
+		int posicionSocio = mostrarFichaPorNumeroSocio();
+		
+		System.out.println("Escriba el nuevo número de teléfono:");
+		String nuevoTelefono = sc.nextLine();
+	
+		// TODO
 		leerFichero();
-		String numeroSocio;
-		System.out.println("Escriba el número de socio cuyo telefono quiere editar");
-		numeroSocio = sc.nextLine();
-		String linea;
-		try {
-			BufferedReader ficheroEntrada = new BufferedReader(new FileReader("socios.txt"));
-			boolean encontrado = false;
-			do {
-				linea = ficheroEntrada.readLine();
-				String campos[] = linea.split(";");
+		for (int i = 0; i < listaSocios.size(); i++) {
+			try {
+				
+				String lineaSocio = "";
 
-				if (campos[0].equals(numeroSocio)) {
-					System.out.println("El número de socio es: " + campos[0] + " perteneciente al socio: " + campos[1]);
-					System.out.println("Introduzca el nuevo número de telefono");
-					String telefonoNuevo = sc.nextLine();
-					for (int i = 0; i < campos.length; i++) {
-						linea += campos[i] + ";";
-					}
-					System.out.println(linea);
-					encontrado = true;
+				BufferedWriter bwFicheroSalida = new BufferedWriter(new FileWriter("socios.txt", true));
+			
+				if (i == posicionSocio-1) {
+					lineaSocio = listaSocios.get(i).getNumero() + ";" + listaSocios.get(i).getNombre() + ";"
+							+ nuevoTelefono + ";" + listaSocios.get(i).getEmail() + ";"
+							+ listaSocios.get(i).getFechaAlta() + ";" + listaSocios.get(i).getTarifa();
 				} else {
-					System.out.println("No se encuentra ese número de socio.");
+					lineaSocio = listaSocios.get(i).getNumero() + ";" + listaSocios.get(i).getNombre() + ";"
+							+ listaSocios.get(i).getTelefono() + ";" + listaSocios.get(i).getEmail() + ";"
+							+ listaSocios.get(i).getFechaAlta() + ";" + listaSocios.get(i).getTarifa();
 				}
+				if()
+					listaSocios.clear();
+				bwFicheroSalida.write(lineaSocio);
 
-			} while (linea != null & !encontrado);
+				bwFicheroSalida.newLine();
 
-			ficheroEntrada.close();
+				bwFicheroSalida.close();
 
-		} catch (EOFException eof) {
-			System.out.println("No se puede abrir el fichero ");
-			System.out.println(eof.getMessage());
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
+			} catch (IOException e) {
+				System.out.println(e.getMessage());
+			}
+			System.out.println("Escritura completada.");
 		}
+
+		
 
 	}
 
 	/* Método para buscar un socio por su número de socio */
-	public static void mostrarFichaPorNumeroSocio() {
-		leerFichero();
-		String numeroSocio;
-		System.out.println("Escriba el número de socio cuyo telefono quiere editar");
-		numeroSocio = sc.nextLine();
-		String linea;
+	public static int mostrarFichaPorNumeroSocio() {
+
 		try {
-			BufferedReader ficheroEntrada = new BufferedReader(new FileReader("socios.txt"));
+			BufferedReader ficheroEntrada = new BufferedReader(new FileReader(pedirNombreFichero("fichero origen")));
+			String numeroSocio;
+			System.out.println("Escriba el número de socio que quiere buscar");
+			numeroSocio = sc.nextLine();
+			String linea;
 			boolean encontrado = false;
-			do {
+			linea = "";
+			int contador = 0;
+			while (linea != null && !encontrado) {
 				linea = ficheroEntrada.readLine();
 				String campos[] = linea.split(";");
-
+				contador += 1;
 				if (campos[0].equals(numeroSocio)) {
-					System.out.println("El número de socio es: " + campos[0] + " perteneciente al socio: " + campos[1]);
-					System.out.println("Introduzca el nuevo número de telefono");
 					for (int i = 0; i < campos.length; i++)
 						System.out.println(campos[i]);
+
 					encontrado = true;
-				} else {
-					System.out.println("No se encuentra ese número de socio.");
+
+					return contador;
 				}
 
-			} while (linea != null & !encontrado);
-
+			}
 			ficheroEntrada.close();
 
 		} catch (EOFException eof) {
@@ -313,8 +317,11 @@ public class Principal {
 			System.out.println(eof.getMessage());
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
+		} catch (NullPointerException e) {
+			System.out.println("El número que busca no está en la lista.");
 		}
-
+		return 0;
+		
 	}
 
 	/* Método para salir de la aplicación */
