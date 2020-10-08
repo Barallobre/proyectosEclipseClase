@@ -266,7 +266,7 @@ public class Principal {
 							+ listaSocios.get(i).getTelefono() + ";" + listaSocios.get(i).getEmail() + ";"
 							+ listaSocios.get(i).getFechaAlta() + ";" + listaSocios.get(i).getTarifa();
 				}
-				if()
+				
 					listaSocios.clear();
 				bwFicheroSalida.write(lineaSocio);
 
