@@ -267,7 +267,7 @@ public class Principal {
 							+ listaSocios.get(i).getFechaAlta() + ";" + listaSocios.get(i).getTarifa();
 				}
 				
-					listaSocios.clear();
+					
 				bwFicheroSalida.write(lineaSocio);
 
 				bwFicheroSalida.newLine();
@@ -279,7 +279,7 @@ public class Principal {
 			}
 			System.out.println("Escritura completada.");
 		}
-
+		listaSocios.clear();
 		
 
 	}
