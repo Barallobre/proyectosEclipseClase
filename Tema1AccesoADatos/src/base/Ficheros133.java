@@ -13,10 +13,12 @@ public class Ficheros133 {
 
 	public static void main(String[] args) {
 		try {
-			FileWriter fichero = new FileWriter("C:\\Users\\Usuario\\Desktop", true);
+			FileWriter fichero = new FileWriter("C:\\Users\\Usuario\\Desktop\\fichero.txt", true);
+			System.out.println("Introduzca un texto en el fichero:");
 			String textoIntroducido = sc.nextLine();
-			fichero.write(textoIntroducido);
+			fichero.write(textoIntroducido+"\n");
 			fichero.close();
+			System.out.println("Texto introducido...");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
