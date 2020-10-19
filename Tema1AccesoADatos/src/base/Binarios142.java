@@ -1,17 +1,18 @@
 package base;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
 public class Binarios142 {
 
 	public static void main(String[] args) {
-		char barra = File.separatorChar; // Devuelve el separador de los pathname, / o \
-		File fichero = new File("C:" + barra + "Users" + barra + "Usuario" + barra + "Desktop" + barra + "Datos.dat");
+		File fichero = new File("C:\\Users\\Cristian\\Desktop\\datos.dat");
 		DataOutputStream datos = null;
 		try {
 
@@ -37,6 +38,17 @@ public class Binarios142 {
 				} catch (IOException e) {
 					e.getMessage();
 				}
+		}
+			leerFichero();	
+	}
+	public static void leerFichero() {
+		File fichero = new File("C:\\Users\\Cristian\\Desktop\\datos.dat");
+		DataInputStream datos = null;
+		try {
+			FileInputStream conexion = new FileInputStream(fichero);
+			datos = new DataInputStream(conexion);
+		}catch(IOException e) {
+			System.out.println(e);
 		}
 	}
 }
