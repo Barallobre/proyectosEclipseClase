@@ -9,11 +9,13 @@ public class Ficheros132 {
 	public static void main(String[] args) {
 		int valor = 0;
 		try {
-			FileReader fich = new FileReader("chiquito.txt");
-
+			FileReader fich = new FileReader("aviso.txt");
 			char cbuf[] = new char[30];
+			
 			while ((valor = fich.read(cbuf, 0, 30)) != -1) {
 				System.out.println(cbuf);
+				cbuf = new char[30];
+				
 			}
 
 			fich.close();
