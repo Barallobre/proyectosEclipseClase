@@ -16,6 +16,7 @@ public class binarios141 {
 				destino.write(lectura);
 			}
 			origen.close();
+			destino.close();
 			System.out.println("Copiado terminado.");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
