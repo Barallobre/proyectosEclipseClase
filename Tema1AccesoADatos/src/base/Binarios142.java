@@ -13,8 +13,7 @@ public class Binarios142 {
 
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
-		char barra = File.separatorChar;
-		File fichero = new File("C:" + barra + "Users" + barra + "Usuario" + barra + "Desktop" + barra + "Datos.dat");
+
 		DataOutputStream datos = null;
 		try {
 
