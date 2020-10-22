@@ -41,7 +41,7 @@ public class dialogosModales {
 				// modificarContacto();
 				break;
 			case "Listar contactos":
-				// listarContactos();
+				listarContactos();
 				break;
 			case "Salir":
 				salir();
@@ -85,16 +85,17 @@ public class dialogosModales {
 			}
 			bfr.close();
 //preguntar si querer borrarlo
-			
+
 			int respuesta;
-			respuesta = (int)JOptionPane.showConfirmDialog(null,"¿Está seguro de querer borrarlo?","Borrar contacto",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE);
-			if(respuesta == JOptionPane.YES_OPTION ) {
-			for (int i = 0; i < contactos.size(); i++) {
-				if (nombre.equals(contactos.get(i))) {
-					contactos.remove(i);
+			respuesta = (int) JOptionPane.showConfirmDialog(null, "¿Está seguro de querer borrarlo?", "Borrar contacto",
+					JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+			if (respuesta == JOptionPane.YES_OPTION) {
+				for (int i = 0; i < contactos.size(); i++) {
+					if (nombre.equals(contactos.get(i))) {
+						contactos.remove(i);
+					}
 				}
-			}
-			}else {
+			} else {
 				panel();
 			}
 		} catch (IOException e) {
@@ -114,20 +115,42 @@ public class dialogosModales {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
-	/*
-	 * public static void modificarContacto() { String nombre =
-	 * JOptionPane.showInputDialog(null, "Introduzca el nombre que desea modificar",
-	 * "Borrar contacto", JOptionPane.DEFAULT_OPTION); }
-	 * 
-	 * public static void listarContactos() { //JOptionPane.showInputDialog(null,
-	 * "Lista de contactos", "Contactos", JOptionPane.DEFAULT_OPTION, null, //
-	 * contactos, contactos.get(0)); }
-	 */
+	public static void modificarContacto() {
+		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nombre que desea modificar", "Borrar contacto",
+				JOptionPane.DEFAULT_OPTION);
+	}
+
+	/* Listar contactos en una lista desplegable */
+	public static void listarContactos() {
+		String[] contactos1 = null;
+		try {
+			BufferedReader bfr = new BufferedReader(new FileReader("contactos.txt"));
+
+			String linea = bfr.readLine();
+
+			while (linea != null) {
+				contactos.add(linea);
+				linea = bfr.readLine();
+
+			}
+			bfr.close();
+			contactos1 = new String[contactos.size()];
+			for (int i = 0; i < contactos.size(); i++) {
+				contactos1[i] = contactos.get(i);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		JOptionPane.showInputDialog(null, "Lista de contactos", "Contactos", JOptionPane.DEFAULT_OPTION, null,
+				contactos1, contactos1[0]);
+	}
+
+	/* Saliendo de la aplicación */
 	public static void salir() {
-		System.out.println("Saliendo de la aplicación...");
 		System.exit(0);
 	}
 
