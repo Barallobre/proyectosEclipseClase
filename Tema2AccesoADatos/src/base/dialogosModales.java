@@ -38,7 +38,7 @@ public class dialogosModales {
 				borrarContacto();
 				break;
 			case "Modificar contacto":
-				// modificarContacto();
+				modificarContacto();
 				break;
 			case "Listar contactos":
 				listarContactos();
@@ -59,14 +59,28 @@ public class dialogosModales {
 	public static void agregarContacto() {
 		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nuevo nombre", "Añadir contacto",
 				JOptionPane.DEFAULT_OPTION);
-		try {
-			BufferedWriter bfw = new BufferedWriter(new FileWriter("contactos.txt", true));
-			bfw.write(nombre);
-			bfw.newLine();
-			bfw.close();
-		} catch (IOException e) {
-			e.printStackTrace();
+		pasarListaAArray();
+		for (int i = 0; i < contactos.size(); i++) {
+			if (nombre.equals(contactos.get(i))) {
+				int respuesta;
+				respuesta = JOptionPane.showConfirmDialog(null, "¿Está seguro?", "Va a añadir un nombre repetido",
+						JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+				if (respuesta == JOptionPane.YES_OPTION) {
+					try {
+						BufferedWriter bfw = new BufferedWriter(new FileWriter("contactos.txt", true));
+						bfw.write(nombre);
+						bfw.newLine();
+						bfw.close();
+						contactos.clear();
+					} catch (IOException e) {
+						e.printStackTrace();//TODO los catch tienen que salir en cuadros de dialogo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+					}
+				} else {
+					panel();
+				}
+			}
 		}
+
 	}
 
 	/* Borrar contacto que este en la lista antes creada */
@@ -122,8 +136,19 @@ public class dialogosModales {
 	}
 
 	public static void modificarContacto() {
-		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nombre que desea modificar", "Borrar contacto",
+		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nombre que desea modificar", "Modificar contacto",
 				JOptionPane.DEFAULT_OPTION);
+		pasarListaAArray();
+		for(int i=0;i<contactos.size();i++) {
+			if(nombre.equals(contactos.get(i))) {
+				//TODO
+			}else {
+				JOptionPane.showMessageDialog(null,"Ese contacto no está en la lista","Cliente buscado",JOptionPane.WARNING_MESSAGE);
+			}
+		}
+		
+		contactos.clear();
+		
 	}
 
 	/* Listar contactos en una lista desplegable */
