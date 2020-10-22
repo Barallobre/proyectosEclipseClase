@@ -73,33 +73,18 @@ public class dialogosModales {
 	public static void borrarContacto() {
 		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nombre que desea eliminar", "Borrar contacto",
 				JOptionPane.DEFAULT_OPTION);
-		try {
-			BufferedReader bfr = new BufferedReader(new FileReader("contactos.txt"));
-
-			String linea = bfr.readLine();
-
-			while (linea != null) {
-				contactos.add(linea);
-				linea = bfr.readLine();
-
-			}
-			bfr.close();
-//preguntar si querer borrarlo
-
-			int respuesta;
-			respuesta = (int) JOptionPane.showConfirmDialog(null, "¿Está seguro de querer borrarlo?", "Borrar contacto",
-					JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
-			if (respuesta == JOptionPane.YES_OPTION) {
-				for (int i = 0; i < contactos.size(); i++) {
-					if (nombre.equals(contactos.get(i))) {
-						contactos.remove(i);
-					}
+		pasarListaAArray();
+		int respuesta;
+		respuesta = (int) JOptionPane.showConfirmDialog(null, "¿Está seguro de querer borrarlo?", "Borrar contacto",
+				JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+		if (respuesta == JOptionPane.YES_OPTION) {
+			for (int i = 0; i < contactos.size(); i++) {
+				if (nombre.equals(contactos.get(i))) {
+					contactos.remove(i);
 				}
-			} else {
-				panel();
 			}
-		} catch (IOException e) {
-			e.printStackTrace();
+		} else {
+			panel();
 		}
 
 		try {
@@ -118,14 +103,8 @@ public class dialogosModales {
 
 	}
 
-	public static void modificarContacto() {
-		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nombre que desea modificar", "Borrar contacto",
-				JOptionPane.DEFAULT_OPTION);
-	}
-
-	/* Listar contactos en una lista desplegable */
-	public static void listarContactos() {
-		String[] contactos1 = null;
+	/* Convertimos la lista del documento en un arrayList */
+	public static void pasarListaAArray() {
 		try {
 			BufferedReader bfr = new BufferedReader(new FileReader("contactos.txt"));
 
@@ -137,16 +116,28 @@ public class dialogosModales {
 
 			}
 			bfr.close();
-			contactos1 = new String[contactos.size()];
-			for (int i = 0; i < contactos.size(); i++) {
-				contactos1[i] = contactos.get(i);
-			}
 		} catch (IOException e) {
 			e.printStackTrace();
+		}
+	}
+
+	public static void modificarContacto() {
+		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nombre que desea modificar", "Borrar contacto",
+				JOptionPane.DEFAULT_OPTION);
+	}
+
+	/* Listar contactos en una lista desplegable */
+	public static void listarContactos() {
+		String[] contactos1 = null;
+		pasarListaAArray();
+		contactos1 = new String[contactos.size()];
+		for (int i = 0; i < contactos.size(); i++) {
+			contactos1[i] = contactos.get(i);
 		}
 
 		JOptionPane.showInputDialog(null, "Lista de contactos", "Contactos", JOptionPane.DEFAULT_OPTION, null,
 				contactos1, contactos1[0]);
+		contactos.clear();
 	}
 
 	/* Saliendo de la aplicación */
