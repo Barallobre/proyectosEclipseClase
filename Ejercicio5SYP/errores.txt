@@ -1,0 +1,2 @@
+Error: Could not find or load main class base.Lanzador
+Caused by: java.lang.ClassNotFoundException: base.Lanzador
