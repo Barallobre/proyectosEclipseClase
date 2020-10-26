@@ -170,24 +170,30 @@ public class dialogosModales {
 				hayContacto = true;
 			}
 		}
-		String nombreNuevo = JOptionPane.showInputDialog(null, "Introduzca el nuevo nombre", "Modificar contacto",
-				JOptionPane.DEFAULT_OPTION);
+
 		if (hayContacto) {
+			String nombreNuevo = JOptionPane.showInputDialog(null, "Introduzca el nuevo nombre", "Modificar contacto",
+					JOptionPane.DEFAULT_OPTION);
 			contactos.remove(posicion);
 			contactos.add(posicion, nombreNuevo);
-		}
-		try {
-			BufferedWriter bfw = new BufferedWriter(new FileWriter("contactos.txt"));
 
-			for (int i = 0; i < contactos.size(); i++) {
-				bfw.write(contactos.get(i));
-				bfw.newLine();
+			try {
+				BufferedWriter bfw = new BufferedWriter(new FileWriter("contactos.txt"));
+
+				for (int i = 0; i < contactos.size(); i++) {
+					bfw.write(contactos.get(i));
+					bfw.newLine();
+				}
+				bfw.close();
+				contactos.clear();
+			} catch (IOException e) {
+				JOptionPane.showMessageDialog(null, "IOException", "Error", JOptionPane.WARNING_MESSAGE);
+				panel();
 			}
-			bfw.close();
+		} else {
+			JOptionPane.showMessageDialog(null, "El usuario que busca no se encuentra en la lista",
+					"Modificar contacto", JOptionPane.WARNING_MESSAGE);
 			contactos.clear();
-		} catch (IOException e) {
-			JOptionPane.showMessageDialog(null, "IOException", "Error", JOptionPane.WARNING_MESSAGE);
-			panel();
 		}
 
 	}
