@@ -12,13 +12,10 @@ public class Main {
 	static final String PREFIJO_FICHEROS = "fich";
 
 	public static void lanzarSumador(int n1, int n2, String fichResultados) throws IOException {
-		String comando;
-		comando = "base.Sumador";
-		File directorioSumador;
-		directorioSumador = new File("C:\\Users\\Usuario\\proyectosEclipseClase1\\Ejercicio7SYP\\bin");
+		String comando = "base.Sumador";
+		File directorioSumador = new File("C:\\Users\\Usuario\\proyectosEclipseClase1\\Ejercicio7SYP\\bin");
 		File fichResultado = new File(fichResultados);
-		ProcessBuilder pb;
-		pb = new ProcessBuilder("java", comando, String.valueOf(n1), String.valueOf(n2));
+		ProcessBuilder pb = new ProcessBuilder("java", comando, String.valueOf(n1), String.valueOf(n2));
 		pb.directory(directorioSumador);
 		pb.redirectOutput(fichResultado);
 		pb.start();
