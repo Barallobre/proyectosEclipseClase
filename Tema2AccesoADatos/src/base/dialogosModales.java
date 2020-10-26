@@ -56,53 +56,44 @@ public class dialogosModales {
 		}
 	}
 
-	/*
-	 * Agregar contacto a un archivo de texto desde donde accederemos para
-	 * listarlos, borrarlos y/o modificarlos
-	 */
+	/* Agregar contacto a un archivo de texto */
 	public static void agregarContacto() {
 		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nuevo nombre", "Añadir contacto",
 				JOptionPane.DEFAULT_OPTION);
-
-		if (!contactos.isEmpty()) {
+		if (contactos.isEmpty()) {
+			agregarContacto2(nombre);
+		} else {
 			pasarListaAArray();
+
 			for (int i = 0; i < contactos.size(); i++) {
 				if (nombre.equals(contactos.get(i))) {
 					int respuesta;
 					respuesta = JOptionPane.showConfirmDialog(null, "¿Está seguro?", "Va a añadir un nombre repetido",
 							JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
 					if (respuesta == JOptionPane.YES_OPTION) {
-						try {
-							BufferedWriter bfw = new BufferedWriter(new FileWriter("contactos.txt", true));
-							bfw.write(nombre);
-							bfw.newLine();
-							bfw.close();
-							contactos.clear();
-						} catch (IOException e) {
-
-							JOptionPane.showMessageDialog(null, "IOException", "Error", JOptionPane.WARNING_MESSAGE);
-							panel();
-						}
+						agregarContacto2(nombre);
 					} else {
 						panel();
 					}
 				}
 			}
-		} else {
-			try {
-				BufferedWriter bfw = new BufferedWriter(new FileWriter("contactos.txt", true));
-				bfw.write(nombre);
-				bfw.newLine();
-				bfw.close();
+		}
 
-			} catch (IOException e) {
+	}
+/*Añadir el contacto al fichero*/
+	public static void agregarContacto2(String nombre) {
+		try {
+			BufferedWriter bfw = new BufferedWriter(new FileWriter("contactos.txt", true));
+			bfw.write(nombre);
+			bfw.newLine();
+			bfw.close();
+			contactos.clear();
+		} catch (IOException e) {
 
-				JOptionPane.showMessageDialog(null, "IOException", "Error", JOptionPane.WARNING_MESSAGE);
-				panel();
-			}
+			JOptionPane.showMessageDialog(null, "IOException", "Error", JOptionPane.WARNING_MESSAGE);
+			panel();
 		}
 	}
-
 	/* Borrar contacto que este en la lista antes creada */
 	public static void borrarContacto() {
 		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nombre que desea eliminar", "Borrar contacto",
@@ -140,6 +131,7 @@ public class dialogosModales {
 
 	/* Convertimos la lista del documento en un arrayList */
 	public static void pasarListaAArray() {
+
 		try {
 			BufferedReader bfr = new BufferedReader(new FileReader("contactos.txt"));
 
