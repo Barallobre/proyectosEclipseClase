@@ -19,6 +19,9 @@ public class dialogosModales {
 		panel();
 	}
 
+	/*
+	 * Método que nos mostrará en un panel las distintas opciones de la aplicación
+	 */
 	public static void panel() {
 		String[] opciones = { "Añadir contacto", "Borrar contacto", "Modificar contacto", "Listar contactos", "Salir" };
 		String opcion = (String) JOptionPane.showInputDialog(null, "Seleccione una opción", "Opciones",
@@ -26,6 +29,7 @@ public class dialogosModales {
 		menu(opcion);
 	}
 
+	/* A partir del panel entramos en el switch a las diferentes opciones */
 	public static void menu(String opcion) {
 		if (opcion == null) {
 			salir();
@@ -52,37 +56,44 @@ public class dialogosModales {
 		}
 	}
 
-	/*
-	 * Agregar contacto a un archivo de texto desde donde accederemos para
-	 * listarlos, borrarlos y/o modificarlos
-	 */
+	/* Agregar contacto a un archivo de texto */
 	public static void agregarContacto() {
 		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nuevo nombre", "Añadir contacto",
 				JOptionPane.DEFAULT_OPTION);
-		pasarListaAArray();
-		for (int i = 0; i < contactos.size(); i++) {
-			if (nombre.equals(contactos.get(i))) {
-				int respuesta;
-				respuesta = JOptionPane.showConfirmDialog(null, "¿Está seguro?", "Va a añadir un nombre repetido",
-						JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
-				if (respuesta == JOptionPane.YES_OPTION) {
-					try {
-						BufferedWriter bfw = new BufferedWriter(new FileWriter("contactos.txt", true));
-						bfw.write(nombre);
-						bfw.newLine();
-						bfw.close();
-						contactos.clear();
-					} catch (IOException e) {
-						e.printStackTrace();//TODO los catch tienen que salir en cuadros de dialogo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		if (contactos.isEmpty()) {
+			agregarContacto2(nombre);
+		} else {
+			pasarListaAArray();
+
+			for (int i = 0; i < contactos.size(); i++) {
+				if (nombre.equals(contactos.get(i))) {
+					int respuesta;
+					respuesta = JOptionPane.showConfirmDialog(null, "¿Está seguro?", "Va a añadir un nombre repetido",
+							JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+					if (respuesta == JOptionPane.YES_OPTION) {
+						agregarContacto2(nombre);
+					} else {
+						panel();
 					}
-				} else {
-					panel();
 				}
 			}
 		}
 
 	}
+/*Añadir el contacto al fichero*/
+	public static void agregarContacto2(String nombre) {
+		try {
+			BufferedWriter bfw = new BufferedWriter(new FileWriter("contactos.txt", true));
+			bfw.write(nombre);
+			bfw.newLine();
+			bfw.close();
+			contactos.clear();
+		} catch (IOException e) {
 
+			JOptionPane.showMessageDialog(null, "IOException", "Error", JOptionPane.WARNING_MESSAGE);
+			panel();
+		}
+	}
 	/* Borrar contacto que este en la lista antes creada */
 	public static void borrarContacto() {
 		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nombre que desea eliminar", "Borrar contacto",
@@ -112,13 +123,15 @@ public class dialogosModales {
 			bfw.close();
 			contactos.clear();
 		} catch (IOException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "IOException", "Error", JOptionPane.WARNING_MESSAGE);
+			panel();
 		}
 
 	}
 
 	/* Convertimos la lista del documento en un arrayList */
 	public static void pasarListaAArray() {
+
 		try {
 			BufferedReader bfr = new BufferedReader(new FileReader("contactos.txt"));
 
@@ -131,24 +144,50 @@ public class dialogosModales {
 			}
 			bfr.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "IOException", "Error", JOptionPane.WARNING_MESSAGE);
+			panel();
 		}
 	}
 
+	/* Modificamos el contacto cambiando el nombre si existe en el fichero */
 	public static void modificarContacto() {
-		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nombre que desea modificar", "Modificar contacto",
-				JOptionPane.DEFAULT_OPTION);
+		int posicion = 0;
+		boolean hayContacto = false;
+		String nombre = JOptionPane.showInputDialog(null, "Introduzca el nombre que desea modificar",
+				"Modificar contacto", JOptionPane.DEFAULT_OPTION);
 		pasarListaAArray();
-		for(int i=0;i<contactos.size();i++) {
-			if(nombre.equals(contactos.get(i))) {
-				//TODO
-			}else {
-				JOptionPane.showMessageDialog(null,"Ese contacto no está en la lista","Cliente buscado",JOptionPane.WARNING_MESSAGE);
+		for (int i = 0; i < contactos.size(); i++) {
+			if (contactos.get(i).equals(nombre)) {
+				posicion = i;
+				hayContacto = true;
 			}
 		}
-		
-		contactos.clear();
-		
+
+		if (hayContacto) {
+			String nombreNuevo = JOptionPane.showInputDialog(null, "Introduzca el nuevo nombre", "Modificar contacto",
+					JOptionPane.DEFAULT_OPTION);
+			contactos.remove(posicion);
+			contactos.add(posicion, nombreNuevo);
+
+			try {
+				BufferedWriter bfw = new BufferedWriter(new FileWriter("contactos.txt"));
+
+				for (int i = 0; i < contactos.size(); i++) {
+					bfw.write(contactos.get(i));
+					bfw.newLine();
+				}
+				bfw.close();
+				contactos.clear();
+			} catch (IOException e) {
+				JOptionPane.showMessageDialog(null, "IOException", "Error", JOptionPane.WARNING_MESSAGE);
+				panel();
+			}
+		} else {
+			JOptionPane.showMessageDialog(null, "El usuario que busca no se encuentra en la lista",
+					"Modificar contacto", JOptionPane.WARNING_MESSAGE);
+			contactos.clear();
+		}
+
 	}
 
 	/* Listar contactos en una lista desplegable */
