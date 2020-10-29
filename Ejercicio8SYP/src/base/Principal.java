@@ -1,13 +1,8 @@
 package base;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
 
 public class Principal {
 
@@ -16,31 +11,29 @@ public class Principal {
 
 	public static void lanzarSumadorVocales(String nombreFicheroEntrada, String letra, String nombreFicheroResultado)
 			throws IOException {
-		String comando = "base.SumadorVocales";
+		String clase = "base.SumadorVocales";
 		File directorioSumadorVocales = new File("C:\\Users\\Usuario\\proyectosEclipseClase1\\Ejercicio8SYP\\bin");
-		File fichResultado = new File(nombreFicheroResultado);
-
 		try {
-			ProcessBuilder pb = new ProcessBuilder("java", comando, nombreFicheroEntrada, letra);
+			ProcessBuilder pb = new ProcessBuilder("java", clase, nombreFicheroEntrada, letra);
 			pb.directory(directorioSumadorVocales);
-			pb.redirectOutput(fichResultado);
+			pb.redirectOutput(new File(nombreFicheroResultado));
+			System.out.println(nombreFicheroEntrada + letra + nombreFicheroResultado);
 			pb.start();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
+	
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		String[] vocales = { "A", "E", "I", "O", "U" };
 		String letra = null;
 		String nombreFicheroResultado = null;
-		String nombreFicheroEntrada = "C:\\Users\\Usuario\\proyectosEclipseClase1\\Ejercicio8SYP\\" + args[0];
+		String nombreFicheroEntrada = "vocales.txt"; //+ args[0];
+
 		for (int i = 0; i < vocales.length; i++) {
 			letra = vocales[i];
-			nombreFicheroResultado = PREFIJO_FICHEROS + String.valueOf(i);
+			nombreFicheroResultado = PREFIJO_FICHEROS + String.valueOf(i+1);
+			lanzarSumadorVocales(nombreFicheroEntrada, letra, nombreFicheroResultado);
 		}
-
-		lanzarSumadorVocales(nombreFicheroEntrada, letra, nombreFicheroResultado);
-		// Fin del main
 	}
 }

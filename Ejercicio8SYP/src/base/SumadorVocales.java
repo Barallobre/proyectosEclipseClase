@@ -1,51 +1,38 @@
 package base;
 
-import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
 
 public class SumadorVocales {
 
-	
-	public static int sumarVocales(String letra, String nombreFicheroEntrada) {
-		int numeroVocales = 0; 
-		
-		
-		
-		return numeroVocales;
-	}
-	
-	
+	/* Método para saber cuantas veces aparece una letra en el texto */
+	public static int leerLetras(String letra, String nombreFicheroEntrada) {
 
-	public static PrintWriter getPrintWriter(String nombreFichero) throws IOException {
-		FileWriter fileWriter = new FileWriter(nombreFichero);
-		PrintWriter printWriter = new PrintWriter(fileWriter);
-		return printWriter;
-	}
-
-	public static ArrayList<String> getLineasFichero(String nombreFicheroEntrada) throws IOException, FileNotFoundException {
-		ArrayList<String> lineas = new ArrayList<String>();
-		FileReader lector = new FileReader(nombreFicheroEntrada);
-		BufferedReader bfr = new BufferedReader(lector);
-		String linea = bfr.readLine();
-		while (linea != null) {
-			lineas.add(linea);
-			linea = bfr.readLine();
+		int valor = 0;
+		int contador = 0;
+		char caracter = letra.charAt(0);
+		try {
+			FileReader fich = new FileReader(nombreFicheroEntrada);
+			while ((valor = fich.read()) != -1) {
+				if (valor == caracter) {
+					contador++;
+				}
+			}
+			fich.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		bfr.close();
-		return lineas;
+		return contador;
 	}
-
-	
 
 	public static void main(String[] args) {
+
 		String nombreFicheroEntrada = args[0];
 		String letra = args[1];
-		int sumaVocales = sumarVocales(letra,nombreFicheroEntrada);
+		int sumaVocales = leerLetras(letra, nombreFicheroEntrada);
 		System.out.println(sumaVocales);
 		System.out.flush();
 	}
