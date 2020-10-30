@@ -30,7 +30,7 @@ public class Aleatorios152 {
 		RandomAccessFile fichero2 = new RandomAccessFile(fichero.toString(), "rw");
 		String nombre2 = "";
 
-		for (int i = 0; i < nombre.length; i++) {
+		for (int i = 0; i < fichero.length()/46; i++) {
 			System.out.println("Nº empleado: " +fichero2.readInt());
 			for (int j = 0; j < 15; j++) {
 				nombre2 += String.valueOf(fichero2.readChar());
@@ -40,7 +40,8 @@ public class Aleatorios152 {
 			System.out.println("Departamento: "+fichero2.readInt());
 			System.out.println("Salario: "+fichero2.readDouble()+"\n");
 		}
-		System.out.println("-----------------------------------------------------");
+		
+		System.out.println("---------------------------------------------------------------------------------------------------------");
 
 		int largo = (int) fichero.length();
 		while (largo != 0) {
