@@ -37,11 +37,12 @@ public class Principal {
 
 	public static char confirmarPeticion() {
 		char respuesta;
+		sc.nextLine();
 		do {
 			System.out.println("Quiere introducir otro?(S/N)");
 
-			String respuestaUsuario = sc.nextLine().toUpperCase();
-			respuesta = respuestaUsuario.charAt(0);
+			String respuestaUsuario = sc.nextLine();
+			respuesta = respuestaUsuario.toUpperCase().charAt(0);
 		} while (respuesta != 'S' && respuesta != 'N');
 		return respuesta;
 	}
