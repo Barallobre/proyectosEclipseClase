@@ -4,7 +4,8 @@ import java.io.*;
 
 public class Aleatorios152 {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		File fichero = new File("C:\\Users\\Usuario\\Desktop\\Empleados.dat");
+		File fichero = new File("C:\\Users\\Cristian\\Desktop\\Empleados.dat");
+		// File fichero = new File("C:\\Users\\Usuario\\Desktop\\Empleados.dat");
 
 		RandomAccessFile fichAleatorio = new RandomAccessFile(fichero, "rw");
 
@@ -30,37 +31,32 @@ public class Aleatorios152 {
 		String nombre2 = "";
 
 		for (int i = 0; i < nombre.length; i++) {
-			System.out.println(fichero2.readInt());
+			System.out.println("Nº empleado: " +fichero2.readInt());
 			for (int j = 0; j < 15; j++) {
 				nombre2 += String.valueOf(fichero2.readChar());
 			}
-			System.out.println(nombre2);
+			System.out.println("Nombre: "+nombre2);
 			nombre2 = "";
-			System.out.println(fichero2.readInt());
-			System.out.println(fichero2.readDouble());
+			System.out.println("Departamento: "+fichero2.readInt());
+			System.out.println("Salario: "+fichero2.readDouble()+"\n");
 		}
 		System.out.println("-----------------------------------------------------");
-		
-		int largo = nombre.length;
-		while (largo != 0) {
-			System.out.println(46 * (largo - 1));
-			fichero2.seek(46 * (largo - 1)); // me coloco antes del ultimo nombre
 
-			
-				System.out.println(fichero2.readInt());
-				for (int j = 0; j < 15; j++) {
-					nombre2 += String.valueOf(fichero2.readChar());
-				}
-				System.out.println(nombre2);
-				nombre2 = "";
-				System.out.println(fichero2.readInt());
-				System.out.println(fichero2.readDouble());
-			
-			System.out.println(largo);
-			largo--;
-			System.out.println(largo);
+		int largo = (int) fichero.length();
+		while (largo != 0) {
+			fichero2.seek(largo - 46); // me coloco antes del ultimo nombre
+
+			System.out.println("Nº empleado: " +fichero2.readInt());
+			for (int j = 0; j < 15; j++) {
+				nombre2 += String.valueOf(fichero2.readChar());
+			}
+			System.out.println("Nombre: "+nombre2);
+			nombre2 = "";
+			System.out.println("Departamento: "+fichero2.readInt());
+			System.out.println("Salario: "+fichero2.readDouble()+"\n");
+
+			largo = largo - 46;
 		}
 		fichero2.close();
 	}
-
 }
