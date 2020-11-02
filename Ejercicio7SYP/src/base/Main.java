@@ -37,7 +37,8 @@ public class Main {
 		}
 		return suma;
 	}
-
+	
+	synchronized
 	public static int getSumaTotal(int numFicheros) {
 		int sumaTotal = 0;
 		for (int i = 1; i <= NUM_PROCESOS; i++) {
@@ -50,11 +51,14 @@ public class Main {
 	 * Recibe dos parámetros y hará* la suma de los valores comprendidos entre ambos
 	 * parametros
 	 */
+	
 	public static void main(String[] args) throws IOException, InterruptedException {
 		int n1 = Integer.parseInt(args[0]);
 		int n2 = Integer.parseInt(args[1]);
 		int salto = (n2 / NUM_PROCESOS) - 1;
+		
 		for (int i = 1; i <= NUM_PROCESOS; i++) {
+			
 			System.out.println("n1:" + n1);
 			int resultadoSumaConSalto = n1 + salto;
 			System.out.println("n2:" + resultadoSumaConSalto);
