@@ -18,11 +18,11 @@ public class Aleatorio153 {
 		boolean empleadoBuscadoFinal = false;
 		char respuesta = 0;
 		do {
-		System.out.println("Qué número de empleado quiere buscar?");
+		System.out.println("QuÃ© nÃºmero de empleado quiere buscar?");
 		int numeroEmpleado = sc.nextInt();
 		int empleadoBuscado = 46*(numeroEmpleado-1);
 		if(empleadoBuscado >((fichero2.length())-46)||empleadoBuscado<0) {
-			System.out.println("Ese número de empleado no existe");
+			System.out.println("Ese nÃºmero de empleado no existe");
 			do {
 			System.out.println("Quiere introducir otro?(S/N)");
 			sc.nextLine();
@@ -33,7 +33,7 @@ public class Aleatorio153 {
 			}while (respuesta != 'S' && respuesta != 'N');
 		}else {
 			fichero2.seek(empleadoBuscado);
-			System.out.println("Nº empleado: " + fichero2.readInt());
+			System.out.println("NÂº empleado: " + fichero2.readInt());
 			for (int j = 0; j < 15; j++) {
 				nombre2 += String.valueOf(fichero2.readChar());
 			}
