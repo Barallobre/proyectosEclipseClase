@@ -9,9 +9,11 @@ public class Ventana extends JFrame{
 
 	public Ventana() {
 		super("Título de la ventana.");
-		this.setSize(400,300);//el this no es obligatorio
+		this.setSize(550,350);//el this no es obligatorio
 		this.setResizable(false);//para que no se pueda modificar el tamaño
 		this.setLocationRelativeTo(null);//para que centre la ventana
+		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);//Cierra la ventana pero la aplicación sigue 
+		//this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); Cierra la ventana y la aplicación
 		this.setLayout(null);//Elimino la distribución
 		
 		JButton boton = new JButton("click");//añadir un boton a la ventana
@@ -24,6 +26,7 @@ public class Ventana extends JFrame{
 		JLabel etiqueta = new JLabel("Nombre del módulo: ");
 		etiqueta.setBounds(30,90,200,30);
 		etiqueta.setDisplayedMnemonic('m');
+		etiqueta.setDisplayedMnemonicIndex(11);
 		this.add(etiqueta);
 		
 		JTextField ctexto = new JTextField();
