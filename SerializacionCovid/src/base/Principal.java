@@ -22,7 +22,21 @@ public class Principal {
 	static ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
 	static Scanner sc = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {// falta leer bien el fichero TODO
+		String ruta = "alumnos.dat";
+		ObjectInputStream is;
+		try {
+			is = new ObjectInputStream(new FileInputStream(ruta));
+			Alumno alumno = (Alumno) is.readObject();
+			System.out.println(alumno.getDatos());
+			is.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 		menu();
 	}
 
@@ -50,17 +64,19 @@ public class Principal {
 		case 2:
 			break;
 		case 3:
+			eliminarAlumno();
 			break;
 		case 4:
-
+			listaAlumno();
 			break;
 		case 5:
 			listarAlumnos();
 			break;
 		case 6:
-			salirVolcar();
+			salirVolcar();// falta volcar TODO
 			break;
 		}
+		menu();
 	}
 
 	public static void insertarAlumno() {
@@ -72,6 +88,7 @@ public class Principal {
 
 		System.out.println("Introduzca el DNI: ");
 		DNI = sc.next();
+
 		System.out.println("Introduzca edad: ");
 		edad = sc.nextInt();
 		System.out.println("Introduzca nombre: ");
@@ -83,42 +100,53 @@ public class Principal {
 		if (respuesta.toUpperCase().charAt(0) == 'S') {
 			tieneAnticuerpos = true;
 		}
-		String ruta = "alumnos.dat";
 		Alumno alumno = new Alumno(DNI, nombre, edad, tieneAnticuerpos);
-		ObjectOutputStream os;
+		alumnos.add(alumno);
 
 		menu();
 	}
 
+	public static void eliminarAlumno() {
+		System.out.println("Indique el DNI del alumno que quiere eliminar.");
+		String DNI = sc.next();
+		for (int i = 0; i < alumnos.size(); i++) {
+			if (alumnos.get(i).getDNI() == DNI) {
+				alumnos.remove(i);
+			}
+		}
+	}
+
+	public static void listaAlumno() {
+		System.out.println("Indique el DNI del alumno que quiere buscar.");
+		String DNI = sc.next();
+		for (int i = 0; i < alumnos.size(); i++) {
+			if (alumnos.get(i).getDNI() == DNI) {
+				System.out.println(alumnos.get(i));
+			}
+		}
+	}
+
 	public static void listarAlumnos() {
-		String ruta = "alumnos.dat";
-		ObjectInputStream is;
-		try {
-			is = new ObjectInputStream(new FileInputStream(ruta));
-			Alumno alumno = (Alumno) is.readObject();
-			System.out.println(alumno.getDatos());
-			is.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+		for (int i = 0; i < alumnos.size(); i++) {
+			System.out.println(alumnos.get(i));
 		}
 
 	}
 
 	public static void salirVolcar() {
-
-		Alumno alumno = new Alumno(DNI, nombre, edad, tieneAnticuerpos);
-		try {
-			os = new ObjectOutputStream(new FileOutputStream(ruta));
-			os.writeObject(alumno);
-			os.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		System.out.println("Saliendo de la aplicación...");
+		System.exit(0);
+		// Alumno alumno = new Alumno(DNI, nombre, edad, tieneAnticuerpos);
+//		String ruta = "alumnos.dat";
+//		try {
+//			ObjectOutputStream os;
+//			os = new ObjectOutputStream(new FileOutputStream(ruta));
+//			os.writeObject(alumno);
+//			os.close();
+//		} catch (FileNotFoundException e) {
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 }

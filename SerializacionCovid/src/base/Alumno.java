@@ -61,4 +61,11 @@ public class Alumno implements Serializable {
 	public void seExamina() {
 
 	}
+
+	@Override
+	public String toString() {
+		String sb = "\nDNI: " + this.DNI + "\nNombre: " + this.nombre + "\nEdad: " + this.edad;
+		return sb;
+	}
+
 }
