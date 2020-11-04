@@ -10,7 +10,7 @@ import java.io.ObjectOutputStream;
 public class Principal {
 
 	public static void main(String[] args) {
-		Coche coche1 = new Coche("1234DGT", "Corolla Verso", 20000);
+//		Coche coche1 = new Coche("1234DGT", "Corolla Verso", 20000);
 		String ruta = "coches.dat";
 		try {
 //			ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(ruta));
