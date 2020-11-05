@@ -2,6 +2,7 @@ package base;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.FlowLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -18,24 +19,27 @@ public class MiSegundaVentana extends JFrame {
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);//Cierra la ventana pero la aplicación sigue 
 	
 	
-		
+		JPanel panel0 = new JPanel();
+		this.add(panel0,BorderLayout.CENTER);
+		panel0.setLayout(null);
 		JLabel nombre = new JLabel("Nombre completo: ");
 		nombre.setBounds(30,60,200,30);
-		this.add(nombre);
+		panel0.add(nombre);
 		JTextField textoNombre = new JTextField();
 		nombre.setLabelFor(textoNombre);
 		textoNombre.setBounds(150,60,250,25);
-		this.add(textoNombre);
+		panel0.add(textoNombre);
 		
 		JLabel direccion = new JLabel("Dirección: ");
 		direccion.setBounds(30,120,200,30);
-		this.add(direccion);
+		panel0.add(direccion);
 		JTextField textoDireccion = new JTextField();
 		direccion.setLabelFor(textoDireccion);
 		textoDireccion.setBounds(150,120,250,25);
-		this.add(textoDireccion);
+		panel0.add(textoDireccion);
 		
 		JPanel panel = new JPanel();
+		((FlowLayout)panel.getLayout()).setAlignment(FlowLayout.RIGHT);
 		this.add(panel,BorderLayout.SOUTH);
 		panel.setBackground(Color.GRAY);
 		JButton botonAceptar = new JButton("Aceptar");
