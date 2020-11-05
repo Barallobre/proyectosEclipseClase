@@ -9,6 +9,7 @@ de alumnos.
 Requisitos mínimos: insertar un alumno y listar todos los alumnos, utilizando la consola*/
 package base;
 
+import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -22,13 +23,24 @@ public class Principal {
 	static ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
 	static Scanner sc = new Scanner(System.in);
 
-	public static void main(String[] args) {// falta leer bien el fichero TODO
+	/*
+	 * Al iniciar la aplicación escribimos en el arrayList lo que se encuentra en el
+	 * fichero
+	 */
+	public static void main(String[] args) {
 		String ruta = "alumnos.dat";
 		ObjectInputStream is;
 		try {
 			is = new ObjectInputStream(new FileInputStream(ruta));
-			Alumno alumno = (Alumno) is.readObject();
-			System.out.println(alumno.getDatos());
+			try {
+				while (true) {
+
+					Alumno alumno = (Alumno) is.readObject();
+					System.out.println(alumno.getDatos());
+					alumnos.add(alumno);
+				}
+			} catch (EOFException e) {
+			}
 			is.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -74,12 +86,13 @@ public class Principal {
 			listarAlumnos();
 			break;
 		case 6:
-			salirVolcar();// falta volcar TODO
+			salirVolcar();
 			break;
 		}
 		menu();
 	}
 
+	/* Método para insertar un alumno nuevo */
 	public static void insertarAlumno(int posicion) {
 
 		String DNI;
@@ -107,17 +120,24 @@ public class Principal {
 		menu();
 	}
 
+	/*
+	 * Método para modificar un alumno y sustituirlo en el array mediante su indice
+	 */
 	public static void modificarAlumno() {
 		System.out.println("Indique el DNI del alumno que quiere modificar.");
 		String DNI = sc.next();
 		for (int i = 0; i < alumnos.size(); i++) {
 			if (alumnos.get(i).getDNI().equals(DNI)) {
-				insertarAlumno(i);
 				alumnos.remove(i);
+				insertarAlumno(i);
+				
 			}
 		}
 	}
 
+	/*
+	 * Método para eliminar un alumno del array y por tanto del fichero al volcarlo
+	 */
 	public static void eliminarAlumno() {
 		System.out.println("Indique el DNI del alumno que quiere eliminar.");
 		String DNI = sc.next();
@@ -128,6 +148,7 @@ public class Principal {
 		}
 	}
 
+	/* Método para listar los alumnos que están en el array */
 	public static void listaAlumno() {
 		System.out.println("Indique el DNI del alumno que quiere buscar.");
 		String DNI = sc.next();
@@ -138,6 +159,7 @@ public class Principal {
 		}
 	}
 
+	/* Método para listar todos los alumnos del array */
 	public static void listarAlumnos() {
 		for (int i = 0; i < alumnos.size(); i++) {
 			System.out.println(alumnos.get(i));
@@ -145,26 +167,26 @@ public class Principal {
 
 	}
 
+	/* Método para salir de la aplicación y volcar el arrayList en el fichero */
 	public static void salirVolcar() {
 		System.out.println("Saliendo de la aplicación...");
-		
+		volcarEnFichero();
+		System.exit(0);
+	}
+
+	/* Método para volcar en el fichero los alumnos del array */
+	public static void volcarEnFichero() {
 		String ruta = "alumnos.dat";
-		ObjectOutputStream os = null;
-		for (int i = 0; i < alumnos.size(); i++) {
-			try {
-				os = new ObjectOutputStream(new FileOutputStream(ruta));
-				os.writeObject(alumnos.get(i));
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
 		try {
+			ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(ruta));
+			for (int i = 0; i < alumnos.size(); i++) {
+				os.writeObject(alumnos.get(i));
+			}
 			os.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.exit(0);
 	}
 }
