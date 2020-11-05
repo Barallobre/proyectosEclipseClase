@@ -59,7 +59,7 @@ public class Principal {
 			System.out.println("1. Insertar alumno.");
 			System.out.println("2. Modificar alumno.");
 			System.out.println("3. Elimniar alumno.");
-			System.out.println("4. Lista alumnos.");
+			System.out.println("4. Lista alumno.");
 			System.out.println("5. Listar todos los alumnos.");
 			System.out.println("6. Salir de la aplicación y volcar a archivo.");
 			opc = sc.nextInt();
@@ -148,7 +148,7 @@ public class Principal {
 		}
 	}
 
-	/* Método para listar los alumnos que están en el array */
+	/* Método para lista un alumno buscado por DNI */
 	public static void listaAlumno() {
 		System.out.println("Indique el DNI del alumno que quiere buscar.");
 		String DNI = sc.next();
