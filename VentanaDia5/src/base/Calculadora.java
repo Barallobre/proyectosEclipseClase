@@ -13,7 +13,7 @@ import javax.swing.JTextField;
 public class Calculadora extends JFrame {
 	public Calculadora() {
 		super("Calculadora Básica");
-		this.setSize(400, 400);
+		this.setSize(250, 300);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel panelCentro = new JPanel();
