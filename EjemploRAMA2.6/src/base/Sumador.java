@@ -12,8 +12,9 @@ public class Sumador extends Thread {
 	}
 	public void sumar() {
 		Acumula.acumulador++;
+		//System.out.println(Acumula.acumulador);
 	}
-	public void rum() {
+	public void run() {
 		for(int i=0;i<cuenta;i++) {
 			try {
 				sem.acquire();
