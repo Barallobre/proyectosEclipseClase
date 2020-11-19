@@ -36,7 +36,7 @@ public class Filosofo extends Thread {
 						this.pal_izquierda.soltar();// semaforo.release()
 					}
 				}
-				soltar_lock();
+				soltar_lock();// semaforo.release
 			}
 
 			comer(); // 5 segundos

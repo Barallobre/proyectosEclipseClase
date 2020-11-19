@@ -18,6 +18,8 @@ import com.jgoodies.forms.layout.RowSpec;
 import net.miginfocom.swing.MigLayout;
 import javax.swing.JLabel;
 import java.awt.Rectangle;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Registro extends JFrame {
 
@@ -46,14 +48,34 @@ public class Registro extends JFrame {
 		contentPane.add(panel, BorderLayout.SOUTH);
 		panel.setLayout(new FlowLayout(FlowLayout.CENTER, 100, 5));
 		
-		JButton btnNewButton = new JButton("Reg\u00EDstrate");
-		btnNewButton.setHorizontalAlignment(SwingConstants.LEFT);
-		panel.add(btnNewButton);
+		JButton botonRegistro = new JButton("Reg\u00EDstrate");
+		botonRegistro.setHorizontalAlignment(SwingConstants.LEFT);
+		panel.add(botonRegistro);
 		
-		JButton btnNewButton_1 = new JButton("Cancela");
-		btnNewButton_1.setHorizontalAlignment(SwingConstants.RIGHT);
-		panel.add(btnNewButton_1);
 		
+		botonRegistro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					DatosRegistro frame = new DatosRegistro();
+					frame.setVisible(true);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				dispose();
+			}
+		});
+		
+		JButton botonCancelar = new JButton("Cancela");
+		botonCancelar.setHorizontalAlignment(SwingConstants.RIGHT);
+		panel.add(botonCancelar);
+		
+		
+		botonCancelar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			
+				System.exit(0);
+			}
+		});
 		JPanel panel_1 = new JPanel();
 		FlowLayout flowLayout = (FlowLayout) panel_1.getLayout();
 		flowLayout.setVgap(60);

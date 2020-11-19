@@ -13,11 +13,36 @@
 
 package base;
 
+
 public class Principal {
 
+	static int NUM_PROCESOS = 5;
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Escritor escritores[] = new Escritor[NUM_PROCESOS];
+		Lector lectores[] = new Lector[NUM_PROCESOS];
+		
+		
+		
+		// Crear los escritores
+		for (int i = 0; i < NUM_PROCESOS; i++){
+			escritores[i] = new Escritor();
+		}
+		// Crear los lectores
+		for (int i = 0; i < NUM_PROCESOS; i++){
+			lectores[i] = new Lector();
+		}
+		
+		// Crear los fil—sofos y asignarles los palillos
+		for (int i = 0; i < NUM_PROCESOS; i++){
+		
+		}
+		
+		// Crear los fil—sofos y asignarles los palillos
+		for (int i = 0; i < NUM_FILOSOFOS; i++){
+			lectores[i].start();
+			escritores[i].start();
+		}
 	}
 
 }

@@ -13,11 +13,14 @@ import javax.swing.JTextField;
 import java.awt.FlowLayout;
 import javax.swing.BoxLayout;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.CardLayout;
 import javax.swing.JPasswordField;
 import javax.swing.JComboBox;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
+import javax.swing.DefaultComboBoxModel;
 
 public class DatosRegistro extends JFrame {
 
@@ -33,18 +36,7 @@ public class DatosRegistro extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					DatosRegistro frame = new DatosRegistro();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+
 
 	/**
 	 * Create the frame.
@@ -124,6 +116,7 @@ public class DatosRegistro extends JFrame {
 		panel.add(lblNewLabel_6);
 		
 		JComboBox comboBox = new JComboBox();
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"}));
 		comboBox.setToolTipText("D\u00EDa nacimiento");
 		comboBox.setBounds(175, 209, 37, 22);
 		panel.add(comboBox);
@@ -133,6 +126,7 @@ public class DatosRegistro extends JFrame {
 		panel.add(lblNewLabel_7);
 		
 		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"}));
 		comboBox_1.setToolTipText("Mes nacimiento");
 		comboBox_1.setBounds(244, 209, 71, 22);
 		panel.add(comboBox_1);
@@ -142,6 +136,7 @@ public class DatosRegistro extends JFrame {
 		panel.add(lblNewLabel_8);
 		
 		JComboBox comboBox_2 = new JComboBox();
+		comboBox_2.setModel(new DefaultComboBoxModel(new String[] {"1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000"}));
 		comboBox_2.setToolTipText("A\u00F1o nacimiento");
 		comboBox_2.setBounds(349, 209, 66, 22);
 		panel.add(comboBox_2);
@@ -170,12 +165,25 @@ public class DatosRegistro extends JFrame {
 		flowLayout.setAlignment(FlowLayout.RIGHT);
 		contentPane.add(panel_1, BorderLayout.SOUTH);
 		
-		JButton btnNewButton = new JButton("Aceptar");
-		panel_1.add(btnNewButton);
+		JButton botonAceptar = new JButton("Aceptar");
+		panel_1.add(botonAceptar);
+		botonAceptar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Bienvenido al grupo");
+				System.exit(0);
+			}
+		});
 		
-		JOptionPane.showMessageDialog(null, "Bienvenido al grupo");
 		
-		JButton btnNewButton_1 = new JButton("Cancelar");
-		panel_1.add(btnNewButton_1);
+		
+		
+		JButton botonCancelar = new JButton("Cancelar");
+		panel_1.add(botonCancelar);
+		botonCancelar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				System.exit(0);
+			}
+		});
 	}
 }
