@@ -53,7 +53,8 @@ public class Filosofo extends Thread {
 	}
 
 // Each acquire() blocks if necessary until a permit is available, and then takes it. 
-	// Each release() adds a permit, potentially releasing a blocking acquirer.
+// Each release() adds a permit, potentially releasing a blocking acquirer.
+
 	private void esperar_lock() {
 		try {
 			semaforo.acquire();
