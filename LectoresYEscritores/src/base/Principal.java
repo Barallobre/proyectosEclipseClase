@@ -21,25 +21,19 @@ public class Principal {
 	public static void main(String[] args) {
 		Escritor escritores[] = new Escritor[NUM_PROCESOS];
 		Lector lectores[] = new Lector[NUM_PROCESOS];
-		
+		FicheroTexto ficheroTexto = new FicheroTexto();
 		
 		
 		// Crear los escritores
 		for (int i = 0; i < NUM_PROCESOS; i++){
-			escritores[i] = new Escritor();
+			escritores[i] = new Escritor(ficheroTexto,i);
 		}
 		// Crear los lectores
 		for (int i = 0; i < NUM_PROCESOS; i++){
-			lectores[i] = new Lector();
+			lectores[i] = new Lector(ficheroTexto,i);
 		}
 		
-		// Crear los fil—sofos y asignarles los palillos
 		for (int i = 0; i < NUM_PROCESOS; i++){
-		
-		}
-		
-		// Crear los fil—sofos y asignarles los palillos
-		for (int i = 0; i < NUM_FILOSOFOS; i++){
 			lectores[i].start();
 			escritores[i].start();
 		}
