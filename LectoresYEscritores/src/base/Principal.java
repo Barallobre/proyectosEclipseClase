@@ -13,30 +13,33 @@
 
 package base;
 
-
 public class Principal {
 
 	static int NUM_PROCESOS = 8;
-	
+
 	public static void main(String[] args) {
 		Escritor escritores[] = new Escritor[NUM_PROCESOS];
 		Lector lectores[] = new Lector[NUM_PROCESOS];
-		//Creamos solo una instancia del fichero de texto, ya que todos escribiran o leeran en el mismo
+		// Creamos solo una instancia del fichero de texto, ya que todos escribiran o
+		// leeran en el mismo
 		FicheroTexto ficheroTexto = new FicheroTexto();
-		
-		
+
 		// Crear los escritores y asignarles el fichero
-		for (int i = 0; i < NUM_PROCESOS; i++){
-			escritores[i] = new Escritor(ficheroTexto,i);
+		for (int i = 0; i < NUM_PROCESOS; i++) {
+			escritores[i] = new Escritor(ficheroTexto, i);
 		}
 		// Crear los lectores y asignarles el fichero
-		for (int i = 0; i < NUM_PROCESOS; i++){
-			lectores[i] = new Lector(ficheroTexto,i);
+		for (int i = 0; i < NUM_PROCESOS; i++) {
+			lectores[i] = new Lector(ficheroTexto, i);
+		}
+
+		for (int i = 0; i < NUM_PROCESOS; i++) {
+			lectores[i].start();
 		}
 		
-		for (int i = 0; i < NUM_PROCESOS; i++){
-			lectores[i].start();
+		for (int i = 0; i < NUM_PROCESOS; i++) {
 			escritores[i].start();
 		}
+		
 	}
 }
