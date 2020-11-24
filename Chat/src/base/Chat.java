@@ -15,15 +15,16 @@ import javax.swing.BoxLayout;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.JTextArea;
 
 public class Chat extends JFrame {
 
 	private JPanel contentPane;
-	public JTextField textoRecogido;
 	public JTextField textoEnviado;
 
 	static JButton botonEnviar;
 	static JButton botonBorrar;
+	public JTextArea textoRecogido;
 
 	public Chat() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -47,10 +48,9 @@ public class Chat extends JFrame {
 
 		JScrollPane scrollPane = new JScrollPane();
 		contentPane.add(scrollPane, BorderLayout.CENTER);
-
-		textoRecogido = new JTextField();
+		
+		textoRecogido = new JTextArea();
 		scrollPane.setViewportView(textoRecogido);
-		textoRecogido.setColumns(10);
 
 		botonBorrar = new JButton("Borrar Chat");
 		botonBorrar.setAlignmentX(Component.CENTER_ALIGNMENT);

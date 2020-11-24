@@ -17,7 +17,11 @@ public class Escuchador implements ActionListener {
 		
 		String comando = e.getActionCommand();
 		if (comando.equals("Enviar")) {
-			chat1.textoRecogido.setText(chat1.textoEnviado.getText());
+			String textoAEscribir = chat1.textoEnviado.getText();
+			String textoRecogido = chat1.textoRecogido.getText();
+			chat1.textoRecogido.setText(textoRecogido+=textoAEscribir+"\n");
+			
+			chat1.textoEnviado.setText("");
 		} else if (comando.equals("Borrar Chat")) {
 			chat1.textoRecogido.setText("");
 		}
