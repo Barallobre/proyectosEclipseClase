@@ -42,6 +42,9 @@ public class VentanaChat2 extends JFrame {
 		this.getContentPane().setLayout(new GridBagLayout());
 		
 		GridBagConstraints props = new GridBagConstraints();
+		GridBagConstraints props1 = new GridBagConstraints();
+		GridBagConstraints props2 = new GridBagConstraints();
+		GridBagConstraints props3 = new GridBagConstraints();
 		
 		JTextField texto = new JTextField();
 		props.gridx = 0;
@@ -54,37 +57,37 @@ public class VentanaChat2 extends JFrame {
 		this.getContentPane().add(texto, props);
 		
 		JButton boton1 = new JButton("Enviar");
-		props.gridx = 2;
-		props.gridy = 0;
-		props.gridwidth = 1;
-		props.gridheight = 1;
-		props.weightx = 0.0;
-		props.weighty = 0.0;
-		props.fill = GridBagConstraints.NONE;
-		props.anchor = GridBagConstraints.EAST;
-		this.getContentPane().add(boton1, props);
+		props1.gridx = 2;
+		props1.gridy = 0;
+		props1.gridwidth = 1;
+		props1.gridheight = 1;
+		props1.weightx = 0.0;
+		props1.weighty = 0.0;
+		props1.fill = GridBagConstraints.NONE;
+		props1.anchor = GridBagConstraints.EAST;
+		this.getContentPane().add(boton1, props1);
 		
 		JTextArea area = new JTextArea();
-		props.gridx = 0;
-		props.gridy = 1;
-		props.gridwidth = 3;
-		props.gridheight = 1;
-		props.weightx = 1.0;
-		props.weighty = 1.0;
-		props.fill = GridBagConstraints.BOTH;
+		props2.gridx = 0;
+		props2.gridy = 1;
+		props2.gridwidth = 3;
+		props2.gridheight = 1;
+		props2.weightx = 1.0;
+		props2.weighty = 1.0;
+		props2.fill = GridBagConstraints.BOTH;
 		
-		this.getContentPane().add(area, props);
+		this.getContentPane().add(area, props2);
 		
 		JButton boton2 = new JButton("Borrar chat");
-		props.gridx = 1;
-		props.gridy = 2;
-		props.gridwidth = 3;
-		props.gridheight = 1;
-		props.weightx = 0.0;
-		props.weighty = 0.0;
-		props.fill = GridBagConstraints.NONE;
-		props.anchor = GridBagConstraints.CENTER;
-		this.getContentPane().add(boton2, props);
+		props3.gridx = 1;
+		props3.gridy = 2;
+		props3.gridwidth = 3;
+		props3.gridheight = 1;
+		props3.weightx = 0.0;
+		props3.weighty = 0.0;
+		props3.fill = GridBagConstraints.NONE;
+		props3.anchor = GridBagConstraints.CENTER;
+		this.getContentPane().add(boton2, props3);
 	}
 
 }
