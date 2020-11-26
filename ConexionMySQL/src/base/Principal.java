@@ -18,12 +18,13 @@ public class Principal {
 			
 			Statement sentencia = conexion.createStatement();
 			ResultSet resultado = sentencia.executeQuery("select * from clientes");
-		
+			//sentencia.execute("insert into clientes values (45,'Paquito','Valencia') ");
 			
 			
 			while(resultado.next()) {
-				System.out.println("Nº cliente"+resultado.getInt(1));
-				System.out.println("Nombre "+resultado.getString(2)+"\n");
+				System.out.println("Nº cliente "+resultado.getInt(1));
+				System.out.println("Nombre "+resultado.getString(2));
+				System.out.println("Ciudad "+resultado.getString(3)+"\n");
 			}
 			
 			
