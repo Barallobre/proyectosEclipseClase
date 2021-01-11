@@ -40,12 +40,7 @@ public class Binarios142 {
 					e.getMessage();
 				}
 		}
-		}
+		
+	}
 }
-<<<<<<< HEAD
 
-=======
-		
-		
-	
->>>>>>> 133dfc064fb72d9d1414512fcede3bc53be62c7b
