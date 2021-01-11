@@ -8,6 +8,9 @@ public class Principal {
 			public void run() {
 				try {
 					VentanaPrincipal frame = new VentanaPrincipal();
+					
+					
+					
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
