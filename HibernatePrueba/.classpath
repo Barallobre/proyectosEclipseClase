@@ -5,8 +5,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.datatools.connectivity.jdt.DRIVERLIBRARY/MySQL JDBC Driver"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/Usuario/Downloads/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Usuario/Dropbox/Trimestre 1 - DAM2/2DAM_ACCESO A DATOS/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
