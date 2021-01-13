@@ -20,7 +20,7 @@ public class Principal {
 		String clase = "base.SumadorVocales";
 		
 		File directorioSumadorVocales = new File(
-				"D:\\ProyectosEclipseSegundo\\proyectosEclipseClase\\Ejercicio8SYP\\bin");
+				"C:\\Users\\Usuario\\proyectosEclipseClase1\\Ejercicio8SYP\\bin");
 		try {
 			ProcessBuilder pb = new ProcessBuilder("java", clase, nombreFicheroEntrada, letra);
 			pb.directory(directorioSumadorVocales);

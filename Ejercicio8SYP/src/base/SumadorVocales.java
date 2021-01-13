@@ -13,7 +13,7 @@ public class SumadorVocales {
 		try {
 
 			FileReader fich = new FileReader(
-					"D:\\ProyectosEclipseSegundo\\proyectosEclipseClase\\Ejercicio8SYP\\" + nombreFicheroEntrada);
+					"C:\\Users\\Usuario\\Desktop\\" + nombreFicheroEntrada);
 			while ((valor = fich.read()) != -1) {
 
 				if ((String.valueOf((char) valor).toUpperCase()).equals(letra)) {

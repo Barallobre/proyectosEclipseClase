@@ -17,13 +17,13 @@ public class Metadatos {
 			ResultSet resultado;
 			ResultSet resultado2;
 			DatabaseMetaData objdbmd = conexion.getMetaData();
-			System.out.println(objdbmd.getDatabaseProductName()); // devuelve el nombre de la base de datos
-			System.out.println(objdbmd.getDriverName());
-			System.out.println(objdbmd.getURL());
-			System.out.println(objdbmd.getUserName());
+			//System.out.println(objdbmd.getDatabaseProductName()); // devuelve el nombre de la base de datos
+			//System.out.println(objdbmd.getDriverName());
+			//System.out.println(objdbmd.getURL());
+			//System.out.println(objdbmd.getUserName());
 
 			String[] tipo = { "TABLE" };
-			System.out.println(objdbmd.getTables(null, null, null, tipo)); // informacion de todas las tablas de todas
+//			System.out.println(objdbmd.getTables(null, null, null, tipo)); // informacion de todas las tablas de todas
 																			// las bases de datos; devuelve un resulset
 
 			resultado = objdbmd.getTables("vehiculosayuntamiento2ev", null, "%vehiculo%"/* tabla que buscamos */, tipo);
