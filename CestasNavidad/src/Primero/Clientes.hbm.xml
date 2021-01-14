@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 14 ene. 2021 10:07:25 by Hibernate Tools 5.4.21.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="cestasnavidad2ev" dynamic-insert="false" dynamic-update="false" mutable="true" name="Primero.Clientes" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="clientes">
+        <id name="dni" type="int">
+            <column name="DNI"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="nombreRazonSocial" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="Nombre_RazonSocial" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="direccion" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="Direccion"/>
+        </property>
+        <property generated="never" lazy="false" name="telfonoFax" optimistic-lock="true" type="string" unique="false">
+            <column length="30" name="Telfono_Fax"/>
+        </property>
+        <property generated="never" lazy="false" name="email" optimistic-lock="true" type="string" unique="false">
+            <column length="60" name="email"/>
+        </property>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="presupuestoses" optimistic-lock="true" sort="unsorted" table="presupuestos">
+            <key on-delete="noaction">
+                <column name="DNICliente"/>
+            </key>
+            <one-to-many class="Primero.Presupuestos" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>
