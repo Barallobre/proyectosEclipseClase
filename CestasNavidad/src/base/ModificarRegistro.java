@@ -1,5 +1,7 @@
 package base;
 
+import java.math.BigDecimal;
+
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -15,7 +17,8 @@ public class ModificarRegistro {
 			sesion = sesionFactory.openSession();
 
 			Transaction transaccion = sesion.beginTransaction();
-			int numcli = 99999999;
+			int numcli = 66666666;
+			int codProducto = 1;
 			System.out.println("Voy a modificar un cliente número: "+numcli);
 			
 			try {
@@ -30,13 +33,24 @@ public class ModificarRegistro {
 					System.out.println("El cliente no existe.");
 				}
 				
+				Productos pro = new Productos();
+				pro = sesion.get(Productos.class, codProducto);
+				if(cli!=null) {
+					System.out.println("Modificando...");
+					pro.setDescripcion("Torreznos");
+					pro.setPrecio(new BigDecimal(35));
+					sesion.update(pro);
+				}else {
+					System.out.println("El producto no existe.");
+				}
+				
 				transaccion.commit();
 			} catch (Exception e1) {
 				try {
 					transaccion.rollback();
-					System.out.println("No se ha podido borrar registro en la tabla de Clientes");
+					System.out.println("No se ha podido modificar el registro ");
 				} catch (Exception e2) {
-					System.out.println("Error al borrar el registro y recuperar el estado anterior");
+					System.out.println("Error al modificar el registro ");
 				}
 			} finally {
 
