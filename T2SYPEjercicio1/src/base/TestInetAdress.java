@@ -1,14 +1,18 @@
 package base;
 import java.net.*;
+import java.util.Scanner;
 public class TestInetAdress {
-
+static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 		InetAddress dir = null;
 		System.out.println("---------------------------------");
 		System.out.println("Salida para localhost: ");
 		try {
 			//localhost
-			dir = InetAddress.getByName("localhost");
+			String direccion;
+			System.out.println("Introduzca una direccion");
+			direccion = sc.nextLine();
+			dir = InetAddress.getByName(direccion);
 			pruebaMetodos(dir);
 			
 			//URL www.google.es
