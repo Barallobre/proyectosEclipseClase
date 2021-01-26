@@ -1,19 +1,11 @@
 package base;
 
-
-
-import java.util.Iterator;
-import java.util.List;
-
-
-
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import Primero.Actor;
 import Primero.SessionFactoryUtil;
 
 public class BorrarActores {
@@ -41,5 +33,4 @@ public class BorrarActores {
 			}
 		}
 	}
-
 }
