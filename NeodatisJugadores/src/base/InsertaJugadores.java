@@ -34,7 +34,7 @@ public class InsertaJugadores {
 					+ jug.getEdad());
 		}
 		
-		
+		//Modificar para insertar país en cada jugador
 		IQuery consulta = new CriteriaQuery(Jugador.class, Where.equal("num_cli", numero));
 		Objects<Jugador> lista2 = odb.getObjects(consulta);
 		Jugador jug = (Jugador) lista2.getFirst();
