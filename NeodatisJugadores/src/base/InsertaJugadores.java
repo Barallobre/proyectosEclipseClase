@@ -12,36 +12,44 @@ import org.neodatis.odb.impl.core.query.values.ValuesCriteriaQuery;
 
 public class InsertaJugadores {
 	public static void main(String[] args) {
-//		Jugador j1 = new Jugador("Diego", "fútbol", "Cambre", 22);
-//		Jugador j2 = new Jugador("Pablo", "tenis", "Coruña", 23);
-//		Jugador j3 = new Jugador("Felipe", "baloncesto", "Cambre", 25);
-//		Jugador j4 = new Jugador("Belén", "tenis", "Coruña", 21);
+//		Jugador j1 = new Jugador("Diego", "fútbol", "Cambre", 22, null);
+//		Jugador j2 = new Jugador("Pablo", "tenis", "Coruña", 23, null);
+//		Jugador j3 = new Jugador("Felipe", "baloncesto", "Cambre", 25, null);
+//		Jugador j4 = new Jugador("Belén", "tenis", "Coruña", 21, null);
 
 		ODB odb = ODBFactory.open("Jugadores.test");
 
-//		odb.store(j1);
-//		odb.store(j2);
-//		odb.store(j3);
-//		odb.store(j4);
-
 		Objects<Jugador> objetos = odb.getObjects(Jugador.class);
 		System.out.println("Nº de jugadores: " + objetos.size());
-
+		Pais Esp = new Pais(1, "España");
 		int i = 1;
 		while (objetos.hasNext()) {
 			Jugador jug = objetos.next();
 			System.out.println((i++) + "-" + jug.getNombre() + "-" + jug.getDeporte() + "-" + jug.getCiudad() + "-"
-					+ jug.getEdad());
+					+ jug.getEdad() + " - " + jug.getPais().getNombrepais());
+//			Jugador jug = objetos.next();
+			jug.setPais(Esp);
+			odb.store(jug);
+			System.out.println("pais");
+
 		}
+
 		
-		//Modificar para insertar país en cada jugador
-		IQuery consulta = new CriteriaQuery(Jugador.class, Where.equal("num_cli", numero));
-		Objects<Jugador> lista2 = odb.getObjects(consulta);
-		Jugador jug = (Jugador) lista2.getFirst();
-		if (!lista2.hasNext()) {
-			jug.setPais();
-		} 
 		
+		while (objetos.hasNext()) {
+			
+		}
+
+//		odb.store(j2);
+//		odb.store(j3);
+//		odb.store(j4);
+		Values valores = odb.getValues(
+				new ValuesCriteriaQuery(Jugador.class).field("nombre").field("ciudad").field("pais.nombrepais"));
+		while (valores.hasNext()) {
+			ObjectValues objectValues = (ObjectValues) valores.next();
+			System.out.println(objectValues.getByAlias("nombre") + ", ciudad: " + objectValues.getByIndex(1)
+					+ ", país: " + objectValues.getByIndex(2));
+		}
 		paises();
 		odb.close();
 	}
@@ -65,13 +73,7 @@ public class InsertaJugadores {
 			System.out.println(pais.getNumpais() + "-" + pais.getNombrepais());
 
 		}
-		Values valores = odb.getValues(
-				new ValuesCriteriaQuery(Jugador.class).field("nombre").field("ciudad").field("pais.nombrepais"));
-		while (valores.hasNext()) {
-			ObjectValues objectValues = (ObjectValues) valores.next();
-			System.out.println(objectValues.getByAlias("nombre") + ", ciudad: " + objectValues.getByIndex(1)
-					+ ", país: " + objectValues.getByIndex(2));
-		}
+
 		odb.close();
 	}
 }
