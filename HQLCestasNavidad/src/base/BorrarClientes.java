@@ -18,9 +18,9 @@ public class BorrarClientes {
 		try {
 			sesion =sesionFactory.openSession();
 			transaccion = sesion.beginTransaction();
-			Query SENTENCIA = sesion.createQuery("delete from FilmActor where actor < 7 ");
+			Query SENTENCIA = sesion.createQuery("delete from Clientes where DNI = 11111111 ");
 			SENTENCIA.executeUpdate();
-			Query SENTENCIA2 = sesion.createQuery("delete from Actor where actorId < 7");
+			Query SENTENCIA2 = sesion.createQuery("delete from Clientes where DNI = 11111111");
 			int numRegsBorrados = SENTENCIA2.executeUpdate();
 			System.out.println("Se han modificado: "+ numRegsBorrados +" registros.");
 		} catch (HibernateException e) {

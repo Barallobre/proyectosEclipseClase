@@ -18,19 +18,19 @@ public class TCPObjetoCliente1 {
 		ObjectInputStream perEnt = new ObjectInputStream(cliente.getInputStream());
 		
 		//Se recibe un objeto
-		Persona dato = (Persona) perEnt.readObject();
-		System.out.println("Recibo: "+ dato.getNombre()+"*"+dato.getEdad());
+		Cosa dato = (Cosa) perEnt.readObject();
+		System.out.println("Recibo: "+ dato.getMaterial()+"*"+dato.getAntiguedad());
 		
 		//Modifico el objeto
-		dato.setNombre("Juan Ramos");
-		dato.setEdad(22);
+		dato.setMaterial("Marmol");
+		dato.setAntiguedad(1000);
 		
 		//FLUJO DE salida para objetos
 		ObjectOutputStream perSal = new ObjectOutputStream(cliente.getOutputStream());
 		
 		//Se envía el objeto
 		perSal.writeObject(dato);
-		System.out.println("Envío: "+dato.getNombre()+"*"+dato.getEdad());
+		System.out.println("Envío: "+dato.getMaterial()+"*"+dato.getAntiguedad());
 		
 		//CERRAR STREAMS Y SOCKETS
 		perEnt.close();
