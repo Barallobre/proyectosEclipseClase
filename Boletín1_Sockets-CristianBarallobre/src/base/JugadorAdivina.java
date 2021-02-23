@@ -35,7 +35,6 @@ public class JugadorAdivina {
 				cadena = sc.nextLine();
 				Datos d = new Datos();
 			
-				
 				d.setCadena(cadena);
 				
 				fsalida.reset();
@@ -53,7 +52,7 @@ public class JugadorAdivina {
 					cadena="*";							
 				}			
 
-		}//fin while
+		}
 
 		fsalida.close();
 		fentrada.close();

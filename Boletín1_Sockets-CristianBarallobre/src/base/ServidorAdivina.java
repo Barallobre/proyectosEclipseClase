@@ -10,11 +10,13 @@ public class ServidorAdivina {
 
 		ServerSocket servidor = new ServerSocket(44444);
 		System.out.println("Servidor iniciado...");
+		
 		// Premios a adivinar dentro de un array bidimensional
 		String premios[][] = { { "        ", "        ", "        ", "        " },  
 				{ "        ", "        ", "        ", "        " }, { "        ", "        ", "        ", "        " } };
 		int premioColocado = 0;
 		ArrayList<String> nombrePremios = new ArrayList<String>();
+		ArrayList<String> coordenadasPremios = new ArrayList<String>();
 		nombrePremios.add("Crucero ");
 		nombrePremios.add("Masaje  ");
 		nombrePremios.add("1000€   ");
@@ -27,6 +29,7 @@ public class ServidorAdivina {
 				if (premios[fila][columna] == "        ") {
 					premios[fila][columna] = nombrePremios.get(i);
 					nombrePremios.remove(i);
+					coordenadasPremios.add(fila +","+columna);
 					premioColocado++;
 				}
 			}
@@ -38,6 +41,11 @@ public class ServidorAdivina {
 			}
 			System.out.println("");
 		}
+		System.out.println("Coordenadas premios");
+		for (int i=0;i<coordenadasPremios.size();i++) {
+			System.out.println(coordenadasPremios.get(i));
+		}
+		
 		// Todos los hilos comparten el objeto
 		ObjetoCompartido objeto = new ObjetoCompartido(premios);
 		int id = 0;
@@ -49,4 +57,4 @@ public class ServidorAdivina {
 			hilo.start();
 		}
 	}
-}// ..
+}

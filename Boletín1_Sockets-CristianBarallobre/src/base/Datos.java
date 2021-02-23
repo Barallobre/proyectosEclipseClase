@@ -14,36 +14,27 @@ public class Datos implements Serializable {
 		this.gana=false;
 		this.juega=true;		
 	}	
-	
 	public Datos() {
 		super();		
 	}
-
 	public boolean isJuega() {
 		return juega;
 	}
-
 	public void setJuega(boolean juega) {
 		this.juega = juega;
 	}
-
 	public boolean isGana() {
 		return gana;
 	}
-
 	public void setGana(boolean gana) {
 		this.gana = gana;
 	}
-
-
 	public int getIdentificador() {
 		return identificador;
 	}
-
 	public void setIdentificador(int identificador) {
 		this.identificador = identificador;
 	}
-
 	public String getCadena() {
 		return cadena;
 	}

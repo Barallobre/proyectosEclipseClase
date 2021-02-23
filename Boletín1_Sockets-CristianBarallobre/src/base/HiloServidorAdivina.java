@@ -12,7 +12,6 @@ public class HiloServidorAdivina extends Thread {
 	ObjetoCompartido objeto;
 	int identificador;
 	
-
 	public HiloServidorAdivina(Socket s, ObjetoCompartido objeto, int id) {
 		this.socket = s;
 		this.objeto = objeto;
@@ -24,7 +23,7 @@ public class HiloServidorAdivina extends Thread {
 			System.out.println("ERROR DE E/S en HiloServidor");
 			e.printStackTrace();
 		}
-	}// ..
+	}
 
 	// ----------------------------------------------------------------
 	public void run() {
@@ -86,8 +85,7 @@ public class HiloServidorAdivina extends Thread {
 				System.out.println("El jugador  " + identificador + " ha desconectado ");
 				break;
 			}
-
-		} // fin while
+		} 
 
 		if (objeto.seAcabo()) {
 			System.out.println("EL JUEGO SE HA ACABADO.....");
@@ -101,7 +99,5 @@ public class HiloServidorAdivina extends Thread {
 			System.out.println("Error en Hilo al cerrar cliente: " + identificador);
 			e.printStackTrace();
 		}
-
-	}// run
-
-}// ..
+	}
+}
