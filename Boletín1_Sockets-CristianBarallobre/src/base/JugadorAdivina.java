@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class JugadorAdivina {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		String Host = "localhost";
-		int Puerto = 4444;// puerto remoto
+		int Puerto = 44444;// puerto remoto
 		Socket Cliente = new Socket(Host, Puerto);
 
 		ObjectOutputStream fsalida = new ObjectOutputStream(Cliente.getOutputStream());

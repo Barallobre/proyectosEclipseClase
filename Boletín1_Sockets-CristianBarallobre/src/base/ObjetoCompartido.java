@@ -26,13 +26,17 @@ public class ObjetoCompartido {
 			int Fila = Integer.parseInt(coordenadasClientePartes[0]);
 			int Columna = Integer.parseInt(coordenadasClientePartes[1]);
 
-			if (premios[Fila][Columna] == "Crucero" || premios[Fila][Columna] == "Entradas"
-					|| premios[Fila][Columna] == "Masaje" || premios[Fila][Columna] == "1000€") {
-				cad = "Ha ganado un premio";
+			if (premios[Fila][Columna] == "Crucero ") {
+				cad = "Ha ganado un Crucero";
+			}else if(premios[Fila][Columna] == "Entradas") {
+				cad = "Ha ganado unas Entradas";
+			}else if( premios[Fila][Columna] == "Masaje  ") {
+				cad = "Ha ganado un Masaje";
+			}else if(premios[Fila][Columna] == "1000€   ") {
+				cad = "Ha ganado 1000€";
 			}
-
 		} else
-			cad = "Jugador " + ganador + " adivinó un premio ";
+			cad = "Jugador " + ganador + " siga probando. ";
 
 		return cad;
 	}
