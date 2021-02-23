@@ -70,8 +70,7 @@ public class HiloServidorAdivina extends Thread {
 
 			if (objeto.seAcabo()) {
 				datos.setJuega(false); 
-				if (identificador == objeto.getGanador())
-					datos.setGana(true);				
+							
 			}
 
 			try {
@@ -88,7 +87,7 @@ public class HiloServidorAdivina extends Thread {
 		} 
 
 		if (objeto.seAcabo()) {
-			System.out.println("EL JUEGO SE HA ACABADO.....");
+			System.out.println("Los premios se han terminado...");
 			System.out.println("\t==>Desconecta: " + identificador);
 		}
 		try {

@@ -43,12 +43,9 @@ public class JugadorAdivina {
 				datos = (Datos) fentrada.readObject();
 				System.out.println("\t"+datos.getCadena());
 			
-				if (datos.isGana()) {
-					System.out.println("<<HAS GANADO!! EL JUEGO HA TERMINADO>>");	
-					cadena="*";						
-	             } else 
+			 
 				if (!(datos.isJuega()) ){
-					System.out.println("<<EL JUEGO HA TERMINADO, HAN ADIVINADO EL NUMERO>>");
+					System.out.println("El juego ha terminado, ya no quedan premios!");
 					cadena="*";							
 				}			
 
