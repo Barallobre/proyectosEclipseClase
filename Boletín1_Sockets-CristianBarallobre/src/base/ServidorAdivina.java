@@ -10,10 +10,11 @@ public class ServidorAdivina {
 
 		ServerSocket servidor = new ServerSocket(44444);
 		System.out.println("Servidor iniciado...");
-		
+
 		// Premios a adivinar dentro de un array bidimensional
-		String premios[][] = { { "        ", "        ", "        ", "        " },  
-				{ "        ", "        ", "        ", "        " }, { "        ", "        ", "        ", "        " } };
+		String premios[][] = { { "        ", "        ", "        ", "        " },
+				{ "        ", "        ", "        ", "        " },
+				{ "        ", "        ", "        ", "        " } };
 		int premioColocado = 0;
 		ArrayList<String> nombrePremios = new ArrayList<String>();
 		ArrayList<String> coordenadasPremios = new ArrayList<String>();
@@ -21,15 +22,15 @@ public class ServidorAdivina {
 		nombrePremios.add("Masaje  ");
 		nombrePremios.add("1000€   ");
 		nombrePremios.add("Entradas");
-		
+
 		while (premioColocado < 4) {
 			for (int i = 0; i < nombrePremios.size(); i++) {
-				int fila = (int) ((Math.random() * 3) );
-				int columna = (int) ((Math.random() * 4) );
+				int fila = (int) ((Math.random() * 3));
+				int columna = (int) ((Math.random() * 4));
 				if (premios[fila][columna] == "        ") {
 					premios[fila][columna] = nombrePremios.get(i);
 					nombrePremios.remove(i);
-					coordenadasPremios.add(fila +","+columna);
+					coordenadasPremios.add(fila + "," + columna);
 					premioColocado++;
 				}
 			}
@@ -41,11 +42,15 @@ public class ServidorAdivina {
 			}
 			System.out.println("");
 		}
-		System.out.println("Coordenadas premios");
-		for (int i=0;i<coordenadasPremios.size();i++) {
-			System.out.println(coordenadasPremios.get(i));
+		System.out.print("\nPosiciones con premio: ");
+		for (int i = 0; i < coordenadasPremios.size(); i++) {
+			System.out.print("[");
+			System.out.print(coordenadasPremios.get(i));
+			System.out.print("]");
+			System.out.print(" ");
+
 		}
-		
+
 		// Todos los hilos comparten el objeto
 		ObjetoCompartido objeto = new ObjetoCompartido(premios);
 		int id = 0;

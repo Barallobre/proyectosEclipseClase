@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class JugadorAdivina {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		String Host = "localhost";
-		int Puerto = 44444;// puerto remoto
+		int Puerto = 44444;
 		Socket Cliente = new Socket(Host, Puerto);
 
 		ObjectOutputStream fsalida = new ObjectOutputStream(Cliente.getOutputStream());
@@ -34,7 +34,11 @@ public class JugadorAdivina {
 				
 				cadena = sc.nextLine();
 				Datos d = new Datos();
-			
+				if(!validarCadena(cadena)) {
+					System.out.println("Dato incorrecto, introduzca el formato indicado.");
+					continue;
+				}
+				
 				d.setCadena(cadena);
 				
 				fsalida.reset();
@@ -58,6 +62,8 @@ public class JugadorAdivina {
 		Cliente.close();
 	}//main
 
-
+	private static boolean validarCadena(String cadena) {
+		return cadena.matches("^[0-9]\\,[0-9]$");
+	}
 	
 }//JugadorAdivina
