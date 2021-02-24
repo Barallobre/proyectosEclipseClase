@@ -11,7 +11,7 @@ public class HiloServidorAdivina extends Thread {
 
 	ObjetoCompartido objeto;
 	int identificador;
-
+	int intentos = 0;
 	public HiloServidorAdivina(Socket s, ObjetoCompartido objeto, int id) {
 		this.socket = s;
 		this.objeto = objeto;
@@ -27,12 +27,12 @@ public class HiloServidorAdivina extends Thread {
 
 	public void run() {
 
-		System.out.println("=>Cliente conectado: " + identificador);
+		System.out.println("Cliente conectado => " + identificador);
 
-		// PREPARAR PRIMER ENVIO AL CLIENTE
+	
 		Datos datos = new Datos(
 				"Adivina en que casilla se encuentra uno de los premios. Introduce fila y columna, separados por una coma.",
-				identificador);
+				intentos,identificador);
 
 		if (objeto.seAcabo()) {
 			datos.setCadena("Lo sentimos, no quedan más premios, el juego ha terminado.");
@@ -47,7 +47,7 @@ public class HiloServidorAdivina extends Thread {
 			return;
 		}
 
-		while (!objeto.seAcabo()) {
+		while (!objeto.seAcabo()|| !(datos.getIntentos() == 5)) {
 			String coordenadasCliente = "";
 			try {
 
@@ -65,8 +65,8 @@ public class HiloServidorAdivina extends Thread {
 			}
 
 			String cad = objeto.nuevaJugada(identificador, coordenadasCliente);
-
-			datos = new Datos(cad, identificador);
+			intentos++;
+			datos = new Datos(cad,intentos, identificador);
 
 			if (objeto.seAcabo()) {
 				datos.setJuega(false);
@@ -88,7 +88,7 @@ public class HiloServidorAdivina extends Thread {
 
 		if (objeto.seAcabo()) {
 			System.out.println("Los premios se han terminado...");
-			System.out.println("\t==>Desconecta: " + identificador);
+			System.out.println("\tDesconecta => " + identificador);
 		}
 		try {
 			fsalida.close();

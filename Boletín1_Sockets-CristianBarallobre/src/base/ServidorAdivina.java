@@ -50,8 +50,7 @@ public class ServidorAdivina {
 			System.out.print(" ");
 
 		}
-
-		// Todos los hilos comparten el objeto
+		System.out.println("\n");
 		ObjetoCompartido objeto = new ObjetoCompartido(premios);
 		int id = 0;
 		while (true) {
