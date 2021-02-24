@@ -3,9 +3,9 @@ package base;
 import java.io.Serializable;
 
 public class Datos implements Serializable {
-	String cadena; // cadena que se intercambia con el servidor
-	int identificador; // id del jugador
-	boolean juega; // true si el jugador juega, false juego finalizado
+	String cadena; 
+	int identificador; 
+	boolean juega;
 	int intentos; 
 	public Datos(String cadena,int intentos, int identificador) {
 		this.cadena = cadena;

@@ -2,12 +2,12 @@ package base;
 
 
 public class ObjetoCompartido {
-	private String[][] premios; // array con los premios
+	private String[][] premios; 
 	private boolean acabo;
 	private int ganador;
 	private int premiosGanados=0;
 	public ObjetoCompartido(String[][] premios) {
-		this.premios = premios; // array a adivinar
+		this.premios = premios; 
 		this.acabo = false;
 	}
 
@@ -37,7 +37,7 @@ public class ObjetoCompartido {
 	
 
 			if (premios[Fila][Columna].equals("        ")) {
-				cad = "No hay premios ahí, siga probando";
+				cad = "No hay premios en esa casilla, siga probando";
 				
 			}else {
 				cad = "Jugador " + jugador + " ha ganado: " + premios[Fila][Columna];

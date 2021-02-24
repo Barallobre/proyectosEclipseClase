@@ -25,12 +25,12 @@ public class JugadorAdivina {
 		System.out.println(datos.getCadena());
 
 		cadena = "";
-
+	
 		if (!datos.isJuega())
 			cadena = "*";
 
 		while (datos.isJuega() && !cadena.trim().equals("*")) {
-			System.out.print("Intento: " + (datos.getIntentos() + 1)+"\n");
+			System.out.print("Intento: " + (datos.getIntentos() + 1) + "\n");
 			cadena = sc.nextLine();
 			Datos d = new Datos();
 			if (!validarCadena(cadena)) {
@@ -45,9 +45,9 @@ public class JugadorAdivina {
 
 			datos = (Datos) fentrada.readObject();
 			System.out.println("\t" + datos.getCadena());
-			if (datos.getIntentos()>=4){
+			if (datos.getIntentos() >= 4) {
 				System.out.println("\tNo tienes más intentos.");
-				cadena="*";					
+				cadena = "*";
 			}
 			if (!(datos.isJuega())) {
 				System.out.println("El juego ha terminado, ya no quedan premios!");
