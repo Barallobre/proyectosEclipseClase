@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="VehiculosAyuntamiento" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c72f96d9-38c2-435f-af49-97a4a2b29c57">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="687"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="257"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="736"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="720"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="266"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Times New Roman" fontSize="18" isBold="false"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="PieChartDataset" uuid="39581794-7f4c-48d6-8f6a-b421776f515c"/>
+	<parameter name="fechaDesde" class="java.lang.String">
+		<defaultValueExpression><![CDATA["2020-01-01"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="fechaHasta" class="java.lang.String">
+		<defaultValueExpression><![CDATA["2020-01-01"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[SELECT vehiculosayuntamiento2ev.vehiculos.marca,
+	vehiculosayuntamiento2ev.tiposmantenimiento.`TipoMantenimiento`,
+	vehiculosayuntamiento2ev.mantenimientos.`Coste`,
+	vehiculosayuntamiento2ev.mantenimientos.`FechaMantenimiento`
+FROM vehiculosayuntamiento2ev.mantenimientos,
+	vehiculosayuntamiento2ev.vehiculos,
+	vehiculosayuntamiento2ev.tiposmantenimiento
+WHERE 
+	 vehiculosayuntamiento2ev.mantenimientos.`Matricula` = vehiculosayuntamiento2ev.vehiculos.matricula 
+	 AND vehiculosayuntamiento2ev.mantenimientos.`TipoMantenimiento` = vehiculosayuntamiento2ev.tiposmantenimiento.`TipoMantenimiento` 
+	 AND vehiculosayuntamiento2ev.mantenimientos.`FechaMantenimiento` BETWEEN $P{fechaDesde} AND $P{fechaHasta} 
+ORDER BY vehiculosayuntamiento2ev.mantenimientos.`TipoMantenimiento` ASC]]>
+	</queryString>
+	<field name="TipoMantenimiento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TipoMantenimiento"/>
+		<property name="com.jaspersoft.studio.field.label" value="TipoMantenimiento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tiposmantenimiento"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="FechaMantenimiento" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="FechaMantenimiento"/>
+		<property name="com.jaspersoft.studio.field.label" value="FechaMantenimiento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="mantenimientos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Coste" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="Coste"/>
+		<property name="com.jaspersoft.studio.field.label" value="Coste"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="mantenimientos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="marca" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="marca"/>
+		<property name="com.jaspersoft.studio.field.label" value="marca"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehiculos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="Coste1" class="java.math.BigDecimal" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{Coste}]]></variableExpression>
+	</variable>
+	<group name="TiposMantenimiento">
+		<groupExpression><![CDATA[$F{TipoMantenimiento}]]></groupExpression>
+		<groupHeader>
+			<band height="50">
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement style="Detail" positionType="Float" x="30" y="10" width="150" height="18" uuid="e63b550e-9859-417f-8d1c-409ee2d53be2">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6b5831e8-09de-4a46-92eb-32a8ee873ace"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial" size="14" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{TipoMantenimiento}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band height="802" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="0" width="595" height="65" forecolor="#006699" backcolor="#006699" uuid="29f958b3-9df5-4ee0-905e-9fd33029926f"/>
+				<staticText>
+					<reportElement style="Title" x="249" y="17" width="325" height="30" uuid="cf1fabd8-9376-4a95-a65d-c762a7404011"/>
+					<textElement textAlignment="Right">
+						<font size="26" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Mantenimiento vehículos]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<frame>
+				<reportElement x="227" y="0" width="328" height="20" uuid="793d06e1-d7cc-4d62-ad99-d289a8ce0026"/>
+				<staticText>
+					<reportElement style="Column header" positionType="Float" x="-210" y="0" width="162" height="20" forecolor="#000000" uuid="735762af-8fec-46d7-854c-0c931cc12d48">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6b5831e8-09de-4a46-92eb-32a8ee873ace"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial" isBold="false"/>
+					</textElement>
+					<text><![CDATA[TIPO MANTENIMIENTO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" positionType="Float" x="-40" y="0" width="178" height="20" forecolor="#000000" uuid="f945784d-33ef-42ed-b688-ae8b51915276">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b1285f0f-38c5-41c9-bbf2-885e2cc4508d"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial" isBold="false"/>
+					</textElement>
+					<text><![CDATA[FECHA MANTENIMIENTO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" positionType="Float" x="150" y="0" width="82" height="20" forecolor="#000000" uuid="c88ca43a-308e-43af-94ee-b89b583c7f34">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9c63cea-5815-40a6-bdc8-0b53dc0aaea7"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial" isBold="false"/>
+					</textElement>
+					<text><![CDATA[COSTE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" positionType="Float" x="240" y="0" width="82" height="20" forecolor="#000000" uuid="722cf3d5-8574-4c78-a151-5cb325b94c8a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55cde92f-52e8-4da3-95ba-afdc668b08e6"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial" isBold="false"/>
+					</textElement>
+					<text><![CDATA[MARCA]]></text>
+				</staticText>
+			</frame>
+			<line>
+				<reportElement x="-3" y="33" width="532" height="1" uuid="f625b043-fcbe-4d61-928c-3c6e5e8bda5b"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<frame>
+				<reportElement x="227" y="0" width="328" height="20" uuid="dec77cf2-1014-4b3e-9934-7f0c65a83bce"/>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement style="Detail" positionType="Float" x="11" y="5" width="82" height="18" uuid="030d7457-7d21-44bf-946b-27d40ed31937">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b1285f0f-38c5-41c9-bbf2-885e2cc4508d"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial" size="14" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{FechaMantenimiento}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement style="Detail" positionType="Float" x="150" y="5" width="82" height="18" uuid="134359aa-5dd5-4caa-a911-cc4335a9e45a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9c63cea-5815-40a6-bdc8-0b53dc0aaea7"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial" size="14" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Coste}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement style="Detail" positionType="Float" x="240" y="5" width="82" height="18" uuid="2e48d8fa-f8d1-47b1-8e40-81f8996c20d5">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55cde92f-52e8-4da3-95ba-afdc668b08e6"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial" size="14" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{marca}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="0a05d19c-77ff-48d5-91d6-460d221419e5"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="90" splitType="Stretch">
+			<textField>
+				<reportElement x="380" y="10" width="100" height="30" uuid="2054f9b4-b452-42f3-a955-bf056bb77d3b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{Coste1}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="60" width="595" height="30" forecolor="#D0B48E" backcolor="#006699" uuid="21b8ec89-3912-4f38-b1d2-846c348d496b"/>
+				<staticText>
+					<reportElement x="456" y="0" width="139" height="30" uuid="7b71c7d8-5030-4e58-969b-5a391e86a06e"/>
+					<textElement>
+						<font size="16"/>
+					</textElement>
+					<text><![CDATA[Cristian Barallobre]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement x="270" y="12" width="91" height="31" uuid="662794bc-43af-48ac-bed4-982b339e30b7"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[TOTAL:]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
