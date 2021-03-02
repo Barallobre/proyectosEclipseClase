@@ -71,7 +71,7 @@ ORDER BY vehiculosayuntamiento2ev.mantenimientos.`TipoMantenimiento` ASC]]>
 	<group name="TiposMantenimiento">
 		<groupExpression><![CDATA[$F{TipoMantenimiento}]]></groupExpression>
 		<groupHeader>
-			<band height="50">
+			<band height="28">
 				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
 					<reportElement style="Detail" positionType="Float" x="30" y="10" width="150" height="18" uuid="e63b550e-9859-417f-8d1c-409ee2d53be2">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6b5831e8-09de-4a46-92eb-32a8ee873ace"/>
