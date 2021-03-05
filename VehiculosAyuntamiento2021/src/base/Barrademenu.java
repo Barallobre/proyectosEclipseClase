@@ -12,12 +12,17 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import javax.swing.JTextPane;
+import java.awt.Font;
 
 public class Barrademenu extends JFrame {
 
 	JPanel panel;
-
-
+	JMenuItem altamantenimientos,bajamantenimientos,modificacionmantenimientos,consultamantenimientos,mantenimientosfechas,mantenimientopormatricula;
+	JMenuItem altavehiculos, bajavehiculos,modificacionvehiculos,consultavehiculos,consultatodosvehiculos,consultapordepartamento;
+	JMenuItem altatiposmantenimiento, bajatiposmantenimiento, modificaciontiposmantenimiento,consultatiposmantenimiento;
+	JMenuItem altadepartamentos, bajadepartamentos, modificaciondepartamentos,consultadepartamentos;
+	
 	public Barrademenu() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -28,61 +33,73 @@ public class Barrademenu extends JFrame {
 		JMenu mantenimientos = new JMenu("Mantenimientos");
 		menuBar.add(mantenimientos);
 		
-		JMenuItem altamantenimientos = new JMenuItem("Alta");
+		altamantenimientos = new JMenuItem("Alta");
 		mantenimientos.add(altamantenimientos);
 		
-		JMenuItem bajamantenimientos = new JMenuItem("Baja");
+		bajamantenimientos = new JMenuItem("Baja");
 		mantenimientos.add(bajamantenimientos);
 		
-		JMenuItem modificacionmantenimientos = new JMenuItem("Modificacion");
+		modificacionmantenimientos = new JMenuItem("Modificacion");
 		mantenimientos.add(modificacionmantenimientos);
 		
-		JMenuItem consultamantenimientos = new JMenuItem("Consulta");
+		consultamantenimientos = new JMenuItem("Consulta");
 		mantenimientos.add(consultamantenimientos);
+		
+		mantenimientosfechas = new JMenuItem("Mantenimientos entre dos fechas");
+		mantenimientos.add(mantenimientosfechas);
+		
+		mantenimientopormatricula = new JMenuItem("Mantenimientos por matr\u00EDcula");
+		mantenimientos.add(mantenimientopormatricula);
 		
 		JMenu vehiculos = new JMenu("Veh\u00EDculos");
 		menuBar.add(vehiculos);
 		
-		JMenuItem altavehiculos = new JMenuItem("Alta");
+		altavehiculos = new JMenuItem("Alta");
 		vehiculos.add(altavehiculos);
 		
-		JMenuItem bajavehiculos = new JMenuItem("Baja");
+		bajavehiculos = new JMenuItem("Baja");
 		vehiculos.add(bajavehiculos);
 		
-		JMenuItem modificacionvehiculos = new JMenuItem("Modificacion");
+		modificacionvehiculos = new JMenuItem("Modificacion");
 		vehiculos.add(modificacionvehiculos);
 		
-		JMenuItem consultavehiculos = new JMenuItem("Consulta");
+		consultavehiculos = new JMenuItem("Consulta");
 		vehiculos.add(consultavehiculos);
+		
+		consultatodosvehiculos = new JMenuItem("Consultar todos los veh\u00EDculos");
+		vehiculos.add(consultatodosvehiculos);
+		
+		consultapordepartamento = new JMenuItem("Consulta por departamento");
+		vehiculos.add(consultapordepartamento);
 		
 		JMenu tiposmantenimiento = new JMenu("Tipos Mantenimiento");
 		menuBar.add(tiposmantenimiento);
 		
-		JMenuItem altatiposmantenimiento = new JMenuItem("Alta");
+		altatiposmantenimiento = new JMenuItem("Alta");
 		tiposmantenimiento.add(altatiposmantenimiento);
 		
-		JMenuItem bajatiposmantenimiento = new JMenuItem("Baja");
+		bajatiposmantenimiento = new JMenuItem("Baja");
 		tiposmantenimiento.add(bajatiposmantenimiento);
 		
-		JMenuItem modificaciontiposmantenimiento = new JMenuItem("Modificacion");
+		modificaciontiposmantenimiento = new JMenuItem("Modificacion");
 		tiposmantenimiento.add(modificaciontiposmantenimiento);
 		
-		JMenuItem consultatiposmantenimiento = new JMenuItem("Consulta");
+		consultatiposmantenimiento = new JMenuItem("Consulta");
 		tiposmantenimiento.add(consultatiposmantenimiento);
 		
 		JMenu departamentos = new JMenu("Departamentos");
 		menuBar.add(departamentos);
 		
-		JMenuItem altadepartamentos = new JMenuItem("Alta");
+		altadepartamentos = new JMenuItem("Alta");
 		departamentos.add(altadepartamentos);
 		
-		JMenuItem bajadepartamentos = new JMenuItem("Baja");
+		bajadepartamentos = new JMenuItem("Baja");
 		departamentos.add(bajadepartamentos);
 		
-		JMenuItem modificaciondepartamentos = new JMenuItem("Modificacion");
+		modificaciondepartamentos = new JMenuItem("Modificacion");
 		departamentos.add(modificaciondepartamentos);
 		
-		JMenuItem consultadepartamentos = new JMenuItem("Consulta");
+		consultadepartamentos = new JMenuItem("Consulta");
 		departamentos.add(consultadepartamentos);
 		
 		JMenuBar menuBar_1 = new JMenuBar();
@@ -92,21 +109,221 @@ public class Barrademenu extends JFrame {
 		panel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		panel.setLayout(new BorderLayout(0, 0));
 		setContentPane(panel);
-	}
+		
+		JTextPane txtpnVehiculosAyuntamiento = new JTextPane();
+		txtpnVehiculosAyuntamiento.setFont(new Font("Tahoma", Font.BOLD, 35));
+		txtpnVehiculosAyuntamiento.setText("Veh\u00EDculos Ayuntamiento 2021\r\n");
+		panel.add(txtpnVehiculosAyuntamiento, BorderLayout.CENTER);
+	
 
-	public void asignarEscuchador(Escuchador e) {
-		verde.addActionListener(e);
-
+	altamantenimientos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	bajamantenimientos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	modificacionmantenimientos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	consultamantenimientos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	mantenimientosfechas.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	mantenimientopormatricula.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	altavehiculos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
 	}
-//	ActionListener fondoListener = new ActionListener() {
-//	public void actionPerformed(ActionEvent e) {
-//		if (e.getSource() == verde) {
-//			panel.setBackground(Color.GREEN);
-//		}
-//		if (e.getSource() == rojo) {
-//			panel.setBackground(Color.RED);
-//		}
-//	}
-//};
-//verde.addActionListener(fondoListener);
 }
