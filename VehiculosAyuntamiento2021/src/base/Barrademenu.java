@@ -130,7 +130,7 @@ public class Barrademenu extends JFrame {
 	bajamantenimientos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Altavehiculos frame = new Altavehiculos();
+				Bajamantenimientos frame = new Bajamantenimientos();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();
@@ -141,7 +141,7 @@ public class Barrademenu extends JFrame {
 	modificacionmantenimientos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Altavehiculos frame = new Altavehiculos();
+				Modificacionmantenimientos frame = new Modificacionmantenimientos();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();

@@ -90,7 +90,7 @@ public class Altamantenimientos extends JFrame {
 					sentencia.execute();
 
 					sentencia.close();
-					System.out.println(sentencia);
+					
 					conexion.close();
 
 					JOptionPane.showMessageDialog(null, "Mantenimiento añadido", "Vehículos ayuntamiento",
@@ -110,9 +110,7 @@ public class Altamantenimientos extends JFrame {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-
 			}
-
 		});
 		JButton cancelar = new JButton("Cancelar");
 		panel_1.add(cancelar);
