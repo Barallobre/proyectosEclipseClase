@@ -119,7 +119,7 @@ public class Barrademenu extends JFrame {
 	altamantenimientos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Altavehiculos frame = new Altavehiculos();
+				Altamantenimientos frame = new Altamantenimientos();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();
@@ -163,7 +163,7 @@ public class Barrademenu extends JFrame {
 	mantenimientosfechas.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Altavehiculos frame = new Altavehiculos();
+				Altamantenimientos frame = new Altamantenimientos();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();
@@ -193,7 +193,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	bajavehiculos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -204,7 +204,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	modificacionvehiculos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -215,7 +215,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	consultatodosvehiculos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -226,7 +226,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	consultatodosvehiculos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -237,7 +237,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	consultapordepartamento.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -248,7 +248,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	altatiposmantenimiento.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -259,7 +259,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	bajatiposmantenimiento.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -270,7 +270,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	modificaciontiposmantenimiento.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -281,7 +281,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	consultatiposmantenimiento.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -292,7 +292,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	altadepartamentos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -303,7 +303,7 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	bajadepartamentos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
@@ -314,7 +314,18 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	altavehiculos.addActionListener(new ActionListener() {
+	modificaciondepartamentos.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Altavehiculos frame = new Altavehiculos();
+				frame.setVisible(true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			dispose();
+		}
+	});
+	consultadepartamentos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
 				Altavehiculos frame = new Altavehiculos();
