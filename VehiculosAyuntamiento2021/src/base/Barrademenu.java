@@ -120,7 +120,7 @@ public class Barrademenu extends JFrame {
 		panel.setLayout(new BorderLayout(0, 0));
 		setContentPane(panel);
 		
-		lblNewLabel = new JLabel("New label");
+		lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("D:\\ProyectosEclipseSegundo\\proyectosEclipseClase\\VehiculosAyuntamiento2021\\el_homer.jpg"));
 		panel.add(lblNewLabel, BorderLayout.CENTER);
 	
