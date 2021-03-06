@@ -14,18 +14,26 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.util.JRLoader;
+import net.sf.jasperreports.view.JasperViewer;
+
 import javax.swing.JButton;
 import javax.swing.JTextField;
+import javax.swing.JLabel;
 
 public class Consultamantenimientos extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
 
 	public Consultamantenimientos() {
 		setTitle("Consulta de los mantenimientos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 450, 104);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -33,46 +41,47 @@ public class Consultamantenimientos extends JFrame {
 
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.CENTER);
-
-		textField = new JTextField();
-		panel.add(textField);
-		textField.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("Generara informe con todos los mantenimientos");
+		panel.add(lblNewLabel);
 
 		JPanel panel_1 = new JPanel();
 		contentPane.add(panel_1, BorderLayout.SOUTH);
 
-		JButton consultar = new JButton("Consultar");
-		panel_1.add(consultar);
+		JButton aceptar = new JButton("Aceptar");
+		panel_1.add(aceptar);
+		aceptar.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/sakila?serverTimezone=UTC",
+					"demo", "password");
+			String rutaInforme = System.getProperty("user.dir") + System.getProperty("file.separator");
+			rutaInforme += "Mantenimientos.jasper";
+			JasperReport informeVacio;
+			
+				informeVacio = (JasperReport) JRLoader.loadObjectFromFile(rutaInforme);
 
-		consultar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager.getConnection(
-							"jdbc:mysql://localhost/vehiculosayuntamiento2021?serverTimezone=UTC", "demo", "password");
-
-					PreparedStatement sentencia;
-
-					sentencia = conexion.prepareStatement("select * from mantenimientos");
-
-					sentencia.execute();
-					String resultado = String.valueOf(sentencia);
-					System.out.println(resultado);
-					textField.setText(resultado);
-					sentencia.close();
-
-					conexion.close();
-
-				} catch (ClassNotFoundException | SQLException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
+				JasperPrint informeConDatos = JasperFillManager.fillReport(informeVacio, null, conexion);
+				JasperViewer visor = new JasperViewer(informeConDatos);
+				
+				visor.setVisible(true);
+			} catch (JRException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (ClassNotFoundException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (SQLException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
 			}
+		}
 		});
 
-		JButton atras = new JButton("Atr\u00E1s");
-		panel_1.add(atras);
-		atras.addActionListener(new ActionListener() {
+		JButton cancelar = new JButton("Cancelar");
+		panel_1.add(cancelar);
+		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Barrademenu frame = new Barrademenu();

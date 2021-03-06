@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Mantenimientos" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="13acf49e-4913-4d1b-bccc-113817ad15d1">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Vehiculos2021"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT vehiculosayuntamiento2021.mantenimientos.`NumMantenimiento`,
+	vehiculosayuntamiento2021.mantenimientos.`Matricula`,
+	vehiculosayuntamiento2021.mantenimientos.`TipoMantenimiento`,
+	vehiculosayuntamiento2021.mantenimientos.`FechaMantenimiento`,
+	vehiculosayuntamiento2021.mantenimientos.`Coste`
+FROM vehiculosayuntamiento2021.mantenimientos]]>
+	</queryString>
+	<field name="NumMantenimiento" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="NumMantenimiento"/>
+		<property name="com.jaspersoft.studio.field.label" value="NumMantenimiento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="mantenimientos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Matricula" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Matricula"/>
+		<property name="com.jaspersoft.studio.field.label" value="Matricula"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="mantenimientos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TipoMantenimiento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TipoMantenimiento"/>
+		<property name="com.jaspersoft.studio.field.label" value="TipoMantenimiento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="mantenimientos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="FechaMantenimiento" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="FechaMantenimiento"/>
+		<property name="com.jaspersoft.studio.field.label" value="FechaMantenimiento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="mantenimientos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Coste" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="Coste"/>
+		<property name="com.jaspersoft.studio.field.label" value="Coste"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="mantenimientos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="132" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="95" backcolor="#000000" uuid="6c6ca4e1-17cd-4913-93d6-5e670ea9ae8a"/>
+				<staticText>
+					<reportElement style="Title" x="111" y="14" width="333" height="66" uuid="a2a2cac8-5a7d-4487-8c54-dab235ce4e21"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[Mantenimientos]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="26" splitType="Stretch">
+			<staticText>
+				<reportElement style="Column header" x="0" y="7" width="111" height="18" forecolor="#000000" uuid="1387efc7-3fc5-4ce4-a8d1-fa9e36804407">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7de9ca20-c640-4c20-bdca-c98f55ef5037"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Numero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="111" y="7" width="111" height="18" forecolor="#000000" uuid="ac768589-848a-404a-ae0a-390620867667">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c1a9981e-4bcf-4f1d-be30-ee1df6503d54"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Matricula]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="222" y="7" width="111" height="18" forecolor="#000000" uuid="d31347e0-19e8-4c4f-9c22-846bb0988dae">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec89c33e-fd55-40b2-864f-3c6328169cf4"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="333" y="7" width="111" height="18" forecolor="#000000" uuid="b6a2b118-6bb1-47c0-b1ba-3cc3f5075e73">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="750827e5-f451-4557-b576-b3c3545e4a11"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="444" y="7" width="111" height="18" forecolor="#000000" uuid="d9a6727f-6977-4fb5-98a9-e3dc8e316533">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="91ac1f62-66d9-4f8b-8993-5b3bb2304d29"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Coste]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="555" height="18" uuid="b50221b5-8254-440b-8c6f-1f0b138c9259"/>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="0" y="18" width="111" height="18" uuid="9c42280c-98a6-4b8b-89a3-a6702c61ffd8">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7de9ca20-c640-4c20-bdca-c98f55ef5037"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{NumMantenimiento}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="111" y="18" width="111" height="18" uuid="c5977911-bd24-441a-b64a-b6e8c18fc5b2">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c1a9981e-4bcf-4f1d-be30-ee1df6503d54"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Matricula}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="222" y="18" width="111" height="18" uuid="889343a7-d0e3-44d5-848b-a6bc7550a555">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec89c33e-fd55-40b2-864f-3c6328169cf4"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{TipoMantenimiento}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="333" y="18" width="111" height="18" uuid="fb2e7e10-7136-4f88-b189-a4b5959827ee">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="750827e5-f451-4557-b576-b3c3545e4a11"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{FechaMantenimiento}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="444" y="18" width="111" height="18" uuid="b27f4df9-f6b8-4203-b057-6042a3aa43e6">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="91ac1f62-66d9-4f8b-8993-5b3bb2304d29"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Coste}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement positionType="FixRelativeToBottom" x="-1" y="0" width="555" height="1" uuid="1133a906-5b71-476e-9f3e-bc97c97058c1"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#999999"/>
+					</graphicElement>
+				</line>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

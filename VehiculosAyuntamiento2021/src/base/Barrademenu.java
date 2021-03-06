@@ -215,10 +215,10 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	consultatodosvehiculos.addActionListener(new ActionListener() {
+	consultavehiculos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Altavehiculos frame = new Altavehiculos();
+				Consultavehiculos frame = new Consultavehiculos();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();
