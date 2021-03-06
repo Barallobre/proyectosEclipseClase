@@ -22,7 +22,12 @@ import java.sql.SQLException;
 import java.util.Date;
 
 import javax.swing.JTextField;
-
+/**
+ * 
+ * @author Cristian Barallobre
+ * @version 06-03-2020
+ * Clase construida con windowbuilder que nos permite modificar los tipos de mantenimiento en la base de datos
+ */
 public class Modificaciontiposmantenimiento extends JFrame {
 
 	private JPanel contentPane;

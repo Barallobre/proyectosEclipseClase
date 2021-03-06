@@ -14,7 +14,12 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JTextPane;
 import java.awt.Font;
-
+/**
+ * 
+ * @author Cristian Barallobre
+ * @version 06-03-2020
+ * Clase que genera una ventana a partir de la cual accederemos a cada uno de las funciones del programa mediante una barra de menús
+ */
 public class Barrademenu extends JFrame {
 
 	JPanel panel;

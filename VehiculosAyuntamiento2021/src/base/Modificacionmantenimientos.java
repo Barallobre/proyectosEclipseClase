@@ -22,7 +22,12 @@ import java.sql.SQLException;
 import java.util.Date;
 
 import javax.swing.JTextField;
-
+/**
+ * 
+ * @author Cristian Barallobre
+ * @version 06-03-2020
+ * Clase construida con windowbuilder que nos permite modificar los parámetros de un mantenimiento
+ */
 public class Modificacionmantenimientos extends JFrame {
 
 	private JPanel contentPane;
@@ -32,25 +37,7 @@ public class Modificacionmantenimientos extends JFrame {
 	private JTextField coste;
 	private JTextField tipoMantenimiento;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Modificacionmantenimientos frame = new Modificacionmantenimientos();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 
-	/**
-	 * Create the frame.
-	 */
 	public Modificacionmantenimientos() {
 		setTitle("Modificaci\u00F3n de mantenimientos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

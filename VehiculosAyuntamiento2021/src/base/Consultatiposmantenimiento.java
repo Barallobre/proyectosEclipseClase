@@ -21,30 +21,18 @@ import net.sf.jasperreports.view.JasperViewer;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
-
+/**
+ * 
+ * @author Cristian Barallobre
+ * @version 06-03-2020
+ * Clase que nos permite listar en un informe todos los tipos de mantenimientos que hay en la base de datos
+ * 
+ */
 public class Consultatiposmantenimiento extends JFrame {
 
 	private JPanel contentPane;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Consultatiposmantenimiento frame = new Consultatiposmantenimiento();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 
-	/**
-	 * Create the frame.
-	 */
 	public Consultatiposmantenimiento() {
 		setTitle("Consulta de tipos de mantenimiento");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

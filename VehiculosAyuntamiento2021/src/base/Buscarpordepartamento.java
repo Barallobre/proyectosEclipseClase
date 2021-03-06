@@ -27,7 +27,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * 
+ * @author Cristian Barallobre
+ * @version 06-03-2020
+ * Clase construida con windowbuilder que nos permite generar un informe al introducir un departamento 
+ */
 public class Buscarpordepartamento extends JFrame {
 
 	private JPanel contentPane;

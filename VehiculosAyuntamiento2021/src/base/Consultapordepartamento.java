@@ -21,7 +21,12 @@ import net.sf.jasperreports.view.JasperViewer;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
-
+/**
+ * 
+ * @author Cristian Barallobre
+ * @version 06-03-2020
+ * Clase creada en window builder que nos permite listar en un informe los vehículos que hay en cada departamento
+ */
 public class Consultapordepartamento extends JFrame {
 
 	private JPanel contentPane;

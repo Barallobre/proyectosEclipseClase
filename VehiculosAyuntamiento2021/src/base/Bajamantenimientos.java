@@ -22,7 +22,12 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Date;
-
+/**
+ * 
+ * @author Cristian Barallobre
+ * @version 06-03-2020
+ * Clase construida con windowbuilder que nos permite dar de baja un mantenimiento de un vehículo en la base de datos
+ */
 public class Bajamantenimientos extends JFrame {
 
 	private JPanel contentPane;

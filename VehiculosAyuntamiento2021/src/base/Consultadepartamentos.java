@@ -21,7 +21,12 @@ import net.sf.jasperreports.view.JasperViewer;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
-
+/**
+ * 
+ * @author Cristian Barallobre
+ * @version 06-03-2020
+ * Clase construida mediante window builder que nos permite generar un informe donde vemos los departamentos existentes
+ */
 public class Consultadepartamentos extends JFrame {
 
 	private JPanel contentPane;

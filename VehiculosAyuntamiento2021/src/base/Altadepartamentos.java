@@ -22,7 +22,12 @@ import java.sql.SQLException;
 import java.util.Date;
 
 import javax.swing.JTextField;
-
+/**
+ * 
+ * @author Cristian Barallobre
+ * @version 06-03-2020
+ * Clase construida con windowbuilder que nos permite insertar un nuevo departamento en la base de datos 
+ */
 public class Altadepartamentos extends JFrame {
 
 	private JPanel contentPane;
