@@ -19,7 +19,7 @@ public class Barrademenu extends JFrame {
 
 	JPanel panel;
 	JMenuItem altamantenimientos,bajamantenimientos,modificacionmantenimientos,consultamantenimientos,mantenimientosfechas,mantenimientopormatricula;
-	JMenuItem altavehiculos, bajavehiculos,modificacionvehiculos,consultavehiculos,consultatodosvehiculos,consultapordepartamento;
+	JMenuItem altavehiculos, bajavehiculos,modificacionvehiculos,consultavehiculos,buscarpordepartamento,consultapordepartamento;
 	JMenuItem altatiposmantenimiento, bajatiposmantenimiento, modificaciontiposmantenimiento,consultatiposmantenimiento;
 	JMenuItem altadepartamentos, bajadepartamentos, modificaciondepartamentos,consultadepartamentos;
 	
@@ -66,8 +66,8 @@ public class Barrademenu extends JFrame {
 		consultavehiculos = new JMenuItem("Consulta");
 		vehiculos.add(consultavehiculos);
 		
-		consultatodosvehiculos = new JMenuItem("Consultar todos los veh\u00EDculos");
-		vehiculos.add(consultatodosvehiculos);
+		buscarpordepartamento = new JMenuItem("Buscar por departamento");
+		vehiculos.add(buscarpordepartamento);
 		
 		consultapordepartamento = new JMenuItem("Consulta por departamento");
 		vehiculos.add(consultapordepartamento);
@@ -226,10 +226,11 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	consultatodosvehiculos.addActionListener(new ActionListener() {
+
+	consultapordepartamento.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Altavehiculos frame = new Altavehiculos();
+				Consultapordepartamento frame = new Consultapordepartamento();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();
@@ -237,10 +238,10 @@ public class Barrademenu extends JFrame {
 			dispose();
 		}
 	});
-	consultapordepartamento.addActionListener(new ActionListener() {
+	buscarpordepartamento.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Consultadepartamentos frame = new Consultadepartamentos();
+				Buscarpordepartamento frame = new Buscarpordepartamento();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();

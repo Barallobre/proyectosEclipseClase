@@ -2,11 +2,6 @@ package base;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -20,17 +15,29 @@ import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 
 import javax.swing.JButton;
+import java.awt.GridBagLayout;
 import javax.swing.JLabel;
+import java.awt.GridBagConstraints;
+import javax.swing.JTextField;
+import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
 
-public class Consultapordepartamento extends JFrame {
+public class Buscarpordepartamento extends JFrame {
 
 	private JPanel contentPane;
+	private JTextField nombreDepartamento;
 
 
-	public Consultapordepartamento() {
-		setTitle("Consulta de veh\u00EDculos por departamento");
+	public Buscarpordepartamento() {
+		setTitle("Buscar veh\u00EDculos por departamento");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 111);
+		setBounds(100, 100, 450, 105);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -48,12 +55,14 @@ public class Consultapordepartamento extends JFrame {
 			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/sakila?serverTimezone=UTC",
 					"demo", "password");
 			String rutaInforme = System.getProperty("user.dir") + System.getProperty("file.separator");
-			rutaInforme += "Vehiculospordepartamento.jasper";
+			rutaInforme += "Buscarpordepartamento.jasper";
 			JasperReport informeVacio;
 			
 				informeVacio = (JasperReport) JRLoader.loadObjectFromFile(rutaInforme);
-
-				JasperPrint informeConDatos = JasperFillManager.fillReport(informeVacio, null, conexion);
+				Map<String, Object> parametros = new HashMap<String, Object>();
+				String departamento = nombreDepartamento.getText();
+				parametros.put("Departamento", departamento);
+				JasperPrint informeConDatos = JasperFillManager.fillReport(informeVacio, parametros, conexion);
 				JasperViewer visor = new JasperViewer(informeConDatos);
 				
 				visor.setVisible(true);
@@ -84,9 +93,27 @@ public class Consultapordepartamento extends JFrame {
 		});
 		JPanel panel_1 = new JPanel();
 		contentPane.add(panel_1, BorderLayout.CENTER);
+		GridBagLayout gbl_panel_1 = new GridBagLayout();
+		gbl_panel_1.columnWidths = new int[]{0, 0, 0, 0, 0, 0, 0};
+		gbl_panel_1.rowHeights = new int[]{0, 0};
+		gbl_panel_1.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE};
+		gbl_panel_1.rowWeights = new double[]{0.0, Double.MIN_VALUE};
+		panel_1.setLayout(gbl_panel_1);
 		
-		JLabel lblNewLabel = new JLabel("Generar informe de vehiculos por departamento.");
-		panel_1.add(lblNewLabel);
+		JLabel lblNewLabel = new JLabel("Nombre departamento");
+		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
+		gbc_lblNewLabel.insets = new Insets(0, 0, 0, 5);
+		gbc_lblNewLabel.gridx = 2;
+		gbc_lblNewLabel.gridy = 0;
+		panel_1.add(lblNewLabel, gbc_lblNewLabel);
+		
+		nombreDepartamento = new JTextField();
+		GridBagConstraints gbc_nombreDepartamento = new GridBagConstraints();
+		gbc_nombreDepartamento.fill = GridBagConstraints.HORIZONTAL;
+		gbc_nombreDepartamento.gridx = 5;
+		gbc_nombreDepartamento.gridy = 0;
+		panel_1.add(nombreDepartamento, gbc_nombreDepartamento);
+		nombreDepartamento.setColumns(10);
 	}
 
 }
