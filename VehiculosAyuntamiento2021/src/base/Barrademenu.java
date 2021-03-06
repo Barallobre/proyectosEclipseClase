@@ -174,7 +174,7 @@ public class Barrademenu extends JFrame {
 	mantenimientopormatricula.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Altavehiculos frame = new Altavehiculos();
+				Mantenimientospormatricula frame = new Mantenimientospormatricula();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();
