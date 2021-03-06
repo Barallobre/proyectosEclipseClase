@@ -240,7 +240,7 @@ public class Barrademenu extends JFrame {
 	consultapordepartamento.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Altavehiculos frame = new Altavehiculos();
+				Consultadepartamentos frame = new Consultadepartamentos();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();
@@ -284,7 +284,7 @@ public class Barrademenu extends JFrame {
 	consultatiposmantenimiento.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Altavehiculos frame = new Altavehiculos();
+				Consultatiposmantenimiento frame = new Consultatiposmantenimiento();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();
@@ -328,7 +328,7 @@ public class Barrademenu extends JFrame {
 	consultadepartamentos.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-				Altavehiculos frame = new Altavehiculos();
+				Consultadepartamentos frame = new Consultadepartamentos();
 				frame.setVisible(true);
 			} catch (Exception e1) {
 				e1.printStackTrace();
