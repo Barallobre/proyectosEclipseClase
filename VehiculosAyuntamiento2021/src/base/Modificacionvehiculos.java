@@ -23,10 +23,10 @@ import java.util.Date;
 
 import javax.swing.JTextField;
 /**
- * 
+ * Clase construida con windowbuilder que nos permite modificar los parámetros de un vehículo en la base de datos
  * @author Cristian Barallobre
  * @version 06-03-2020
- * Clase construida con windowbuilder que nos permite modificar los parámetros de un vehículo en la base de datos
+ * 
  */
 public class Modificacionvehiculos extends JFrame {
 

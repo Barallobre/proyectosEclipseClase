@@ -22,10 +22,10 @@ import net.sf.jasperreports.view.JasperViewer;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 /**
- * 
+ * Clase construida con windowbuilder que nos permite generar un informe que liste todos los vehículos existentes en la base de datos
  * @author Cristian Barallobre
  * @version 06-03-2020
- * Clase construida con windowbuilder que nos permite generar un informe que liste todos los vehículos existentes en la base de datos
+ * 
  */
 public class Consultavehiculos extends JFrame {
 

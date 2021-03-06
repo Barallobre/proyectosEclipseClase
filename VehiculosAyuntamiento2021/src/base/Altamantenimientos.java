@@ -22,10 +22,10 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Date;
 /**
- * 
+ * Clase construida con windowbuilder que nos permite dar de alta un nuevo mantenimiento en la base de datos
  * @author Cristian Barallobre
  * @version 06-03-2020
- * Clase construida con windowbuilder que nos permite dar de alta un nuevo mantenimiento en la base de datos
+ * 
  */
 public class Altamantenimientos extends JFrame {
 

@@ -26,10 +26,10 @@ import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 /**
- * 
+ * Clase que nos permite listar en un informe los mantenimientos existentes dentro de la base de datos
  * @author Cristian Barallobre
  * @version 06-03-2020
- * Clase que nos permite listar en un informe los mantenimientos existentes dentro de la base de datos
+ * 
  */
 public class Consultamantenimientos extends JFrame {
 

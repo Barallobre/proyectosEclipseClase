@@ -22,10 +22,10 @@ import net.sf.jasperreports.view.JasperViewer;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 /**
- * 
+ * Clase que nos permite listar en un informe todos los tipos de mantenimientos que hay en la base de datos
  * @author Cristian Barallobre
  * @version 06-03-2020
- * Clase que nos permite listar en un informe todos los tipos de mantenimientos que hay en la base de datos
+ * 
  * 
  */
 public class Consultatiposmantenimiento extends JFrame {

@@ -23,10 +23,10 @@ import java.util.Date;
 
 import javax.swing.JTextField;
 /**
- * 
+ * Clase construida con windowbuilder que nos permite modificar el nombre de un departamento
  * @author Cristian Barallobre
  * @version 06-03-2020
- * Clase construida con windowbuilder que nos permite modificar el nombre de un departamento
+ * 
  */
 public class Modificaciondepartamentos extends JFrame {
 

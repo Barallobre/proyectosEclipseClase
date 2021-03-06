@@ -28,10 +28,10 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 /**
- * 
+ * Clase construida con windowbuilder que nos permite generar un informe que liste los mantenimientos que existan entre las fechas que introduzcamos
  * @author Cristian Barallobre
  * @version 06-03-2020
- * Clase construida con windowbuilder que nos permite generar un informe que liste los mantenimientos que existan entre las fechas que introduzcamos
+ * 
  */
 public class Mantenimientosentrefechas extends JFrame {
 

@@ -14,11 +14,13 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JTextPane;
 import java.awt.Font;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 /**
- * 
+ * Clase que genera una ventana a partir de la cual accederemos a cada uno de las funciones del programa mediante una barra de menús
  * @author Cristian Barallobre
  * @version 06-03-2020
- * Clase que genera una ventana a partir de la cual accederemos a cada uno de las funciones del programa mediante una barra de menús
+ * 
  */
 public class Barrademenu extends JFrame {
 
@@ -27,10 +29,13 @@ public class Barrademenu extends JFrame {
 	JMenuItem altavehiculos, bajavehiculos,modificacionvehiculos,consultavehiculos,buscarpordepartamento,consultapordepartamento;
 	JMenuItem altatiposmantenimiento, bajatiposmantenimiento, modificaciontiposmantenimiento,consultatiposmantenimiento;
 	JMenuItem altadepartamentos, bajadepartamentos, modificaciondepartamentos,consultadepartamentos;
+	private JLabel lblNewLabel;
+	private JMenuItem ayuda;
 	
 	public Barrademenu() {
+		setTitle("Mantenimiento vehiculosayuntamiento2021");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 467, 300);
 
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -107,18 +112,17 @@ public class Barrademenu extends JFrame {
 		consultadepartamentos = new JMenuItem("Consulta");
 		departamentos.add(consultadepartamentos);
 		
-		JMenuBar menuBar_1 = new JMenuBar();
-		menuBar.add(menuBar_1);
+		ayuda = new JMenuItem("Ayuda");
+		menuBar.add(ayuda);
 		
 		panel = new JPanel();
 		panel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		panel.setLayout(new BorderLayout(0, 0));
 		setContentPane(panel);
 		
-		JTextPane txtpnVehiculosAyuntamiento = new JTextPane();
-		txtpnVehiculosAyuntamiento.setFont(new Font("Tahoma", Font.BOLD, 35));
-		txtpnVehiculosAyuntamiento.setText("Veh\u00EDculos Ayuntamiento 2021\r\n");
-		panel.add(txtpnVehiculosAyuntamiento, BorderLayout.CENTER);
+		lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("D:\\ProyectosEclipseSegundo\\proyectosEclipseClase\\VehiculosAyuntamiento2021\\el_homer.jpg"));
+		panel.add(lblNewLabel, BorderLayout.CENTER);
 	
 
 	altamantenimientos.addActionListener(new ActionListener() {
