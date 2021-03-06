@@ -2,9 +2,11 @@ package base;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Desktop;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -114,14 +116,31 @@ public class Barrademenu extends JFrame {
 		
 		ayuda = new JMenuItem("Ayuda");
 		menuBar.add(ayuda);
-		
+		ayuda.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			if (!Desktop.isDesktopSupported()) {
+				System.out.println("La clase Desktop no es soportada");
+			} else {
+				Desktop escritorio = Desktop.getDesktop();
+				try {
+					File archivo = new File("ayuda.chm");
+					if (escritorio.isSupported(Desktop.Action.valueOf("OPEN")))
+						escritorio.open(archivo);
+					else
+						System.out.println("La función OPEN no es soportada");
+				} catch (Exception e1) {
+					e1.getMessage();
+				}
+			}
+		}
+	});
 		panel = new JPanel();
 		panel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		panel.setLayout(new BorderLayout(0, 0));
 		setContentPane(panel);
 		
 		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("D:\\ProyectosEclipseSegundo\\proyectosEclipseClase\\VehiculosAyuntamiento2021\\el_homer.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("el_homer.jpg"));
 		panel.add(lblNewLabel, BorderLayout.CENTER);
 	
 

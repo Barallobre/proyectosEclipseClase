@@ -91,7 +91,6 @@ public class Altadepartamentos extends JFrame {
 		panel_1.add(aceptar);
 		aceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					Connection conexion = DriverManager.getConnection(
@@ -120,7 +119,6 @@ public class Altadepartamentos extends JFrame {
 				} catch (ClassNotFoundException e1) {
 					e1.printStackTrace();
 				}
-
 			}
 		});
 		JButton cancelar = new JButton("Cancelar");
