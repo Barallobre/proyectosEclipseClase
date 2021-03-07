@@ -160,7 +160,7 @@ public class Altavehiculos extends JFrame {
 					String observaciones1=observaciones.getText();
 					int numDepartamento1=Integer.parseInt(numDepartamento.getText());
 					String marca1=marca.getText();
-		
+					
 					
 					
 					

@@ -36,8 +36,12 @@ import java.util.Map;
 public class Mantenimientosentrefechas extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField fechaDesde;
-	private JTextField fechaHasta;
+	private JTextField dia;
+	private JTextField mes;
+	private JTextField ano;
+	private JTextField diah;
+	private JTextField mesh;
+	private JTextField anoh;
 
 
 	public Mantenimientosentrefechas() {
@@ -66,8 +70,14 @@ public class Mantenimientosentrefechas extends JFrame {
 				
 					informeVacio = (JasperReport) JRLoader.loadObjectFromFile(rutaInforme);
 					Map<String, Object> parametros = new HashMap<String, Object>();
-					String fechaDesde1 = fechaDesde.getText();
-					String fechaHasta1 = fechaHasta.getText();
+					String dia1=dia.getText();
+					String mes1=mes.getText();
+					String ano1=ano.getText();
+					String dia2=diah.getText();
+					String mes2=mesh.getText();
+					String ano2=anoh.getText();
+					String fechaDesde1 = ano1+"-"+mes1+"-"+dia1;
+					String fechaHasta1 =  ano2+"-"+mes2+"-"+dia2;
 					parametros.put("fechaDesde", fechaDesde1);
 					parametros.put("fechaHasta", fechaHasta1);
 					JasperPrint informeConDatos = JasperFillManager.fillReport(informeVacio, parametros, conexion);
@@ -104,40 +114,78 @@ public class Mantenimientosentrefechas extends JFrame {
 		GridBagLayout gbl_panel_1 = new GridBagLayout();
 		gbl_panel_1.columnWidths = new int[]{0, 0, 0, 0, 0, 0, 0};
 		gbl_panel_1.rowHeights = new int[]{0, 0, 0};
-		gbl_panel_1.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE};
+		gbl_panel_1.columnWeights = new double[]{0.0, 0.0, 0.0, 1.0, 1.0, 1.0, Double.MIN_VALUE};
 		gbl_panel_1.rowWeights = new double[]{0.0, 0.0, Double.MIN_VALUE};
 		panel_1.setLayout(gbl_panel_1);
 		
-		JLabel lblNewLabel = new JLabel("Fecha desde");
+		JLabel lblNewLabel = new JLabel("Fecha desde(d\u00EDa/mes/a\u00F1o)");
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
+		gbc_lblNewLabel.anchor = GridBagConstraints.EAST;
 		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
 		gbc_lblNewLabel.gridx = 2;
 		gbc_lblNewLabel.gridy = 0;
 		panel_1.add(lblNewLabel, gbc_lblNewLabel);
 		
-		fechaDesde = new JTextField();
-		GridBagConstraints gbc_fechaDesde = new GridBagConstraints();
-		gbc_fechaDesde.insets = new Insets(0, 0, 5, 0);
-		gbc_fechaDesde.fill = GridBagConstraints.HORIZONTAL;
-		gbc_fechaDesde.gridx = 5;
-		gbc_fechaDesde.gridy = 0;
-		panel_1.add(fechaDesde, gbc_fechaDesde);
-		fechaDesde.setColumns(10);
+		dia = new JTextField();
+		GridBagConstraints gbc_dia = new GridBagConstraints();
+		gbc_dia.insets = new Insets(0, 0, 5, 5);
+		gbc_dia.fill = GridBagConstraints.HORIZONTAL;
+		gbc_dia.gridx = 3;
+		gbc_dia.gridy = 0;
+		panel_1.add(dia, gbc_dia);
+		dia.setColumns(10);
 		
-		JLabel lblNewLabel_1 = new JLabel("Fecha hasta");
+		mes = new JTextField();
+		GridBagConstraints gbc_mes = new GridBagConstraints();
+		gbc_mes.insets = new Insets(0, 0, 5, 5);
+		gbc_mes.fill = GridBagConstraints.HORIZONTAL;
+		gbc_mes.gridx = 4;
+		gbc_mes.gridy = 0;
+		panel_1.add(mes, gbc_mes);
+		mes.setColumns(10);
+		
+		ano = new JTextField();
+		GridBagConstraints gbc_ano = new GridBagConstraints();
+		gbc_ano.insets = new Insets(0, 0, 5, 0);
+		gbc_ano.fill = GridBagConstraints.HORIZONTAL;
+		gbc_ano.gridx = 5;
+		gbc_ano.gridy = 0;
+		panel_1.add(ano, gbc_ano);
+		ano.setColumns(10);
+		
+		JLabel lblNewLabel_1 = new JLabel("Fecha hasta(d\u00EDa/mes/a\u00F1o)");
 		GridBagConstraints gbc_lblNewLabel_1 = new GridBagConstraints();
+		gbc_lblNewLabel_1.anchor = GridBagConstraints.EAST;
 		gbc_lblNewLabel_1.insets = new Insets(0, 0, 0, 5);
 		gbc_lblNewLabel_1.gridx = 2;
 		gbc_lblNewLabel_1.gridy = 1;
 		panel_1.add(lblNewLabel_1, gbc_lblNewLabel_1);
 		
-		fechaHasta = new JTextField();
-		GridBagConstraints gbc_fechaHasta = new GridBagConstraints();
-		gbc_fechaHasta.fill = GridBagConstraints.HORIZONTAL;
-		gbc_fechaHasta.gridx = 5;
-		gbc_fechaHasta.gridy = 1;
-		panel_1.add(fechaHasta, gbc_fechaHasta);
-		fechaHasta.setColumns(10);
+		diah = new JTextField();
+		GridBagConstraints gbc_diah = new GridBagConstraints();
+		gbc_diah.insets = new Insets(0, 0, 0, 5);
+		gbc_diah.fill = GridBagConstraints.HORIZONTAL;
+		gbc_diah.gridx = 3;
+		gbc_diah.gridy = 1;
+		panel_1.add(diah, gbc_diah);
+		diah.setColumns(10);
+		
+		mesh = new JTextField();
+		GridBagConstraints gbc_mesh = new GridBagConstraints();
+		gbc_mesh.insets = new Insets(0, 0, 0, 5);
+		gbc_mesh.fill = GridBagConstraints.HORIZONTAL;
+		gbc_mesh.gridx = 4;
+		gbc_mesh.gridy = 1;
+		panel_1.add(mesh, gbc_mesh);
+		mesh.setColumns(10);
+		
+		anoh = new JTextField();
+		GridBagConstraints gbc_anoh = new GridBagConstraints();
+		gbc_anoh.fill = GridBagConstraints.HORIZONTAL;
+		gbc_anoh.gridx = 5;
+		gbc_anoh.gridy = 1;
+		panel_1.add(anoh, gbc_anoh);
+		anoh.setColumns(10);
 	}
 
 }

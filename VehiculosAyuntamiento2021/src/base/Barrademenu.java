@@ -37,7 +37,7 @@ public class Barrademenu extends JFrame {
 	public Barrademenu() {
 		setTitle("Mantenimiento vehiculosayuntamiento2021");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 467, 300);
+		setBounds(100, 100, 504, 300);
 
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -140,7 +140,7 @@ public class Barrademenu extends JFrame {
 		setContentPane(panel);
 		
 		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("el_homer.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("ayuntamiento_de_a_coruna_001.jpg"));
 		panel.add(lblNewLabel, BorderLayout.CENTER);
 	
 
