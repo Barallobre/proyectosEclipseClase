@@ -41,11 +41,12 @@ public class Altacomic extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField _isbn;
+	private JTextField _nombre;
 
 	public Altacomic() throws ClassNotFoundException {
 		setTitle("Alta de mantenimientos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 453, 313);
+		setBounds(100, 100, 453, 348);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -74,18 +75,36 @@ public class Altacomic extends JFrame {
 		contentPane.add(panel, BorderLayout.CENTER);
 		GridBagLayout gbl_panel = new GridBagLayout();
 		gbl_panel.columnWidths = new int[] { 30, 0, 0, 0, 0, 0 };
-		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 1.0, 1.0, 1.0, Double.MIN_VALUE };
-		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		panel.setLayout(gbl_panel);
 
-		JLabel isbn = new JLabel("ISBN");
-		GridBagConstraints gbc_isbn = new GridBagConstraints();
-		gbc_isbn.anchor = GridBagConstraints.EAST;
-		gbc_isbn.insets = new Insets(0, 0, 5, 5);
-		gbc_isbn.gridx = 1;
-		gbc_isbn.gridy = 0;
-		panel.add(isbn, gbc_isbn);
+		JLabel nombre = new JLabel("Nombre");
+		GridBagConstraints gbc_nombre = new GridBagConstraints();
+		gbc_nombre.anchor = GridBagConstraints.EAST;
+		gbc_nombre.insets = new Insets(0, 0, 5, 5);
+		gbc_nombre.gridx = 1;
+		gbc_nombre.gridy = 1;
+		panel.add(nombre, gbc_nombre);
+
+		_nombre = new JTextField();
+		_nombre.setColumns(10);
+		GridBagConstraints gbc__nombre = new GridBagConstraints();
+		gbc__nombre.gridwidth = 2;
+		gbc__nombre.insets = new Insets(0, 0, 5, 0);
+		gbc__nombre.fill = GridBagConstraints.HORIZONTAL;
+		gbc__nombre.gridx = 3;
+		gbc__nombre.gridy = 1;
+		panel.add(_nombre, gbc__nombre);
+
+		JLabel isbn_1 = new JLabel("ISBN");
+		GridBagConstraints gbc_isbn_1 = new GridBagConstraints();
+		gbc_isbn_1.anchor = GridBagConstraints.EAST;
+		gbc_isbn_1.insets = new Insets(0, 0, 5, 5);
+		gbc_isbn_1.gridx = 1;
+		gbc_isbn_1.gridy = 2;
+		panel.add(isbn_1, gbc_isbn_1);
 
 		_isbn = new JTextField();
 		GridBagConstraints gbc__isbn = new GridBagConstraints();
@@ -93,17 +112,17 @@ public class Altacomic extends JFrame {
 		gbc__isbn.insets = new Insets(0, 0, 5, 0);
 		gbc__isbn.fill = GridBagConstraints.HORIZONTAL;
 		gbc__isbn.gridx = 3;
-		gbc__isbn.gridy = 0;
+		gbc__isbn.gridy = 2;
 		panel.add(_isbn, gbc__isbn);
 		_isbn.setColumns(10);
 
-		JLabel autor = new JLabel("Autor");
-		GridBagConstraints gbc_autor = new GridBagConstraints();
-		gbc_autor.anchor = GridBagConstraints.EAST;
-		gbc_autor.insets = new Insets(0, 0, 5, 5);
-		gbc_autor.gridx = 1;
-		gbc_autor.gridy = 1;
-		panel.add(autor, gbc_autor);
+		JLabel autor_1 = new JLabel("Autor");
+		GridBagConstraints gbc_autor_1 = new GridBagConstraints();
+		gbc_autor_1.anchor = GridBagConstraints.EAST;
+		gbc_autor_1.insets = new Insets(0, 0, 5, 5);
+		gbc_autor_1.gridx = 1;
+		gbc_autor_1.gridy = 3;
+		panel.add(autor_1, gbc_autor_1);
 
 		JComboBox _autor = new JComboBox();
 		GridBagConstraints gbc__autor = new GridBagConstraints();
@@ -111,69 +130,63 @@ public class Altacomic extends JFrame {
 		gbc__autor.insets = new Insets(0, 0, 5, 0);
 		gbc__autor.fill = GridBagConstraints.HORIZONTAL;
 		gbc__autor.gridx = 3;
-		gbc__autor.gridy = 1;
-
-		String consulta = "select * from autores";
-		ArrayList<String> listado = llenarLista(consulta);
+		gbc__autor.gridy = 3;
 		_autor.removeAllItems();
 		_autor.addItem("");
+		String consulta = "select * from autores";
+		ArrayList<String> listado = llenarLista(consulta);
 		for (int i = 0; i < listado.size(); i++) {
 			_autor.addItem(listado.get(i));
 		}
-
 		panel.add(_autor, gbc__autor);
 
-		JLabel editorial = new JLabel("Editorial");
-		GridBagConstraints gbc_editorial = new GridBagConstraints();
-		gbc_editorial.anchor = GridBagConstraints.EAST;
-		gbc_editorial.insets = new Insets(0, 0, 5, 5);
-		gbc_editorial.gridx = 1;
-		gbc_editorial.gridy = 2;
-		panel.add(editorial, gbc_editorial);
+		JLabel editorial_1 = new JLabel("Editorial");
+		GridBagConstraints gbc_editorial_1 = new GridBagConstraints();
+		gbc_editorial_1.anchor = GridBagConstraints.EAST;
+		gbc_editorial_1.insets = new Insets(0, 0, 5, 5);
+		gbc_editorial_1.gridx = 1;
+		gbc_editorial_1.gridy = 4;
+		panel.add(editorial_1, gbc_editorial_1);
 
 		JComboBox _editorial = new JComboBox();
 		GridBagConstraints gbc__editorial = new GridBagConstraints();
 		gbc__editorial.gridwidth = 2;
-		gbc__editorial.insets = new Insets(0, 0, 5, 5);
+		gbc__editorial.insets = new Insets(0, 0, 5, 0);
 		gbc__editorial.fill = GridBagConstraints.HORIZONTAL;
 		gbc__editorial.gridx = 3;
-		gbc__editorial.gridy = 2;
-
-		String consulta2 = "select * from editoriales";
-		ArrayList<String> listado2 = llenarLista(consulta2);
+		gbc__editorial.gridy = 4;
 		_editorial.removeAllItems();
 		_editorial.addItem("");
+		String consulta2 = "select * from editoriales";
+		ArrayList<String> listado2 = llenarLista(consulta2);
 		for (int i = 0; i < listado2.size(); i++) {
 			_editorial.addItem(listado2.get(i));
 		}
-
 		panel.add(_editorial, gbc__editorial);
 
-		JLabel FechaMantenimiento = new JLabel("Tipo");
-		GridBagConstraints gbc_FechaMantenimiento = new GridBagConstraints();
-		gbc_FechaMantenimiento.anchor = GridBagConstraints.EAST;
-		gbc_FechaMantenimiento.insets = new Insets(0, 0, 5, 5);
-		gbc_FechaMantenimiento.gridx = 1;
-		gbc_FechaMantenimiento.gridy = 3;
+		JLabel Tipo = new JLabel("Tipo");
+		GridBagConstraints gbc_Tipo = new GridBagConstraints();
+		gbc_Tipo.anchor = GridBagConstraints.EAST;
+		gbc_Tipo.insets = new Insets(0, 0, 5, 5);
+		gbc_Tipo.gridx = 1;
+		gbc_Tipo.gridy = 5;
 
-		panel.add(FechaMantenimiento, gbc_FechaMantenimiento);
+		panel.add(Tipo, gbc_Tipo);
 
 		JComboBox _tipo = new JComboBox();
 		GridBagConstraints gbc__tipo = new GridBagConstraints();
 		gbc__tipo.gridwidth = 2;
-		gbc__tipo.insets = new Insets(0, 0, 5, 5);
+		gbc__tipo.insets = new Insets(0, 0, 5, 0);
 		gbc__tipo.fill = GridBagConstraints.HORIZONTAL;
 		gbc__tipo.gridx = 3;
-		gbc__tipo.gridy = 3;
-
-		String consulta3 = "select * from tipos";
-		ArrayList<String> listado3 = llenarLista(consulta3);
+		gbc__tipo.gridy = 5;
 		_tipo.removeAllItems();
 		_tipo.addItem("");
+		String consulta3 = "select * from tipos";
+		ArrayList<String> listado3 = llenarLista(consulta3);
 		for (int i = 0; i < listado3.size(); i++) {
 			_tipo.addItem(listado3.get(i));
 		}
-
 		panel.add(_tipo, gbc__tipo);
 
 		JLabel subtipo = new JLabel("Subtipo");
@@ -181,59 +194,56 @@ public class Altacomic extends JFrame {
 		gbc_subtipo.anchor = GridBagConstraints.EAST;
 		gbc_subtipo.insets = new Insets(0, 0, 5, 5);
 		gbc_subtipo.gridx = 1;
-		gbc_subtipo.gridy = 4;
+		gbc_subtipo.gridy = 6;
 		panel.add(subtipo, gbc_subtipo);
 
 		JComboBox _subtipo = new JComboBox();
 		GridBagConstraints gbc__subtipo = new GridBagConstraints();
 		gbc__subtipo.gridwidth = 2;
-		gbc__subtipo.insets = new Insets(0, 0, 5, 5);
+		gbc__subtipo.insets = new Insets(0, 0, 5, 0);
 		gbc__subtipo.fill = GridBagConstraints.HORIZONTAL;
 		gbc__subtipo.gridx = 3;
-		gbc__subtipo.gridy = 4;
+		gbc__subtipo.gridy = 6;
 		panel.add(_subtipo, gbc__subtipo);
 
-		JLabel coleccion = new JLabel("Colecci\u00F3n");
-		GridBagConstraints gbc_coleccion = new GridBagConstraints();
-		gbc_coleccion.anchor = GridBagConstraints.EAST;
-		gbc_coleccion.insets = new Insets(0, 0, 5, 5);
-		gbc_coleccion.gridx = 1;
-		gbc_coleccion.gridy = 5;
-		panel.add(coleccion, gbc_coleccion);
+		JLabel coleccion_1 = new JLabel("Colecci\u00F3n");
+		GridBagConstraints gbc_coleccion_1 = new GridBagConstraints();
+		gbc_coleccion_1.anchor = GridBagConstraints.EAST;
+		gbc_coleccion_1.insets = new Insets(0, 0, 5, 5);
+		gbc_coleccion_1.gridx = 1;
+		gbc_coleccion_1.gridy = 7;
+		panel.add(coleccion_1, gbc_coleccion_1);
 
 		JComboBox _coleccion = new JComboBox();
 		GridBagConstraints gbc__coleccion = new GridBagConstraints();
 		gbc__coleccion.gridwidth = 2;
-		gbc__coleccion.insets = new Insets(0, 0, 5, 5);
+		gbc__coleccion.insets = new Insets(0, 0, 5, 0);
 		gbc__coleccion.fill = GridBagConstraints.HORIZONTAL;
 		gbc__coleccion.gridx = 3;
-		gbc__coleccion.gridy = 5;
-
-		String consulta4 = "select * from colecciones";
-		ArrayList<String> listado4 = llenarLista(consulta4);
+		gbc__coleccion.gridy = 7;
 		_coleccion.removeAllItems();
 		_coleccion.addItem("");
+		String consulta4 = "select * from colecciones";
+		ArrayList<String> listado4 = llenarLista(consulta4);
 		for (int i = 0; i < listado4.size(); i++) {
 			_coleccion.addItem(listado4.get(i));
 		}
-
 		panel.add(_coleccion, gbc__coleccion);
 
-		JLabel leido = new JLabel("Le\u00EDdo");
-		GridBagConstraints gbc_leido = new GridBagConstraints();
-		gbc_leido.anchor = GridBagConstraints.BASELINE_TRAILING;
-		gbc_leido.insets = new Insets(0, 0, 5, 5);
-		gbc_leido.gridx = 1;
-		gbc_leido.gridy = 6;
-		panel.add(leido, gbc_leido);
+		JLabel leido_1 = new JLabel("Le\u00EDdo");
+		GridBagConstraints gbc_leido_1 = new GridBagConstraints();
+		gbc_leido_1.anchor = GridBagConstraints.BASELINE_TRAILING;
+		gbc_leido_1.insets = new Insets(0, 0, 0, 5);
+		gbc_leido_1.gridx = 1;
+		gbc_leido_1.gridy = 8;
+		panel.add(leido_1, gbc_leido_1);
 
 		JComboBox _leido = new JComboBox();
 		GridBagConstraints gbc__leido = new GridBagConstraints();
 		gbc__leido.gridwidth = 2;
-		gbc__leido.insets = new Insets(0, 0, 5, 5);
 		gbc__leido.fill = GridBagConstraints.HORIZONTAL;
 		gbc__leido.gridx = 3;
-		gbc__leido.gridy = 6;
+		gbc__leido.gridy = 8;
 		_leido.addItem("si");
 		_leido.addItem("no");
 		panel.add(_leido, gbc__leido);
@@ -248,6 +258,7 @@ public class Altacomic extends JFrame {
 
 					PreparedStatement sentencia;
 					PreparedStatement sentencia2;
+					String nombre = _nombre.getText();
 					String isbn = _isbn.getText();
 					String autor = _autor.getSelectedItem().toString();
 					String editorial = _editorial.getSelectedItem().toString();
@@ -262,13 +273,14 @@ public class Altacomic extends JFrame {
 					}
 
 					sentencia = conexion.prepareStatement(
-							"insert into comics (isbn,autor,editorial,tipo,coleccion) values(?,?,?,?,?)");
+							"insert into comics (isbn,autor,editorial,tipo,coleccion,Nombre) values(?,?,?,?,?,?)");
+
 					sentencia.setString(1, isbn);
 					sentencia.setString(2, autor);
 					sentencia.setString(3, editorial);
 					sentencia.setString(4, tipo);
 					sentencia.setString(5, coleccion);
-
+					sentencia.setString(6, nombre);
 					sentencia.execute();
 
 					sentencia.close();
@@ -279,10 +291,7 @@ public class Altacomic extends JFrame {
 					String fechaFinal = objSDF.format(objDate);
 
 					Date fechaLeido = java.sql.Date.valueOf(fechaFinal);
-					System.out.println(isbn);
-					System.out.println(leido);
-					System.out.println(fechaLeido);
-					
+
 					sentencia2 = conexion.prepareStatement("insert into leidos (id_leido,leido,fecha) values(?,?,?)");
 					sentencia2.setString(1, isbn);
 					sentencia2.setInt(2, leido);
