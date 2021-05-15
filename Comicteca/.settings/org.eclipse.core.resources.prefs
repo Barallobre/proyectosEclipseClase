@@ -1,9 +1,5 @@
 eclipse.preferences.version=1
-encoding/Buscarpordepartamento.jrxml=UTF-8
 encoding/Departamentos.jrxml=UTF-8
 encoding/Mantenimientos.jrxml=UTF-8
-encoding/Mantenimientosentrefechas.jrxml=UTF-8
-encoding/Mantenimientospormatricula.jrxml=UTF-8
 encoding/TiposMantenimiento.jrxml=UTF-8
 encoding/Vehiculos.jrxml=UTF-8
-encoding/Vehiculospordepartamento.jrxml=UTF-8

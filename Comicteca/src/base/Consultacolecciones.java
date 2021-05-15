@@ -57,8 +57,7 @@ public class Consultacolecciones extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/sakila?serverTimezone=UTC",
-						"demo", "password");
+				Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
 				String rutaInforme = System.getProperty("user.dir") + System.getProperty("file.separator");
 				rutaInforme += "TiposMantenimiento.jasper";
 				JasperReport informeVacio;

@@ -75,7 +75,7 @@ public class Bajaautor extends JFrame {
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					Connection conexion = DriverManager.getConnection(
-							"jdbc:mysql://localhost/vehiculosayuntamiento2021?serverTimezone=UTC", "demo", "password");
+							"jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
 
 					PreparedStatement sentencia;
 

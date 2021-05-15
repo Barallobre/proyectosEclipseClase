@@ -30,11 +30,11 @@ import java.util.Date;
 public class Altaeditorial extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField tipoMantenimiento;
+	private JTextField nombre;
 
 
 	public Altaeditorial() {
-		setTitle("Alta tipo de mantenimiento");
+		setTitle("Alta editorial");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 105);
 		contentPane = new JPanel();
@@ -53,15 +53,15 @@ public class Altaeditorial extends JFrame {
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					Connection conexion = DriverManager.getConnection(
-							"jdbc:mysql://localhost/vehiculosayuntamiento2021?serverTimezone=UTC", "demo", "password");
+							"jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
 
 					PreparedStatement sentencia;
 					
-					String tipoMantenimiento1 = tipoMantenimiento.getText();
+					String editorial = nombre.getText();
 			
 
-					sentencia = conexion.prepareStatement("insert into tiposmantenimiento (TipoMantenimiento) values (?)");
-					sentencia.setString(1, tipoMantenimiento1);
+					sentencia = conexion.prepareStatement("insert into editoriales (editorial) values (?)");
+					sentencia.setString(1, editorial);
 					sentencia.execute();
 					
 					sentencia.close();
@@ -98,20 +98,20 @@ public class Altaeditorial extends JFrame {
 		gbl_panel_1.rowWeights = new double[]{0.0, Double.MIN_VALUE};
 		panel_1.setLayout(gbl_panel_1);
 		
-		JLabel lblNewLabel = new JLabel("Tipo de mantenimiento");
+		JLabel lblNewLabel = new JLabel("Nombre de editorial");
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.insets = new Insets(0, 0, 0, 5);
 		gbc_lblNewLabel.gridx = 2;
 		gbc_lblNewLabel.gridy = 0;
 		panel_1.add(lblNewLabel, gbc_lblNewLabel);
 		
-		tipoMantenimiento = new JTextField();
-		GridBagConstraints gbc_tipoMantenimiento = new GridBagConstraints();
-		gbc_tipoMantenimiento.fill = GridBagConstraints.HORIZONTAL;
-		gbc_tipoMantenimiento.gridx = 5;
-		gbc_tipoMantenimiento.gridy = 0;
-		panel_1.add(tipoMantenimiento, gbc_tipoMantenimiento);
-		tipoMantenimiento.setColumns(10);
+		nombre = new JTextField();
+		GridBagConstraints gbc_nombre = new GridBagConstraints();
+		gbc_nombre.fill = GridBagConstraints.HORIZONTAL;
+		gbc_nombre.gridx = 5;
+		gbc_nombre.gridy = 0;
+		panel_1.add(nombre, gbc_nombre);
+		nombre.setColumns(10);
 	}
 
 }

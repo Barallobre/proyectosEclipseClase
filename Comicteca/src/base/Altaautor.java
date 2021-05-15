@@ -94,13 +94,13 @@ public class Altaautor extends JFrame {
 					sentencia.close();
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Vehiculo añadido", "Vehículos ayuntamiento",
+					JOptionPane.showMessageDialog(null, "Autor añadido", "Comicteca",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (NumberFormatException e1) {
-					JOptionPane.showMessageDialog(null, "El número de departamento debe ser un número", "ERROR",
+					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
-					JOptionPane.showMessageDialog(null, "No existe ningún departamento con ese número.", "ERROR",
+					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (ClassNotFoundException e1) {
 					e1.printStackTrace();
