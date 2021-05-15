@@ -27,12 +27,12 @@ import java.util.Date;
  * @version 06-03-2020
  * 
  */
-public class Bajadepartamentos extends JFrame {
+public class Bajaautor extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField numeroDepartamento;
 
-	public Bajadepartamentos() {
+	public Bajaautor() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 103);
 		contentPane = new JPanel();
@@ -105,7 +105,7 @@ public class Bajadepartamentos extends JFrame {
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();

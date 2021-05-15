@@ -22,30 +22,36 @@ import net.sf.jasperreports.view.JasperViewer;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 /**
- *  Clase creada en window builder que nos permite listar en un informe los vehículos que hay en cada departamento
+ * Clase construida mediante window builder que nos permite generar un informe donde vemos los departamentos existentes
  * @author Cristian Barallobre
  * @version 06-03-2020
- *
+ * 
  */
-public class Consultapordepartamento extends JFrame {
+public class Consultaeditoriales extends JFrame {
 
 	private JPanel contentPane;
 
 
-	public Consultapordepartamento() {
-		setTitle("Consulta de veh\u00EDculos por departamento");
+	public Consultaeditoriales() {
+		setTitle("Consulta de todos los departamentos.");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 111);
+		setBounds(100, 100, 450, 105);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
 		JPanel panel = new JPanel();
-		contentPane.add(panel, BorderLayout.SOUTH);
+		contentPane.add(panel, BorderLayout.CENTER);
+		
+		JLabel lblNewLabel = new JLabel("Generar informe de los departamentos existentes.");
+		panel.add(lblNewLabel);
+		
+		JPanel panel_1 = new JPanel();
+		contentPane.add(panel_1, BorderLayout.SOUTH);
 		
 		JButton aceptar = new JButton("Aceptar");
-		panel.add(aceptar);
+		panel_1.add(aceptar);
 		aceptar.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
@@ -53,7 +59,7 @@ public class Consultapordepartamento extends JFrame {
 			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/sakila?serverTimezone=UTC",
 					"demo", "password");
 			String rutaInforme = System.getProperty("user.dir") + System.getProperty("file.separator");
-			rutaInforme += "Vehiculospordepartamento.jasper";
+			rutaInforme += "Departamentos.jasper";
 			JasperReport informeVacio;
 			
 				informeVacio = (JasperReport) JRLoader.loadObjectFromFile(rutaInforme);
@@ -75,11 +81,11 @@ public class Consultapordepartamento extends JFrame {
 		}
 		});
 		JButton cancelar = new JButton("Cancelar");
-		panel.add(cancelar);
+		panel_1.add(cancelar);
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();
@@ -87,11 +93,6 @@ public class Consultapordepartamento extends JFrame {
 				dispose();
 			}
 		});
-		JPanel panel_1 = new JPanel();
-		contentPane.add(panel_1, BorderLayout.CENTER);
-		
-		JLabel lblNewLabel = new JLabel("Generar informe de vehiculos por departamento.");
-		panel_1.add(lblNewLabel);
 	}
 
 }

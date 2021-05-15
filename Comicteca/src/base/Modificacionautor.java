@@ -28,14 +28,14 @@ import javax.swing.JTextField;
  * @version 06-03-2020
  * 
  */
-public class Modificaciondepartamentos extends JFrame {
+public class Modificacionautor extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField numeroDepartamento;
 	private JTextField nombreDepartamento;
 
 
-	public Modificaciondepartamentos() {
+	public Modificacionautor() {
 		setTitle("Modificaci\u00F3n de departamentos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 128);
@@ -127,7 +127,7 @@ public class Modificaciondepartamentos extends JFrame {
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();

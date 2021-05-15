@@ -27,7 +27,7 @@ import java.util.Date;
  * @version 06-03-2020
  * 
  */
-public class Altamantenimientos extends JFrame {
+public class Altacomic extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField numMantenimiento;
@@ -39,7 +39,7 @@ public class Altamantenimientos extends JFrame {
 	private JTextField ano;
 
 
-	public Altamantenimientos() {
+	public Altacomic() {
 		setTitle("Alta de mantenimientos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 234);
@@ -113,7 +113,7 @@ public class Altamantenimientos extends JFrame {
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();

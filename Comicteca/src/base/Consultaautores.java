@@ -22,20 +22,19 @@ import net.sf.jasperreports.view.JasperViewer;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 /**
- * Clase construida mediante window builder que nos permite generar un informe donde vemos los departamentos existentes
+ * Clase construida con windowbuilder que nos permite generar un informe que liste todos los vehículos existentes en la base de datos
  * @author Cristian Barallobre
  * @version 06-03-2020
  * 
  */
-public class Consultadepartamentos extends JFrame {
+public class Consultaautores extends JFrame {
 
 	private JPanel contentPane;
 
 
-	public Consultadepartamentos() {
-		setTitle("Consulta de todos los departamentos.");
+	public Consultaautores() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 105);
+		setBounds(100, 100, 450, 107);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -44,7 +43,7 @@ public class Consultadepartamentos extends JFrame {
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.CENTER);
 		
-		JLabel lblNewLabel = new JLabel("Generar informe de los departamentos existentes.");
+		JLabel lblNewLabel = new JLabel("Generar informe de los veh\u00EDculos registrados.");
 		panel.add(lblNewLabel);
 		
 		JPanel panel_1 = new JPanel();
@@ -59,7 +58,7 @@ public class Consultadepartamentos extends JFrame {
 			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/sakila?serverTimezone=UTC",
 					"demo", "password");
 			String rutaInforme = System.getProperty("user.dir") + System.getProperty("file.separator");
-			rutaInforme += "Departamentos.jasper";
+			rutaInforme += "Vehiculos.jasper";
 			JasperReport informeVacio;
 			
 				informeVacio = (JasperReport) JRLoader.loadObjectFromFile(rutaInforme);
@@ -85,7 +84,7 @@ public class Consultadepartamentos extends JFrame {
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();

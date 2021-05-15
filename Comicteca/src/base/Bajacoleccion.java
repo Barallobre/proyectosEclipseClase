@@ -27,13 +27,13 @@ import java.util.Date;
  * @version 06-03-2020
  * 
  */
-public class Bajatiposmantenimiento extends JFrame {
+public class Bajacoleccion extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField tipoMantenimiento;
 
 
-	public Bajatiposmantenimiento() {
+	public Bajacoleccion() {
 		setTitle("Baja de tipo de mantenimiento");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 102);
@@ -105,7 +105,7 @@ public class Bajatiposmantenimiento extends JFrame {
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();

@@ -28,14 +28,14 @@ import javax.swing.JTextField;
  * @version 06-03-2020
  * 
  */
-public class Altadepartamentos extends JFrame {
+public class Altacoleccion extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField numeroDepartamento;
 	private JTextField nombreDepartamento;
 
 
-	public Altadepartamentos() {
+	public Altacoleccion() {
 		setTitle("Alta de departamentos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 132);
@@ -94,7 +94,7 @@ public class Altadepartamentos extends JFrame {
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					Connection conexion = DriverManager.getConnection(
-							"jdbc:mysql://localhost/vehiculosayuntamiento2021?serverTimezone=UTC", "demo", "password");
+							"jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
 
 					PreparedStatement sentencia;
 					int numeroDepartamento1 = Integer.parseInt(numeroDepartamento.getText());
@@ -126,7 +126,7 @@ public class Altadepartamentos extends JFrame {
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();

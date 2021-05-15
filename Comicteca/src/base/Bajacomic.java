@@ -28,12 +28,12 @@ import java.util.Date;
  * @version 06-03-2020
  * 
  */
-public class Bajamantenimientos extends JFrame {
+public class Bajacomic extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField numMantenimiento;
 
-	public Bajamantenimientos() {
+	public Bajacomic() {
 		setTitle("Baja de un mantenimiento");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 138);
@@ -84,7 +84,7 @@ public class Bajamantenimientos extends JFrame {
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();

@@ -28,7 +28,7 @@ import javax.swing.JTextField;
  * @version 06-03-2020
  * 
  */
-public class Modificacionvehiculos extends JFrame {
+public class Modificacioncoleccion extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField matricula;
@@ -38,7 +38,7 @@ public class Modificacionvehiculos extends JFrame {
 	private JTextField marca;
 
 
-	public Modificacionvehiculos() {
+	public Modificacioncoleccion() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 208);
 		contentPane = new JPanel();
@@ -188,7 +188,7 @@ public class Modificacionvehiculos extends JFrame {
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();

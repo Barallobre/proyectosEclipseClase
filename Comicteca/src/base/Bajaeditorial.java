@@ -27,12 +27,12 @@ import java.util.Date;
  * @version 06-03-2020
  * 
  */
-public class Bajavehiculos extends JFrame {
+public class Bajaeditorial extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField matricula;
 
-	public Bajavehiculos() {
+	public Bajaeditorial() {
 		setTitle("Baja de veh\u00EDculos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 109);
@@ -82,7 +82,7 @@ public class Bajavehiculos extends JFrame {
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();

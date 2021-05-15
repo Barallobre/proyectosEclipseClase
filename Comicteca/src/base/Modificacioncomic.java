@@ -28,7 +28,7 @@ import javax.swing.JTextField;
  * @version 06-03-2020
  * 
  */
-public class Modificacionmantenimientos extends JFrame {
+public class Modificacioncomic extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField numMantenimiento;
@@ -38,7 +38,7 @@ public class Modificacionmantenimientos extends JFrame {
 	private JTextField tipoMantenimiento;
 
 
-	public Modificacionmantenimientos() {
+	public Modificacioncomic() {
 		setTitle("Modificaci\u00F3n de mantenimientos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 203);
@@ -103,7 +103,7 @@ public class Modificacionmantenimientos extends JFrame {
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Barrademenu frame = new Barrademenu();
+					VentanaPrincipal frame = new VentanaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();
