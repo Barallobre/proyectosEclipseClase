@@ -23,6 +23,7 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -111,7 +112,7 @@ public class Altacomic extends JFrame {
 		gbc__autor.fill = GridBagConstraints.HORIZONTAL;
 		gbc__autor.gridx = 3;
 		gbc__autor.gridy = 1;
-		
+
 		String consulta = "select * from autores";
 		ArrayList<String> listado = llenarLista(consulta);
 		_autor.removeAllItems();
@@ -119,7 +120,7 @@ public class Altacomic extends JFrame {
 		for (int i = 0; i < listado.size(); i++) {
 			_autor.addItem(listado.get(i));
 		}
-		
+
 		panel.add(_autor, gbc__autor);
 
 		JLabel editorial = new JLabel("Editorial");
@@ -137,7 +138,7 @@ public class Altacomic extends JFrame {
 		gbc__editorial.fill = GridBagConstraints.HORIZONTAL;
 		gbc__editorial.gridx = 3;
 		gbc__editorial.gridy = 2;
-		
+
 		String consulta2 = "select * from editoriales";
 		ArrayList<String> listado2 = llenarLista(consulta2);
 		_editorial.removeAllItems();
@@ -145,7 +146,7 @@ public class Altacomic extends JFrame {
 		for (int i = 0; i < listado2.size(); i++) {
 			_editorial.addItem(listado2.get(i));
 		}
-		
+
 		panel.add(_editorial, gbc__editorial);
 
 		JLabel FechaMantenimiento = new JLabel("Tipo");
@@ -164,8 +165,7 @@ public class Altacomic extends JFrame {
 		gbc__tipo.fill = GridBagConstraints.HORIZONTAL;
 		gbc__tipo.gridx = 3;
 		gbc__tipo.gridy = 3;
-		
-		
+
 		String consulta3 = "select * from tipos";
 		ArrayList<String> listado3 = llenarLista(consulta3);
 		_tipo.removeAllItems();
@@ -173,8 +173,7 @@ public class Altacomic extends JFrame {
 		for (int i = 0; i < listado3.size(); i++) {
 			_tipo.addItem(listado3.get(i));
 		}
-		
-		
+
 		panel.add(_tipo, gbc__tipo);
 
 		JLabel subtipo = new JLabel("Subtipo");
@@ -209,8 +208,7 @@ public class Altacomic extends JFrame {
 		gbc__coleccion.fill = GridBagConstraints.HORIZONTAL;
 		gbc__coleccion.gridx = 3;
 		gbc__coleccion.gridy = 5;
-		
-		
+
 		String consulta4 = "select * from colecciones";
 		ArrayList<String> listado4 = llenarLista(consulta4);
 		_coleccion.removeAllItems();
@@ -218,7 +216,7 @@ public class Altacomic extends JFrame {
 		for (int i = 0; i < listado4.size(); i++) {
 			_coleccion.addItem(listado4.get(i));
 		}
-		
+
 		panel.add(_coleccion, gbc__coleccion);
 
 		JLabel leido = new JLabel("Le\u00EDdo");
@@ -236,7 +234,8 @@ public class Altacomic extends JFrame {
 		gbc__leido.fill = GridBagConstraints.HORIZONTAL;
 		gbc__leido.gridx = 3;
 		gbc__leido.gridy = 6;
-		_leido.addItem(1);
+		_leido.addItem("si");
+		_leido.addItem("no");
 		panel.add(_leido, gbc__leido);
 
 		aceptar.addActionListener(new ActionListener() {
@@ -248,30 +247,52 @@ public class Altacomic extends JFrame {
 							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
 
 					PreparedStatement sentencia;
+					PreparedStatement sentencia2;
 					String isbn = _isbn.getText();
 					String autor = _autor.getSelectedItem().toString();
 					String editorial = _editorial.getSelectedItem().toString();
 					String tipo = _tipo.getSelectedItem().toString();
 					String coleccion = _coleccion.getSelectedItem().toString();
-					int leido = Integer.parseInt(_leido.getSelectedItem().toString());
+
+					int leido;
+					if ((_leido.getSelectedItem().toString()).equals("si")) {
+						leido = 1;
+					} else {
+						leido = 0;
+					}
 
 					sentencia = conexion.prepareStatement(
-							"insert into comics (isbn,autor,editorial,tipo,coleccion,id_leido) values(?,?,?,?,?,?)");
+							"insert into comics (isbn,autor,editorial,tipo,coleccion) values(?,?,?,?,?)");
 					sentencia.setString(1, isbn);
 					sentencia.setString(2, autor);
 					sentencia.setString(3, editorial);
 					sentencia.setString(4, tipo);
 					sentencia.setString(5, coleccion);
-					sentencia.setInt(6, leido);
 
 					sentencia.execute();
 
 					sentencia.close();
 
+					Date objDate = new Date();
+					String strDateFormat = "yyyy-MM-dd";
+					SimpleDateFormat objSDF = new SimpleDateFormat(strDateFormat);
+					String fechaFinal = objSDF.format(objDate);
+
+					Date fechaLeido = java.sql.Date.valueOf(fechaFinal);
+					System.out.println(isbn);
+					System.out.println(leido);
+					System.out.println(fechaLeido);
+					
+					sentencia2 = conexion.prepareStatement("insert into leidos (id_leido,leido,fecha) values(?,?,?)");
+					sentencia2.setString(1, isbn);
+					sentencia2.setInt(2, leido);
+					sentencia2.setDate(3, (java.sql.Date) fechaLeido);
+					sentencia2.execute();
+					sentencia2.close();
+
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Mantenimiento añadido", "Vehículos ayuntamiento",
-							JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Comic añadido", "Comicteca", JOptionPane.PLAIN_MESSAGE);
 				} catch (NumberFormatException e1) {
 					JOptionPane.showMessageDialog(null, "Error introduciendo parámetros", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
