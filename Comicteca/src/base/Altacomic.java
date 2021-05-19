@@ -204,6 +204,11 @@ public class Altacomic extends JFrame {
 		gbc__subtipo.fill = GridBagConstraints.HORIZONTAL;
 		gbc__subtipo.gridx = 3;
 		gbc__subtipo.gridy = 6;
+		String consulta5 = "select subtipo from subtipos";
+		ArrayList<String> listado5 = llenarLista(consulta5);
+		for (int i = 0; i < listado5.size(); i++) {
+			_subtipo.addItem(listado5.get(i));
+		}
 		panel.add(_subtipo, gbc__subtipo);
 
 		JLabel coleccion_1 = new JLabel("Colecci\u00F3n");
@@ -264,7 +269,7 @@ public class Altacomic extends JFrame {
 					String editorial = _editorial.getSelectedItem().toString();
 					String tipo = _tipo.getSelectedItem().toString();
 					String coleccion = _coleccion.getSelectedItem().toString();
-
+					String subtipo = _subtipo.getSelectedItem().toString();
 					int leido;
 					if ((_leido.getSelectedItem().toString()).equals("si")) {
 						leido = 1;
@@ -273,7 +278,7 @@ public class Altacomic extends JFrame {
 					}
 
 					sentencia = conexion.prepareStatement(
-							"insert into comics (isbn,autor,editorial,tipo,coleccion,Nombre) values(?,?,?,?,?,?)");
+							"insert into comics (isbn,autor,editorial,tipo,coleccion,Nombre,subtipo) values(?,?,?,?,?,?,?)");
 
 					sentencia.setString(1, isbn);
 					sentencia.setString(2, autor);
@@ -281,6 +286,7 @@ public class Altacomic extends JFrame {
 					sentencia.setString(4, tipo);
 					sentencia.setString(5, coleccion);
 					sentencia.setString(6, nombre);
+					sentencia.setString(7, subtipo);
 					sentencia.execute();
 
 					sentencia.close();

@@ -24,27 +24,30 @@ import javax.swing.ImageIcon;
  * las funciones del programa mediante una barra de menús
  * 
  * @author Cristian Barallobre
- * @version 06-03-2020
+ * @version 19-05-2021
  * 
  */
 public class VentanaPrincipal extends JFrame {
 
 	JPanel panel;
 	JMenuItem altacomic, bajacomic, modificacioncomic, consultacomics;
-	JMenuItem altacoleccion, bajacoleccion, modificacioncoleccion;
-	JMenuItem altaeditorial, bajaeditorial, modificacioneditorial;
-	JMenuItem altaautor, bajaautor, modificacionautor;
+	JMenuItem altacoleccion, bajacoleccion;
+	JMenuItem altaeditorial, bajaeditorial;
+	JMenuItem altaautor, bajaautor;
 	JMenuItem consultaleidos;
+	JMenuItem altatipos;
+	JMenuItem bajatipos;
+	JMenuItem altasubtipos;
+	JMenuItem bajasubtipos;
+
 	private JLabel lblNewLabel;
 	private JMenuItem ayuda;
 	private JMenu Leidos;
 	private JMenuItem consultanoleidos_;
 	private JMenuItem consultaleidos_;
 	private JMenu Tipos;
-	private JMenuItem altamantenimientos_1;
-	private JMenuItem bajamantenimientos_1;
-	private JMenuItem modificacionmantenimientos_1;
 	private JMenuItem agregaraleidos;
+	private JMenu subtipos;
 
 	public VentanaPrincipal() {
 		setTitle("COMICTECA");
@@ -77,9 +80,6 @@ public class VentanaPrincipal extends JFrame {
 
 		bajaautor = new JMenuItem("Baja");
 		Autores.add(bajaautor);
-
-		modificacionautor = new JMenuItem("Modificacion");
-		Autores.add(modificacionautor);
 //------------------------------------------------------------------------------
 		JMenu Colecciones = new JMenu("Colecciones");
 		menuBar.add(Colecciones);
@@ -89,9 +89,6 @@ public class VentanaPrincipal extends JFrame {
 
 		bajacoleccion = new JMenuItem("Baja");
 		Colecciones.add(bajacoleccion);
-
-		modificacioncoleccion = new JMenuItem("Modificacion");
-		Colecciones.add(modificacioncoleccion);
 //------------------------------------------------------------------------------
 		JMenu Editoriales = new JMenu("Editoriales");
 		menuBar.add(Editoriales);
@@ -101,21 +98,24 @@ public class VentanaPrincipal extends JFrame {
 
 		bajaeditorial = new JMenuItem("Baja");
 		Editoriales.add(bajaeditorial);
-
-		modificacioneditorial = new JMenuItem("Modificacion");
-		Editoriales.add(modificacioneditorial);
 //------------------------------------------------------------------------------
 		Tipos = new JMenu("Tipos");
 		menuBar.add(Tipos);
 
-		altamantenimientos_1 = new JMenuItem("Alta");
-		Tipos.add(altamantenimientos_1);
+		altatipos = new JMenuItem("Alta");
+		Tipos.add(altatipos);
 
-		bajamantenimientos_1 = new JMenuItem("Baja");
-		Tipos.add(bajamantenimientos_1);
+		bajatipos = new JMenuItem("Baja");
+		Tipos.add(bajatipos);
+//------------------------------------------------------------------------------	
+		subtipos = new JMenu("Subtipos");
+		menuBar.add(subtipos);
 
-		modificacionmantenimientos_1 = new JMenuItem("Modificacion");
-		Tipos.add(modificacionmantenimientos_1);
+		altasubtipos = new JMenuItem("Alta");
+		subtipos.add(altasubtipos);
+
+		bajasubtipos = new JMenuItem("Baja");
+		subtipos.add(bajasubtipos);
 //------------------------------------------------------------------------------
 		Leidos = new JMenu("Leidos");
 		menuBar.add(Leidos);
@@ -217,18 +217,7 @@ public class VentanaPrincipal extends JFrame {
 		bajaautor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Bajaeditorial frame = new Bajaeditorial();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
-		modificacionautor.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Modificacioncoleccion frame = new Modificacioncoleccion();
+					Bajaautor frame = new Bajaautor();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();
@@ -252,18 +241,7 @@ public class VentanaPrincipal extends JFrame {
 		bajaeditorial.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Bajacoleccion frame = new Bajacoleccion();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
-		modificacioneditorial.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Modificacioneditorial frame = new Modificacioneditorial();
+					Bajaeditorial frame = new Bajaeditorial();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();
@@ -295,10 +273,11 @@ public class VentanaPrincipal extends JFrame {
 				dispose();
 			}
 		});
-		modificacioncoleccion.addActionListener(new ActionListener() {
+// ------------------------------------------------------------------------------
+		altatipos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Modificacionautor frame = new Modificacionautor();
+					Altatipos frame = new Altatipos();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();
@@ -306,7 +285,40 @@ public class VentanaPrincipal extends JFrame {
 				dispose();
 			}
 		});
-
+		bajatipos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Bajatipos frame = new Bajatipos();
+					frame.setVisible(true);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				dispose();
+			}
+		});
+// ------------------------------------------------------------------------------
+		altasubtipos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Altasubtipos frame = new Altasubtipos();
+					frame.setVisible(true);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				dispose();
+			}
+		});
+		bajasubtipos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Bajasubtipos frame = new Bajasubtipos();
+					frame.setVisible(true);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				dispose();
+			}
+		});
 //------------------------------------------------------------------------------
 		consultaleidos_.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

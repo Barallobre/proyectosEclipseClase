@@ -36,12 +36,12 @@ import java.util.Date;
  * @version 19-05-2021
  * 
  */
-public class Bajaautor extends JFrame {
+public class Bajasubtipos extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField numeroDepartamento;
 
-	public Bajaautor() throws ClassNotFoundException {
+	public Bajasubtipos() throws ClassNotFoundException {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 103);
 		contentPane = new JPanel();

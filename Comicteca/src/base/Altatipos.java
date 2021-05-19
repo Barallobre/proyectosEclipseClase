@@ -24,19 +24,19 @@ import java.util.Date;
 import javax.swing.JTextField;
 
 /**
- * Clase construida con windowbuilder que nos permite dar de alta un autor
- * nuevo en la base de datos
+ * Clase construida con windowbuilder que nos permite dar de alta un autor nuevo
+ * en la base de datos
  * 
  * @author Cristian Barallobre
  * @version 19-05-2021
  * 
  */
-public class Altaautor extends JFrame {
+public class Altatipos extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField nombre;
 
-	public Altaautor() {
+	public Altatipos() {
 		setTitle("Alta autor");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 446, 174);
@@ -81,27 +81,24 @@ public class Altaautor extends JFrame {
 
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager.getConnection(
-							"jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					Connection conexion = DriverManager
+							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
 
 					PreparedStatement sentencia;
-					String Nombre_autor = nombre.getText();
+					String tipo = nombre.getText();
 
-					sentencia = conexion.prepareStatement("insert into autores (autor) values(?)");
-					sentencia.setString(1, Nombre_autor);
+					sentencia = conexion.prepareStatement("insert into tipos (tipo) values(?)");
+					sentencia.setString(1, tipo);
 					sentencia.execute();
 
 					sentencia.close();
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Autor añadido", "Comicteca",
-							JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Tipo añadido", "Comicteca", JOptionPane.PLAIN_MESSAGE);
 				} catch (NumberFormatException e1) {
-					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR",
-							JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR", JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
-					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR",
-							JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR", JOptionPane.PLAIN_MESSAGE);
 				} catch (ClassNotFoundException e1) {
 					e1.printStackTrace();
 				}
