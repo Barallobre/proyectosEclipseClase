@@ -11,6 +11,24 @@ import java.io.File;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import funciones.Agregaraleidos;
+import funciones.Altaautor;
+import funciones.Altacoleccion;
+import funciones.Altacomic;
+import funciones.Altaeditorial;
+import funciones.Altasubtipos;
+import funciones.Altatipos;
+import funciones.Bajaautor;
+import funciones.Bajacomic;
+import funciones.Bajaeditorial;
+import funciones.Bajasubtipos;
+import funciones.Bajatipos;
+import funciones.Consultacomics;
+import funciones.Consultaleidos;
+import funciones.Consultanoleidos;
+import funciones.Modificacioncomic;
+
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;

@@ -1,4 +1,4 @@
-package base;
+package funciones;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -6,15 +6,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Date;
 
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import base.VentanaPrincipal;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -23,36 +21,36 @@ import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 
 import javax.swing.JButton;
-import javax.swing.JTextField;
 import javax.swing.JLabel;
 /**
- * Clase que nos permite listar en un informe los comics existentes dentro de la base de datos
+ * Clase construida mediante window builder que nos permite generar un informe donde vemos los departamentos existentes
  * @author Cristian Barallobre
- * @version 19-05-2021
+ * @version 06-03-2020
  * 
  */
-public class Consultacomics extends JFrame {
+public class Consultanoleidos extends JFrame {
 
 	private JPanel contentPane;
 
-	public Consultacomics() {
-		setTitle("Consulta de los comics");
+
+	public Consultanoleidos() {
+		setTitle("Consulta de todos los departamentos.");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 104);
+		setBounds(100, 100, 450, 105);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
-
+		
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.CENTER);
 		
-		JLabel lblNewLabel = new JLabel("Generar informe con todos los comics guardados");
+		JLabel lblNewLabel = new JLabel("Generar informe de los comics leídos.");
 		panel.add(lblNewLabel);
-
+		
 		JPanel panel_1 = new JPanel();
 		contentPane.add(panel_1, BorderLayout.SOUTH);
-
+		
 		JButton aceptar = new JButton("Aceptar");
 		panel_1.add(aceptar);
 		aceptar.addActionListener(new ActionListener() {
@@ -61,7 +59,7 @@ public class Consultacomics extends JFrame {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
 			String rutaInforme = System.getProperty("user.dir") + System.getProperty("file.separator");
-			rutaInforme += "Comics.jasper";
+			rutaInforme += "Noleidos.jasper";
 			JasperReport informeVacio;
 			
 				informeVacio = (JasperReport) JRLoader.loadObjectFromFile(rutaInforme);
@@ -82,7 +80,6 @@ public class Consultacomics extends JFrame {
 			}
 		}
 		});
-
 		JButton cancelar = new JButton("Cancelar");
 		panel_1.add(cancelar);
 		cancelar.addActionListener(new ActionListener() {

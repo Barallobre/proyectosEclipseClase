@@ -1,4 +1,4 @@
-package base;
+package funciones;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import base.VentanaPrincipal;
+
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
@@ -37,13 +40,13 @@ import javax.swing.JComboBox;
  * @version 19-05-2021
  * 
  */
-public class Altacomic extends JFrame {
+public class Modificacioncomic extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField _isbn;
 	private JTextField _nombre;
 
-	public Altacomic() throws ClassNotFoundException {
+	public Modificacioncomic() throws ClassNotFoundException {
 		setTitle("Alta de comics");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 453, 348);
@@ -105,16 +108,23 @@ public class Altacomic extends JFrame {
 		gbc_isbn_1.gridx = 1;
 		gbc_isbn_1.gridy = 2;
 		panel.add(isbn_1, gbc_isbn_1);
+		
 
-		_isbn = new JTextField();
-		GridBagConstraints gbc__isbn = new GridBagConstraints();
-		gbc__isbn.gridwidth = 2;
-		gbc__isbn.insets = new Insets(0, 0, 5, 0);
-		gbc__isbn.fill = GridBagConstraints.HORIZONTAL;
-		gbc__isbn.gridx = 3;
-		gbc__isbn.gridy = 2;
-		panel.add(_isbn, gbc__isbn);
-		_isbn.setColumns(10);
+		JComboBox _isbn_1 = new JComboBox();
+		GridBagConstraints gbc__isbn_1 = new GridBagConstraints();
+		gbc__isbn_1.gridwidth = 2;
+		gbc__isbn_1.insets = new Insets(0, 0, 5, 0);
+		gbc__isbn_1.fill = GridBagConstraints.HORIZONTAL;
+		gbc__isbn_1.gridx = 3;
+		gbc__isbn_1.gridy = 2;
+		_isbn_1.removeAllItems();
+		_isbn_1.addItem("");
+		String consulta0 = "select isbn from comics";
+		ArrayList<String> listado0 = llenarLista(consulta0);
+		for (int i = 0; i < listado0.size(); i++) {
+			_isbn_1.addItem(listado0.get(i));
+		}
+		panel.add(_isbn_1, gbc__isbn_1);
 
 		JLabel autor_1 = new JLabel("Autor");
 		GridBagConstraints gbc_autor_1 = new GridBagConstraints();
@@ -204,11 +214,6 @@ public class Altacomic extends JFrame {
 		gbc__subtipo.fill = GridBagConstraints.HORIZONTAL;
 		gbc__subtipo.gridx = 3;
 		gbc__subtipo.gridy = 6;
-		String consulta5 = "select subtipo from subtipos";
-		ArrayList<String> listado5 = llenarLista(consulta5);
-		for (int i = 0; i < listado5.size(); i++) {
-			_subtipo.addItem(listado5.get(i));
-		}
 		panel.add(_subtipo, gbc__subtipo);
 
 		JLabel coleccion_1 = new JLabel("Colecci\u00F3n");
@@ -264,12 +269,12 @@ public class Altacomic extends JFrame {
 					PreparedStatement sentencia;
 					PreparedStatement sentencia2;
 					String nombre = _nombre.getText();
-					String isbn = _isbn.getText();
+					String isbn = _isbn_1.getSelectedItem().toString();
 					String autor = _autor.getSelectedItem().toString();
 					String editorial = _editorial.getSelectedItem().toString();
 					String tipo = _tipo.getSelectedItem().toString();
 					String coleccion = _coleccion.getSelectedItem().toString();
-					String subtipo = _subtipo.getSelectedItem().toString();
+
 					int leido;
 					if ((_leido.getSelectedItem().toString()).equals("si")) {
 						leido = 1;
@@ -278,15 +283,14 @@ public class Altacomic extends JFrame {
 					}
 
 					sentencia = conexion.prepareStatement(
-							"insert into comics (isbn,autor,editorial,tipo,coleccion,Nombre,subtipo) values(?,?,?,?,?,?,?)");
+							"update comics set autor=?,editorial=?,tipo=?,coleccion=?,nombre=? where isbn=?");
 
-					sentencia.setString(1, isbn);
-					sentencia.setString(2, autor);
-					sentencia.setString(3, editorial);
-					sentencia.setString(4, tipo);
-					sentencia.setString(5, coleccion);
-					sentencia.setString(6, nombre);
-					sentencia.setString(7, subtipo);
+					sentencia.setString(6, isbn);
+					sentencia.setString(1, autor);
+					sentencia.setString(2, editorial);
+					sentencia.setString(3, tipo);
+					sentencia.setString(4, coleccion);
+					sentencia.setString(5, nombre);
 					sentencia.execute();
 
 					sentencia.close();
@@ -298,10 +302,10 @@ public class Altacomic extends JFrame {
 
 					Date fechaLeido = java.sql.Date.valueOf(fechaFinal);
 
-					sentencia2 = conexion.prepareStatement("insert into leidos (isbn,leido,fecha) values(?,?,?)");
-					sentencia2.setString(1, isbn);
-					sentencia2.setInt(2, leido);
-					sentencia2.setDate(3, (java.sql.Date) fechaLeido);
+					sentencia2 = conexion.prepareStatement("update leidos set leido=?,fecha=? where id_leido=?");
+					sentencia2.setString(3, isbn);
+					sentencia2.setInt(1, leido);
+					sentencia2.setDate(2, (java.sql.Date) fechaLeido);
 					sentencia2.execute();
 					sentencia2.close();
 
@@ -312,10 +316,10 @@ public class Altacomic extends JFrame {
 					JOptionPane.showMessageDialog(null, "Error introduciendo parámetros", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
-					JOptionPane.showMessageDialog(null, "Ha introducido mal algún dato en base de datos.", "ERROR",
+					JOptionPane.showMessageDialog(null, "Ha introducido mal algún dato.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (IllegalArgumentException e1) {
-					JOptionPane.showMessageDialog(null, "Ha introducido  algún dato erroneo.", "ERROR",
+					JOptionPane.showMessageDialog(null, "Ha introducido mal algún dato.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (ClassNotFoundException e1) {
 					JOptionPane.showMessageDialog(null, "Clase no encontrada", null, JOptionPane.PLAIN_MESSAGE);

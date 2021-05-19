@@ -1,4 +1,4 @@
-package base;
+package funciones;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -6,9 +6,13 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import base.VentanaPrincipal;
+
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 
+import java.awt.FlowLayout;
 import java.awt.GridBagLayout;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -29,19 +33,19 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Clase construida con windowbuilder que nos permite dar de baja un autor en la
+ * Clase construida con windowbuilder que nos permite dar de baja un comic en la
  * base de datos
  * 
  * @author Cristian Barallobre
  * @version 19-05-2021
  * 
  */
-public class Bajatipos extends JFrame {
+public class Bajacomic extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField numeroDepartamento;
+	private JTextField numMantenimiento;
 
-	public Bajatipos() throws ClassNotFoundException {
+	public Bajacomic() throws ClassNotFoundException {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 103);
 		contentPane = new JPanel();
@@ -58,7 +62,7 @@ public class Bajatipos extends JFrame {
 		gbl_panel.rowWeights = new double[] { 0.0, Double.MIN_VALUE };
 		panel.setLayout(gbl_panel);
 
-		JLabel autor_1 = new JLabel("Autor");
+		JLabel autor_1 = new JLabel("Título");
 		GridBagConstraints gbc_autor_1 = new GridBagConstraints();
 		gbc_autor_1.anchor = GridBagConstraints.EAST;
 		gbc_autor_1.insets = new Insets(0, 0, 5, 5);
@@ -66,21 +70,21 @@ public class Bajatipos extends JFrame {
 		gbc_autor_1.gridy = 3;
 		panel.add(autor_1, gbc_autor_1);
 
-		JComboBox _autor = new JComboBox();
+		JComboBox _titulo = new JComboBox();
 		GridBagConstraints gbc__autor = new GridBagConstraints();
 		gbc__autor.gridwidth = 2;
 		gbc__autor.insets = new Insets(0, 0, 5, 0);
 		gbc__autor.fill = GridBagConstraints.HORIZONTAL;
 		gbc__autor.gridx = 3;
 		gbc__autor.gridy = 3;
-		_autor.removeAllItems();
-		_autor.addItem("");
-		String consulta = "select * from autores";
+		_titulo.removeAllItems();
+		_titulo.addItem("");
+		String consulta = "select Nombre from comics";
 		ArrayList<String> listado = llenarLista(consulta);
 		for (int i = 0; i < listado.size(); i++) {
-			_autor.addItem(listado.get(i));
+			_titulo.addItem(listado.get(i));
 		}
-		panel.add(_autor, gbc__autor);
+		panel.add(_titulo, gbc__autor);
 
 		JButton aceptar = new JButton("Aceptar");
 		panel.add(aceptar);
@@ -93,25 +97,33 @@ public class Bajatipos extends JFrame {
 							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
 
 					PreparedStatement sentencia;
+					PreparedStatement sentencia2;
+					String titulo = _titulo.getSelectedItem().toString();
 
-					String autor = _autor.getSelectedItem().toString();
-					sentencia = conexion.prepareStatement("delete from autores where autor=?");
-					sentencia.setString(1, autor);
+					sentencia = conexion
+							.prepareStatement("delete from leidos where isbn=(select isbn from comics where Nombre=?)");
+					sentencia.setString(1, titulo);
 					sentencia.execute();
 
 					sentencia.close();
+
+					sentencia2 = conexion.prepareStatement("delete from comics where Nombre=?");
+					sentencia2.setString(1, titulo);
+					sentencia2.execute();
+
+					sentencia2.close();
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Autor borrado", "Comicteca", JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Comic borrado", "Comicteca", JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
-					JOptionPane.showMessageDialog(null, "Error al borrar el autor.", "ERROR",
+					JOptionPane.showMessageDialog(null, "Error al borrar el comic.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (ClassNotFoundException e1) {
 					e1.printStackTrace();
 				}
 			}
 		});
-		JButton cancelar = new JButton("Cancelar");
+		JButton cancelar = new JButton("Atrás");
 		panel.add(cancelar);
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

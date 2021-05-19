@@ -1,4 +1,4 @@
-package base;
+package funciones;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import base.VentanaPrincipal;
+
 import java.awt.GridBagLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -24,19 +27,19 @@ import java.util.Date;
 import javax.swing.JTextField;
 
 /**
- * Clase construida con windowbuilder que nos permite dar de alta un autor nuevo
- * en la base de datos
+ * Clase construida con windowbuilder que nos permite dar de alta un autor
+ * nuevo en la base de datos
  * 
  * @author Cristian Barallobre
  * @version 19-05-2021
  * 
  */
-public class Altatipos extends JFrame {
+public class Altaautor extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField nombre;
 
-	public Altatipos() {
+	public Altaautor() {
 		setTitle("Alta autor");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 446, 174);
@@ -81,24 +84,27 @@ public class Altatipos extends JFrame {
 
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager
-							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					Connection conexion = DriverManager.getConnection(
+							"jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
 
 					PreparedStatement sentencia;
-					String tipo = nombre.getText();
+					String Nombre_autor = nombre.getText();
 
-					sentencia = conexion.prepareStatement("insert into tipos (tipo) values(?)");
-					sentencia.setString(1, tipo);
+					sentencia = conexion.prepareStatement("insert into autores (autor) values(?)");
+					sentencia.setString(1, Nombre_autor);
 					sentencia.execute();
 
 					sentencia.close();
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Tipo añadido", "Comicteca", JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Autor añadido", "Comicteca",
+							JOptionPane.PLAIN_MESSAGE);
 				} catch (NumberFormatException e1) {
-					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR", JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR",
+							JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
-					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR", JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR",
+							JOptionPane.PLAIN_MESSAGE);
 				} catch (ClassNotFoundException e1) {
 					e1.printStackTrace();
 				}

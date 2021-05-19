@@ -1,4 +1,4 @@
-package base;
+package funciones;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import base.VentanaPrincipal;
+
 import javax.swing.JButton;
 import java.awt.GridBagLayout;
 import javax.swing.JLabel;
@@ -21,24 +24,21 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Date;
-
 /**
- * Clase construida con windowbuilder que nos permite dar de alta editoriales en
- * la base de datos
- * 
+ * Clase construida con windowbuilder que nos permite dar de baja un vehículo de la base de datos
  * @author Cristian Barallobre
- * @version 19-05-2020
+ * @version 06-03-2020
  * 
  */
-public class Altaeditorial extends JFrame {
+public class Bajaeditorial extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField nombre;
+	private JTextField matricula;
 
-	public Altaeditorial() {
-		setTitle("Alta editorial");
+	public Bajaeditorial() {
+		setTitle("Baja de veh\u00EDculos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 105);
+		setBounds(100, 100, 450, 109);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -54,28 +54,33 @@ public class Altaeditorial extends JFrame {
 
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager
-							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					Connection conexion = DriverManager.getConnection(
+							"jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
 
 					PreparedStatement sentencia;
+					
+					String matricula1 = matricula.getText();
 
-					String editorial = nombre.getText();
-
-					sentencia = conexion.prepareStatement("insert into editoriales (editorial) values (?)");
-					sentencia.setString(1, editorial);
+					sentencia = conexion.prepareStatement("delete from vehiculos where matricula=?");
+					sentencia.setString(1, matricula1);
 					sentencia.execute();
 
 					sentencia.close();
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Editorial añadida", "Comicteca", JOptionPane.PLAIN_MESSAGE);
-				} catch (SQLException | ClassNotFoundException e1) {
-					JOptionPane.showMessageDialog(null, "??", "ERROR", JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Vehículo borrado", "Vehículos ayuntamiento",
+							JOptionPane.PLAIN_MESSAGE);
+				} catch (SQLException e1) {
+					JOptionPane.showMessageDialog(null,
+							"No se puede borrar este vehículo, porque tiene mantenimientos asociados."
+									+ "\nBorre primero los mantenimientos antes de proceder al borrado del vehículo.",
+							"ERROR", JOptionPane.ERROR_MESSAGE);
+				} catch (ClassNotFoundException e1) {
+					e1.printStackTrace();
 				}
-
 			}
 		});
-		JButton cancelar = new JButton("Atrás");
+		JButton cancelar = new JButton("Cancelar");
 		panel.add(cancelar);
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -97,20 +102,20 @@ public class Altaeditorial extends JFrame {
 		gbl_panel_1.rowWeights = new double[] { 0.0, Double.MIN_VALUE };
 		panel_1.setLayout(gbl_panel_1);
 
-		JLabel lblNewLabel = new JLabel("Nombre de editorial");
+		JLabel lblNewLabel = new JLabel("Matr\u00EDcula");
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.insets = new Insets(0, 0, 0, 5);
 		gbc_lblNewLabel.gridx = 2;
 		gbc_lblNewLabel.gridy = 0;
 		panel_1.add(lblNewLabel, gbc_lblNewLabel);
 
-		nombre = new JTextField();
-		GridBagConstraints gbc_nombre = new GridBagConstraints();
-		gbc_nombre.fill = GridBagConstraints.HORIZONTAL;
-		gbc_nombre.gridx = 5;
-		gbc_nombre.gridy = 0;
-		panel_1.add(nombre, gbc_nombre);
-		nombre.setColumns(10);
+		matricula = new JTextField();
+		GridBagConstraints gbc_matricula = new GridBagConstraints();
+		gbc_matricula.fill = GridBagConstraints.HORIZONTAL;
+		gbc_matricula.gridx = 5;
+		gbc_matricula.gridy = 0;
+		panel_1.add(matricula, gbc_matricula);
+		matricula.setColumns(10);
 	}
 
 }
