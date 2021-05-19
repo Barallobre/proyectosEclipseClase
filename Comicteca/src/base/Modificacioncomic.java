@@ -280,14 +280,14 @@ public class Modificacioncomic extends JFrame {
 					}
 
 					sentencia = conexion.prepareStatement(
-							"update mantenimientos set Matricula=?,TipoMantenimiento=?,FechaMantenimiento=?,Coste=? where isbn=?");
+							"update comics set autor=?,editorial=?,tipo=?,coleccion=?,nombre=? where isbn=?");
 
-					sentencia.setString(1, isbn);
-					sentencia.setString(2, autor);
-					sentencia.setString(3, editorial);
-					sentencia.setString(4, tipo);
-					sentencia.setString(5, coleccion);
-					sentencia.setString(6, nombre);
+					sentencia.setString(6, isbn);
+					sentencia.setString(1, autor);
+					sentencia.setString(2, editorial);
+					sentencia.setString(3, tipo);
+					sentencia.setString(4, coleccion);
+					sentencia.setString(5, nombre);
 					sentencia.execute();
 
 					sentencia.close();
@@ -299,10 +299,10 @@ public class Modificacioncomic extends JFrame {
 
 					Date fechaLeido = java.sql.Date.valueOf(fechaFinal);
 
-					sentencia2 = conexion.prepareStatement("insert into leidos (id_leido,leido,fecha) values(?,?,?)");
-					sentencia2.setString(1, isbn);
-					sentencia2.setInt(2, leido);
-					sentencia2.setDate(3, (java.sql.Date) fechaLeido);
+					sentencia2 = conexion.prepareStatement("update leidos set leido=?,fecha=? where id_leido=?");
+					sentencia2.setString(3, isbn);
+					sentencia2.setInt(1, leido);
+					sentencia2.setDate(2, (java.sql.Date) fechaLeido);
 					sentencia2.execute();
 					sentencia2.close();
 
