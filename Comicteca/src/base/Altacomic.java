@@ -30,8 +30,8 @@ import java.util.Date;
 import javax.swing.JComboBox;
 
 /**
- * Clase construida con windowbuilder que nos permite dar de alta un nuevo
- * comic en la base de datos
+ * Clase construida con windowbuilder que nos permite dar de alta un nuevo comic
+ * en la base de datos
  * 
  * @author Cristian Barallobre
  * @version 19-05-2021
@@ -298,7 +298,7 @@ public class Altacomic extends JFrame {
 
 					Date fechaLeido = java.sql.Date.valueOf(fechaFinal);
 
-					sentencia2 = conexion.prepareStatement("insert into leidos (id_leido,leido,fecha) values(?,?,?)");
+					sentencia2 = conexion.prepareStatement("insert into leidos (isbn,leido,fecha) values(?,?,?)");
 					sentencia2.setString(1, isbn);
 					sentencia2.setInt(2, leido);
 					sentencia2.setDate(3, (java.sql.Date) fechaLeido);
@@ -312,10 +312,10 @@ public class Altacomic extends JFrame {
 					JOptionPane.showMessageDialog(null, "Error introduciendo parámetros", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
-					JOptionPane.showMessageDialog(null, "Ha introducido mal algún dato.", "ERROR",
+					JOptionPane.showMessageDialog(null, "Ha introducido mal algún dato en base de datos.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (IllegalArgumentException e1) {
-					JOptionPane.showMessageDialog(null, "Ha introducido mal algún dato.", "ERROR",
+					JOptionPane.showMessageDialog(null, "Ha introducido  algún dato erroneo.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (ClassNotFoundException e1) {
 					JOptionPane.showMessageDialog(null, "Clase no encontrada", null, JOptionPane.PLAIN_MESSAGE);
