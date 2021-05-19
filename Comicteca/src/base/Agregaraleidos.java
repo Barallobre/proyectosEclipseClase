@@ -149,7 +149,7 @@ public class Agregaraleidos extends JFrame {
 
 					Date fechaLeido = java.sql.Date.valueOf(fechaFinal);
 
-					sentencia2 = conexion.prepareStatement("update leidos set leido=?,fecha=? where id_leido=?");
+					sentencia2 = conexion.prepareStatement("update leidos set leido=?,fecha=? where isbn=?");
 					sentencia2.setInt(1, leido);
 					sentencia2.setDate(2, (java.sql.Date) fechaLeido);
 					sentencia2.setString(3,isbn);

@@ -14,18 +14,18 @@
 		</conditionalStyle>
 	</style>
 	<queryString language="SQL">
-		<![CDATA[SELECT comics.leidos.id_leido,
+		<![CDATA[SELECT comics.leidos.isbn,
 	comics.comics.`Nombre`,
 	comics.leidos.fecha
 FROM comics.comics,
 	comics.leidos
 WHERE 
-	 comics.comics.isbn = comics.leidos.id_leido 
+	 comics.comics.isbn = comics.leidos.isbn 
 	 AND comics.leidos.leido = '1']]>
 	</queryString>
-	<field name="id_leido" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="id_leido"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_leido"/>
+	<field name="isbn" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="isbn"/>
+		<property name="com.jaspersoft.studio.field.label" value="isbn"/>
 		<property name="com.jaspersoft.studio.field.tree.path" value="leidos"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
@@ -90,11 +90,7 @@ WHERE
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="46" splitType="Stretch">
-			<textField>
-				<reportElement x="60" y="0" width="100" height="30" uuid="9a5517e6-e542-450f-9992-73f7fe72b115"/>
-				<textFieldExpression><![CDATA[$F{id_leido}]]></textFieldExpression>
-			</textField>
+		<band height="34" splitType="Stretch">
 			<textField>
 				<reportElement x="230" y="0" width="100" height="30" uuid="c4c152aa-868b-4366-a396-97b3f6da5700"/>
 				<textFieldExpression><![CDATA[$F{Nombre}]]></textFieldExpression>
@@ -104,6 +100,12 @@ WHERE
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8de1beb5-dd20-4ff9-82a3-36166623dc48"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="0" width="100" height="30" uuid="c43106af-5512-49d9-9d3a-131be6914233">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="83c1e3c5-c8c1-4385-8ebf-1e530987fb10"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{isbn}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

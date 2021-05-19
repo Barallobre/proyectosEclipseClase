@@ -24,11 +24,11 @@ import java.util.Date;
 import javax.swing.JTextField;
 
 /**
- * Clase construida con windowbuilder que nos permite insertar un nuevo
- * departamento en la base de datos
+ * Clase construida con windowbuilder que nos permite insertar una nueva
+ * colección en la base de datos
  * 
  * @author Cristian Barallobre
- * @version 06-03-2020
+ * @version 19-05-2021
  * 
  */
 public class Altacoleccion extends JFrame {
@@ -95,20 +95,20 @@ public class Altacoleccion extends JFrame {
 					sentencia.close();
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Departamento añadido", "Vehículos ayuntamiento",
+					JOptionPane.showMessageDialog(null, "Colección añadida", "Comicteca",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (NumberFormatException e1) {
-					JOptionPane.showMessageDialog(null, "El número de departamento debe ser un número", "ERROR",
+					JOptionPane.showMessageDialog(null, "Error en el formato.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
-					JOptionPane.showMessageDialog(null, "Ya existe un departamento con ese Número de departamento",
+					JOptionPane.showMessageDialog(null, "Error en la introducción de datos.",
 							"ERROR", JOptionPane.PLAIN_MESSAGE);
 				} catch (ClassNotFoundException e1) {
 					e1.printStackTrace();
 				}
 			}
 		});
-		JButton cancelar = new JButton("Cancelar");
+		JButton cancelar = new JButton("Atrás");
 		panel_1.add(cancelar);
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

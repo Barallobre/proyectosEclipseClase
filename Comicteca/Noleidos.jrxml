@@ -14,17 +14,17 @@
 		</conditionalStyle>
 	</style>
 	<queryString language="SQL">
-		<![CDATA[SELECT comics.leidos.id_leido,
+		<![CDATA[SELECT comics.leidos.isbn,
 	comics.comics.`Nombre`
 FROM comics.comics,
 	comics.leidos
 WHERE 
-	 comics.comics.isbn = comics.leidos.id_leido 
+	 comics.comics.isbn = comics.leidos.isbn 
 	 AND comics.leidos.leido = '0']]>
 	</queryString>
-	<field name="id_leido" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="id_leido"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_leido"/>
+	<field name="isbn" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="isbn"/>
+		<property name="com.jaspersoft.studio.field.label" value="isbn"/>
 		<property name="com.jaspersoft.studio.field.tree.path" value="leidos"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
@@ -63,14 +63,14 @@ WHERE
 		<band splitType="Stretch"/>
 	</pageHeader>
 	<detail>
-		<band height="56" splitType="Stretch">
+		<band height="34" splitType="Stretch">
 			<textField>
-				<reportElement x="80" y="13" width="100" height="30" uuid="d8814443-fc1c-42e0-a6f8-5232a039b538"/>
-				<textFieldExpression><![CDATA[$F{id_leido}]]></textFieldExpression>
+				<reportElement x="380" y="0" width="100" height="30" uuid="cf8960dd-0f08-4943-b2b9-f6a8de49cd18"/>
+				<textFieldExpression><![CDATA[$F{Nombre}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="13" width="100" height="30" uuid="cf8960dd-0f08-4943-b2b9-f6a8de49cd18"/>
-				<textFieldExpression><![CDATA[$F{Nombre}]]></textFieldExpression>
+				<reportElement x="80" y="0" width="100" height="30" uuid="facff48d-7844-4d28-8e2a-dcb9b6e8d1cd"/>
+				<textFieldExpression><![CDATA[$F{isbn}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
