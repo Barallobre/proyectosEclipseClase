@@ -62,11 +62,11 @@ FROM comics.comics]]>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="132" splitType="Stretch">
+		<band height="140" splitType="Stretch">
 			<frame>
 				<reportElement mode="Opaque" x="0" y="0" width="555" height="95" backcolor="#000000" uuid="6c6ca4e1-17cd-4913-93d6-5e670ea9ae8a"/>
 				<staticText>
-					<reportElement style="Title" x="111" y="14" width="333" height="66" uuid="a2a2cac8-5a7d-4487-8c54-dab235ce4e21"/>
+					<reportElement style="Title" x="131" y="14" width="299" height="66" uuid="a2a2cac8-5a7d-4487-8c54-dab235ce4e21"/>
 					<textElement>
 						<font isBold="false"/>
 					</textElement>
@@ -79,9 +79,9 @@ FROM comics.comics]]>
 		<band splitType="Stretch"/>
 	</pageHeader>
 	<columnHeader>
-		<band height="26" splitType="Stretch">
+		<band height="28" splitType="Stretch">
 			<staticText>
-				<reportElement style="Column header" x="0" y="7" width="111" height="18" forecolor="#000000" uuid="1387efc7-3fc5-4ce4-a8d1-fa9e36804407">
+				<reportElement style="Column header" x="120" y="7" width="111" height="18" forecolor="#000000" uuid="1387efc7-3fc5-4ce4-a8d1-fa9e36804407">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7de9ca20-c640-4c20-bdca-c98f55ef5037"/>
 				</reportElement>
 				<textElement>
@@ -90,16 +90,7 @@ FROM comics.comics]]>
 				<text><![CDATA[Nombre]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="111" y="7" width="111" height="18" forecolor="#000000" uuid="ac768589-848a-404a-ae0a-390620867667">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c1a9981e-4bcf-4f1d-be30-ee1df6503d54"/>
-				</reportElement>
-				<textElement>
-					<font isBold="false"/>
-				</textElement>
-				<text><![CDATA[ISBN]]></text>
-			</staticText>
-			<staticText>
-				<reportElement style="Column header" x="222" y="7" width="111" height="18" forecolor="#000000" uuid="d31347e0-19e8-4c4f-9c22-846bb0988dae">
+				<reportElement style="Column header" x="259" y="9" width="111" height="18" forecolor="#000000" uuid="d31347e0-19e8-4c4f-9c22-846bb0988dae">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec89c33e-fd55-40b2-864f-3c6328169cf4"/>
 				</reportElement>
 				<textElement>
@@ -108,7 +99,7 @@ FROM comics.comics]]>
 				<text><![CDATA[Autor]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="333" y="7" width="111" height="18" forecolor="#000000" uuid="b6a2b118-6bb1-47c0-b1ba-3cc3f5075e73">
+				<reportElement style="Column header" x="370" y="7" width="100" height="18" forecolor="#000000" uuid="b6a2b118-6bb1-47c0-b1ba-3cc3f5075e73">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="750827e5-f451-4557-b576-b3c3545e4a11"/>
 				</reportElement>
 				<textElement>
@@ -117,7 +108,7 @@ FROM comics.comics]]>
 				<text><![CDATA[Editorial]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="444" y="7" width="111" height="18" forecolor="#000000" uuid="d9a6727f-6977-4fb5-98a9-e3dc8e316533">
+				<reportElement style="Column header" x="479" y="7" width="66" height="18" forecolor="#000000" uuid="d9a6727f-6977-4fb5-98a9-e3dc8e316533">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="91ac1f62-66d9-4f8b-8993-5b3bb2304d29"/>
 				</reportElement>
 				<textElement>
@@ -125,45 +116,45 @@ FROM comics.comics]]>
 				</textElement>
 				<text><![CDATA[Colección]]></text>
 			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="0" y="10" width="111" height="18" forecolor="#000000" uuid="ac768589-848a-404a-ae0a-390620867667">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c1a9981e-4bcf-4f1d-be30-ee1df6503d54"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[ISBN]]></text>
+			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="72" splitType="Stretch">
-			<frame>
-				<reportElement style="Row" mode="Opaque" x="0" y="0" width="555" height="18" uuid="b50221b5-8254-440b-8c6f-1f0b138c9259"/>
-				<line>
-					<reportElement positionType="FixRelativeToBottom" x="-1" y="0" width="555" height="1" uuid="1133a906-5b71-476e-9f3e-bc97c97058c1"/>
-					<graphicElement>
-						<pen lineWidth="0.5" lineColor="#999999"/>
-					</graphicElement>
-				</line>
-			</frame>
+		<band height="90" splitType="Stretch">
 			<textField>
-				<reportElement x="80" y="32" width="100" height="30" uuid="ff77e7d8-a457-4f10-93c9-2cb6a8571ac0">
+				<reportElement x="0" y="18" width="120" height="30" uuid="ff77e7d8-a457-4f10-93c9-2cb6a8571ac0">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ad04eac1-5077-4abd-8937-6d17d89713f2"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{isbn}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="30" width="100" height="30" uuid="761cc515-f205-48aa-96e0-398566698506">
+				<reportElement x="120" y="20" width="139" height="30" uuid="761cc515-f205-48aa-96e0-398566698506">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46bb81cb-af57-4670-ad7b-60eb4cc39d75"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{Nombre}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="180" y="30" width="100" height="30" uuid="172c2cbc-c7e2-4070-ba22-303a55ab670a">
+				<reportElement x="260" y="18" width="110" height="30" uuid="172c2cbc-c7e2-4070-ba22-303a55ab670a">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="112268cc-9d1d-4161-9300-77aa3842b759"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{autor}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="30" width="100" height="30" uuid="f9ef1888-d0bb-4ac8-9e66-439aa7f1cd14">
+				<reportElement x="370" y="20" width="109" height="30" uuid="f9ef1888-d0bb-4ac8-9e66-439aa7f1cd14">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b7f30bca-7d99-43f5-a6ba-ae3f674c779e"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{editorial}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="430" y="30" width="100" height="30" uuid="298713d7-39f4-429d-ac17-705e4f882000">
+				<reportElement x="481" y="20" width="74" height="30" uuid="298713d7-39f4-429d-ac17-705e4f882000">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5657d367-1083-4d57-98d1-b9280b9eb469"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{coleccion}]]></textFieldExpression>

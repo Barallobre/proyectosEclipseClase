@@ -34,23 +34,23 @@ public class VentanaPrincipal extends JFrame {
 	JMenuItem altacoleccion, bajacoleccion, modificacioncoleccion, consultacolecciones;
 	JMenuItem altaeditorial, bajaeditorial, modificacioneditorial, consultaeditoriales;
 	JMenuItem altaautor, bajaautor, modificacionautor, consultaautores;
+	JMenuItem consultaleidos;
 	private JLabel lblNewLabel;
 	private JMenuItem ayuda;
 	private JMenu Leidos;
-	private JMenuItem altadepartamentos_1;
-	private JMenuItem bajadepartamentos_1;
-	private JMenuItem modificaciondepartamentos_1;
-	private JMenuItem consultadepartamentos_1;
+	private JMenuItem consultanoleidos_;
+	private JMenuItem consultaleidos_;
 	private JMenu Tipos;
 	private JMenuItem altamantenimientos_1;
 	private JMenuItem bajamantenimientos_1;
 	private JMenuItem modificacionmantenimientos_1;
 	private JMenuItem consultamantenimientos_1;
+	private JMenuItem agregaraleidos;
 
 	public VentanaPrincipal() {
 		setTitle("COMICTECA");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 500, 283);
+		setBounds(100, 100, 566, 286);
 
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -132,18 +132,15 @@ public class VentanaPrincipal extends JFrame {
 //------------------------------------------------------------------------------
 		Leidos = new JMenu("Leidos");
 		menuBar.add(Leidos);
+		
+		agregaraleidos = new JMenuItem("Alta");
+		Leidos.add(agregaraleidos);
 
-		altadepartamentos_1 = new JMenuItem("Alta");
-		Leidos.add(altadepartamentos_1);
+		consultaleidos_ = new JMenuItem("Le\u00EDdos");
+		Leidos.add(consultaleidos_);
 
-		bajadepartamentos_1 = new JMenuItem("Baja");
-		Leidos.add(bajadepartamentos_1);
-
-		modificaciondepartamentos_1 = new JMenuItem("Modificacion");
-		Leidos.add(modificaciondepartamentos_1);
-
-		consultadepartamentos_1 = new JMenuItem("Consulta");
-		Leidos.add(consultadepartamentos_1);
+		consultanoleidos_ = new JMenuItem("No Le\u00EDdos");
+		Leidos.add(consultanoleidos_);
 //------------------------------------------------------------------------------
 		ayuda = new JMenuItem("Ayuda");
 		menuBar.add(ayuda);
@@ -354,5 +351,38 @@ public class VentanaPrincipal extends JFrame {
 			}
 		});
 //------------------------------------------------------------------------------
+		consultaleidos_.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Consultaleidos frame = new Consultaleidos();
+					frame.setVisible(true);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				dispose();
+			}
+		});
+		consultanoleidos_.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Consultanoleidos frame = new Consultanoleidos();
+					frame.setVisible(true);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				dispose();
+			}
+		});
+		agregaraleidos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Agregaraleidos frame = new Agregaraleidos();
+					frame.setVisible(true);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				dispose();
+			}
+		});
 	}
 }
