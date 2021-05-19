@@ -31,10 +31,10 @@ import javax.swing.JComboBox;
 
 /**
  * Clase construida con windowbuilder que nos permite dar de alta un nuevo
- * mantenimiento en la base de datos
+ * comic en la base de datos
  * 
  * @author Cristian Barallobre
- * @version 06-03-2020
+ * @version 19-05-2021
  * 
  */
 public class Altacomic extends JFrame {
@@ -44,7 +44,7 @@ public class Altacomic extends JFrame {
 	private JTextField _nombre;
 
 	public Altacomic() throws ClassNotFoundException {
-		setTitle("Alta de mantenimientos");
+		setTitle("Alta de comics");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 453, 348);
 		contentPane = new JPanel();
@@ -58,7 +58,7 @@ public class Altacomic extends JFrame {
 		JButton aceptar = new JButton("Aceptar");
 		panel_1.add(aceptar);
 
-		JButton cancelar = new JButton("Cancelar");
+		JButton cancelar = new JButton("Atrás");
 		panel_1.add(cancelar);
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -312,7 +312,7 @@ public class Altacomic extends JFrame {
 					JOptionPane.showMessageDialog(null, "Ha introducido mal algún dato.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (ClassNotFoundException e1) {
-					JOptionPane.showMessageDialog(null, null, null, JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Clase no encontrada", null, JOptionPane.PLAIN_MESSAGE);
 					e1.printStackTrace();
 				}
 			}
@@ -335,7 +335,6 @@ public class Altacomic extends JFrame {
 
 			ResultSetMetaData metadata = resultado.getMetaData();
 			int numberOfColumns = metadata.getColumnCount();
-			System.out.println(numberOfColumns);
 			while (resultado.next()) {
 				int i = 1;
 				while (i <= numberOfColumns) {
@@ -348,7 +347,7 @@ public class Altacomic extends JFrame {
 
 		} catch (SQLException e) {
 
-			JOptionPane.showMessageDialog(null, "Error no acceso á base de datos12", "Error",
+			JOptionPane.showMessageDialog(null, "Error en el acceso a base de datos", "Error",
 					JOptionPane.PLAIN_MESSAGE);
 		}
 

@@ -23,9 +23,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Date;
 /**
- * Clase construida con windowbuilder que nos permite dar de baja un mantenimiento de un vehículo en la base de datos
+ * Clase construida con windowbuilder que nos permite dar de baja un comic en la base de datos
  * @author Cristian Barallobre
- * @version 06-03-2020
+ * @version 19-05-2021
  * 
  */
 public class Bajacomic extends JFrame {
@@ -34,7 +34,7 @@ public class Bajacomic extends JFrame {
 	private JTextField numMantenimiento;
 
 	public Bajacomic() {
-		setTitle("Baja de un mantenimiento");
+		setTitle("Baja comic");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 138);
 		contentPane = new JPanel();
@@ -58,28 +58,24 @@ public class Bajacomic extends JFrame {
 					PreparedStatement sentencia;
 					int numMantenimiento1 = Integer.parseInt(numMantenimiento.getText());
 				
-
-				
-
-					sentencia = conexion.prepareStatement("delete from mantenimientos where numMantenimiento=?");
+					sentencia = conexion.prepareStatement("delete from comics where isbn=?");
 					sentencia.setInt(1, numMantenimiento1);
 					sentencia.execute();
 
 					sentencia.close();
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Mantenimiento borrado", "Vehículos ayuntamiento",
+					JOptionPane.showMessageDialog(null, "Comic borrado", "Comicteca",
 							JOptionPane.PLAIN_MESSAGE);
 				}  catch (SQLException | ClassNotFoundException e1) {
-					JOptionPane.showMessageDialog(null, "No se puede borrar este mantenimiento, porque ???????????"
-							+ "\nBorre primero los mantenimientos antes de proceder al borrado del vehículo.", "ERROR",
+					JOptionPane.showMessageDialog(null, "No se puede borrar este comic"
+							, "ERROR",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
-
 		});
 		
-		JButton cancelar = new JButton("Cancelar");
+		JButton cancelar = new JButton("Atrás");
 		panel.add(cancelar);
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
