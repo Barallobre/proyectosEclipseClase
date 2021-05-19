@@ -30,8 +30,8 @@ import java.util.Date;
 import javax.swing.JComboBox;
 
 /**
- * Clase construida con windowbuilder que nos permite dar de alta un nuevo
- * comic en la base de datos
+ * Clase construida con windowbuilder que nos permite dar de alta un nuevo comic
+ * en la base de datos
  * 
  * @author Cristian Barallobre
  * @version 19-05-2021
@@ -79,19 +79,14 @@ public class Agregaraleidos extends JFrame {
 		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 1.0, 1.0, 1.0, Double.MIN_VALUE };
 		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		panel.setLayout(gbl_panel);
-		
-		
-		
-				
-		
-				JLabel isbn_1 = new JLabel("ISBN");
-				GridBagConstraints gbc_isbn_1 = new GridBagConstraints();
-				gbc_isbn_1.anchor = GridBagConstraints.EAST;
-				gbc_isbn_1.insets = new Insets(0, 0, 5, 5);
-				gbc_isbn_1.gridx = 1;
-				gbc_isbn_1.gridy = 1;
-				panel.add(isbn_1, gbc_isbn_1);
-		
+
+		JLabel isbn_1 = new JLabel("ISBN");
+		GridBagConstraints gbc_isbn_1 = new GridBagConstraints();
+		gbc_isbn_1.anchor = GridBagConstraints.EAST;
+		gbc_isbn_1.insets = new Insets(0, 0, 5, 5);
+		gbc_isbn_1.gridx = 1;
+		gbc_isbn_1.gridy = 1;
+		panel.add(isbn_1, gbc_isbn_1);
 
 		JComboBox _isbn_1 = new JComboBox();
 		GridBagConstraints gbc__isbn_1 = new GridBagConstraints();
@@ -108,27 +103,25 @@ public class Agregaraleidos extends JFrame {
 			_isbn_1.addItem(listado0.get(i));
 		}
 		panel.add(_isbn_1, gbc__isbn_1);
-		
-		
-		
-				JLabel leido_1 = new JLabel("Le\u00EDdo");
-				GridBagConstraints gbc_leido_1 = new GridBagConstraints();
-				gbc_leido_1.anchor = GridBagConstraints.BASELINE_TRAILING;
-				gbc_leido_1.insets = new Insets(0, 0, 5, 5);
-				gbc_leido_1.gridx = 1;
-				gbc_leido_1.gridy = 3;
-				panel.add(leido_1, gbc_leido_1);
-		
-				JComboBox _leido = new JComboBox();
-				GridBagConstraints gbc__leido = new GridBagConstraints();
-				gbc__leido.insets = new Insets(0, 0, 5, 0);
-				gbc__leido.gridwidth = 2;
-				gbc__leido.fill = GridBagConstraints.HORIZONTAL;
-				gbc__leido.gridx = 3;
-				gbc__leido.gridy = 3;
-				_leido.addItem("si");
-				_leido.addItem("no");
-				panel.add(_leido, gbc__leido);
+
+		JLabel leido_1 = new JLabel("Le\u00EDdo");
+		GridBagConstraints gbc_leido_1 = new GridBagConstraints();
+		gbc_leido_1.anchor = GridBagConstraints.BASELINE_TRAILING;
+		gbc_leido_1.insets = new Insets(0, 0, 5, 5);
+		gbc_leido_1.gridx = 1;
+		gbc_leido_1.gridy = 3;
+		panel.add(leido_1, gbc_leido_1);
+
+		JComboBox _leido = new JComboBox();
+		GridBagConstraints gbc__leido = new GridBagConstraints();
+		gbc__leido.insets = new Insets(0, 0, 5, 0);
+		gbc__leido.gridwidth = 2;
+		gbc__leido.fill = GridBagConstraints.HORIZONTAL;
+		gbc__leido.gridx = 3;
+		gbc__leido.gridy = 3;
+		_leido.addItem("si");
+		_leido.addItem("no");
+		panel.add(_leido, gbc__leido);
 
 		aceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -148,8 +141,6 @@ public class Agregaraleidos extends JFrame {
 					} else {
 						leido = 0;
 					}
-
-	
 
 					Date objDate = new Date();
 					String strDateFormat = "yyyy-MM-dd";

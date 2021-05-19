@@ -31,9 +31,9 @@ public class VentanaPrincipal extends JFrame {
 
 	JPanel panel;
 	JMenuItem altacomic, bajacomic, modificacioncomic, consultacomics;
-	JMenuItem altacoleccion, bajacoleccion, modificacioncoleccion, consultacolecciones;
-	JMenuItem altaeditorial, bajaeditorial, modificacioneditorial, consultaeditoriales;
-	JMenuItem altaautor, bajaautor, modificacionautor, consultaautores;
+	JMenuItem altacoleccion, bajacoleccion, modificacioncoleccion;
+	JMenuItem altaeditorial, bajaeditorial, modificacioneditorial;
+	JMenuItem altaautor, bajaautor, modificacionautor;
 	JMenuItem consultaleidos;
 	private JLabel lblNewLabel;
 	private JMenuItem ayuda;
@@ -44,7 +44,6 @@ public class VentanaPrincipal extends JFrame {
 	private JMenuItem altamantenimientos_1;
 	private JMenuItem bajamantenimientos_1;
 	private JMenuItem modificacionmantenimientos_1;
-	private JMenuItem consultamantenimientos_1;
 	private JMenuItem agregaraleidos;
 
 	public VentanaPrincipal() {
@@ -81,9 +80,6 @@ public class VentanaPrincipal extends JFrame {
 
 		modificacionautor = new JMenuItem("Modificacion");
 		Autores.add(modificacionautor);
-
-		consultaautores = new JMenuItem("Consulta");
-		Autores.add(consultaautores);
 //------------------------------------------------------------------------------
 		JMenu Colecciones = new JMenu("Colecciones");
 		menuBar.add(Colecciones);
@@ -96,9 +92,6 @@ public class VentanaPrincipal extends JFrame {
 
 		modificacioncoleccion = new JMenuItem("Modificacion");
 		Colecciones.add(modificacioncoleccion);
-
-		consultacolecciones = new JMenuItem("Consulta");
-		Colecciones.add(consultacolecciones);
 //------------------------------------------------------------------------------
 		JMenu Editoriales = new JMenu("Editoriales");
 		menuBar.add(Editoriales);
@@ -111,9 +104,6 @@ public class VentanaPrincipal extends JFrame {
 
 		modificacioneditorial = new JMenuItem("Modificacion");
 		Editoriales.add(modificacioneditorial);
-
-		consultaeditoriales = new JMenuItem("Consulta");
-		Editoriales.add(consultaeditoriales);
 //------------------------------------------------------------------------------
 		Tipos = new JMenu("Tipos");
 		menuBar.add(Tipos);
@@ -126,13 +116,10 @@ public class VentanaPrincipal extends JFrame {
 
 		modificacionmantenimientos_1 = new JMenuItem("Modificacion");
 		Tipos.add(modificacionmantenimientos_1);
-
-		consultamantenimientos_1 = new JMenuItem("Consulta");
-		Tipos.add(consultamantenimientos_1);
 //------------------------------------------------------------------------------
 		Leidos = new JMenu("Leidos");
 		menuBar.add(Leidos);
-		
+
 		agregaraleidos = new JMenuItem("Alta");
 		Leidos.add(agregaraleidos);
 
@@ -249,17 +236,7 @@ public class VentanaPrincipal extends JFrame {
 				dispose();
 			}
 		});
-		consultaautores.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Consultaautores frame = new Consultaautores();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
+
 //------------------------------------------------------------------------------
 		altaeditorial.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -294,17 +271,7 @@ public class VentanaPrincipal extends JFrame {
 				dispose();
 			}
 		});
-		consultaeditoriales.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Consultacolecciones frame = new Consultacolecciones();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
+
 //------------------------------------------------------------------------------
 		altacoleccion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -339,17 +306,7 @@ public class VentanaPrincipal extends JFrame {
 				dispose();
 			}
 		});
-		consultacolecciones.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Consultaeditoriales frame = new Consultaeditoriales();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
+
 //------------------------------------------------------------------------------
 		consultaleidos_.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
