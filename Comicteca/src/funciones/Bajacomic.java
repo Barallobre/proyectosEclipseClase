@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
 import utils.AccesoBaseDatos;
+import utils.BotonAtras;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -44,7 +45,6 @@ import java.util.Date;
 public class Bajacomic extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField numMantenimiento;
 
 	public Bajacomic() throws ClassNotFoundException {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -121,17 +121,7 @@ public class Bajacomic extends JFrame {
 		});
 		JButton cancelar = new JButton("Atrás");
 		panel.add(cancelar);
-		cancelar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					VentanaPrincipal frame = new VentanaPrincipal();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
+		BotonAtras.irAtras(cancelar, panel);
 	}
 
 	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException {

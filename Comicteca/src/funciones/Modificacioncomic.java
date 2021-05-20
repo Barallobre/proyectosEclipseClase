@@ -9,6 +9,8 @@ import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
 import utils.AccesoBaseDatos;
+import utils.BotonAtras;
+import utils.ComboBoxFiller;
 
 import javax.swing.JButton;
 import javax.swing.JTextField;
@@ -64,17 +66,7 @@ public class Modificacioncomic extends JFrame {
 
 		JButton cancelar = new JButton("Atrás");
 		panel_1.add(cancelar);
-		cancelar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					VentanaPrincipal frame = new VentanaPrincipal();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
+		BotonAtras.irAtras(cancelar, panel_1);
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.CENTER);
 		GridBagLayout gbl_panel = new GridBagLayout();
@@ -109,7 +101,6 @@ public class Modificacioncomic extends JFrame {
 		gbc_isbn_1.gridx = 1;
 		gbc_isbn_1.gridy = 2;
 		panel.add(isbn_1, gbc_isbn_1);
-		
 
 		JComboBox _isbn_1 = new JComboBox();
 		GridBagConstraints gbc__isbn_1 = new GridBagConstraints();
@@ -121,7 +112,7 @@ public class Modificacioncomic extends JFrame {
 		_isbn_1.removeAllItems();
 		_isbn_1.addItem("");
 		String consulta0 = "select isbn from comics";
-		ArrayList<String> listado0 = llenarLista(consulta0);
+		ArrayList<String> listado0 = ComboBoxFiller.llenarLista(consulta0);
 		for (int i = 0; i < listado0.size(); i++) {
 			_isbn_1.addItem(listado0.get(i));
 		}
@@ -145,7 +136,7 @@ public class Modificacioncomic extends JFrame {
 		_autor.removeAllItems();
 		_autor.addItem("");
 		String consulta = "select * from autores";
-		ArrayList<String> listado = llenarLista(consulta);
+		ArrayList<String> listado = ComboBoxFiller.llenarLista(consulta);
 		for (int i = 0; i < listado.size(); i++) {
 			_autor.addItem(listado.get(i));
 		}
@@ -169,7 +160,7 @@ public class Modificacioncomic extends JFrame {
 		_editorial.removeAllItems();
 		_editorial.addItem("");
 		String consulta2 = "select * from editoriales";
-		ArrayList<String> listado2 = llenarLista(consulta2);
+		ArrayList<String> listado2 = ComboBoxFiller.llenarLista(consulta2);
 		for (int i = 0; i < listado2.size(); i++) {
 			_editorial.addItem(listado2.get(i));
 		}
@@ -194,7 +185,7 @@ public class Modificacioncomic extends JFrame {
 		_tipo.removeAllItems();
 		_tipo.addItem("");
 		String consulta3 = "select * from tipos";
-		ArrayList<String> listado3 = llenarLista(consulta3);
+		ArrayList<String> listado3 = ComboBoxFiller.llenarLista(consulta3);
 		for (int i = 0; i < listado3.size(); i++) {
 			_tipo.addItem(listado3.get(i));
 		}
@@ -235,7 +226,7 @@ public class Modificacioncomic extends JFrame {
 		_coleccion.removeAllItems();
 		_coleccion.addItem("");
 		String consulta4 = "select * from colecciones";
-		ArrayList<String> listado4 = llenarLista(consulta4);
+		ArrayList<String> listado4 = ComboBoxFiller.llenarLista(consulta4);
 		for (int i = 0; i < listado4.size(); i++) {
 			_coleccion.addItem(listado4.get(i));
 		}
@@ -323,41 +314,6 @@ public class Modificacioncomic extends JFrame {
 				}
 			}
 		});
-
-	}
-
-	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException {
-
-		ArrayList<String> listado = new ArrayList<String>();
-
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC",
-					"root", "chios");
-
-			Statement sentencia = conexion.createStatement();
-
-			ResultSet resultado = sentencia.executeQuery(consulta);
-
-			ResultSetMetaData metadata = resultado.getMetaData();
-			int numberOfColumns = metadata.getColumnCount();
-			while (resultado.next()) {
-				int i = 1;
-				while (i <= numberOfColumns) {
-					listado.add(resultado.getString(i++));
-				}
-			}
-			resultado.close();
-			sentencia.close();
-			conexion.close();
-
-		} catch (SQLException e) {
-
-			JOptionPane.showMessageDialog(null, "Error en el acceso a base de datos", "Error",
-					JOptionPane.PLAIN_MESSAGE);
-		}
-
-		return listado;
 
 	}
 }

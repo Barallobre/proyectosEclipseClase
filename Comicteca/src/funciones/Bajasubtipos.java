@@ -9,6 +9,8 @@ import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
 import utils.AccesoBaseDatos;
+import utils.BotonAtras;
+import utils.ComboBoxFiller;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -43,7 +45,6 @@ import java.util.Date;
 public class Bajasubtipos extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField numeroDepartamento;
 
 	public Bajasubtipos() throws ClassNotFoundException {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -79,8 +80,8 @@ public class Bajasubtipos extends JFrame {
 		gbc__autor.gridy = 3;
 		_autor.removeAllItems();
 		_autor.addItem("");
-		String consulta = "select * from autores";
-		ArrayList<String> listado = llenarLista(consulta);
+		String consulta = "select subtipo from subtipos";
+		ArrayList<String> listado = ComboBoxFiller.llenarLista(consulta);
 		for (int i = 0; i < listado.size(); i++) {
 			_autor.addItem(listado.get(i));
 		}
@@ -97,7 +98,7 @@ public class Bajasubtipos extends JFrame {
 					PreparedStatement sentencia;
 
 					String autor = _autor.getSelectedItem().toString();
-					sentencia = conexion.prepareStatement("delete from autores where autor=?");
+					sentencia = conexion.prepareStatement("delete from subtipos where subtipo=?");
 					sentencia.setString(1, autor);
 					sentencia.execute();
 
@@ -113,51 +114,6 @@ public class Bajasubtipos extends JFrame {
 		});
 		JButton cancelar = new JButton("Cancelar");
 		panel.add(cancelar);
-		cancelar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					VentanaPrincipal frame = new VentanaPrincipal();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
-	}
-
-	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException {
-
-		ArrayList<String> listado = new ArrayList<String>();
-
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC",
-					"root", "chios");
-
-			Statement sentencia = conexion.createStatement();
-
-			ResultSet resultado = sentencia.executeQuery(consulta);
-
-			ResultSetMetaData metadata = resultado.getMetaData();
-			int numberOfColumns = metadata.getColumnCount();
-			while (resultado.next()) {
-				int i = 1;
-				while (i <= numberOfColumns) {
-					listado.add(resultado.getString(i++));
-				}
-			}
-			resultado.close();
-			sentencia.close();
-			conexion.close();
-
-		} catch (SQLException e) {
-
-			JOptionPane.showMessageDialog(null, "Error en el acceso a base de datos", "Error",
-					JOptionPane.PLAIN_MESSAGE);
-		}
-
-		return listado;
-
+		BotonAtras.irAtras(cancelar, panel);
 	}
 }

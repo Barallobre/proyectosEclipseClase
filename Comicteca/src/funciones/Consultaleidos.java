@@ -20,6 +20,7 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 import utils.AccesoBaseDatos;
+import utils.BotonAtras;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -75,17 +76,7 @@ public class Consultaleidos extends JFrame {
 		});
 		JButton cancelar = new JButton("Atrás");
 		panel_1.add(cancelar);
-		cancelar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					VentanaPrincipal frame = new VentanaPrincipal();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
+		BotonAtras.irAtras(cancelar, panel);
 	}
 
 }

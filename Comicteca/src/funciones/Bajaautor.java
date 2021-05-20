@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
 import utils.AccesoBaseDatos;
+import utils.BotonAtras;
 import utils.ComboBoxFiller;
 
 import javax.swing.JButton;
@@ -44,7 +45,6 @@ import java.util.Date;
 public class Bajaautor extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField numeroDepartamento;
 
 	public Bajaautor() throws ClassNotFoundException {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -112,19 +112,8 @@ public class Bajaautor extends JFrame {
 				}
 			}
 		});
-		JButton cancelar = new JButton("Cancelar");
+		JButton cancelar = new JButton("Atrás");
 		panel.add(cancelar);
-		cancelar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					VentanaPrincipal frame = new VentanaPrincipal();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
+		BotonAtras.irAtras(cancelar, panel);
 	}
-
 }

@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
 import utils.AccesoBaseDatos;
+import utils.BotonAtras;
 
 import java.awt.GridBagLayout;
 import javax.swing.JButton;
@@ -107,17 +108,7 @@ public class Altatipos extends JFrame {
 		});
 		JButton cancelar = new JButton("Atrás");
 		panel_1.add(cancelar);
-		cancelar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					VentanaPrincipal frame = new VentanaPrincipal();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
+		BotonAtras.irAtras(cancelar, panel);
 	}
 
 }
