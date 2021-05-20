@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
 import utils.ComboBoxFiller;
 
 import javax.swing.JButton;
@@ -261,9 +262,7 @@ public class Altacomic extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager
-							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 
 					PreparedStatement sentencia;
 					PreparedStatement sentencia2;
@@ -321,9 +320,6 @@ public class Altacomic extends JFrame {
 				} catch (IllegalArgumentException e1) {
 					JOptionPane.showMessageDialog(null, "Ha introducido  algún dato erroneo.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
-				} catch (ClassNotFoundException e1) {
-					JOptionPane.showMessageDialog(null, "Clase no encontrada", null, JOptionPane.PLAIN_MESSAGE);
-					e1.printStackTrace();
 				}
 			}
 		});

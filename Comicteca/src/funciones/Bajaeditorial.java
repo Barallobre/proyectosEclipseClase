@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
 
 import javax.swing.JButton;
 import java.awt.GridBagLayout;
@@ -24,10 +25,13 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Date;
+
 /**
- * Clase construida con windowbuilder que nos permite dar de baja un vehículo de la base de datos
+ * Clase construida con windowbuilder que nos permite dar de baja una editorial de
+ * la base de datos
+ * 
  * @author Cristian Barallobre
- * @version 06-03-2020
+ * @version 20-05-2021
  * 
  */
 public class Bajaeditorial extends JFrame {
@@ -53,12 +57,10 @@ public class Bajaeditorial extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager.getConnection(
-							"jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 
 					PreparedStatement sentencia;
-					
+
 					String matricula1 = matricula.getText();
 
 					sentencia = conexion.prepareStatement("delete from vehiculos where matricula=?");
@@ -68,15 +70,10 @@ public class Bajaeditorial extends JFrame {
 					sentencia.close();
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Vehículo borrado", "Vehículos ayuntamiento",
-							JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Editorial borrada", "Comicteca", JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
-					JOptionPane.showMessageDialog(null,
-							"No se puede borrar este vehículo, porque tiene mantenimientos asociados."
-									+ "\nBorre primero los mantenimientos antes de proceder al borrado del vehículo.",
-							"ERROR", JOptionPane.ERROR_MESSAGE);
-				} catch (ClassNotFoundException e1) {
-					e1.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Error en la base de datos.", "ERROR",
+							JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		});

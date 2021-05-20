@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -92,10 +93,7 @@ public class Bajacomic extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager
-							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
-
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 					PreparedStatement sentencia;
 					PreparedStatement sentencia2;
 					String titulo = _titulo.getSelectedItem().toString();
@@ -118,8 +116,6 @@ public class Bajacomic extends JFrame {
 				} catch (SQLException e1) {
 					JOptionPane.showMessageDialog(null, "Error al borrar el comic.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
-				} catch (ClassNotFoundException e1) {
-					e1.printStackTrace();
 				}
 			}
 		});

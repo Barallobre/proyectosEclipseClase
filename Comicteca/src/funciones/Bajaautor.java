@@ -8,6 +8,8 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
+import utils.ComboBoxFiller;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -79,7 +81,7 @@ public class Bajaautor extends JFrame {
 		_autor.removeAllItems();
 		_autor.addItem("");
 		String consulta = "select * from autores";
-		ArrayList<String> listado = llenarLista(consulta);
+		ArrayList<String> listado = ComboBoxFiller.llenarLista(consulta);
 		for (int i = 0; i < listado.size(); i++) {
 			_autor.addItem(listado.get(i));
 		}
@@ -91,9 +93,7 @@ public class Bajaautor extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager
-							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 
 					PreparedStatement sentencia;
 
@@ -109,8 +109,6 @@ public class Bajaautor extends JFrame {
 				} catch (SQLException e1) {
 					JOptionPane.showMessageDialog(null, "Error al borrar el autor.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
-				} catch (ClassNotFoundException e1) {
-					e1.printStackTrace();
 				}
 			}
 		});
@@ -129,38 +127,4 @@ public class Bajaautor extends JFrame {
 		});
 	}
 
-	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException {
-
-		ArrayList<String> listado = new ArrayList<String>();
-
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC",
-					"root", "chios");
-
-			Statement sentencia = conexion.createStatement();
-
-			ResultSet resultado = sentencia.executeQuery(consulta);
-
-			ResultSetMetaData metadata = resultado.getMetaData();
-			int numberOfColumns = metadata.getColumnCount();
-			while (resultado.next()) {
-				int i = 1;
-				while (i <= numberOfColumns) {
-					listado.add(resultado.getString(i++));
-				}
-			}
-			resultado.close();
-			sentencia.close();
-			conexion.close();
-
-		} catch (SQLException e) {
-
-			JOptionPane.showMessageDialog(null, "Error en el acceso a base de datos", "Error",
-					JOptionPane.PLAIN_MESSAGE);
-		}
-
-		return listado;
-
-	}
 }

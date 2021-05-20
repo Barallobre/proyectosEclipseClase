@@ -8,6 +8,8 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
+import utils.ComboBoxFiller;
 
 import javax.swing.JButton;
 import javax.swing.JTextField;
@@ -101,7 +103,7 @@ public class Agregaraleidos extends JFrame {
 		_isbn_1.removeAllItems();
 		_isbn_1.addItem("");
 		String consulta0 = "select isbn from comics";
-		ArrayList<String> listado0 = llenarLista(consulta0);
+		ArrayList<String> listado0 = ComboBoxFiller.llenarLista(consulta0);
 		for (int i = 0; i < listado0.size(); i++) {
 			_isbn_1.addItem(listado0.get(i));
 		}
@@ -130,9 +132,8 @@ public class Agregaraleidos extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager
-							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 
 					PreparedStatement sentencia;
 					PreparedStatement sentencia2;
@@ -171,47 +172,9 @@ public class Agregaraleidos extends JFrame {
 				} catch (IllegalArgumentException e1) {
 					JOptionPane.showMessageDialog(null, "Ha introducido mal algún dato.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
-				} catch (ClassNotFoundException e1) {
-					JOptionPane.showMessageDialog(null, "Clase no encontrada", null, JOptionPane.PLAIN_MESSAGE);
-					e1.printStackTrace();
 				}
 			}
 		});
-
-	}
-
-	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException {
-
-		ArrayList<String> listado = new ArrayList<String>();
-
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC",
-					"root", "chios");
-
-			Statement sentencia = conexion.createStatement();
-
-			ResultSet resultado = sentencia.executeQuery(consulta);
-
-			ResultSetMetaData metadata = resultado.getMetaData();
-			int numberOfColumns = metadata.getColumnCount();
-			while (resultado.next()) {
-				int i = 1;
-				while (i <= numberOfColumns) {
-					listado.add(resultado.getString(i++));
-				}
-			}
-			resultado.close();
-			sentencia.close();
-			conexion.close();
-
-		} catch (SQLException e) {
-
-			JOptionPane.showMessageDialog(null, "Error en el acceso a base de datos", "Error",
-					JOptionPane.PLAIN_MESSAGE);
-		}
-
-		return listado;
 
 	}
 }

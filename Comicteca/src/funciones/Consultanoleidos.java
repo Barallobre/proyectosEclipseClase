@@ -19,6 +19,8 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
+import utils.AccesoBaseDatos;
+import utils.BotonAtras;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -45,7 +47,7 @@ public class Consultanoleidos extends JFrame {
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.CENTER);
 		
-		JLabel lblNewLabel = new JLabel("Generar informe de los comics leídos.");
+		JLabel lblNewLabel = new JLabel("Generar informe de los comics no leídos.");
 		panel.add(lblNewLabel);
 		
 		JPanel panel_1 = new JPanel();
@@ -56,8 +58,8 @@ public class Consultanoleidos extends JFrame {
 		aceptar.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+			
+			Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 			String rutaInforme = System.getProperty("user.dir") + System.getProperty("file.separator");
 			rutaInforme += "Noleidos.jasper";
 			JasperReport informeVacio;
@@ -70,25 +72,11 @@ public class Consultanoleidos extends JFrame {
 				visor.setVisible(true);
 			} catch (JRException e1) {
 				e1.printStackTrace();
-			} catch (ClassNotFoundException e1) {
-				e1.printStackTrace();
-			} catch (SQLException e1) {
-				e1.printStackTrace();
 			}
 		}
 		});
 		JButton cancelar = new JButton("Atrás");
 		panel_1.add(cancelar);
-		cancelar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					VentanaPrincipal frame = new VentanaPrincipal();
-					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-				dispose();
-			}
-		});
+		BotonAtras.irAtras(cancelar,contentPane);
 	}
 }

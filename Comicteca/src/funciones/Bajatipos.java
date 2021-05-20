@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -91,9 +92,7 @@ public class Bajatipos extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager
-							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 
 					PreparedStatement sentencia;
 
@@ -105,12 +104,10 @@ public class Bajatipos extends JFrame {
 					sentencia.close();
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Autor borrado", "Comicteca", JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Tipo borrado", "Comicteca", JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
-					JOptionPane.showMessageDialog(null, "Error al borrar el autor.", "ERROR",
+					JOptionPane.showMessageDialog(null, "Error al borrar el tipo en base de datos.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
-				} catch (ClassNotFoundException e1) {
-					e1.printStackTrace();
 				}
 			}
 		});

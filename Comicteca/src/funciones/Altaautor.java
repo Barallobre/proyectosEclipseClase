@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
 
 import java.awt.GridBagLayout;
 import javax.swing.JButton;
@@ -83,9 +84,7 @@ public class Altaautor extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager.getConnection(
-							"jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 
 					PreparedStatement sentencia;
 					String Nombre_autor = nombre.getText();
@@ -105,8 +104,6 @@ public class Altaautor extends JFrame {
 				} catch (SQLException e1) {
 					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
-				} catch (ClassNotFoundException e1) {
-					e1.printStackTrace();
 				}
 
 			}

@@ -20,6 +20,7 @@ import funciones.Altaeditorial;
 import funciones.Altasubtipos;
 import funciones.Altatipos;
 import funciones.Bajaautor;
+import funciones.Bajacoleccion;
 import funciones.Bajacomic;
 import funciones.Bajaeditorial;
 import funciones.Bajasubtipos;
@@ -283,7 +284,7 @@ public class VentanaPrincipal extends JFrame {
 		bajacoleccion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Bajaautor frame = new Bajaautor();
+					Bajacoleccion frame = new Bajacoleccion();
 					frame.setVisible(true);
 				} catch (Exception e1) {
 					e1.printStackTrace();

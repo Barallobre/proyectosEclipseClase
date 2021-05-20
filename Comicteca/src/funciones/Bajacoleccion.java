@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
 
 import javax.swing.JButton;
 import java.awt.GridBagLayout;
@@ -78,9 +79,7 @@ public class Bajacoleccion extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager.getConnection(
-							"jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 
 					PreparedStatement sentencia;
 		
@@ -94,11 +93,11 @@ public class Bajacoleccion extends JFrame {
 					sentencia.close();
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Tipo de Mantenimiento borrado", "Vehículos ayuntamiento",
+					JOptionPane.showMessageDialog(null, "Colección borrada", "Comicteca",
 							JOptionPane.PLAIN_MESSAGE);
-				}  catch (SQLException | ClassNotFoundException e1) {
-					JOptionPane.showMessageDialog(null, "No se puede borrar este mantenimiento, porque figura en mantenimiento?"
-							+ "\nBorre primero los mantenimientos antes de proceder al borrado del tipo de mantenimiento.", "ERROR",
+				}  catch (SQLException e1) {
+					JOptionPane.showMessageDialog(null, "Error en la base de datos"
+							, "ERROR",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}

@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
 
 import java.awt.GridBagLayout;
 import javax.swing.JButton;
@@ -112,10 +113,7 @@ public class Altasubtipos extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager
-							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
-
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 					PreparedStatement sentencia;
 					String subtipo = nombre.getText();
 					String tipo = _tipo.getSelectedItem().toString();
@@ -133,8 +131,6 @@ public class Altasubtipos extends JFrame {
 					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR", JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
 					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR", JOptionPane.PLAIN_MESSAGE);
-				} catch (ClassNotFoundException e1) {
-					e1.printStackTrace();
 				}
 
 			}

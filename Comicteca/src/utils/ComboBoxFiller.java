@@ -1,7 +1,6 @@
 package utils;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
@@ -14,11 +13,9 @@ public class ComboBoxFiller {
 	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException {
 
 		ArrayList<String> listado = new ArrayList<String>();
-
+		
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC",
-					"root", "chios");
+			Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 
 			Statement sentencia = conexion.createStatement();
 

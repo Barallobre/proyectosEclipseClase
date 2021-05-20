@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
 
 import javax.swing.JButton;
 import java.awt.GridBagLayout;
@@ -81,9 +82,7 @@ public class Altacoleccion extends JFrame {
 		aceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager
-							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 
 					PreparedStatement sentencia;
 					
@@ -106,8 +105,6 @@ public class Altacoleccion extends JFrame {
 				} catch (SQLException e1) {
 					JOptionPane.showMessageDialog(null, "Error en la introducción de datos.",
 							"ERROR", JOptionPane.PLAIN_MESSAGE);
-				} catch (ClassNotFoundException e1) {
-					e1.printStackTrace();
 				}
 			}
 		});

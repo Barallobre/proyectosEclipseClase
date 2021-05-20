@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.AccesoBaseDatos;
 
 import javax.swing.JButton;
 import java.awt.GridBagLayout;
@@ -56,10 +57,7 @@ public class Altaeditorial extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection conexion = DriverManager
-							.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
-
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 					PreparedStatement sentencia;
 
 					String editorial = nombre.getText();
@@ -72,7 +70,7 @@ public class Altaeditorial extends JFrame {
 					conexion.close();
 
 					JOptionPane.showMessageDialog(null, "Editorial añadida", "Comicteca", JOptionPane.PLAIN_MESSAGE);
-				} catch (SQLException | ClassNotFoundException e1) {
+				} catch (SQLException e1) {
 					JOptionPane.showMessageDialog(null, "??", "ERROR", JOptionPane.PLAIN_MESSAGE);
 				}
 

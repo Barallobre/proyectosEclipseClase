@@ -19,6 +19,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
+import utils.AccesoBaseDatos;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -56,8 +57,7 @@ public class Consultaleidos extends JFrame {
 		aceptar.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC", "root", "chios");
+				Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 			String rutaInforme = System.getProperty("user.dir") + System.getProperty("file.separator");
 			rutaInforme += "Leidos.jasper";
 			JasperReport informeVacio;
@@ -69,10 +69,6 @@ public class Consultaleidos extends JFrame {
 				
 				visor.setVisible(true);
 			} catch (JRException e1) {
-				e1.printStackTrace();
-			} catch (ClassNotFoundException e1) {
-				e1.printStackTrace();
-			} catch (SQLException e1) {
 				e1.printStackTrace();
 			}
 		}
