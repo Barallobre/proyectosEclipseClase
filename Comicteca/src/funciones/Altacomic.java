@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import base.VentanaPrincipal;
+import utils.ComboBoxFiller;
 
 import javax.swing.JButton;
 import javax.swing.JTextField;
@@ -137,7 +138,7 @@ public class Altacomic extends JFrame {
 		_autor.removeAllItems();
 		_autor.addItem("");
 		String consulta = "select * from autores";
-		ArrayList<String> listado = llenarLista(consulta);
+		ArrayList<String> listado = ComboBoxFiller.llenarLista(consulta);
 		for (int i = 0; i < listado.size(); i++) {
 			_autor.addItem(listado.get(i));
 		}
@@ -161,7 +162,7 @@ public class Altacomic extends JFrame {
 		_editorial.removeAllItems();
 		_editorial.addItem("");
 		String consulta2 = "select * from editoriales";
-		ArrayList<String> listado2 = llenarLista(consulta2);
+		ArrayList<String> listado2 = ComboBoxFiller.llenarLista(consulta2);
 		for (int i = 0; i < listado2.size(); i++) {
 			_editorial.addItem(listado2.get(i));
 		}
@@ -186,7 +187,7 @@ public class Altacomic extends JFrame {
 		_tipo.removeAllItems();
 		_tipo.addItem("");
 		String consulta3 = "select * from tipos";
-		ArrayList<String> listado3 = llenarLista(consulta3);
+		ArrayList<String> listado3 = ComboBoxFiller.llenarLista(consulta3);
 		for (int i = 0; i < listado3.size(); i++) {
 			_tipo.addItem(listado3.get(i));
 		}
@@ -208,7 +209,7 @@ public class Altacomic extends JFrame {
 		gbc__subtipo.gridx = 3;
 		gbc__subtipo.gridy = 6;
 		String consulta5 = "select subtipo from subtipos";
-		ArrayList<String> listado5 = llenarLista(consulta5);
+		ArrayList<String> listado5 = ComboBoxFiller.llenarLista(consulta5);
 		for (int i = 0; i < listado5.size(); i++) {
 			_subtipo.addItem(listado5.get(i));
 		}
@@ -232,7 +233,7 @@ public class Altacomic extends JFrame {
 		_coleccion.removeAllItems();
 		_coleccion.addItem("");
 		String consulta4 = "select * from colecciones";
-		ArrayList<String> listado4 = llenarLista(consulta4);
+		ArrayList<String> listado4 = ComboBoxFiller.llenarLista(consulta4);
 		for (int i = 0; i < listado4.size(); i++) {
 			_coleccion.addItem(listado4.get(i));
 		}
@@ -329,38 +330,4 @@ public class Altacomic extends JFrame {
 
 	}
 
-	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException {
-
-		ArrayList<String> listado = new ArrayList<String>();
-
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC",
-					"root", "chios");
-
-			Statement sentencia = conexion.createStatement();
-
-			ResultSet resultado = sentencia.executeQuery(consulta);
-
-			ResultSetMetaData metadata = resultado.getMetaData();
-			int numberOfColumns = metadata.getColumnCount();
-			while (resultado.next()) {
-				int i = 1;
-				while (i <= numberOfColumns) {
-					listado.add(resultado.getString(i++));
-				}
-			}
-			resultado.close();
-			sentencia.close();
-			conexion.close();
-
-		} catch (SQLException e) {
-
-			JOptionPane.showMessageDialog(null, "Error en el acceso a base de datos", "Error",
-					JOptionPane.PLAIN_MESSAGE);
-		}
-
-		return listado;
-
-	}
 }

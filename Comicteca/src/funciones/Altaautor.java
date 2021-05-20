@@ -100,7 +100,7 @@ public class Altaautor extends JFrame {
 					JOptionPane.showMessageDialog(null, "Autor añadido", "Comicteca",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (NumberFormatException e1) {
-					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR",
+					JOptionPane.showMessageDialog(null, "Error en el formato de la inserción", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
 					JOptionPane.showMessageDialog(null, "Error en la inserción", "ERROR",

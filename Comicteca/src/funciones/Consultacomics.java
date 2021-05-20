@@ -72,19 +72,16 @@ public class Consultacomics extends JFrame {
 				
 				visor.setVisible(true);
 			} catch (JRException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			} catch (ClassNotFoundException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			} catch (SQLException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 		}
 		});
 
-		JButton cancelar = new JButton("Cancelar");
+		JButton cancelar = new JButton("Atrás");
 		panel_1.add(cancelar);
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

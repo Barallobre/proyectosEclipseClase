@@ -23,9 +23,9 @@ import net.sf.jasperreports.view.JasperViewer;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 /**
- * Clase construida mediante window builder que nos permite generar un informe donde vemos los departamentos existentes
+ * Clase construida mediante window builder que nos permite generar un informe donde vemos los comics que hemos leído
  * @author Cristian Barallobre
- * @version 06-03-2020
+ * @version 20-05-2021
  * 
  */
 public class Consultaleidos extends JFrame {
@@ -69,18 +69,15 @@ public class Consultaleidos extends JFrame {
 				
 				visor.setVisible(true);
 			} catch (JRException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			} catch (ClassNotFoundException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			} catch (SQLException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 		}
 		});
-		JButton cancelar = new JButton("Cancelar");
+		JButton cancelar = new JButton("Atrás");
 		panel_1.add(cancelar);
 		cancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

@@ -161,7 +161,7 @@ public class Agregaraleidos extends JFrame {
 
 					conexion.close();
 
-					JOptionPane.showMessageDialog(null, "Comic añadido", "Comicteca", JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Comic añadido a leídos", "Comicteca", JOptionPane.PLAIN_MESSAGE);
 				} catch (NumberFormatException e1) {
 					JOptionPane.showMessageDialog(null, "Error introduciendo parámetros", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
