@@ -10,6 +10,7 @@ import javax.swing.border.EmptyBorder;
 import base.VentanaPrincipal;
 import utils.AccesoBaseDatos;
 import utils.BotonAtras;
+import utils.ComboBoxFiller;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -47,8 +48,9 @@ public class Bajacomic extends JFrame {
 	private JPanel contentPane;
 
 	public Bajacomic() throws ClassNotFoundException {
+		setTitle("Baja comic");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 103);
+		setBounds(100, 100, 450, 139);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -57,59 +59,58 @@ public class Bajacomic extends JFrame {
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.CENTER);
 		GridBagLayout gbl_panel = new GridBagLayout();
-		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0 };
-		gbl_panel.rowHeights = new int[] { 0, 0 };
-		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };
-		gbl_panel.rowWeights = new double[] { 0.0, Double.MIN_VALUE };
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		panel.setLayout(gbl_panel);
 
-		JLabel autor_1 = new JLabel("Título");
+		JPanel panel_1 = new JPanel();
+		contentPane.add(panel_1, BorderLayout.SOUTH);
+
+		JButton aceptar = new JButton("Aceptar");
+		panel_1.add(aceptar);
+		JButton cancelar = new JButton("Atrás");
+		panel_1.add(cancelar);
+		BotonAtras.irAtras(cancelar, panel);
+
+		JComboBox _autor = new JComboBox();
+		GridBagConstraints gbc__autor = new GridBagConstraints();
+		gbc__autor.gridwidth = 7;
+		gbc__autor.insets = new Insets(0, 0, 5, 0);
+		gbc__autor.fill = GridBagConstraints.HORIZONTAL;
+		gbc__autor.gridx = 6;
+		gbc__autor.gridy = 2;
+		_autor.removeAllItems();
+
+		JLabel autor_1 = new JLabel("Comic");
 		GridBagConstraints gbc_autor_1 = new GridBagConstraints();
 		gbc_autor_1.anchor = GridBagConstraints.EAST;
 		gbc_autor_1.insets = new Insets(0, 0, 5, 5);
 		gbc_autor_1.gridx = 1;
-		gbc_autor_1.gridy = 3;
+		gbc_autor_1.gridy = 2;
 		panel.add(autor_1, gbc_autor_1);
-
-		JComboBox _titulo = new JComboBox();
-		GridBagConstraints gbc__autor = new GridBagConstraints();
-		gbc__autor.gridwidth = 2;
-		gbc__autor.insets = new Insets(0, 0, 5, 0);
-		gbc__autor.fill = GridBagConstraints.HORIZONTAL;
-		gbc__autor.gridx = 3;
-		gbc__autor.gridy = 3;
-		_titulo.removeAllItems();
-		_titulo.addItem("");
+		_autor.addItem("");
 		String consulta = "select Nombre from comics";
-		ArrayList<String> listado = llenarLista(consulta);
+		ArrayList<String> listado = ComboBoxFiller.llenarLista(consulta);
 		for (int i = 0; i < listado.size(); i++) {
-			_titulo.addItem(listado.get(i));
+			_autor.addItem(listado.get(i));
 		}
-		panel.add(_titulo, gbc__autor);
-
-		JButton aceptar = new JButton("Aceptar");
-		panel.add(aceptar);
+		panel.add(_autor, gbc__autor);
 		aceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
 					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
-					PreparedStatement sentencia;
-					PreparedStatement sentencia2;
-					String titulo = _titulo.getSelectedItem().toString();
 
-					sentencia = conexion
-							.prepareStatement("delete from leidos where isbn=(select isbn from comics where Nombre=?)");
-					sentencia.setString(1, titulo);
+					PreparedStatement sentencia;
+
+					String autor = _autor.getSelectedItem().toString();
+					sentencia = conexion.prepareStatement("delete from comics where Nombre=?");
+					sentencia.setString(1, autor);
 					sentencia.execute();
 
 					sentencia.close();
-
-					sentencia2 = conexion.prepareStatement("delete from comics where Nombre=?");
-					sentencia2.setString(1, titulo);
-					sentencia2.execute();
-
-					sentencia2.close();
 					conexion.close();
 
 					JOptionPane.showMessageDialog(null, "Comic borrado", "Comicteca", JOptionPane.PLAIN_MESSAGE);
@@ -119,43 +120,5 @@ public class Bajacomic extends JFrame {
 				}
 			}
 		});
-		JButton cancelar = new JButton("Atrás");
-		panel.add(cancelar);
-		BotonAtras.irAtras(cancelar, panel);
-	}
-
-	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException {
-
-		ArrayList<String> listado = new ArrayList<String>();
-
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/comics?serverTimezone=UTC",
-					"root", "chios");
-
-			Statement sentencia = conexion.createStatement();
-
-			ResultSet resultado = sentencia.executeQuery(consulta);
-
-			ResultSetMetaData metadata = resultado.getMetaData();
-			int numberOfColumns = metadata.getColumnCount();
-			while (resultado.next()) {
-				int i = 1;
-				while (i <= numberOfColumns) {
-					listado.add(resultado.getString(i++));
-				}
-			}
-			resultado.close();
-			sentencia.close();
-			conexion.close();
-
-		} catch (SQLException e) {
-
-			JOptionPane.showMessageDialog(null, "Error en el acceso a base de datos", "Error",
-					JOptionPane.PLAIN_MESSAGE);
-		}
-
-		return listado;
-
 	}
 }

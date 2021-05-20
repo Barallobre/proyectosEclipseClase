@@ -47,8 +47,9 @@ public class Bajasubtipos extends JFrame {
 	private JPanel contentPane;
 
 	public Bajasubtipos() throws ClassNotFoundException {
+		setTitle("Baja subtipos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 103);
+		setBounds(100, 100, 450, 139);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -57,28 +58,37 @@ public class Bajasubtipos extends JFrame {
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.CENTER);
 		GridBagLayout gbl_panel = new GridBagLayout();
-		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0 };
-		gbl_panel.rowHeights = new int[] { 0, 0 };
-		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };
-		gbl_panel.rowWeights = new double[] { 0.0, Double.MIN_VALUE };
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		panel.setLayout(gbl_panel);
 
-		JLabel autor_1 = new JLabel("Autor");
+		JPanel panel_1 = new JPanel();
+		contentPane.add(panel_1, BorderLayout.SOUTH);
+
+		JButton aceptar = new JButton("Aceptar");
+		panel_1.add(aceptar);
+		JButton cancelar = new JButton("Atrás");
+		panel_1.add(cancelar);
+		BotonAtras.irAtras(cancelar, panel);
+
+		JComboBox _autor = new JComboBox();
+		GridBagConstraints gbc__autor = new GridBagConstraints();
+		gbc__autor.gridwidth = 7;
+		gbc__autor.insets = new Insets(0, 0, 5, 0);
+		gbc__autor.fill = GridBagConstraints.HORIZONTAL;
+		gbc__autor.gridx = 6;
+		gbc__autor.gridy = 2;
+		_autor.removeAllItems();
+
+		JLabel autor_1 = new JLabel("Subtipo");
 		GridBagConstraints gbc_autor_1 = new GridBagConstraints();
 		gbc_autor_1.anchor = GridBagConstraints.EAST;
 		gbc_autor_1.insets = new Insets(0, 0, 5, 5);
 		gbc_autor_1.gridx = 1;
-		gbc_autor_1.gridy = 3;
+		gbc_autor_1.gridy = 2;
 		panel.add(autor_1, gbc_autor_1);
-
-		JComboBox _autor = new JComboBox();
-		GridBagConstraints gbc__autor = new GridBagConstraints();
-		gbc__autor.gridwidth = 2;
-		gbc__autor.insets = new Insets(0, 0, 5, 0);
-		gbc__autor.fill = GridBagConstraints.HORIZONTAL;
-		gbc__autor.gridx = 3;
-		gbc__autor.gridy = 3;
-		_autor.removeAllItems();
 		_autor.addItem("");
 		String consulta = "select subtipo from subtipos";
 		ArrayList<String> listado = ComboBoxFiller.llenarLista(consulta);
@@ -86,9 +96,6 @@ public class Bajasubtipos extends JFrame {
 			_autor.addItem(listado.get(i));
 		}
 		panel.add(_autor, gbc__autor);
-
-		JButton aceptar = new JButton("Aceptar");
-		panel.add(aceptar);
 		aceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
@@ -107,13 +114,10 @@ public class Bajasubtipos extends JFrame {
 
 					JOptionPane.showMessageDialog(null, "Subtipo borrado", "Comicteca", JOptionPane.PLAIN_MESSAGE);
 				} catch (SQLException e1) {
-					JOptionPane.showMessageDialog(null, "Error en la base de datos al borrar el subtipo.", "ERROR",
+					JOptionPane.showMessageDialog(null, "Error al borrar el subtipo.", "ERROR",
 							JOptionPane.PLAIN_MESSAGE);
 				}
 			}
 		});
-		JButton cancelar = new JButton("Cancelar");
-		panel.add(cancelar);
-		BotonAtras.irAtras(cancelar, panel);
 	}
 }
