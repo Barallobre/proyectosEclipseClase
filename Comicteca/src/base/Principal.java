@@ -22,5 +22,6 @@ public class Principal {
 			}
 		VentanaPrincipal barramenu = new VentanaPrincipal();
 		barramenu.setVisible(true);
+		
 	}
 }

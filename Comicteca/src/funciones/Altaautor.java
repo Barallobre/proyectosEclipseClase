@@ -111,7 +111,7 @@ public class Altaautor extends JFrame {
 		});
 		JButton cancelar = new JButton("Atrás");
 		panel_1.add(cancelar);
-		BotonAtras.irAtras(cancelar, panel);
+		BotonAtras.irAtras(cancelar, contentPane);
 	}
 
 }

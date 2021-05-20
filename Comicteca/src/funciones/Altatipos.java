@@ -42,7 +42,7 @@ public class Altatipos extends JFrame {
 	private JTextField nombre;
 
 	public Altatipos() {
-		setTitle("Alta autor");
+		setTitle("Alta tipo");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 446, 174);
 		contentPane = new JPanel();

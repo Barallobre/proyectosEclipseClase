@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 
 import base.VentanaPrincipal;
 import funciones.Consultanoleidos;
@@ -20,7 +21,8 @@ public static void irAtras(JButton cancelar, JPanel contentPane) {
 			} catch (Exception e1) {
 				e1.printStackTrace();
 			}
-			contentPane.setEnabled(false);
+			Window w = SwingUtilities.getWindowAncestor(contentPane);
+			w.setVisible(false);
 		}
 	});
 }
