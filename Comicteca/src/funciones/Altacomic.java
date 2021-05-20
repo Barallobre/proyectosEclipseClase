@@ -11,6 +11,7 @@ import base.VentanaPrincipal;
 import utils.AccesoBaseDatos;
 import utils.BotonAtras;
 import utils.ComboBoxFiller;
+import utils.VaciadoYLlenadoCombo;
 
 import javax.swing.JButton;
 import javax.swing.JTextField;
@@ -48,7 +49,7 @@ public class Altacomic extends JFrame {
 	private JPanel contentPane;
 	private JTextField _isbn;
 	private JTextField _nombre;
-
+private String consulta;
 	public Altacomic() throws ClassNotFoundException {
 		setTitle("Alta de comics");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -127,13 +128,11 @@ public class Altacomic extends JFrame {
 		gbc__autor.fill = GridBagConstraints.HORIZONTAL;
 		gbc__autor.gridx = 3;
 		gbc__autor.gridy = 3;
-		_autor.removeAllItems();
-		_autor.addItem("");
-		String consulta = "select * from autores";
-		ArrayList<String> listado = ComboBoxFiller.llenarLista(consulta);
-		for (int i = 0; i < listado.size(); i++) {
-			_autor.addItem(listado.get(i));
-		}
+
+		consulta = "select * from autores";
+		VaciadoYLlenadoCombo.consultaParaLlenadodeCombo(consulta,_autor);
+		
+
 		panel.add(_autor, gbc__autor);
 
 		JLabel editorial_1 = new JLabel("Editorial");
@@ -151,13 +150,9 @@ public class Altacomic extends JFrame {
 		gbc__editorial.fill = GridBagConstraints.HORIZONTAL;
 		gbc__editorial.gridx = 3;
 		gbc__editorial.gridy = 4;
-		_editorial.removeAllItems();
-		_editorial.addItem("");
-		String consulta2 = "select * from editoriales";
-		ArrayList<String> listado2 = ComboBoxFiller.llenarLista(consulta2);
-		for (int i = 0; i < listado2.size(); i++) {
-			_editorial.addItem(listado2.get(i));
-		}
+		
+		consulta = "select * from editoriales";
+		VaciadoYLlenadoCombo.consultaParaLlenadodeCombo(consulta,_editorial);
 		panel.add(_editorial, gbc__editorial);
 
 		JLabel Tipo = new JLabel("Tipo");
@@ -176,13 +171,9 @@ public class Altacomic extends JFrame {
 		gbc__tipo.fill = GridBagConstraints.HORIZONTAL;
 		gbc__tipo.gridx = 3;
 		gbc__tipo.gridy = 5;
-		_tipo.removeAllItems();
-		_tipo.addItem("");
-		String consulta3 = "select * from tipos";
-		ArrayList<String> listado3 = ComboBoxFiller.llenarLista(consulta3);
-		for (int i = 0; i < listado3.size(); i++) {
-			_tipo.addItem(listado3.get(i));
-		}
+		
+		consulta = "select * from tipos";
+		VaciadoYLlenadoCombo.consultaParaLlenadodeCombo(consulta,_tipo);
 		panel.add(_tipo, gbc__tipo);
 
 		JLabel subtipo = new JLabel("Subtipo");
@@ -200,11 +191,8 @@ public class Altacomic extends JFrame {
 		gbc__subtipo.fill = GridBagConstraints.HORIZONTAL;
 		gbc__subtipo.gridx = 3;
 		gbc__subtipo.gridy = 6;
-		String consulta5 = "select subtipo from subtipos";
-		ArrayList<String> listado5 = ComboBoxFiller.llenarLista(consulta5);
-		for (int i = 0; i < listado5.size(); i++) {
-			_subtipo.addItem(listado5.get(i));
-		}
+		consulta = "select subtipo from subtipos";
+		VaciadoYLlenadoCombo.consultaParaLlenadodeCombo(consulta,_subtipo);
 		panel.add(_subtipo, gbc__subtipo);
 
 		JLabel coleccion_1 = new JLabel("Colecci\u00F3n");
@@ -224,11 +212,8 @@ public class Altacomic extends JFrame {
 		gbc__coleccion.gridy = 7;
 		_coleccion.removeAllItems();
 		_coleccion.addItem("");
-		String consulta4 = "select * from colecciones";
-		ArrayList<String> listado4 = ComboBoxFiller.llenarLista(consulta4);
-		for (int i = 0; i < listado4.size(); i++) {
-			_coleccion.addItem(listado4.get(i));
-		}
+		consulta = "select * from colecciones";
+		VaciadoYLlenadoCombo.consultaParaLlenadodeCombo(consulta,_coleccion);
 		panel.add(_coleccion, gbc__coleccion);
 
 		JLabel leido_1 = new JLabel("Le\u00EDdo");
