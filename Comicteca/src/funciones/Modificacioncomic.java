@@ -49,7 +49,7 @@ public class Modificacioncomic extends JFrame {
 	private JTextField _isbn;
 	private JTextField _nombre;
 
-	public Modificacioncomic() throws ClassNotFoundException {
+	public Modificacioncomic()  {
 		setTitle("Alta de comics");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 453, 348);

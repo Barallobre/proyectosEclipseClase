@@ -46,8 +46,8 @@ public class Altasubtipos extends JFrame {
 	private JPanel contentPane;
 	private JTextField nombre;
 
-	public Altasubtipos() throws ClassNotFoundException {
-		setTitle("Alta autor");
+	public Altasubtipos() throws ClassNotFoundException  {
+		setTitle("Alta subtipo");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 446, 174);
 		contentPane = new JPanel();
@@ -141,7 +141,7 @@ public class Altasubtipos extends JFrame {
 		BotonAtras.irAtras(cancelar, panel);
 	}
 
-	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException {
+	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException  {
 
 		ArrayList<String> listado = new ArrayList<String>();
 

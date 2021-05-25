@@ -1,0 +1,2147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_TsVVgL0vEeuoGL0ngivwkg">
+  <modelElement href="Comicteca.uml#_TrvfoL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UF_Lob0vEeuoGL0ngivwkg" targetItem="_UGKK0r0vEeuoGL0ngivwkg" sourceItem="_UF_LoL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGC2AL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBfGIb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGC2Ab0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBfGI70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGC2Ar0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGC2A70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBfGIr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGC2BL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGC2Bb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGC2Br0vEeuoGL0ngivwkg" aggregationKind="NONE" name="panel" navigable="true">
+      <modelElement href="Comicteca.uml#_UBGEk70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGC2B70vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGC2CL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGDdEL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBfGJL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGDdEb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBftML0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGDdEr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGDdE70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBfGJb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGDdFL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGDdFb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGDdFr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="altacomic" navigable="true">
+      <modelElement href="Comicteca.uml#_UBGrob0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGDdF70vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGDdGL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGDdGb0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBftMb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGDdGr0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBftM70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGDdG70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGDdHL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBftMr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGDdHb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGDdHr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGDdH70vEeuoGL0ngivwkg" aggregationKind="NONE" name="altacoleccion" navigable="true">
+      <modelElement href="Comicteca.uml#_UBGrpL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGDdIL0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGDdIb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGEEIL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBftNL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGEEIb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBgUQL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGEEIr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGEEI70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBftNb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGEEJL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGEEJb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGEEJr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="altaeditorial" navigable="true">
+      <modelElement href="Comicteca.uml#_UBHSsb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGEEJ70vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGEEKL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGEEKb0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBgUQb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGEEKr0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBgUQ70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGEEK70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGEELL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBgUQr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGEELb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGEELr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGEEL70vEeuoGL0ngivwkg" aggregationKind="NONE" name="altaautor" navigable="true">
+      <modelElement href="Comicteca.uml#_UBHStL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGEEML0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGEEMb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGErML0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBg7UL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGErMb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBg7Ur0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGErMr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGErM70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBg7Ub0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGErNL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGErNb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGErNr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="consultaleidos" navigable="true">
+      <modelElement href="Comicteca.uml#_UBH5wL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGErN70vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGErOL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGErOb0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBg7U70vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGErOr0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBhiYL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGErO70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGErPL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBg7VL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGErPb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGErPr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGErP70vEeuoGL0ngivwkg" aggregationKind="NONE" name="altatipos" navigable="true">
+      <modelElement href="Comicteca.uml#_UBH5wr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGErQL0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGErQb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGFSQL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBhiYb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGFSQb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBhiY70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGFSQr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGFSQ70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBhiYr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGFSRL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGFSRb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGFSRr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="bajatipos" navigable="true">
+      <modelElement href="Comicteca.uml#_UBH5xL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGFSR70vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGFSSL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGFSSb0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBhiZL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGFSSr0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBiJcL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGFSS70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGFSTL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBhiZb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGFSTb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGFSTr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGFST70vEeuoGL0ngivwkg" aggregationKind="NONE" name="altasubtipos" navigable="true">
+      <modelElement href="Comicteca.uml#_UBIg0L0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGFSUL0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGFSUb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGF5UL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBiJcb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGF5Ub0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBiwgL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGF5Ur0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGF5U70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBiJcr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGF5VL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGF5Vb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGF5Vr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="bajasubtipos" navigable="true">
+      <modelElement href="Comicteca.uml#_UBIg0r0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGF5V70vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGF5WL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGF5Wb0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBiwgb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGF5Wr0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBiwg70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGF5W70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGF5XL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBiwgr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGF5Xb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGF5Xr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGF5X70vEeuoGL0ngivwkg" aggregationKind="NONE" name="lblNewLabel" navigable="true">
+      <modelElement href="Comicteca.uml#_UBIg1L0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGF5YL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGF5Yb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGGgYL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBiwhL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGGgYb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBjXkL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGGgYr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGGgY70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBiwhb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGGgZL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGGgZb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGGgZr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="ayuda" navigable="true">
+      <modelElement href="Comicteca.uml#_UBIg1r0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGGgZ70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGGgaL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGGgab0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBjXkb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGGgar0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBjXk70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGGga70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGGgbL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBjXkr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGGgbb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGGgbr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGGgb70vEeuoGL0ngivwkg" aggregationKind="NONE" name="Leidos" navigable="true">
+      <modelElement href="Comicteca.uml#_UBJH4b0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGGgcL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGGgcb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGHHcL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBjXlL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGHHcb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBj-oL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGHHcr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGHHc70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBjXlb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGHHdL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGHHdb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGHHdr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="consultanoleidos_" navigable="true">
+      <modelElement href="Comicteca.uml#_UBJH470vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGHHd70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGHHeL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGHHeb0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBj-ob0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGHHer0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBj-o70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGHHe70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGHHfL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBj-or0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGHHfb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGHHfr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGHHf70vEeuoGL0ngivwkg" aggregationKind="NONE" name="consultaleidos_" navigable="true">
+      <modelElement href="Comicteca.uml#_UBJH5b0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGHHgL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGHHgb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGHugL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBj-pL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGHugb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBj-pr0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGHugr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGHug70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBj-pb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGHuhL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGHuhb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGHuhr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="Tipos" navigable="true">
+      <modelElement href="Comicteca.uml#_UBJH570vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGHuh70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGHuiL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGHuib0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBklsL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGHuir0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBklsr0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGHui70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGHujL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBklsb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGHujb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGHujr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGHuj70vEeuoGL0ngivwkg" aggregationKind="NONE" name="agregaraleidos" navigable="true">
+      <modelElement href="Comicteca.uml#_UBJu8b0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGHukL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGHukb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGIVkL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBkls70vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGIVkb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBkltb0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGIVkr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGIVk70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBkltL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGIVlL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGIVlb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGIVlr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="subtipos" navigable="true">
+      <modelElement href="Comicteca.uml#_UBJu870vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGIVl70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGIVmL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGIVmb0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBkltr0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGIVmr0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBlMwL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGIVm70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGIVnL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBklt70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGIVnb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGIVnr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGIVn70vEeuoGL0ngivwkg" aggregationKind="NONE" name="bajacomic" navigable="true">
+      <modelElement href="Comicteca.uml#_UBOAa70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGIVoL0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGIVob0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGI8oL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBlMwb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGI8ob0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBlMw70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGI8or0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGI8o70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBlMwr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGI8pL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGI8pb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGI8pr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="modificacioncomic" navigable="true">
+      <modelElement href="Comicteca.uml#_UBOncb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGI8p70vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGI8qL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGJjsL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBlMxL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGJjsb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBlz0L0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGJjsr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGJjs70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBlMxb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGJjtL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGJjtb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGJjtr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="consultacomics" navigable="true">
+      <modelElement href="Comicteca.uml#_UBOndL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGJjt70vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGJjuL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGJjub0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBlz0b0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGJjur0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBlz070vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGJju70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGJjvL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBlz0r0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGJjvb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGJjvr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGJjv70vEeuoGL0ngivwkg" aggregationKind="NONE" name="bajacoleccion" navigable="true">
+      <modelElement href="Comicteca.uml#_UBPOgL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGJjwL0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGJjwb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGKKwL0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBlz1L0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGKKwb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBlz1r0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGKKwr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGKKw70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBlz1b0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGKKxL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGKKxb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGKKxr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="bajaeditorial" navigable="true">
+      <modelElement href="Comicteca.uml#_UBPOg70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGKKx70vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKKyL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGKKyb0vEeuoGL0ngivwkg" source="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBlz170vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGKKyr0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBma4b0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGKKy70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGKKzL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBma4L0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGKKzb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGKKzr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGKKz70vEeuoGL0ngivwkg" aggregationKind="NONE" name="bajaautor" navigable="true">
+      <modelElement href="Comicteca.uml#_UBP1kb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGKK0L0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKK0b0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGTUsb0vEeuoGL0ngivwkg" targetItem="_UGTUsr0vEeuoGL0ngivwkg" sourceItem="_UGTUsL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGUi0b0vEeuoGL0ngivwkg" targetItem="_UGVw8L0vEeuoGL0ngivwkg" sourceItem="_UGUi0L0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGUi0r0vEeuoGL0ngivwkg" source="_UGVw8L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBdQ8b0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGVJ470vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBdQ870vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGVJ4L0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGVJ4b0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBdQ8r0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGVJ5b0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGVJ5L0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGVJ4r0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBE2db0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGVJ570vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGVJ5r0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGW_Eb0vEeuoGL0ngivwkg" targetItem="_UGYNML0vEeuoGL0ngivwkg" sourceItem="_UGW_EL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGW_Er0vEeuoGL0ngivwkg" source="_UGYNML0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBa0sb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGXmI70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBa0s70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGXmIL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGXmIb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBa0sr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGXmJb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGXmJL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGXmIr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBDoVb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGXmJ70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGXmJr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGZbUb0vEeuoGL0ngivwkg" targetItem="_UGapeb0vEeuoGL0ngivwkg" sourceItem="_UGZbUL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGZbUr0vEeuoGL0ngivwkg" source="_UGapeb0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBVVIb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGaCY70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBVVI70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGaCYL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGaCYb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBVVIr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGaCZb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGaCZL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGaCYr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UA_9870vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGaCZ70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGaCZr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGapcL0vEeuoGL0ngivwkg" source="_UGapeb0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBVVJL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGapcb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBV8ML0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGapcr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGapc70vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBVVJb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGapdL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGapdb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGapdr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="nombre" navigable="true">
+      <modelElement href="Comicteca.uml#_UBAlAb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGapd70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGapeL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGb3kb0vEeuoGL0ngivwkg" targetItem="_UGdFsL0vEeuoGL0ngivwkg" sourceItem="_UGb3kL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGb3kr0vEeuoGL0ngivwkg" source="_UGdFsL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBbbwL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGceo70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBbbwr0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGceoL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGceob0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBbbwb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGcepb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGcepL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGceor0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBEPYb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGcep70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGcepr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGeT0b0vEeuoGL0ngivwkg" targetItem="_UGfh9r0vEeuoGL0ngivwkg" sourceItem="_UGeT0L0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGeT0r0vEeuoGL0ngivwkg" source="_UGfh9r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBY_gb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGe6470vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBY_g70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGe64L0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGe64b0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBY_gr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGe66b0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGe66L0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGe64r0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBDBQb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGe6670vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGe66r0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGeT070vEeuoGL0ngivwkg" source="_UGfh9r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBY_hL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGe6570vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBZmkL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGe65L0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGe65b0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBY_hb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGfh8r0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGfh8b0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGe65r0vEeuoGL0ngivwkg" aggregationKind="NONE" name="nombre" navigable="true">
+      <modelElement href="Comicteca.uml#_UBDBQ70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGfh9L0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGfh870vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGhXIb0vEeuoGL0ngivwkg" targetItem="_UGilQL0vEeuoGL0ngivwkg" sourceItem="_UGhXIL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGh-ML0vEeuoGL0ngivwkg" source="_UGilQL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBcp4L0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGh-NL0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBcp4r0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGh-Mb0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGh-Mr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBcp4b0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGh-Nr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGh-Nb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGh-M70vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBE2cb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGh-OL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGh-N70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGjzYL0vEeuoGL0ngivwkg" targetItem="_UGlBgL0vEeuoGL0ngivwkg" sourceItem="_UGjMUL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGjzYb0vEeuoGL0ngivwkg" source="_UGlBgL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBXxZL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGjzZr0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBYYcL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGjzY70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGjzZL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBXxZb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGkacr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGkacb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGjzZb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBCaM70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGkadL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGkac70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGjzYr0vEeuoGL0ngivwkg" source="_UGlBgL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBYYcb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGkacL0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBY_gL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGjzZ70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGjzaL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBYYcr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGkad70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGkadr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGjzab0vEeuoGL0ngivwkg" aggregationKind="NONE" name="nombre" navigable="true">
+      <modelElement href="Comicteca.uml#_UBCaNb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGkaeb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGkaeL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGmPoL0vEeuoGL0ngivwkg" targetItem="_UGoE0L0vEeuoGL0ngivwkg" sourceItem="_UGlokL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGmPob0vEeuoGL0ngivwkg" source="_UGoE0L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBTf8L0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGm2s70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBUHAL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGm2sL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGm2sb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBTf8b0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGm2vb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGm2vL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGm2sr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UA-v0L0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGm2v70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGm2vr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGmPor0vEeuoGL0ngivwkg" source="_UGoE0L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBUHAb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGm2t70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBUuEL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGm2tL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGm2tb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBUHAr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGndwr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGndwb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGm2tr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="_isbn" navigable="true">
+      <modelElement href="Comicteca.uml#_UA_W4b0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGndxL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGndw70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGmPo70vEeuoGL0ngivwkg" source="_UGoE0L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBUuEb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGm2u70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBVVIL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGm2uL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGm2ub0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBUuEr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGndx70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGndxr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGm2ur0vEeuoGL0ngivwkg" aggregationKind="NONE" name="_nombre" navigable="true">
+      <modelElement href="Comicteca.uml#_UA_98b0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGndyb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGndyL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGpS8b0vEeuoGL0ngivwkg" targetItem="_UGrIIL0vEeuoGL0ngivwkg" sourceItem="_UGpS8L0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGpS8r0vEeuoGL0ngivwkg" source="_UGrIIL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBV8Mb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGp6A70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBWjQL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGp6AL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGp6Ab0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBV8Mr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGqhEr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGqhEb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGp6Ar0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBAlA70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGqhFL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGqhE70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGpS870vEeuoGL0ngivwkg" source="_UGrIIL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBWjQb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGqhEL0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBWjQ70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGp6BL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGp6Bb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBWjQr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGqhF70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGqhFr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGp6Br0vEeuoGL0ngivwkg" aggregationKind="NONE" name="nombre" navigable="true">
+      <modelElement href="Comicteca.uml#_UBBMEb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGqhGb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGqhGL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGsWQb0vEeuoGL0ngivwkg" targetItem="_UGuLcL0vEeuoGL0ngivwkg" sourceItem="_UGsWQL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGsWQr0vEeuoGL0ngivwkg" source="_UGuLcL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBZmkb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGs9U70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBZmk70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGs9UL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGs9Ub0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBZmkr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGtkY70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGtkYr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGs9Ur0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBDBRb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGtkZb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGtkZL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGsWQ70vEeuoGL0ngivwkg" source="_UGuLcL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBaNoL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGtkYb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBaNor0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGs9VL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGs9Vb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBaNob0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGtkaL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGtkZ70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGtkYL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="nombre" navigable="true">
+      <modelElement href="Comicteca.uml#_UBDoUb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGtkar0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGtkab0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGwAob0vEeuoGL0ngivwkg" targetItem="_UGx10L0vEeuoGL0ngivwkg" sourceItem="_UGwAoL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGwAor0vEeuoGL0ngivwkg" source="_UGx10L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBWjRL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGwns70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBXKUL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGwnsL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGwnsb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBWjRb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGxOwr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGxOwb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGwnsr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBBME70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGxOxL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGxOw70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGwAo70vEeuoGL0ngivwkg" source="_UGx10L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBXKUb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGwnt70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBXxYL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGwntL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGwntb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBXKUr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGxOx70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGxOxr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGwntr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="_isbn" navigable="true">
+      <modelElement href="Comicteca.uml#_UBBzIb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGxOyb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGxOyL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGwApL0vEeuoGL0ngivwkg" source="_UGx10L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBXxYb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UGxOwL0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBXxY70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGwnuL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGwnub0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBXxYr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGxOzL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGxOy70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UGwnur0vEeuoGL0ngivwkg" aggregationKind="NONE" name="_nombre" navigable="true">
+      <modelElement href="Comicteca.uml#_UBBzI70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGxOzr0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGxOzb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UGzrAb0vEeuoGL0ngivwkg" targetItem="_UG05IL0vEeuoGL0ngivwkg" sourceItem="_UGzrAL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UGzrAr0vEeuoGL0ngivwkg" source="_UG05IL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBbbw70vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UG0SEb0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBcC0L0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UGzrA70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UGzrBL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBbbxL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG0SE70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UG0SEr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UG0SEL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBEPY70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG0SFb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG0SFL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UG2HQb0vEeuoGL0ngivwkg" targetItem="_UG3VZb0vEeuoGL0ngivwkg" sourceItem="_UG2HQL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UG2uUL0vEeuoGL0ngivwkg" source="_UG3VZb0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBcp470vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UG2uVL0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBdQ8L0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UG2uUb0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UG2uUr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBcp5L0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG3VYb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UG3VYL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UG2uU70vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBE2c70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG3VY70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG3VYr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UG5Kkb0vEeuoGL0ngivwkg" targetItem="_UG7m0L0vEeuoGL0ngivwkg" sourceItem="_UG5KkL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UG5Kkr0vEeuoGL0ngivwkg" source="_UG7m0L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBd4Ab0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UG5xo70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBd4A70vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UG5xoL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UG5xob0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBd4Ar0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG6Ysb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UG6YsL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UG5xor0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBFdg70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG6Ys70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG6Ysr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UG5Kk70vEeuoGL0ngivwkg" source="_UG7m0L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBd4BL0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UG5xp70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBefEL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UG5xpL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UG5xpb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBd4Bb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG6Ytr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UG6Ytb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UG5xpr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="_isbn" navigable="true">
+      <modelElement href="Comicteca.uml#_UBFdhb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG6YuL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG6Yt70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UG5KlL0vEeuoGL0ngivwkg" source="_UG7m0L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBefEb0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UG5xq70vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBfGIL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UG5xqL0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UG5xqb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBefEr0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG6Yu70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UG6Yur0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UG5xqr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="_nombre" navigable="true">
+      <modelElement href="Comicteca.uml#_UBGEkb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG6Yvb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG6YvL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UG808b0vEeuoGL0ngivwkg" targetItem="_UG-DFL0vEeuoGL0ngivwkg" sourceItem="_UG808L0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UG9cAL0vEeuoGL0ngivwkg" source="_UG-DFL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBcC0b0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UG9cBL0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBcC070vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UG9cAb0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UG9cAr0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBcC0r0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG-DEL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UG9cBb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UG9cA70vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBEPZb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UG-DEr0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG-DEb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UG_4Qb0vEeuoGL0ngivwkg" targetItem="_UHBGYL0vEeuoGL0ngivwkg" sourceItem="_UG_4QL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UG_4Qr0vEeuoGL0ngivwkg" source="_UHBGYL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBaNo70vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UHAfUr0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBa0sL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UG_4Q70vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UHAfUL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBaNpL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UHAfVL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UHAfU70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UHAfUb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBDoU70vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UHAfVr0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UHAfVb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UHCUgL0vEeuoGL0ngivwkg" targetItem="_UHDioL0vEeuoGL0ngivwkg" sourceItem="_UHBtcL0vEeuoGL0ngivwkg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_UHCUgb0vEeuoGL0ngivwkg" source="_UHDioL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBdQ9L0vEeuoGL0ngivwkg"/>
+    <stereotypes xmi:id="_UHC7kr0vEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UBd4AL0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_UHCUgr0vEeuoGL0ngivwkg" text=""/>
+    <sourceRole xmi:id="_UHC7kL0vEeuoGL0ngivwkg" aggregationKind="NONE" name="">
+      <modelElement href="Comicteca.uml#_UBdQ9b0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UHC7lL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UHC7k70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_UHC7kb0vEeuoGL0ngivwkg" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="Comicteca.uml#_UBFdgb0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UHC7lr0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UHC7lb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMGAL0wEeuoGL0ngivwkg" sourceAnchor="0.0,59.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGoE0L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UAyikb0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1clugr0wEeuoGL0ngivwkg" sourceX="-148" targetX="-564" targetY="1010"/>
+    <bendpoints xmi:id="_1clug70wEeuoGL0ngivwkg" sourceX="-148" sourceY="-1189" targetX="-564" targetY="-179"/>
+    <bendpoints xmi:id="_1cluhL0wEeuoGL0ngivwkg" sourceX="748" sourceY="-1189" targetX="332" targetY="-179"/>
+    <bendpoints xmi:id="_1cluhb0wEeuoGL0ngivwkg" sourceX="748" sourceY="-972" targetX="332" targetY="38"/>
+    <bendpoints xmi:id="_1cluhr0wEeuoGL0ngivwkg" sourceX="416" sourceY="-972" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtEL0wEeuoGL0ngivwkg" sourceAnchor="90.0,0.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGapeb0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UAzJoL0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1ckgab0wEeuoGL0ngivwkg" sourceY="-7" targetX="-31" targetY="366"/>
+    <bendpoints xmi:id="_1ckgar0wEeuoGL0ngivwkg" sourceX="456" sourceY="-7" targetX="425" targetY="366"/>
+    <bendpoints xmi:id="_1ckga70wEeuoGL0ngivwkg" sourceX="456" sourceY="-335" targetX="425" targetY="38"/>
+    <bendpoints xmi:id="_1ckgbL0wEeuoGL0ngivwkg" sourceX="31" sourceY="-335" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtEb0wEeuoGL0ngivwkg" sourceAnchor="0.0,49.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGrIIL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UAzwsL0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1ckgY70wEeuoGL0ngivwkg" sourceX="-16" targetX="-136" targetY="297"/>
+    <bendpoints xmi:id="_1ckgZL0wEeuoGL0ngivwkg" sourceX="-16" sourceY="-259" targetX="-136" targetY="38"/>
+    <bendpoints xmi:id="_1ckgZb0wEeuoGL0ngivwkg" sourceX="120" sourceY="-259" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtEr0wEeuoGL0ngivwkg" sourceAnchor="76.0,0.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGx10L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA0XwL0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1cj5UL0wEeuoGL0ngivwkg" sourceY="-30" targetX="-41" targetY="38"/>
+    <bendpoints xmi:id="_1ckgYL0wEeuoGL0ngivwkg" sourceX="41" sourceY="-30" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtE70wEeuoGL0ngivwkg" sourceAnchor="210.0,49.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGlBgL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA0-0L0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1ckgZr0wEeuoGL0ngivwkg" sourceX="58" targetX="403" targetY="297"/>
+    <bendpoints xmi:id="_1ckgZ70wEeuoGL0ngivwkg" sourceX="58" sourceY="-259" targetX="403" targetY="38"/>
+    <bendpoints xmi:id="_1ckgaL0wEeuoGL0ngivwkg" sourceX="-345" sourceY="-259" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtFL0wEeuoGL0ngivwkg" sourceAnchor="146.0,0.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGfh9r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA1l4b0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1ckgYb0wEeuoGL0ngivwkg" sourceY="-31" targetX="242" targetY="38"/>
+    <bendpoints xmi:id="_1ckgYr0wEeuoGL0ngivwkg" sourceX="-242" sourceY="-31" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtFb0wEeuoGL0ngivwkg" sourceAnchor="176.0,49.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGuLcL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA2M8L0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1ckgbb0wEeuoGL0ngivwkg" sourceX="189" targetX="447" targetY="422"/>
+    <bendpoints xmi:id="_1ckgbr0wEeuoGL0ngivwkg" sourceX="189" sourceY="-384" targetX="447" targetY="38"/>
+    <bendpoints xmi:id="_1ckgb70wEeuoGL0ngivwkg" sourceX="-258" sourceY="-384" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtFr0wEeuoGL0ngivwkg" sourceAnchor="182.0,40.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UHBGYL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA20AL0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1clHd70wEeuoGL0ngivwkg" sourceX="222" targetX="521" targetY="639"/>
+    <bendpoints xmi:id="_1clHeL0wEeuoGL0ngivwkg" sourceX="222" sourceY="-601" targetX="521" targetY="38"/>
+    <bendpoints xmi:id="_1clHeb0wEeuoGL0ngivwkg" sourceX="-299" sourceY="-601" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtF70wEeuoGL0ngivwkg" sourceAnchor="84.0,80.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGYNML0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA20Ab0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1clHhL0wEeuoGL0ngivwkg" sourceY="145" targetX="-60" targetY="922"/>
+    <bendpoints xmi:id="_1clHhb0wEeuoGL0ngivwkg" sourceX="-474" sourceY="145" targetX="-534" targetY="922"/>
+    <bendpoints xmi:id="_1clHhr0wEeuoGL0ngivwkg" sourceX="-474" sourceY="-926" targetX="-534" targetY="-149"/>
+    <bendpoints xmi:id="_1clHh70wEeuoGL0ngivwkg" sourceX="362" sourceY="-926" targetX="302" targetY="-149"/>
+    <bendpoints xmi:id="_1clugL0wEeuoGL0ngivwkg" sourceX="362" sourceY="-739" targetX="302" targetY="38"/>
+    <bendpoints xmi:id="_1clugb0wEeuoGL0ngivwkg" sourceX="60" sourceY="-739" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtGL0wEeuoGL0ngivwkg" sourceAnchor="192.0,40.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGdFsL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA3bEL0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1clHdL0wEeuoGL0ngivwkg" sourceX="210" targetX="491" targetY="535"/>
+    <bendpoints xmi:id="_1clHdb0wEeuoGL0ngivwkg" sourceX="210" sourceY="-497" targetX="491" targetY="38"/>
+    <bendpoints xmi:id="_1clHdr0wEeuoGL0ngivwkg" sourceX="-281" sourceY="-497" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtGb0wEeuoGL0ngivwkg" sourceAnchor="0.0,40.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UG05IL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA3bEb0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1clHf70wEeuoGL0ngivwkg" sourceX="-108" targetX="-504" targetY="712"/>
+    <bendpoints xmi:id="_1clHgL0wEeuoGL0ngivwkg" sourceX="-108" sourceY="-831" targetX="-504" targetY="-119"/>
+    <bendpoints xmi:id="_1clHgb0wEeuoGL0ngivwkg" sourceX="668" sourceY="-831" targetX="272" targetY="-119"/>
+    <bendpoints xmi:id="_1clHgr0wEeuoGL0ngivwkg" sourceX="668" sourceY="-674" targetX="272" targetY="38"/>
+    <bendpoints xmi:id="_1clHg70wEeuoGL0ngivwkg" sourceX="396" sourceY="-674" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtGr0wEeuoGL0ngivwkg" sourceAnchor="0.0,42.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UG-DFL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA4CIL0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1ckgdL0wEeuoGL0ngivwkg" sourceX="-325" targetX="-444" targetY="640"/>
+    <bendpoints xmi:id="_1clHcL0wEeuoGL0ngivwkg" sourceX="-325" sourceY="-699" targetX="-444" targetY="-59"/>
+    <bendpoints xmi:id="_1clHcb0wEeuoGL0ngivwkg" sourceX="230" sourceY="-699" targetX="111" targetY="-59"/>
+    <bendpoints xmi:id="_1clHcr0wEeuoGL0ngivwkg" sourceX="230" sourceY="-602" targetX="111" targetY="38"/>
+    <bendpoints xmi:id="_1clHc70wEeuoGL0ngivwkg" sourceX="119" sourceY="-602" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtG70wEeuoGL0ngivwkg" sourceAnchor="89.0,0.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGilQL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA4CIb0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1ckgcL0wEeuoGL0ngivwkg" sourceY="-12" targetX="-32" targetY="488"/>
+    <bendpoints xmi:id="_1ckgcb0wEeuoGL0ngivwkg" sourceX="501" sourceY="-12" targetX="469" targetY="488"/>
+    <bendpoints xmi:id="_1ckgcr0wEeuoGL0ngivwkg" sourceX="501" sourceY="-462" targetX="469" targetY="38"/>
+    <bendpoints xmi:id="_1ckgc70wEeuoGL0ngivwkg" sourceX="32" sourceY="-462" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtHL0wEeuoGL0ngivwkg" sourceAnchor="144.0,0.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UG3VZb0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA4pML0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1cluh70wEeuoGL0ngivwkg" sourceY="-211" targetX="104" targetY="591"/>
+    <bendpoints xmi:id="_1cluiL0wEeuoGL0ngivwkg" sourceX="-261" sourceY="-211" targetX="-157" targetY="591"/>
+    <bendpoints xmi:id="_1cluib0wEeuoGL0ngivwkg" sourceX="-261" sourceY="-809" targetX="-157" targetY="-7"/>
+    <bendpoints xmi:id="_1cluir0wEeuoGL0ngivwkg" sourceX="-195" sourceY="-809" targetX="-91" targetY="-7"/>
+    <bendpoints xmi:id="_1clui70wEeuoGL0ngivwkg" sourceX="-195" sourceY="-764" targetX="-91" targetY="38"/>
+    <bendpoints xmi:id="_1clujL0wEeuoGL0ngivwkg" sourceX="-104" sourceY="-764" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtHb0wEeuoGL0ngivwkg" sourceAnchor="238.0,40.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGVw8L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA4pMb0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1clujb0wEeuoGL0ngivwkg" sourceX="159" targetX="352" targetY="945"/>
+    <bendpoints xmi:id="_1clujr0wEeuoGL0ngivwkg" sourceX="159" sourceY="-718" targetX="352" targetY="227"/>
+    <bendpoints xmi:id="_1cluj70wEeuoGL0ngivwkg" sourceX="-104" sourceY="-718" targetX="89" targetY="227"/>
+    <bendpoints xmi:id="_1clukL0wEeuoGL0ngivwkg" sourceX="-104" sourceY="-907" targetX="89" targetY="38"/>
+    <bendpoints xmi:id="_1clukb0wEeuoGL0ngivwkg" sourceX="-193" sourceY="-907" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtHr0wEeuoGL0ngivwkg" sourceAnchor="0.0,40.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UHDioL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA5QQL0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1clukr0wEeuoGL0ngivwkg" sourceX="-74" targetX="-117" targetY="1053"/>
+    <bendpoints xmi:id="_1cluk70wEeuoGL0ngivwkg" sourceX="-74" sourceY="-267" targetX="-117" targetY="786"/>
+    <bendpoints xmi:id="_1clulL0wEeuoGL0ngivwkg" sourceX="-382" sourceY="-267" targetX="-425" targetY="786"/>
+    <bendpoints xmi:id="_1clulb0wEeuoGL0ngivwkg" sourceX="-382" sourceY="-1070" targetX="-425" targetY="-17"/>
+    <bendpoints xmi:id="_1clulr0wEeuoGL0ngivwkg" sourceX="2" sourceY="-1070" targetX="-41" targetY="-17"/>
+    <bendpoints xmi:id="_1clul70wEeuoGL0ngivwkg" sourceX="2" sourceY="-1015" targetX="-41" targetY="38"/>
+    <bendpoints xmi:id="_1clumL0wEeuoGL0ngivwkg" sourceX="43" sourceY="-1015" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtH70wEeuoGL0ngivwkg" sourceAnchor="0.0,59.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UG7m0L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA53UL0vEeuoGL0ngivwkg"/>
+    <bendpoints xmi:id="_1clHer0wEeuoGL0ngivwkg" sourceX="-45" targetX="-474" targetY="848"/>
+    <bendpoints xmi:id="_1clHe70wEeuoGL0ngivwkg" sourceX="-45" sourceY="-937" targetX="-474" targetY="-89"/>
+    <bendpoints xmi:id="_1clHfL0wEeuoGL0ngivwkg" sourceX="570" sourceY="-937" targetX="141" targetY="-89"/>
+    <bendpoints xmi:id="_1clHfb0wEeuoGL0ngivwkg" sourceX="570" sourceY="-810" targetX="141" targetY="38"/>
+    <bendpoints xmi:id="_1clHfr0wEeuoGL0ngivwkg" sourceX="429" sourceY="-810" targetY="38"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1VMtIL0wEeuoGL0ngivwkg" sourceAnchor="237.0,0.0" targetAnchor="26.0,44.0" superClass="_1VOiQL0wEeuoGL0ngivwkg" subClass="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UA8TkL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_1VOiRL0wEeuoGL0ngivwkg" position="-1143.0,381.0"/>
+    <bendpoints xmi:id="_1cmVkL0wEeuoGL0ngivwkg" sourceY="-70" targetX="-185" targetY="38"/>
+    <bendpoints xmi:id="_1cmVkb0wEeuoGL0ngivwkg" sourceX="185" sourceY="-70" targetY="38"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UF_LoL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UF_Lob0vEeuoGL0ngivwkg" text="Clase que genera una ventana a partir de la cual accederemos a cada uno de&#xD;&#xA;las funciones del programa mediante una barra de menús&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UGKK0r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAar0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGTUsL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGTUsb0vEeuoGL0ngivwkg" text="Clase principal desde la que iniciamos la ventana principal que actúa como&#xD;&#xA;menú para acceder a las distintas partes de la aplicación&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 06-03-2021" item="_UGTUsr0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBNZUL0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGUi0L0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGUi0b0vEeuoGL0ngivwkg" text="Clase construida mediante window builder que nos permite generar un informe donde vemos los comics que hemos leído&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 20-05-2021&#xD;&#xA; *" item="_UGVw8L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAZ70vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGW_EL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGW_Eb0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de baja un una&#xD;&#xA;colección en la base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 20-05-2021&#xD;&#xA; *" item="_UGYNML0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAYb0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGZbUL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGZbUb0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de alta un autor&#xD;&#xA;nuevo en la base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UGapeb0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBNZUr0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGb3kL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGb3kb0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de baja un comic en la&#xD;&#xA;base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UGdFsL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAYr0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGeT0L0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGeT0b0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de alta un autor nuevo&#xD;&#xA;en la base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UGfh9r0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBNZVr0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGhXIL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGhXIb0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de baja un tipo en la&#xD;&#xA;base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UGilQL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAZb0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGjMUL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGjzYL0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de alta editoriales en&#xD;&#xA;la base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2020&#xD;&#xA; *" item="_UGlBgL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBNZVb0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGlokL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGmPoL0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de alta un nuevo comic&#xD;&#xA;en la base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UGoE0L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBNZUb0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGpS8L0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGpS8b0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite insertar una nueva&#xD;&#xA;colección en la base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UGrIIL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBNZU70vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGsWQL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGsWQb0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de alta un autor nuevo&#xD;&#xA;en la base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UGuLcL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBNZV70vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGwAoL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGwAob0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de alta un nuevo comic&#xD;&#xA;en la base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UGx10L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBNZVL0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UGzrAL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UGzrAb0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de baja una editorial de&#xD;&#xA;la base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 20-05-2021&#xD;&#xA; *" item="_UG05IL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAY70vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UG2HQL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UG2HQb0vEeuoGL0ngivwkg" text="Clase que nos permite listar en un informe los comics existentes dentro de la base de datos&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UG3VZb0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAZr0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UG5KkL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UG5Kkb0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de alta un nuevo comic&#xD;&#xA;en la base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UG7m0L0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAab0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UG808L0vEeuoGL0ngivwkg" sourceConnectionVisual="_UG808b0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de baja un autor en la&#xD;&#xA;base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UG-DFL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAZL0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UG_4QL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UG_4Qb0vEeuoGL0ngivwkg" text="Clase construida con windowbuilder que nos permite dar de baja un autor en la&#xD;&#xA;base de datos&#xD;&#xA;&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 19-05-2021&#xD;&#xA; *" item="_UHBGYL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAYL0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UHBtcL0vEeuoGL0ngivwkg" sourceConnectionVisual="_UHCUgL0vEeuoGL0ngivwkg" text="Clase construida mediante window builder que nos permite generar un informe donde vemos los comics que tenemso y aún no hemos leído&#xD;&#xA;@author Cristian Barallobre&#xD;&#xA;@version 20-05-2021&#xD;&#xA; *" item="_UHDioL0vEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UBOAaL0vEeuoGL0ngivwkg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGTUsr0vEeuoGL0ngivwkg" comments="_UGTUsL0vEeuoGL0ngivwkg" targetConnectionVisual="_UGTUsb0vEeuoGL0ngivwkg" name="Principal">
+    <modelElement href="Comicteca.uml#_T8bnAL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGTUs70vEeuoGL0ngivwkg" position="-1240.0,39.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGTUtL0vEeuoGL0ngivwkg" label="+"/>
+    <operations xmi:id="_UGTUtb0vEeuoGL0ngivwkg" name="main" staticOperation="true">
+      <modelElement href="Comicteca.uml#_T8cOEL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UGTUtr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGTUt70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_UGTUuL0vEeuoGL0ngivwkg" name="args">
+        <modelElement href="Comicteca.uml#_T8c1IL0vEeuoGL0ngivwkg"/>
+        <cardinality xmi:id="_UGTUub0vEeuoGL0ngivwkg" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_UGTUur0vEeuoGL0ngivwkg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UHIbIL0vEeuoGL0ngivwkg" name="BotonAtras">
+    <modelElement href="Comicteca.uml#_T812sL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UHIbIb0vEeuoGL0ngivwkg" position="-1261.0,1128.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UHIbIr0vEeuoGL0ngivwkg" label="+"/>
+    <operations xmi:id="_UHIbI70vEeuoGL0ngivwkg" name="irAtras" staticOperation="true">
+      <modelElement href="Comicteca.uml#_UA6eYL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UHIbJL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UHIbJb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_UHIbJr0vEeuoGL0ngivwkg" name="cancelar">
+        <modelElement href="Comicteca.uml#_UA6eYb0vEeuoGL0ngivwkg"/>
+        <cardinality xmi:id="_UHIbJ70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+        <type xmi:id="_UHIbKL0vEeuoGL0ngivwkg" name="JButton">
+          <modelElement href="Comicteca.uml#_UAbWM70vEeuoGL0ngivwkg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_UHIbKb0vEeuoGL0ngivwkg" name="contentPane">
+        <modelElement href="Comicteca.uml#_UA6eYr0vEeuoGL0ngivwkg"/>
+        <cardinality xmi:id="_UHIbKr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+        <type xmi:id="_UHIbK70vEeuoGL0ngivwkg" name="JPanel">
+          <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UHHNAL0vEeuoGL0ngivwkg" name="ComboBoxFiller">
+    <modelElement href="Comicteca.uml#_T83E0L0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UHHNAb0vEeuoGL0ngivwkg" position="-867.0,1132.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UHHNAr0vEeuoGL0ngivwkg" label="+"/>
+    <operations xmi:id="_UHHNA70vEeuoGL0ngivwkg" name="llenarLista" staticOperation="true">
+      <modelElement href="Comicteca.uml#_T83E0b0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UHHNBL0vEeuoGL0ngivwkg" name="Generics">
+        <modelElement href="Comicteca.uml#_T83r4L0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UHHNBb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UHHNBr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UHHNB70vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_UA6eY70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UHHNCL0vEeuoGL0ngivwkg" name="ArrayList">
+          <modelElement href="Comicteca.uml#_UAZhAb0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_UHHNCb0vEeuoGL0ngivwkg" name="consulta">
+        <modelElement href="Comicteca.uml#_T83E0r0vEeuoGL0ngivwkg"/>
+        <cardinality xmi:id="_UHHNCr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+        <type xmi:id="_UHHNC70vEeuoGL0ngivwkg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UHEwwL0vEeuoGL0ngivwkg" name="VaciadoYLlenadoCombo">
+    <modelElement href="Comicteca.uml#_T8c1Ir0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UHEwwb0vEeuoGL0ngivwkg" position="-1260.0,1230.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UHEwwr0vEeuoGL0ngivwkg" label="+"/>
+    <operations xmi:id="_UHEww70vEeuoGL0ngivwkg" name="consultaParaLlenadodeCombo" staticOperation="true">
+      <modelElement href="Comicteca.uml#_UAx7gL0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UHEwxL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UHEwxb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_UHEwxr0vEeuoGL0ngivwkg" name="consulta">
+        <modelElement href="Comicteca.uml#_UAx7gb0vEeuoGL0ngivwkg"/>
+        <cardinality xmi:id="_UHEwx70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+        <type xmi:id="_UHEwyL0vEeuoGL0ngivwkg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_UHEwyb0vEeuoGL0ngivwkg" name="param">
+        <modelElement href="Comicteca.uml#_UAyikL0vEeuoGL0ngivwkg"/>
+        <cardinality xmi:id="_UHEwyr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+        <type xmi:id="_UHEwy70vEeuoGL0ngivwkg" name="JComboBox">
+          <modelElement href="Comicteca.uml#_UAZhA70vEeuoGL0ngivwkg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UHF-4L0vEeuoGL0ngivwkg" name="AccesoBaseDatos">
+    <modelElement href="Comicteca.uml#_T81PoL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UHF-4b0vEeuoGL0ngivwkg" position="-788.0,1229.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UHF-4r0vEeuoGL0ngivwkg" label="+"/>
+    <operations xmi:id="_UHF-470vEeuoGL0ngivwkg" name="conexionBaseDatos" staticOperation="true">
+      <modelElement href="Comicteca.uml#_T81Pob0vEeuoGL0ngivwkg"/>
+      <visibility xmi:id="_UHF-5L0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UHF-5b0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UHF-5r0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_UA53Ub0vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UHF-570vEeuoGL0ngivwkg" name="Connection">
+          <modelElement href="Comicteca.uml#_UAdyc70vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGx10L0vEeuoGL0ngivwkg" comments="_UGwAoL0vEeuoGL0ngivwkg" targetConnectionVisual="_UGwAob0vEeuoGL0ngivwkg" name="Altacomic" associationsOut="_UGwAor0vEeuoGL0ngivwkg _UGwAo70vEeuoGL0ngivwkg _UGwApL0vEeuoGL0ngivwkg" generalizations="_1VMtEr0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8htoL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGx10b0vEeuoGL0ngivwkg" position="-967.0,83.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGx10r0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGx1070vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBBME70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGx11L0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBBzIL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGx11b0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGx11r0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGx1170vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGx12L0vEeuoGL0ngivwkg" name="_isbn">
+      <modelElement href="Comicteca.uml#_UBBzIb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGx12b0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBBzIr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGx12r0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGx1270vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGx13L0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGx13b0vEeuoGL0ngivwkg" name="_nombre">
+      <modelElement href="Comicteca.uml#_UBBzI70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGx13r0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBCaML0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGx1370vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGx14L0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGx14b0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGx14r0vEeuoGL0ngivwkg" name="consulta">
+      <modelElement href="Comicteca.uml#_UBCaMb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGx1470vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBCaMr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGx15L0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGx15b0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGx15r0vEeuoGL0ngivwkg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGx1570vEeuoGL0ngivwkg" name="Altacomic">
+      <modelElement href="Comicteca.uml#_T8iUsL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGx16L0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGx16b0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGx16r0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGx1670vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8iUs70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGx17L0vEeuoGL0ngivwkg" name="Altacomic">
+          <modelElement href="Comicteca.uml#_T8htoL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGfh9r0vEeuoGL0ngivwkg" comments="_UGeT0L0vEeuoGL0ngivwkg" targetConnectionVisual="_UGeT0b0vEeuoGL0ngivwkg" name="Altasubtipos" associationsOut="_UGeT0r0vEeuoGL0ngivwkg _UGeT070vEeuoGL0ngivwkg" generalizations="_1VMtFL0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8kJ4L0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGfh970vEeuoGL0ngivwkg" position="-754.0,84.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGfh-L0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGfh-b0vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBDBQb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGfh-r0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBDBQr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGfh-70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGfh_L0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGfh_b0vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGfh_r0vEeuoGL0ngivwkg" name="nombre">
+      <modelElement href="Comicteca.uml#_UBDBQ70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGfh_70vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBDBRL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGfiAL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGfiAb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGfiAr0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGfiA70vEeuoGL0ngivwkg" name="Altasubtipos">
+      <modelElement href="Comicteca.uml#_T8kw8L0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGfiBL0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGfiBb0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGfiBr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGfiB70vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8kw870vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGfiCL0vEeuoGL0ngivwkg" name="Altasubtipos">
+          <modelElement href="Comicteca.uml#_T8kJ4L0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_UGfiCb0vEeuoGL0ngivwkg" name="llenarLista" staticOperation="true">
+      <modelElement href="Comicteca.uml#_T8kw9L0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGfiCr0vEeuoGL0ngivwkg" name="Generics">
+        <modelElement href="Comicteca.uml#_T8lYAL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGfiC70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGfiDL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGfiDb0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_UA1l4L0vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGfiDr0vEeuoGL0ngivwkg" name="ArrayList">
+          <modelElement href="Comicteca.uml#_UAZhAb0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_UGfiD70vEeuoGL0ngivwkg" name="consulta">
+        <modelElement href="Comicteca.uml#_T8kw9b0vEeuoGL0ngivwkg"/>
+        <cardinality xmi:id="_UGfiEL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+        <type xmi:id="_UGfiEb0vEeuoGL0ngivwkg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGrIIL0vEeuoGL0ngivwkg" comments="_UGpS8L0vEeuoGL0ngivwkg" targetConnectionVisual="_UGpS8b0vEeuoGL0ngivwkg" name="Altacoleccion" associationsOut="_UGpS8r0vEeuoGL0ngivwkg _UGpS870vEeuoGL0ngivwkg" generalizations="_1VMtEb0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8gfgL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGrIIb0vEeuoGL0ngivwkg" position="-970.0,263.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGrIIr0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGrII70vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBAlA70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGrIJL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBBMEL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGrIJb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGrIJr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGrIJ70vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGrIKL0vEeuoGL0ngivwkg" name="nombre">
+      <modelElement href="Comicteca.uml#_UBBMEb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGrIKb0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBBMEr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGrIKr0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGrIK70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGrILL0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGrILb0vEeuoGL0ngivwkg" name="Altacoleccion">
+      <modelElement href="Comicteca.uml#_T8gfgb0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGrILr0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGrIL70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGrIML0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGrIMb0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8hGkr0vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGrIMr0vEeuoGL0ngivwkg" name="Altacoleccion">
+          <modelElement href="Comicteca.uml#_T8gfgL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGlBgL0vEeuoGL0ngivwkg" comments="_UGjMUL0vEeuoGL0ngivwkg" targetConnectionVisual="_UGjzYL0vEeuoGL0ngivwkg" name="Altaeditorial" associationsOut="_UGjzYb0vEeuoGL0ngivwkg _UGjzYr0vEeuoGL0ngivwkg" generalizations="_1VMtE70wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8i7wL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGlBgb0vEeuoGL0ngivwkg" position="-715.0,263.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGlBgr0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGlBg70vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBCaM70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGlBhL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBCaNL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGlBhb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGlBhr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGlBh70vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGlBiL0vEeuoGL0ngivwkg" name="nombre">
+      <modelElement href="Comicteca.uml#_UBCaNb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGlBib0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBDBQL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGlBir0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGlBi70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGlBjL0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGlBjb0vEeuoGL0ngivwkg" name="Altaeditorial">
+      <modelElement href="Comicteca.uml#_T8ji0L0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGlBjr0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGlBj70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGlBkL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGlBkb0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8ji070vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGlBkr0vEeuoGL0ngivwkg" name="Altaeditorial">
+          <modelElement href="Comicteca.uml#_T8i7wL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGapeb0vEeuoGL0ngivwkg" comments="_UGZbUL0vEeuoGL0ngivwkg" targetConnectionVisual="_UGZbUb0vEeuoGL0ngivwkg" name="Altaautor" associationsOut="_UGZbUr0vEeuoGL0ngivwkg _UGapcL0vEeuoGL0ngivwkg" generalizations="_1VMtEL0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8fRYL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGaper0vEeuoGL0ngivwkg" position="-971.0,388.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGape70vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGapfL0vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UA_9870vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGapfb0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBAlAL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGapfr0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGapf70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGapgL0vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGapgb0vEeuoGL0ngivwkg" name="nombre">
+      <modelElement href="Comicteca.uml#_UBAlAb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGapgr0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBAlAr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGapg70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGaphL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGaphb0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGaphr0vEeuoGL0ngivwkg" name="Altaautor">
+      <modelElement href="Comicteca.uml#_T8fRYb0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGaph70vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGapiL0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGapib0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGapir0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8f4cr0vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGapi70vEeuoGL0ngivwkg" name="Altaautor">
+          <modelElement href="Comicteca.uml#_T8fRYL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGuLcL0vEeuoGL0ngivwkg" comments="_UGsWQL0vEeuoGL0ngivwkg" targetConnectionVisual="_UGsWQb0vEeuoGL0ngivwkg" name="Altatipos" associationsOut="_UGsWQr0vEeuoGL0ngivwkg _UGsWQ70vEeuoGL0ngivwkg" generalizations="_1VMtFb0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8nNML0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGuLcb0vEeuoGL0ngivwkg" position="-768.0,388.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGuLcr0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGuLc70vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBDBRb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGuLdL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBDoUL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGuLdb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGuLdr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGuLd70vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGuLeL0vEeuoGL0ngivwkg" name="nombre">
+      <modelElement href="Comicteca.uml#_UBDoUb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGuLeb0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBDoUr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGuLer0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGuLe70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGuLfL0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGuLfb0vEeuoGL0ngivwkg" name="Altatipos">
+      <modelElement href="Comicteca.uml#_T8n0QL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGuLfr0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGuLf70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGuLgL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGuLgb0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8n0Q70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGuLgr0vEeuoGL0ngivwkg" name="Altatipos">
+          <modelElement href="Comicteca.uml#_T8nNML0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGilQL0vEeuoGL0ngivwkg" comments="_UGhXIL0vEeuoGL0ngivwkg" targetConnectionVisual="_UGhXIb0vEeuoGL0ngivwkg" name="Bajatipos" associationsOut="_UGh-ML0vEeuoGL0ngivwkg" generalizations="_1VMtG70wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8uh8L0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGilQb0vEeuoGL0ngivwkg" position="-971.0,515.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGilQr0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGilQ70vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBE2cb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGilRL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBE2cr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGilRb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGilRr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGilR70vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGilSL0vEeuoGL0ngivwkg" name="Bajatipos">
+      <modelElement href="Comicteca.uml#_T8vJAL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGilSb0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGilSr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGilS70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGilTL0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8vJA70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGilTb0vEeuoGL0ngivwkg" name="Bajatipos">
+          <modelElement href="Comicteca.uml#_T8uh8L0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UG-DFL0vEeuoGL0ngivwkg" comments="_UG808L0vEeuoGL0ngivwkg" targetConnectionVisual="_UG808b0vEeuoGL0ngivwkg" name="Bajasubtipos" associationsOut="_UG9cAL0vEeuoGL0ngivwkg" generalizations="_1VMtGr0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8tT0L0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UG-DFb0vEeuoGL0ngivwkg" position="-969.0,613.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UG-DFr0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UG-DF70vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBEPZb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UG-DGL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBE2cL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UG-DGb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG-DGr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UG-DG70vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UG-DHL0vEeuoGL0ngivwkg" name="Bajasubtipos">
+      <modelElement href="Comicteca.uml#_T8t64L0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UG-DHb0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UG-DHr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UG-DH70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UG-DIL0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8t6470vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UG-DIb0vEeuoGL0ngivwkg" name="Bajasubtipos">
+          <modelElement href="Comicteca.uml#_T8tT0L0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGdFsL0vEeuoGL0ngivwkg" comments="_UGb3kL0vEeuoGL0ngivwkg" targetConnectionVisual="_UGb3kb0vEeuoGL0ngivwkg" name="Bajacomic" associationsOut="_UGb3kr0vEeuoGL0ngivwkg" generalizations="_1VMtGL0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8q3kL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGdFsb0vEeuoGL0ngivwkg" position="-761.0,510.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGdFsr0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGdFs70vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBEPYb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGdFtL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBEPYr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGdFtb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGdFtr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGdFt70vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGdFuL0vEeuoGL0ngivwkg" name="Bajacomic">
+      <modelElement href="Comicteca.uml#_T8reoL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGdFub0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGdFur0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGdFu70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGdFvL0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8reo70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGdFvb0vEeuoGL0ngivwkg" name="Bajacomic">
+          <modelElement href="Comicteca.uml#_T8q3kL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UHBGYL0vEeuoGL0ngivwkg" comments="_UG_4QL0vEeuoGL0ngivwkg" targetConnectionVisual="_UG_4Qb0vEeuoGL0ngivwkg" name="Bajaautor" associationsOut="_UG_4Qr0vEeuoGL0ngivwkg" generalizations="_1VMtFr0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8obUL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UHBGYb0vEeuoGL0ngivwkg" position="-733.0,614.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UHBGYr0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UHBGY70vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBDoU70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UHBGZL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBDoVL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UHBGZb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UHBGZr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UHBGZ70vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UHBGaL0vEeuoGL0ngivwkg" name="Bajaautor">
+      <modelElement href="Comicteca.uml#_T8pCYL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UHBGab0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UHBGar0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UHBGa70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UHBGbL0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8pCY70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UHBGbb0vEeuoGL0ngivwkg" name="Bajaautor">
+          <modelElement href="Comicteca.uml#_T8obUL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UG7m0L0vEeuoGL0ngivwkg" comments="_UG5KkL0vEeuoGL0ngivwkg" targetConnectionVisual="_UG5Kkb0vEeuoGL0ngivwkg" name="Modificacioncomic" associationsOut="_UG5Kkr0vEeuoGL0ngivwkg _UG5Kk70vEeuoGL0ngivwkg _UG5KlL0vEeuoGL0ngivwkg" generalizations="_1VMtH70wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8zacL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UG7m0b0vEeuoGL0ngivwkg" position="-1279.0,804.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UG7m0r0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UG7m070vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBFdg70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UG7m1L0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBFdhL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UG7m1b0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG7m1r0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UG7m170vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UG7m2L0vEeuoGL0ngivwkg" name="_isbn">
+      <modelElement href="Comicteca.uml#_UBFdhb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UG7m2b0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBGEkL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UG7m2r0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG7m270vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UG7m3L0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UG7m3b0vEeuoGL0ngivwkg" name="_nombre">
+      <modelElement href="Comicteca.uml#_UBGEkb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UG7m3r0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBGEkr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UG7m370vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG7m4L0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UG7m4b0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UG7m4r0vEeuoGL0ngivwkg" name="Modificacioncomic">
+      <modelElement href="Comicteca.uml#_T80BgL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UG7m470vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UG7m5L0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UG7m5b0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UG7m5r0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T80Bg70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UG7m570vEeuoGL0ngivwkg" name="Modificacioncomic">
+          <modelElement href="Comicteca.uml#_T8zacL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UG05IL0vEeuoGL0ngivwkg" comments="_UGzrAL0vEeuoGL0ngivwkg" targetConnectionVisual="_UGzrAb0vEeuoGL0ngivwkg" name="Bajaeditorial" associationsOut="_UGzrAr0vEeuoGL0ngivwkg" generalizations="_1VMtGb0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8sFsL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UG05Ib0vEeuoGL0ngivwkg" position="-1246.0,687.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UG05Ir0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UG05I70vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBEPY70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UG05JL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBEPZL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UG05Jb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG05Jr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UG05J70vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UG05KL0vEeuoGL0ngivwkg" name="Bajaeditorial">
+      <modelElement href="Comicteca.uml#_T8sswL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UG05Kb0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UG05Kr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UG05K70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UG05LL0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8ssw70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UG05Lb0vEeuoGL0ngivwkg" name="Bajaeditorial">
+          <modelElement href="Comicteca.uml#_T8sFsL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGYNML0vEeuoGL0ngivwkg" comments="_UGW_EL0vEeuoGL0ngivwkg" targetConnectionVisual="_UGW_Eb0vEeuoGL0ngivwkg" name="Bajacoleccion" associationsOut="_UGW_Er0vEeuoGL0ngivwkg" generalizations="_1VMtF70wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8ppcL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGYNMb0vEeuoGL0ngivwkg" position="-994.0,712.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGYNMr0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGYNM70vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBDoVb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGYNNL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBEPYL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGYNNb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGYNNr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGYNN70vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGYNOL0vEeuoGL0ngivwkg" name="Bajacoleccion">
+      <modelElement href="Comicteca.uml#_T8qQgL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGYNOb0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGYNOr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGYNO70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGYNPL0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8qQg70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGYNPb0vEeuoGL0ngivwkg" name="Bajacoleccion">
+          <modelElement href="Comicteca.uml#_T8ppcL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGoE0L0vEeuoGL0ngivwkg" comments="_UGlokL0vEeuoGL0ngivwkg" targetConnectionVisual="_UGmPoL0vEeuoGL0ngivwkg" name="Agregaraleidos" associationsOut="_UGmPob0vEeuoGL0ngivwkg _UGmPor0vEeuoGL0ngivwkg _UGmPo70vEeuoGL0ngivwkg" generalizations="_1VMGAL0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8dcML0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGoE0b0vEeuoGL0ngivwkg" position="-1266.0,966.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGoE0r0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGoE070vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UA-v0L0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGoE1L0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UA_W4L0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGoE1b0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGoE1r0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGoE170vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGoE2L0vEeuoGL0ngivwkg" name="_isbn">
+      <modelElement href="Comicteca.uml#_UA_W4b0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGoE2b0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UA_98L0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGoE2r0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGoE270vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGoE3L0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGoE3b0vEeuoGL0ngivwkg" name="_nombre">
+      <modelElement href="Comicteca.uml#_UA_98b0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGoE3r0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UA_98r0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGoE370vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGoE4L0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGoE4b0vEeuoGL0ngivwkg" name="JTextField">
+        <modelElement href="Comicteca.uml#_UAb9QL0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGoE4r0vEeuoGL0ngivwkg" name="Agregaraleidos">
+      <modelElement href="Comicteca.uml#_T8eDQL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGoE470vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGoE5L0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGoE5b0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGoE5r0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8eDQ70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGoE570vEeuoGL0ngivwkg" name="Agregaraleidos">
+          <modelElement href="Comicteca.uml#_T8dcML0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UG3VZb0vEeuoGL0ngivwkg" comments="_UG2HQL0vEeuoGL0ngivwkg" targetConnectionVisual="_UG2HQb0vEeuoGL0ngivwkg" name="Consultacomics" associationsOut="_UG2uUL0vEeuoGL0ngivwkg" generalizations="_1VMtHL0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8vwEL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UG3VZr0vEeuoGL0ngivwkg" position="-890.0,817.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UG3VZ70vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UG38cL0vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBE2c70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UG38cb0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBE2dL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UG38cr0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UG38c70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UG38dL0vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UG38db0vEeuoGL0ngivwkg" name="Consultacomics">
+      <modelElement href="Comicteca.uml#_T8wXIL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UG38dr0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UG38d70vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UG38eL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UG38eb0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8wXI70vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UG38er0vEeuoGL0ngivwkg" name="Consultacomics">
+          <modelElement href="Comicteca.uml#_T8vwEL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGVw8L0vEeuoGL0ngivwkg" comments="_UGUi0L0vEeuoGL0ngivwkg" targetConnectionVisual="_UGUi0b0vEeuoGL0ngivwkg" name="Consultaleidos" associationsOut="_UGUi0r0vEeuoGL0ngivwkg" generalizations="_1VMtHb0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8w-ML0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGVw8b0vEeuoGL0ngivwkg" position="-895.0,920.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGVw8r0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGVw870vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBE2db0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGVw9L0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBFdgL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGVw9b0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGVw9r0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGVw970vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGVw-L0vEeuoGL0ngivwkg" name="Consultaleidos">
+      <modelElement href="Comicteca.uml#_T8w-Mb0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGVw-b0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGVw-r0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGVw-70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGVw_L0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8xlQr0vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGVw_b0vEeuoGL0ngivwkg" name="Consultaleidos">
+          <modelElement href="Comicteca.uml#_T8w-ML0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UHDioL0vEeuoGL0ngivwkg" comments="_UHBtcL0vEeuoGL0ngivwkg" targetConnectionVisual="_UHCUgL0vEeuoGL0ngivwkg" name="Consultanoleidos" associationsOut="_UHCUgb0vEeuoGL0ngivwkg" generalizations="_1VMtHr0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T8yMUL0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UHDiob0vEeuoGL0ngivwkg" position="-893.0,1028.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UHDior0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UHDio70vEeuoGL0ngivwkg" name="contentPane">
+      <modelElement href="Comicteca.uml#_UBFdgb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UHDipL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBFdgr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UHDipb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UHDipr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UHDip70vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UHDiqL0vEeuoGL0ngivwkg" name="Consultanoleidos">
+      <modelElement href="Comicteca.uml#_T8yMUb0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UHDiqb0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UHDiqr0vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UHDiq70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UHDirL0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T8yzYr0vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UHDirb0vEeuoGL0ngivwkg" name="Consultanoleidos">
+          <modelElement href="Comicteca.uml#_T8yMUL0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1VOiQL0wEeuoGL0ngivwkg" name="JFrame" subclassedBy="_1VMGAL0wEeuoGL0ngivwkg _1VMtEL0wEeuoGL0ngivwkg _1VMtEb0wEeuoGL0ngivwkg _1VMtEr0wEeuoGL0ngivwkg _1VMtE70wEeuoGL0ngivwkg _1VMtFL0wEeuoGL0ngivwkg _1VMtFb0wEeuoGL0ngivwkg _1VMtFr0wEeuoGL0ngivwkg _1VMtF70wEeuoGL0ngivwkg _1VMtGL0wEeuoGL0ngivwkg _1VMtGb0wEeuoGL0ngivwkg _1VMtGr0wEeuoGL0ngivwkg _1VMtG70wEeuoGL0ngivwkg _1VMtHL0wEeuoGL0ngivwkg _1VMtHb0wEeuoGL0ngivwkg _1VMtHr0wEeuoGL0ngivwkg _1VMtH70wEeuoGL0ngivwkg _1VMtIL0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_UAavIb0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_1VOiQb0wEeuoGL0ngivwkg" position="-876.0,-29.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_1VOiQr0wEeuoGL0ngivwkg" name="Reference">
+      <modelElement href="Comicteca.uml#_UAavIr0vEeuoGL0ngivwkg"/>
+    </stereotypes>
+    <visibility xmi:id="_1VOiQ70wEeuoGL0ngivwkg" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UGKK0r0vEeuoGL0ngivwkg" comments="_UF_LoL0vEeuoGL0ngivwkg" targetConnectionVisual="_UF_Lob0vEeuoGL0ngivwkg" name="VentanaPrincipal" associationsOut="_UGC2AL0vEeuoGL0ngivwkg _UGDdEL0vEeuoGL0ngivwkg _UGDdGb0vEeuoGL0ngivwkg _UGEEIL0vEeuoGL0ngivwkg _UGEEKb0vEeuoGL0ngivwkg _UGErML0vEeuoGL0ngivwkg _UGErOb0vEeuoGL0ngivwkg _UGFSQL0vEeuoGL0ngivwkg _UGFSSb0vEeuoGL0ngivwkg _UGF5UL0vEeuoGL0ngivwkg _UGF5Wb0vEeuoGL0ngivwkg _UGGgYL0vEeuoGL0ngivwkg _UGGgab0vEeuoGL0ngivwkg _UGHHcL0vEeuoGL0ngivwkg _UGHHeb0vEeuoGL0ngivwkg _UGHugL0vEeuoGL0ngivwkg _UGHuib0vEeuoGL0ngivwkg _UGIVkL0vEeuoGL0ngivwkg _UGIVmb0vEeuoGL0ngivwkg _UGI8oL0vEeuoGL0ngivwkg _UGJjsL0vEeuoGL0ngivwkg _UGJjub0vEeuoGL0ngivwkg _UGKKwL0vEeuoGL0ngivwkg _UGKKyb0vEeuoGL0ngivwkg" generalizations="_1VMtIL0wEeuoGL0ngivwkg">
+    <modelElement href="Comicteca.uml#_T84S8L0vEeuoGL0ngivwkg"/>
+    <visualProperties xmi:id="_UGKK070vEeuoGL0ngivwkg" position="-1272.0,123.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UGKK1L0vEeuoGL0ngivwkg" label="+"/>
+    <attributes xmi:id="_UGKK1b0vEeuoGL0ngivwkg" name="panel">
+      <modelElement href="Comicteca.uml#_UBGEk70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKK1r0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBGroL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKK170vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKK2L0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKK2b0vEeuoGL0ngivwkg" name="JPanel">
+        <modelElement href="Comicteca.uml#_UAavI70vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKK2r0vEeuoGL0ngivwkg" name="altacomic">
+      <modelElement href="Comicteca.uml#_UBGrob0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKK270vEeuoGL0ngivwkg" name="MultiDeclaration">
+        <modelElement href="Comicteca.uml#_UBGror0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UGKK3L0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBGro70vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKK3b0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKK3r0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKK370vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKK4L0vEeuoGL0ngivwkg" name="altacoleccion">
+      <modelElement href="Comicteca.uml#_UBGrpL0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKK4b0vEeuoGL0ngivwkg" name="MultiDeclaration">
+        <modelElement href="Comicteca.uml#_UBGrpb0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UGKK4r0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBHSsL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKK470vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKK5L0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKK5b0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKK5r0vEeuoGL0ngivwkg" name="altaeditorial">
+      <modelElement href="Comicteca.uml#_UBHSsb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKK570vEeuoGL0ngivwkg" name="MultiDeclaration">
+        <modelElement href="Comicteca.uml#_UBHSsr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UGKK6L0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBHSs70vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKK6b0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKK6r0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKK670vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKK7L0vEeuoGL0ngivwkg" name="altaautor">
+      <modelElement href="Comicteca.uml#_UBHStL0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKK7b0vEeuoGL0ngivwkg" name="MultiDeclaration">
+        <modelElement href="Comicteca.uml#_UBHStb0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UGKK7r0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBHStr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKK770vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKK8L0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKK8b0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKK8r0vEeuoGL0ngivwkg" name="consultaleidos">
+      <modelElement href="Comicteca.uml#_UBH5wL0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKK870vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBH5wb0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKK9L0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKK9b0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKK9r0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKK970vEeuoGL0ngivwkg" name="altatipos">
+      <modelElement href="Comicteca.uml#_UBH5wr0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKK-L0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBH5w70vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKK-b0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKK-r0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKK-70vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKK_L0vEeuoGL0ngivwkg" name="bajatipos">
+      <modelElement href="Comicteca.uml#_UBH5xL0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKK_b0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBH5xb0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKK_r0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKK_70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLAL0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLAb0vEeuoGL0ngivwkg" name="altasubtipos">
+      <modelElement href="Comicteca.uml#_UBIg0L0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLAr0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBIg0b0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLA70vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKLBL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLBb0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLBr0vEeuoGL0ngivwkg" name="bajasubtipos">
+      <modelElement href="Comicteca.uml#_UBIg0r0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLB70vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBIg070vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLCL0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKLCb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLCr0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLC70vEeuoGL0ngivwkg" name="lblNewLabel">
+      <modelElement href="Comicteca.uml#_UBIg1L0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLDL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBIg1b0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLDb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGKLDr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLD70vEeuoGL0ngivwkg" name="JLabel">
+        <modelElement href="Comicteca.uml#_UAb9Qr0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLEL0vEeuoGL0ngivwkg" name="ayuda">
+      <modelElement href="Comicteca.uml#_UBIg1r0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLEb0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBJH4L0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLEr0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGKLE70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLFL0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLFb0vEeuoGL0ngivwkg" name="Leidos">
+      <modelElement href="Comicteca.uml#_UBJH4b0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLFr0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBJH4r0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLF70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGKLGL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLGb0vEeuoGL0ngivwkg" name="JMenu">
+        <modelElement href="Comicteca.uml#_UAr0470vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLGr0vEeuoGL0ngivwkg" name="consultanoleidos_">
+      <modelElement href="Comicteca.uml#_UBJH470vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLG70vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBJH5L0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLHL0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGKLHb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLHr0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLH70vEeuoGL0ngivwkg" name="consultaleidos_">
+      <modelElement href="Comicteca.uml#_UBJH5b0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLIL0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBJH5r0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLIb0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGKLIr0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLI70vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLJL0vEeuoGL0ngivwkg" name="Tipos">
+      <modelElement href="Comicteca.uml#_UBJH570vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLJb0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBJu8L0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLJr0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGKLJ70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLKL0vEeuoGL0ngivwkg" name="JMenu">
+        <modelElement href="Comicteca.uml#_UAr0470vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLKb0vEeuoGL0ngivwkg" name="agregaraleidos">
+      <modelElement href="Comicteca.uml#_UBJu8b0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLKr0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBJu8r0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLK70vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGKLLL0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLLb0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLLr0vEeuoGL0ngivwkg" name="subtipos">
+      <modelElement href="Comicteca.uml#_UBJu870vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLL70vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBJu9L0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLML0vEeuoGL0ngivwkg" label="-"/>
+      <cardinality xmi:id="_UGKLMb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLMr0vEeuoGL0ngivwkg" name="JMenu">
+        <modelElement href="Comicteca.uml#_UAr0470vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLM70vEeuoGL0ngivwkg" name="bajacomic">
+      <modelElement href="Comicteca.uml#_UBOAa70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLNL0vEeuoGL0ngivwkg" name="MultiDeclaration">
+        <modelElement href="Comicteca.uml#_UBOAbL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UGKLNb0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBOncL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLNr0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKLN70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLOL0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLOb0vEeuoGL0ngivwkg" name="modificacioncomic">
+      <modelElement href="Comicteca.uml#_UBOncb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLOr0vEeuoGL0ngivwkg" name="MultiDeclaration">
+        <modelElement href="Comicteca.uml#_UBOncr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UGKLO70vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBOnc70vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLPL0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKLPb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLPr0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLP70vEeuoGL0ngivwkg" name="consultacomics">
+      <modelElement href="Comicteca.uml#_UBOndL0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLQL0vEeuoGL0ngivwkg" name="MultiDeclaration">
+        <modelElement href="Comicteca.uml#_UBOndb0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UGKLQb0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBOndr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLQr0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKLQ70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLRL0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLRb0vEeuoGL0ngivwkg" name="bajacoleccion">
+      <modelElement href="Comicteca.uml#_UBPOgL0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLRr0vEeuoGL0ngivwkg" name="MultiDeclaration">
+        <modelElement href="Comicteca.uml#_UBPOgb0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UGKLR70vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBPOgr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLSL0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKLSb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLSr0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLS70vEeuoGL0ngivwkg" name="bajaeditorial">
+      <modelElement href="Comicteca.uml#_UBPOg70vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLTL0vEeuoGL0ngivwkg" name="MultiDeclaration">
+        <modelElement href="Comicteca.uml#_UBPOhL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UGKLTb0vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBP1kL0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLTr0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKLT70vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKLUL0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_UGKLUb0vEeuoGL0ngivwkg" name="bajaautor">
+      <modelElement href="Comicteca.uml#_UBP1kb0vEeuoGL0ngivwkg"/>
+      <stereotypes xmi:id="_UGKLUr0vEeuoGL0ngivwkg" name="MultiDeclaration">
+        <modelElement href="Comicteca.uml#_UBP1kr0vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UGKLU70vEeuoGL0ngivwkg" name="LegacyStyledElement">
+        <modelElement href="Comicteca.uml#_UBP1k70vEeuoGL0ngivwkg"/>
+      </stereotypes>
+      <visibility xmi:id="_UGKLVL0vEeuoGL0ngivwkg" label="~"/>
+      <cardinality xmi:id="_UGKLVb0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <type xmi:id="_UGKx0L0vEeuoGL0ngivwkg" name="JMenuItem">
+        <modelElement href="Comicteca.uml#_UAsb8b0vEeuoGL0ngivwkg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_UGKx0b0vEeuoGL0ngivwkg" name="VentanaPrincipal">
+      <modelElement href="Comicteca.uml#_T846AL0vEeuoGL0ngivwkg"/>
+      <keywords xmi:id="_UGKx0r0vEeuoGL0ngivwkg" keyword="create"/>
+      <visibility xmi:id="_UGKx070vEeuoGL0ngivwkg" label="+"/>
+      <cardinality xmi:id="_UGKx1L0vEeuoGL0ngivwkg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UGKx1b0vEeuoGL0ngivwkg">
+        <modelElement href="Comicteca.uml#_T85hEr0vEeuoGL0ngivwkg"/>
+        <type xmi:id="_UGKx1r0vEeuoGL0ngivwkg" name="VentanaPrincipal">
+          <modelElement href="Comicteca.uml#_T84S8L0vEeuoGL0ngivwkg"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

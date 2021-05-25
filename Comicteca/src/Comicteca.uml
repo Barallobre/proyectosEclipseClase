@@ -1,0 +1,2939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_TrvfoL0vEeuoGL0ngivwkg" name="Comicteca">
+    <eAnnotations xmi:id="_Tx7AIL0vEeuoGL0ngivwkg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_Tx7AIb0vEeuoGL0ngivwkg" source="codegen">
+        <details xmi:id="_Tx7AIr0vEeuoGL0ngivwkg" key="codegenDirectory" value="/Comicteca/src"/>
+        <details xmi:id="_UF66ML0vEeuoGL0ngivwkg" key="AssociatedSourceCode" value="/Comicteca/src/base/Principal.java;2055088311/1;/Comicteca/src/utils/VaciadoYLlenadoCombo.java;1812343145/1;/Comicteca/src/funciones/Agregaraleidos.java;2250012125/1;/Comicteca/src/funciones/Altaautor.java;2311379656/1;/Comicteca/src/funciones/Altacoleccion.java;929738923/1;/Comicteca/src/funciones/Altacomic.java;634886253/1;/Comicteca/src/funciones/Altaeditorial.java;3782011479/1;/Comicteca/src/funciones/Altasubtipos.java;255451739/1;/Comicteca/src/funciones/Altatipos.java;890036849/1;/Comicteca/src/funciones/Bajaautor.java;1769052327/1;/Comicteca/src/funciones/Bajacoleccion.java;37280584/1;/Comicteca/src/funciones/Bajacomic.java;2338259605/1;/Comicteca/src/funciones/Bajaeditorial.java;3140766290/1;/Comicteca/src/funciones/Bajasubtipos.java;2140624100/1;/Comicteca/src/funciones/Bajatipos.java;947363713/1;/Comicteca/src/funciones/Consultacomics.java;244605563/1;/Comicteca/src/funciones/Consultaleidos.java;2018569445/1;/Comicteca/src/funciones/Consultanoleidos.java;3088562254/1;/Comicteca/src/funciones/Modificacioncomic.java;2335516366/1;/Comicteca/src/utils/AccesoBaseDatos.java;366311183/1;/Comicteca/src/utils/BotonAtras.java;1458417207/1;/Comicteca/src/utils/ComboBoxFiller.java;1028813904/1;/Comicteca/src/base/VentanaPrincipal.java;2903473000/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_T76CkL0vEeuoGL0ngivwkg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_T76poL0vEeuoGL0ngivwkg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_T76pob0vEeuoGL0ngivwkg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_T76por0vEeuoGL0ngivwkg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_T77QsL0vEeuoGL0ngivwkg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_T77Qsb0vEeuoGL0ngivwkg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_T77Qsr0vEeuoGL0ngivwkg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_T77Qs70vEeuoGL0ngivwkg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_T77QtL0vEeuoGL0ngivwkg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_T773wL0vEeuoGL0ngivwkg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_T773wb0vEeuoGL0ngivwkg" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_T79F4r0vEeuoGL0ngivwkg" name="event">
+          <packagedElement xmi:type="uml:Class" xmi:id="_UAdLY70vEeuoGL0ngivwkg" name="ActionEvent"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_UAdycb0vEeuoGL0ngivwkg" name="ActionListener"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAY58L0vEeuoGL0ngivwkg" name="EventQueue"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAaIEb0vEeuoGL0ngivwkg" name="BorderLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAckUb0vEeuoGL0ngivwkg" name="GridBagLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAckU70vEeuoGL0ngivwkg" name="GridBagConstraints"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAdLYb0vEeuoGL0ngivwkg" name="Insets"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAluQL0vEeuoGL0ngivwkg" name="FlowLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAqmwL0vEeuoGL0ngivwkg" name="Window"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UArN0b0vEeuoGL0ngivwkg" name="Color"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UArN070vEeuoGL0ngivwkg" name="Desktop"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAsb9b0vEeuoGL0ngivwkg" name="Font"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_T78e0b0vEeuoGL0ngivwkg" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAZhAb0vEeuoGL0ngivwkg" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_UAg1w70vEeuoGL0ngivwkg" name="Collection"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_UAhc0b0vEeuoGL0ngivwkg" name="Date"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_T79F470vEeuoGL0ngivwkg" name="sql">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_UAdyc70vEeuoGL0ngivwkg" name="Connection"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAeZgL0vEeuoGL0ngivwkg" name="DriverManager"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_UAfAkL0vEeuoGL0ngivwkg" name="PreparedStatement"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_UAfnoL0vEeuoGL0ngivwkg" name="ResultSet"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_UAfnor0vEeuoGL0ngivwkg" name="ResultSetMetaData"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAgOsb0vEeuoGL0ngivwkg" name="SQLException"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_UAgOs70vEeuoGL0ngivwkg" name="Statement"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_T79s8L0vEeuoGL0ngivwkg" name="text">
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAg1wb0vEeuoGL0ngivwkg" name="SimpleDateFormat"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_T8PZwL0vEeuoGL0ngivwkg" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_UArN1b0vEeuoGL0ngivwkg" name="File"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_T773wr0vEeuoGL0ngivwkg" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_T773w70vEeuoGL0ngivwkg" name="swing">
+        <packagedElement xmi:type="uml:Package" xmi:id="_T79F4b0vEeuoGL0ngivwkg" name="border">
+          <packagedElement xmi:type="uml:Class" xmi:id="_UAbWMb0vEeuoGL0ngivwkg" name="EmptyBorder"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAY58r0vEeuoGL0ngivwkg" name="UIManager"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAZhA70vEeuoGL0ngivwkg" name="JComboBox"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAavIb0vEeuoGL0ngivwkg" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAavI70vEeuoGL0ngivwkg" name="JPanel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAbWM70vEeuoGL0ngivwkg" name="JButton"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAb9QL0vEeuoGL0ngivwkg" name="JTextField"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAb9Qr0vEeuoGL0ngivwkg" name="JLabel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAb9RL0vEeuoGL0ngivwkg" name="JOptionPane"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAqmwr0vEeuoGL0ngivwkg" name="SwingUtilities"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAr04b0vEeuoGL0ngivwkg" name="JMenuBar"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAr0470vEeuoGL0ngivwkg" name="JMenu"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAsb8b0vEeuoGL0ngivwkg" name="JMenuItem"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAsb870vEeuoGL0ngivwkg" name="JTextPane"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UAtDAb0vEeuoGL0ngivwkg" name="ImageIcon"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_T78e0L0vEeuoGL0ngivwkg" name="base">
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8bnAL0vEeuoGL0ngivwkg" name="Principal">
+        <ownedComment xmi:id="_UBNZUL0vEeuoGL0ngivwkg">
+          <body>Clase principal desde la que iniciamos la ventana principal que actúa como&#xD;
+menú para acceder a las distintas partes de la aplicación&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 06-03-2021</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBK9EL0vEeuoGL0ngivwkg" name="main" specification="_T8cOEL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBK9Eb0vEeuoGL0ngivwkg" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UBK9Er0vEeuoGL0ngivwkg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>try {&#xD;
+			  UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());&#xD;
+			} catch(Exception e) {&#xD;
+			  System.out.println(&quot;Error setting native LAF: &quot; + e);&#xD;
+			}&#xD;
+		VentanaPrincipal barramenu = new VentanaPrincipal();&#xD;
+		barramenu.setVisible(true);&#xD;
+		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8cOEL0vEeuoGL0ngivwkg" name="main" isStatic="true" method="_UBK9EL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_T8c1IL0vEeuoGL0ngivwkg" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T8c1Ib0vEeuoGL0ngivwkg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T84S8L0vEeuoGL0ngivwkg" name="VentanaPrincipal">
+        <ownedComment xmi:id="_UBOAar0vEeuoGL0ngivwkg">
+          <body>Clase que genera una ventana a partir de la cual accederemos a cada uno de&#xD;
+las funciones del programa mediante una barra de menús&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA8TkL0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBGEk70vEeuoGL0ngivwkg" name="panel" visibility="package" type="_UAavI70vEeuoGL0ngivwkg" association="_UBfGIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBGrob0vEeuoGL0ngivwkg" name="altacomic" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBfGJL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBGrpL0vEeuoGL0ngivwkg" name="altacoleccion" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBftMb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBHSsb0vEeuoGL0ngivwkg" name="altaeditorial" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBftNL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBHStL0vEeuoGL0ngivwkg" name="altaautor" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBgUQb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBH5wL0vEeuoGL0ngivwkg" name="consultaleidos" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBg7UL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBH5wr0vEeuoGL0ngivwkg" name="altatipos" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBg7U70vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBH5xL0vEeuoGL0ngivwkg" name="bajatipos" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBhiYb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBIg0L0vEeuoGL0ngivwkg" name="altasubtipos" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBhiZL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBIg0r0vEeuoGL0ngivwkg" name="bajasubtipos" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBiJcb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBIg1L0vEeuoGL0ngivwkg" name="lblNewLabel" visibility="private" type="_UAb9Qr0vEeuoGL0ngivwkg" association="_UBiwgb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBIg1r0vEeuoGL0ngivwkg" name="ayuda" visibility="private" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBiwhL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBJH4b0vEeuoGL0ngivwkg" name="Leidos" visibility="private" type="_UAr0470vEeuoGL0ngivwkg" association="_UBjXkb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBJH470vEeuoGL0ngivwkg" name="consultanoleidos_" visibility="private" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBjXlL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBJH5b0vEeuoGL0ngivwkg" name="consultaleidos_" visibility="private" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBj-ob0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBJH570vEeuoGL0ngivwkg" name="Tipos" visibility="private" type="_UAr0470vEeuoGL0ngivwkg" association="_UBj-pL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBJu8b0vEeuoGL0ngivwkg" name="agregaraleidos" visibility="private" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBklsL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBJu870vEeuoGL0ngivwkg" name="subtipos" visibility="private" type="_UAr0470vEeuoGL0ngivwkg" association="_UBkls70vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBOAa70vEeuoGL0ngivwkg" name="bajacomic" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBkltr0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBOncb0vEeuoGL0ngivwkg" name="modificacioncomic" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBlMwb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBOndL0vEeuoGL0ngivwkg" name="consultacomics" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBlMxL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBPOgL0vEeuoGL0ngivwkg" name="bajacoleccion" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBlz0b0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBPOg70vEeuoGL0ngivwkg" name="bajaeditorial" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBlz1L0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBP1kb0vEeuoGL0ngivwkg" name="bajaautor" visibility="package" type="_UAsb8b0vEeuoGL0ngivwkg" association="_UBlz170vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBMyQ70vEeuoGL0ngivwkg" name="VentanaPrincipal" specification="_T846AL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBMyRL0vEeuoGL0ngivwkg" type="_T84S8L0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;COMICTECA&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 566, 286);&#xD;
+&#xD;
+		JMenuBar menuBar = new JMenuBar();&#xD;
+		setJMenuBar(menuBar);&#xD;
+//------------------------------------------------------------------------------&#xD;
+		JMenu Comics = new JMenu(&quot;Comics&quot;);&#xD;
+		menuBar.add(Comics);&#xD;
+&#xD;
+		altacomic = new JMenuItem(&quot;Alta&quot;);&#xD;
+		Comics.add(altacomic);&#xD;
+&#xD;
+		bajacomic = new JMenuItem(&quot;Baja&quot;);&#xD;
+		Comics.add(bajacomic);&#xD;
+&#xD;
+		modificacioncomic = new JMenuItem(&quot;Modificacion&quot;);&#xD;
+		Comics.add(modificacioncomic);&#xD;
+&#xD;
+		consultacomics = new JMenuItem(&quot;Consulta&quot;);&#xD;
+		Comics.add(consultacomics);&#xD;
+//------------------------------------------------------------------------------		&#xD;
+		JMenu Autores = new JMenu(&quot;Autores&quot;);&#xD;
+		menuBar.add(Autores);&#xD;
+&#xD;
+		altaautor = new JMenuItem(&quot;Alta&quot;);&#xD;
+		Autores.add(altaautor);&#xD;
+&#xD;
+		bajaautor = new JMenuItem(&quot;Baja&quot;);&#xD;
+		Autores.add(bajaautor);&#xD;
+//------------------------------------------------------------------------------&#xD;
+		JMenu Colecciones = new JMenu(&quot;Colecciones&quot;);&#xD;
+		menuBar.add(Colecciones);&#xD;
+&#xD;
+		altacoleccion = new JMenuItem(&quot;Alta&quot;);&#xD;
+		Colecciones.add(altacoleccion);&#xD;
+&#xD;
+		bajacoleccion = new JMenuItem(&quot;Baja&quot;);&#xD;
+		Colecciones.add(bajacoleccion);&#xD;
+//------------------------------------------------------------------------------&#xD;
+		JMenu Editoriales = new JMenu(&quot;Editoriales&quot;);&#xD;
+		menuBar.add(Editoriales);&#xD;
+&#xD;
+		altaeditorial = new JMenuItem(&quot;Alta&quot;);&#xD;
+		Editoriales.add(altaeditorial);&#xD;
+&#xD;
+		bajaeditorial = new JMenuItem(&quot;Baja&quot;);&#xD;
+		Editoriales.add(bajaeditorial);&#xD;
+//------------------------------------------------------------------------------&#xD;
+		Tipos = new JMenu(&quot;Tipos&quot;);&#xD;
+		menuBar.add(Tipos);&#xD;
+&#xD;
+		altatipos = new JMenuItem(&quot;Alta&quot;);&#xD;
+		Tipos.add(altatipos);&#xD;
+&#xD;
+		bajatipos = new JMenuItem(&quot;Baja&quot;);&#xD;
+		Tipos.add(bajatipos);&#xD;
+//------------------------------------------------------------------------------	&#xD;
+		subtipos = new JMenu(&quot;Subtipos&quot;);&#xD;
+		menuBar.add(subtipos);&#xD;
+&#xD;
+		altasubtipos = new JMenuItem(&quot;Alta&quot;);&#xD;
+		subtipos.add(altasubtipos);&#xD;
+&#xD;
+		bajasubtipos = new JMenuItem(&quot;Baja&quot;);&#xD;
+		subtipos.add(bajasubtipos);&#xD;
+//------------------------------------------------------------------------------&#xD;
+		Leidos = new JMenu(&quot;Leidos&quot;);&#xD;
+		menuBar.add(Leidos);&#xD;
+&#xD;
+		agregaraleidos = new JMenuItem(&quot;Alta&quot;);&#xD;
+		Leidos.add(agregaraleidos);&#xD;
+&#xD;
+		consultaleidos_ = new JMenuItem(&quot;Le\u00EDdos&quot;);&#xD;
+		Leidos.add(consultaleidos_);&#xD;
+&#xD;
+		consultanoleidos_ = new JMenuItem(&quot;No Le\u00EDdos&quot;);&#xD;
+		Leidos.add(consultanoleidos_);&#xD;
+//------------------------------------------------------------------------------&#xD;
+		ayuda = new JMenuItem(&quot;Ayuda&quot;);&#xD;
+		menuBar.add(ayuda);&#xD;
+		ayuda.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				if (!Desktop.isDesktopSupported()) {&#xD;
+					System.out.println(&quot;La clase Desktop no es soportada&quot;);&#xD;
+				} else {&#xD;
+					Desktop escritorio = Desktop.getDesktop();&#xD;
+					try {&#xD;
+						File archivo = new File(&quot;ayuda.chm&quot;);&#xD;
+						if (escritorio.isSupported(Desktop.Action.valueOf(&quot;OPEN&quot;)))&#xD;
+							escritorio.open(archivo);&#xD;
+						else&#xD;
+							System.out.println(&quot;La función OPEN no es soportada&quot;);&#xD;
+					} catch (Exception e1) {&#xD;
+						e1.getMessage();&#xD;
+					}&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+		panel = new JPanel();&#xD;
+		panel.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		panel.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(panel);&#xD;
+&#xD;
+		lblNewLabel = new JLabel(&quot;&quot;);&#xD;
+		lblNewLabel.setIcon(new ImageIcon(&quot;D:\\proyectosJavaDAM2\\Comicteca\\comics.jpg&quot;));&#xD;
+		panel.add(lblNewLabel, BorderLayout.CENTER);&#xD;
+&#xD;
+		altacomic.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Altacomic frame = new Altacomic();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+		bajacomic.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Bajacomic frame = new Bajacomic();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+		modificacioncomic.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Modificacioncomic frame = new Modificacioncomic();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+		consultacomics.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Consultacomics frame = new Consultacomics();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+//------------------------------------------------------------------------------&#xD;
+		altaautor.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Altaautor frame = new Altaautor();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+		bajaautor.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Bajaautor frame = new Bajaautor();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+&#xD;
+//------------------------------------------------------------------------------&#xD;
+		altaeditorial.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Altaeditorial frame = new Altaeditorial();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+		bajaeditorial.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Bajaeditorial frame = new Bajaeditorial();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+&#xD;
+//------------------------------------------------------------------------------&#xD;
+		altacoleccion.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Altacoleccion frame = new Altacoleccion();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+		bajacoleccion.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Bajacoleccion frame = new Bajacoleccion();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+// ------------------------------------------------------------------------------&#xD;
+		altatipos.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Altatipos frame = new Altatipos();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+		bajatipos.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Bajatipos frame = new Bajatipos();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+// ------------------------------------------------------------------------------&#xD;
+		altasubtipos.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Altasubtipos frame = new Altasubtipos();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+		bajasubtipos.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Bajasubtipos frame = new Bajasubtipos();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+//------------------------------------------------------------------------------&#xD;
+		consultaleidos_.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Consultaleidos frame = new Consultaleidos();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+		consultanoleidos_.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Consultanoleidos frame = new Consultanoleidos();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+		agregaraleidos.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Agregaraleidos frame = new Agregaraleidos();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e1) {&#xD;
+					e1.printStackTrace();&#xD;
+				}&#xD;
+				dispose();&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T846AL0vEeuoGL0ngivwkg" name="VentanaPrincipal" method="_UBMyQ70vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T85hEL0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T85hEb0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T85hEr0vEeuoGL0ngivwkg" type="_T84S8L0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBfGIb0vEeuoGL0ngivwkg" name="" memberEnd="_UBfGIr0vEeuoGL0ngivwkg _UBGEk70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBfGIr0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBfGIb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBfGJL0vEeuoGL0ngivwkg" name="" memberEnd="_UBfGJb0vEeuoGL0ngivwkg _UBGrob0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBfGJb0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBfGJL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBftMb0vEeuoGL0ngivwkg" name="" memberEnd="_UBftMr0vEeuoGL0ngivwkg _UBGrpL0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBftMr0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBftMb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBftNL0vEeuoGL0ngivwkg" name="" memberEnd="_UBftNb0vEeuoGL0ngivwkg _UBHSsb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBftNb0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBftNL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBgUQb0vEeuoGL0ngivwkg" name="" memberEnd="_UBgUQr0vEeuoGL0ngivwkg _UBHStL0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBgUQr0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBgUQb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBg7UL0vEeuoGL0ngivwkg" name="" memberEnd="_UBg7Ub0vEeuoGL0ngivwkg _UBH5wL0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBg7Ub0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBg7UL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBg7U70vEeuoGL0ngivwkg" name="" memberEnd="_UBg7VL0vEeuoGL0ngivwkg _UBH5wr0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBg7VL0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBg7U70vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBhiYb0vEeuoGL0ngivwkg" name="" memberEnd="_UBhiYr0vEeuoGL0ngivwkg _UBH5xL0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBhiYr0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBhiYb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBhiZL0vEeuoGL0ngivwkg" name="" memberEnd="_UBhiZb0vEeuoGL0ngivwkg _UBIg0L0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBhiZb0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBhiZL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBiJcb0vEeuoGL0ngivwkg" name="" memberEnd="_UBiJcr0vEeuoGL0ngivwkg _UBIg0r0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBiJcr0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBiJcb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBiwgb0vEeuoGL0ngivwkg" name="" memberEnd="_UBiwgr0vEeuoGL0ngivwkg _UBIg1L0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBiwgr0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBiwgb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBiwhL0vEeuoGL0ngivwkg" name="" memberEnd="_UBiwhb0vEeuoGL0ngivwkg _UBIg1r0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBiwhb0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBiwhL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBjXkb0vEeuoGL0ngivwkg" name="" memberEnd="_UBjXkr0vEeuoGL0ngivwkg _UBJH4b0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBjXkr0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBjXkb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBjXlL0vEeuoGL0ngivwkg" name="" memberEnd="_UBjXlb0vEeuoGL0ngivwkg _UBJH470vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBjXlb0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBjXlL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBj-ob0vEeuoGL0ngivwkg" name="" memberEnd="_UBj-or0vEeuoGL0ngivwkg _UBJH5b0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBj-or0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBj-ob0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBj-pL0vEeuoGL0ngivwkg" name="" memberEnd="_UBj-pb0vEeuoGL0ngivwkg _UBJH570vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBj-pb0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBj-pL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBklsL0vEeuoGL0ngivwkg" name="" memberEnd="_UBklsb0vEeuoGL0ngivwkg _UBJu8b0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBklsb0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBklsL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBkls70vEeuoGL0ngivwkg" name="" memberEnd="_UBkltL0vEeuoGL0ngivwkg _UBJu870vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBkltL0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBkls70vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBkltr0vEeuoGL0ngivwkg" name="" memberEnd="_UBklt70vEeuoGL0ngivwkg _UBOAa70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBklt70vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBkltr0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBlMwb0vEeuoGL0ngivwkg" name="" memberEnd="_UBlMwr0vEeuoGL0ngivwkg _UBOncb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBlMwr0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBlMwb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBlMxL0vEeuoGL0ngivwkg" name="" memberEnd="_UBlMxb0vEeuoGL0ngivwkg _UBOndL0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBlMxb0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBlMxL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBlz0b0vEeuoGL0ngivwkg" name="" memberEnd="_UBlz0r0vEeuoGL0ngivwkg _UBPOgL0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBlz0r0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBlz0b0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBlz1L0vEeuoGL0ngivwkg" name="" memberEnd="_UBlz1b0vEeuoGL0ngivwkg _UBPOg70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBlz1b0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBlz1L0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBlz170vEeuoGL0ngivwkg" name="" memberEnd="_UBma4L0vEeuoGL0ngivwkg _UBP1kb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBma4L0vEeuoGL0ngivwkg" name="" type="_T84S8L0vEeuoGL0ngivwkg" association="_UBlz170vEeuoGL0ngivwkg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_T79F4L0vEeuoGL0ngivwkg" name="utils">
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8c1Ir0vEeuoGL0ngivwkg" name="VaciadoYLlenadoCombo">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBK9E70vEeuoGL0ngivwkg" name="consultaParaLlenadodeCombo" specification="_UAx7gL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBK9FL0vEeuoGL0ngivwkg" name="consulta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_UBK9Fb0vEeuoGL0ngivwkg" name="param" type="_UAZhA70vEeuoGL0ngivwkg"/>
+          <language>java</language>
+          <body>param.removeAllItems();&#xD;
+		param.addItem(&quot;&quot;);&#xD;
+		ArrayList&lt;String> listado;&#xD;
+		try {&#xD;
+			listado = ComboBoxFiller.llenarLista(consulta);&#xD;
+			for (int i = 0; i &lt; listado.size(); i++) {&#xD;
+				param.addItem(listado.get(i));&#xD;
+			}&#xD;
+		} catch (ClassNotFoundException e) {&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_UAx7gL0vEeuoGL0ngivwkg" name="consultaParaLlenadodeCombo" isStatic="true" method="_UBK9E70vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UAx7gb0vEeuoGL0ngivwkg" name="consulta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_UAyikL0vEeuoGL0ngivwkg" name="param" type="_UAZhA70vEeuoGL0ngivwkg"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T81PoL0vEeuoGL0ngivwkg" name="AccesoBaseDatos">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBMLPL0vEeuoGL0ngivwkg" name="conexionBaseDatos" specification="_T81Pob0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBMLPb0vEeuoGL0ngivwkg" type="_UAdyc70vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>Connection conexion = null;&#xD;
+		try {&#xD;
+			Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);&#xD;
+&#xD;
+			conexion = DriverManager.getConnection(&quot;jdbc:mysql://localhost/comics?serverTimezone=UTC&quot;, &quot;root&quot;, &quot;chios&quot;);&#xD;
+		} catch (ClassNotFoundException e) {&#xD;
+			e.printStackTrace();&#xD;
+		} catch (SQLException e) {&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+		return conexion;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T81Pob0vEeuoGL0ngivwkg" name="conexionBaseDatos" isStatic="true" method="_UBMLPL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UA53Ub0vEeuoGL0ngivwkg" type="_UAdyc70vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T812sL0vEeuoGL0ngivwkg" name="BotonAtras">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBMLPr0vEeuoGL0ngivwkg" name="irAtras" specification="_UA6eYL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBMLP70vEeuoGL0ngivwkg" name="cancelar" type="_UAbWM70vEeuoGL0ngivwkg"/>
+          <ownedParameter xmi:id="_UBMLQL0vEeuoGL0ngivwkg" name="contentPane" type="_UAavI70vEeuoGL0ngivwkg"/>
+          <language>java</language>
+          <body>cancelar.addActionListener(new ActionListener() {&#xD;
+		public void actionPerformed(ActionEvent e) {&#xD;
+			try {&#xD;
+				VentanaPrincipal frame = new VentanaPrincipal();&#xD;
+				frame.setVisible(true);&#xD;
+			} catch (Exception e1) {&#xD;
+				e1.printStackTrace();&#xD;
+			}&#xD;
+			Window w = SwingUtilities.getWindowAncestor(contentPane);&#xD;
+			w.setVisible(false);&#xD;
+		}&#xD;
+	});&#xD;
+</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_UA6eYL0vEeuoGL0ngivwkg" name="irAtras" isStatic="true" method="_UBMLPr0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UA6eYb0vEeuoGL0ngivwkg" name="cancelar" type="_UAbWM70vEeuoGL0ngivwkg"/>
+          <ownedParameter xmi:id="_UA6eYr0vEeuoGL0ngivwkg" name="contentPane" type="_UAavI70vEeuoGL0ngivwkg"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T83E0L0vEeuoGL0ngivwkg" name="ComboBoxFiller">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBMyQL0vEeuoGL0ngivwkg" name="llenarLista" specification="_T83E0b0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBMyQb0vEeuoGL0ngivwkg" name="consulta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_UBMyQr0vEeuoGL0ngivwkg" type="_UAZhAb0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>ArrayList&lt;String> listado = new ArrayList&lt;String>();&#xD;
+		&#xD;
+		try {&#xD;
+			Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+			Statement sentencia = conexion.createStatement();&#xD;
+&#xD;
+			ResultSet resultado = sentencia.executeQuery(consulta);&#xD;
+&#xD;
+			ResultSetMetaData metadata = resultado.getMetaData();&#xD;
+			int numberOfColumns = metadata.getColumnCount();&#xD;
+			while (resultado.next()) {&#xD;
+				int i = 1;&#xD;
+				while (i &lt;= numberOfColumns) {&#xD;
+					listado.add(resultado.getString(i++));&#xD;
+				}&#xD;
+			}&#xD;
+			resultado.close();&#xD;
+			sentencia.close();&#xD;
+			conexion.close();&#xD;
+&#xD;
+		} catch (SQLException e) {&#xD;
+&#xD;
+			JOptionPane.showMessageDialog(null, &quot;Error en el acceso a base de datos&quot;, &quot;Error&quot;,&#xD;
+					JOptionPane.PLAIN_MESSAGE);&#xD;
+		}&#xD;
+&#xD;
+		return listado;&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T83E0b0vEeuoGL0ngivwkg" name="llenarLista" isStatic="true" method="_UBMyQL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_T83E0r0vEeuoGL0ngivwkg" name="consulta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_UA6eY70vEeuoGL0ngivwkg" type="_UAZhAb0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_T7-UAL0vEeuoGL0ngivwkg" name="funciones">
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8dcML0vEeuoGL0ngivwkg" name="Agregaraleidos">
+        <ownedComment xmi:id="_UBNZUb0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de alta un nuevo comic&#xD;
+en la base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UAyikb0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UA-v0L0vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBTf8L0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UA_W4b0vEeuoGL0ngivwkg" name="_isbn" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBUHAb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UA_98b0vEeuoGL0ngivwkg" name="_nombre" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBUuEb0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBK9Fr0vEeuoGL0ngivwkg" name="Agregaraleidos" specification="_T8eDQL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBK9F70vEeuoGL0ngivwkg" type="_T8dcML0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Alta de comics&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 446, 241);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel_1);&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 30, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 1.0, 1.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JLabel isbn_1 = new JLabel(&quot;ISBN&quot;);&#xD;
+		GridBagConstraints gbc_isbn_1 = new GridBagConstraints();&#xD;
+		gbc_isbn_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_isbn_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_isbn_1.gridx = 1;&#xD;
+		gbc_isbn_1.gridy = 1;&#xD;
+		panel.add(isbn_1, gbc_isbn_1);&#xD;
+&#xD;
+		JComboBox _isbn_1 = new JComboBox();&#xD;
+		GridBagConstraints gbc__isbn_1 = new GridBagConstraints();&#xD;
+		gbc__isbn_1.gridwidth = 2;&#xD;
+		gbc__isbn_1.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__isbn_1.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__isbn_1.gridx = 3;&#xD;
+		gbc__isbn_1.gridy = 1;&#xD;
+		_isbn_1.removeAllItems();&#xD;
+		_isbn_1.addItem(&quot;&quot;);&#xD;
+		String consulta0 = &quot;select isbn from comics&quot;;&#xD;
+		ArrayList&lt;String> listado0 = ComboBoxFiller.llenarLista(consulta0);&#xD;
+		for (int i = 0; i &lt; listado0.size(); i++) {&#xD;
+			_isbn_1.addItem(listado0.get(i));&#xD;
+		}&#xD;
+		panel.add(_isbn_1, gbc__isbn_1);&#xD;
+&#xD;
+		JLabel leido_1 = new JLabel(&quot;Le\u00EDdo&quot;);&#xD;
+		GridBagConstraints gbc_leido_1 = new GridBagConstraints();&#xD;
+		gbc_leido_1.anchor = GridBagConstraints.BASELINE_TRAILING;&#xD;
+		gbc_leido_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_leido_1.gridx = 1;&#xD;
+		gbc_leido_1.gridy = 3;&#xD;
+		panel.add(leido_1, gbc_leido_1);&#xD;
+&#xD;
+		JComboBox _leido = new JComboBox();&#xD;
+		GridBagConstraints gbc__leido = new GridBagConstraints();&#xD;
+		gbc__leido.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__leido.gridwidth = 2;&#xD;
+		gbc__leido.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__leido.gridx = 3;&#xD;
+		gbc__leido.gridy = 3;&#xD;
+		_leido.addItem(&quot;si&quot;);&#xD;
+		_leido.addItem(&quot;no&quot;);&#xD;
+		panel.add(_leido, gbc__leido);&#xD;
+&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+					PreparedStatement sentencia2;&#xD;
+					String isbn = _isbn_1.getSelectedItem().toString();&#xD;
+&#xD;
+					int leido;&#xD;
+					if ((_leido.getSelectedItem().toString()).equals(&quot;si&quot;)) {&#xD;
+						leido = 1;&#xD;
+					} else {&#xD;
+						leido = 0;&#xD;
+					}&#xD;
+&#xD;
+					Date objDate = new Date();&#xD;
+					String strDateFormat = &quot;yyyy-MM-dd&quot;;&#xD;
+					SimpleDateFormat objSDF = new SimpleDateFormat(strDateFormat);&#xD;
+					String fechaFinal = objSDF.format(objDate);&#xD;
+&#xD;
+					Date fechaLeido = java.sql.Date.valueOf(fechaFinal);&#xD;
+&#xD;
+					sentencia2 = conexion.prepareStatement(&quot;update leidos set leido=?,fecha=? where isbn=?&quot;);&#xD;
+					sentencia2.setInt(1, leido);&#xD;
+					sentencia2.setDate(2, (java.sql.Date) fechaLeido);&#xD;
+					sentencia2.setString(3,isbn);&#xD;
+					sentencia2.execute();&#xD;
+					sentencia2.close();&#xD;
+&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Comic añadido a leídos&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (NumberFormatException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error introduciendo parámetros&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Ha introducido mal algún dato.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (IllegalArgumentException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Ha introducido mal algún dato.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8eDQL0vEeuoGL0ngivwkg" name="Agregaraleidos" method="_UBK9Fr0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8eDQb0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8eDQr0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8eDQ70vEeuoGL0ngivwkg" type="_T8dcML0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8fRYL0vEeuoGL0ngivwkg" name="Altaautor">
+        <ownedComment xmi:id="_UBNZUr0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de alta un autor&#xD;
+nuevo en la base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UAzJoL0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UA_9870vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBVVIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBAlAb0vEeuoGL0ngivwkg" name="nombre" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBVVJL0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBK9GL0vEeuoGL0ngivwkg" name="Altaautor" specification="_T8fRYb0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBK9Gb0vEeuoGL0ngivwkg" type="_T8fRYL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Alta autor&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 446, 174);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JLabel Nombre = new JLabel(&quot;Nombre&quot;);&#xD;
+		GridBagConstraints gbc_Nombre = new GridBagConstraints();&#xD;
+		gbc_Nombre.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_Nombre.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_Nombre.gridx = 2;&#xD;
+		gbc_Nombre.gridy = 2;&#xD;
+		panel.add(Nombre, gbc_Nombre);&#xD;
+&#xD;
+		nombre = new JTextField();&#xD;
+		GridBagConstraints gbc_nombre = new GridBagConstraints();&#xD;
+		gbc_nombre.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc_nombre.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc_nombre.gridx = 4;&#xD;
+		gbc_nombre.gridy = 2;&#xD;
+		panel.add(nombre, gbc_nombre);&#xD;
+		nombre.setColumns(10);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+					String Nombre_autor = nombre.getText();&#xD;
+&#xD;
+					sentencia = conexion.prepareStatement(&quot;insert into autores (autor) values(?)&quot;);&#xD;
+					sentencia.setString(1, Nombre_autor);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Autor añadido&quot;, &quot;Comicteca&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (NumberFormatException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error en el formato de la inserción&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error en la inserción&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+&#xD;
+			}&#xD;
+		});&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, contentPane);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8fRYb0vEeuoGL0ngivwkg" name="Altaautor" method="_UBK9GL0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8f4cL0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8f4cb0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8f4cr0vEeuoGL0ngivwkg" type="_T8fRYL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8gfgL0vEeuoGL0ngivwkg" name="Altacoleccion">
+        <ownedComment xmi:id="_UBNZU70vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite insertar una nueva&#xD;
+colección en la base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UAzwsL0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBAlA70vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBV8Mb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBBMEb0vEeuoGL0ngivwkg" name="nombre" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBWjQb0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBK9Gr0vEeuoGL0ngivwkg" name="Altacoleccion" specification="_T8gfgb0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBK9G70vEeuoGL0ngivwkg" type="_T8gfgL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Alta de colecci\u00F3n&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 132);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+		&#xD;
+				JLabel lblNewLabel_1 = new JLabel(&quot;Nombre de la colecci\u00F3n&quot;);&#xD;
+				GridBagConstraints gbc_lblNewLabel_1 = new GridBagConstraints();&#xD;
+				gbc_lblNewLabel_1.insets = new Insets(0, 0, 5, 5);&#xD;
+				gbc_lblNewLabel_1.gridx = 2;&#xD;
+				gbc_lblNewLabel_1.gridy = 1;&#xD;
+				panel.add(lblNewLabel_1, gbc_lblNewLabel_1);&#xD;
+		&#xD;
+				nombre = new JTextField();&#xD;
+				GridBagConstraints gbc_nombre = new GridBagConstraints();&#xD;
+				gbc_nombre.insets = new Insets(0, 0, 5, 0);&#xD;
+				gbc_nombre.fill = GridBagConstraints.HORIZONTAL;&#xD;
+				gbc_nombre.gridx = 5;&#xD;
+				gbc_nombre.gridy = 1;&#xD;
+				panel.add(nombre, gbc_nombre);&#xD;
+				nombre.setColumns(10);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+					&#xD;
+					String nombreColeccion = nombre.getText();&#xD;
+&#xD;
+					sentencia = conexion.prepareStatement(&#xD;
+							&quot;insert into colecciones (coleccion) values(?)&quot;);&#xD;
+					sentencia.setString(1, nombreColeccion);&#xD;
+					&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Colección añadida&quot;, &quot;Comicteca&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (NumberFormatException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error en el formato.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error en la introducción de datos.&quot;,&#xD;
+							&quot;ERROR&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8gfgb0vEeuoGL0ngivwkg" name="Altacoleccion" method="_UBK9Gr0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8hGkL0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8hGkb0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8hGkr0vEeuoGL0ngivwkg" type="_T8gfgL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8htoL0vEeuoGL0ngivwkg" name="Altacomic">
+        <ownedComment xmi:id="_UBNZVL0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de alta un nuevo comic&#xD;
+en la base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA0XwL0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBBME70vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBWjRL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBBzIb0vEeuoGL0ngivwkg" name="_isbn" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBXKUb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBBzI70vEeuoGL0ngivwkg" name="_nombre" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBXxYb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBCaMb0vEeuoGL0ngivwkg" name="consulta" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBK9HL0vEeuoGL0ngivwkg" name="Altacomic" specification="_T8iUsL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBK9Hb0vEeuoGL0ngivwkg" type="_T8htoL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Alta de comics&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 453, 348);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel_1);&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 30, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 1.0, 1.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JLabel nombre = new JLabel(&quot;Nombre&quot;);&#xD;
+		GridBagConstraints gbc_nombre = new GridBagConstraints();&#xD;
+		gbc_nombre.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_nombre.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_nombre.gridx = 1;&#xD;
+		gbc_nombre.gridy = 1;&#xD;
+		panel.add(nombre, gbc_nombre);&#xD;
+&#xD;
+		_nombre = new JTextField();&#xD;
+		_nombre.setColumns(10);&#xD;
+		GridBagConstraints gbc__nombre = new GridBagConstraints();&#xD;
+		gbc__nombre.gridwidth = 2;&#xD;
+		gbc__nombre.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__nombre.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__nombre.gridx = 3;&#xD;
+		gbc__nombre.gridy = 1;&#xD;
+		panel.add(_nombre, gbc__nombre);&#xD;
+&#xD;
+		JLabel isbn_1 = new JLabel(&quot;ISBN&quot;);&#xD;
+		GridBagConstraints gbc_isbn_1 = new GridBagConstraints();&#xD;
+		gbc_isbn_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_isbn_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_isbn_1.gridx = 1;&#xD;
+		gbc_isbn_1.gridy = 2;&#xD;
+		panel.add(isbn_1, gbc_isbn_1);&#xD;
+&#xD;
+		_isbn = new JTextField();&#xD;
+		GridBagConstraints gbc__isbn = new GridBagConstraints();&#xD;
+		gbc__isbn.gridwidth = 2;&#xD;
+		gbc__isbn.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__isbn.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__isbn.gridx = 3;&#xD;
+		gbc__isbn.gridy = 2;&#xD;
+		panel.add(_isbn, gbc__isbn);&#xD;
+		_isbn.setColumns(10);&#xD;
+&#xD;
+		JLabel autor_1 = new JLabel(&quot;Autor&quot;);&#xD;
+		GridBagConstraints gbc_autor_1 = new GridBagConstraints();&#xD;
+		gbc_autor_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_autor_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_autor_1.gridx = 1;&#xD;
+		gbc_autor_1.gridy = 3;&#xD;
+		panel.add(autor_1, gbc_autor_1);&#xD;
+&#xD;
+		JComboBox _autor = new JComboBox();&#xD;
+		GridBagConstraints gbc__autor = new GridBagConstraints();&#xD;
+		gbc__autor.gridwidth = 2;&#xD;
+		gbc__autor.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__autor.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__autor.gridx = 3;&#xD;
+		gbc__autor.gridy = 3;&#xD;
+&#xD;
+		consulta = &quot;select * from autores&quot;;&#xD;
+		VaciadoYLlenadoCombo.consultaParaLlenadodeCombo(consulta,_autor);&#xD;
+		&#xD;
+&#xD;
+		panel.add(_autor, gbc__autor);&#xD;
+&#xD;
+		JLabel editorial_1 = new JLabel(&quot;Editorial&quot;);&#xD;
+		GridBagConstraints gbc_editorial_1 = new GridBagConstraints();&#xD;
+		gbc_editorial_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_editorial_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_editorial_1.gridx = 1;&#xD;
+		gbc_editorial_1.gridy = 4;&#xD;
+		panel.add(editorial_1, gbc_editorial_1);&#xD;
+&#xD;
+		JComboBox _editorial = new JComboBox();&#xD;
+		GridBagConstraints gbc__editorial = new GridBagConstraints();&#xD;
+		gbc__editorial.gridwidth = 2;&#xD;
+		gbc__editorial.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__editorial.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__editorial.gridx = 3;&#xD;
+		gbc__editorial.gridy = 4;&#xD;
+		&#xD;
+		consulta = &quot;select * from editoriales&quot;;&#xD;
+		VaciadoYLlenadoCombo.consultaParaLlenadodeCombo(consulta,_editorial);&#xD;
+		panel.add(_editorial, gbc__editorial);&#xD;
+&#xD;
+		JLabel Tipo = new JLabel(&quot;Tipo&quot;);&#xD;
+		GridBagConstraints gbc_Tipo = new GridBagConstraints();&#xD;
+		gbc_Tipo.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_Tipo.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_Tipo.gridx = 1;&#xD;
+		gbc_Tipo.gridy = 5;&#xD;
+&#xD;
+		panel.add(Tipo, gbc_Tipo);&#xD;
+&#xD;
+		JComboBox _tipo = new JComboBox();&#xD;
+		GridBagConstraints gbc__tipo = new GridBagConstraints();&#xD;
+		gbc__tipo.gridwidth = 2;&#xD;
+		gbc__tipo.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__tipo.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__tipo.gridx = 3;&#xD;
+		gbc__tipo.gridy = 5;&#xD;
+		&#xD;
+		consulta = &quot;select * from tipos&quot;;&#xD;
+		VaciadoYLlenadoCombo.consultaParaLlenadodeCombo(consulta,_tipo);&#xD;
+		panel.add(_tipo, gbc__tipo);&#xD;
+&#xD;
+		JLabel subtipo = new JLabel(&quot;Subtipo&quot;);&#xD;
+		GridBagConstraints gbc_subtipo = new GridBagConstraints();&#xD;
+		gbc_subtipo.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_subtipo.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_subtipo.gridx = 1;&#xD;
+		gbc_subtipo.gridy = 6;&#xD;
+		panel.add(subtipo, gbc_subtipo);&#xD;
+&#xD;
+		JComboBox _subtipo = new JComboBox();&#xD;
+		GridBagConstraints gbc__subtipo = new GridBagConstraints();&#xD;
+		gbc__subtipo.gridwidth = 2;&#xD;
+		gbc__subtipo.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__subtipo.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__subtipo.gridx = 3;&#xD;
+		gbc__subtipo.gridy = 6;&#xD;
+		consulta = &quot;select subtipo from subtipos&quot;;&#xD;
+		VaciadoYLlenadoCombo.consultaParaLlenadodeCombo(consulta,_subtipo);&#xD;
+		panel.add(_subtipo, gbc__subtipo);&#xD;
+&#xD;
+		JLabel coleccion_1 = new JLabel(&quot;Colecci\u00F3n&quot;);&#xD;
+		GridBagConstraints gbc_coleccion_1 = new GridBagConstraints();&#xD;
+		gbc_coleccion_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_coleccion_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_coleccion_1.gridx = 1;&#xD;
+		gbc_coleccion_1.gridy = 7;&#xD;
+		panel.add(coleccion_1, gbc_coleccion_1);&#xD;
+&#xD;
+		JComboBox _coleccion = new JComboBox();&#xD;
+		GridBagConstraints gbc__coleccion = new GridBagConstraints();&#xD;
+		gbc__coleccion.gridwidth = 2;&#xD;
+		gbc__coleccion.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__coleccion.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__coleccion.gridx = 3;&#xD;
+		gbc__coleccion.gridy = 7;&#xD;
+		_coleccion.removeAllItems();&#xD;
+		_coleccion.addItem(&quot;&quot;);&#xD;
+		consulta = &quot;select * from colecciones&quot;;&#xD;
+		VaciadoYLlenadoCombo.consultaParaLlenadodeCombo(consulta,_coleccion);&#xD;
+		panel.add(_coleccion, gbc__coleccion);&#xD;
+&#xD;
+		JLabel leido_1 = new JLabel(&quot;Le\u00EDdo&quot;);&#xD;
+		GridBagConstraints gbc_leido_1 = new GridBagConstraints();&#xD;
+		gbc_leido_1.anchor = GridBagConstraints.BASELINE_TRAILING;&#xD;
+		gbc_leido_1.insets = new Insets(0, 0, 0, 5);&#xD;
+		gbc_leido_1.gridx = 1;&#xD;
+		gbc_leido_1.gridy = 8;&#xD;
+		panel.add(leido_1, gbc_leido_1);&#xD;
+&#xD;
+		JComboBox _leido = new JComboBox();&#xD;
+		GridBagConstraints gbc__leido = new GridBagConstraints();&#xD;
+		gbc__leido.gridwidth = 2;&#xD;
+		gbc__leido.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__leido.gridx = 3;&#xD;
+		gbc__leido.gridy = 8;&#xD;
+		_leido.addItem(&quot;si&quot;);&#xD;
+		_leido.addItem(&quot;no&quot;);&#xD;
+		panel.add(_leido, gbc__leido);&#xD;
+&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+					PreparedStatement sentencia2;&#xD;
+					String nombre = _nombre.getText();&#xD;
+					String isbn = _isbn.getText();&#xD;
+					String autor = _autor.getSelectedItem().toString();&#xD;
+					String editorial = _editorial.getSelectedItem().toString();&#xD;
+					String tipo = _tipo.getSelectedItem().toString();&#xD;
+					String coleccion = _coleccion.getSelectedItem().toString();&#xD;
+					String subtipo = _subtipo.getSelectedItem().toString();&#xD;
+					int leido;&#xD;
+					if ((_leido.getSelectedItem().toString()).equals(&quot;si&quot;)) {&#xD;
+						leido = 1;&#xD;
+					} else {&#xD;
+						leido = 0;&#xD;
+					}&#xD;
+&#xD;
+					sentencia = conexion.prepareStatement(&#xD;
+							&quot;insert into comics (isbn,autor,editorial,tipo,coleccion,Nombre,subtipo) values(?,?,?,?,?,?,?)&quot;);&#xD;
+&#xD;
+					sentencia.setString(1, isbn);&#xD;
+					sentencia.setString(2, autor);&#xD;
+					sentencia.setString(3, editorial);&#xD;
+					sentencia.setString(4, tipo);&#xD;
+					sentencia.setString(5, coleccion);&#xD;
+					sentencia.setString(6, nombre);&#xD;
+					sentencia.setString(7, subtipo);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+&#xD;
+					Date objDate = new Date();&#xD;
+					String strDateFormat = &quot;yyyy-MM-dd&quot;;&#xD;
+					SimpleDateFormat objSDF = new SimpleDateFormat(strDateFormat);&#xD;
+					String fechaFinal = objSDF.format(objDate);&#xD;
+&#xD;
+					Date fechaLeido = java.sql.Date.valueOf(fechaFinal);&#xD;
+&#xD;
+					sentencia2 = conexion.prepareStatement(&quot;insert into leidos (isbn,leido,fecha) values(?,?,?)&quot;);&#xD;
+					sentencia2.setString(1, isbn);&#xD;
+					sentencia2.setInt(2, leido);&#xD;
+					sentencia2.setDate(3, (java.sql.Date) fechaLeido);&#xD;
+					sentencia2.execute();&#xD;
+					sentencia2.close();&#xD;
+&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Comic añadido&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (NumberFormatException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error introduciendo parámetros&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Ha introducido mal algún dato en base de datos.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (IllegalArgumentException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Ha introducido  algún dato erroneo.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8iUsL0vEeuoGL0ngivwkg" name="Altacomic" method="_UBK9HL0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8iUsb0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8iUsr0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8iUs70vEeuoGL0ngivwkg" type="_T8htoL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8i7wL0vEeuoGL0ngivwkg" name="Altaeditorial">
+        <ownedComment xmi:id="_UBNZVb0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de alta editoriales en&#xD;
+la base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2020&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA0-0L0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBCaM70vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBXxZL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBCaNb0vEeuoGL0ngivwkg" name="nombre" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBYYcb0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBLkIL0vEeuoGL0ngivwkg" name="Altaeditorial" specification="_T8ji0L0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBLkIb0vEeuoGL0ngivwkg" type="_T8i7wL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Alta editorial&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 105);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel.add(aceptar);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+					PreparedStatement sentencia;&#xD;
+&#xD;
+					String editorial = nombre.getText();&#xD;
+&#xD;
+					sentencia = conexion.prepareStatement(&quot;insert into editoriales (editorial) values (?)&quot;);&#xD;
+					sentencia.setString(1, editorial);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Editorial añadida&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;??&quot;, &quot;ERROR&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+&#xD;
+			}&#xD;
+		});&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel_1 = new GridBagLayout();&#xD;
+		gbl_panel_1.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel_1.rowHeights = new int[] { 0, 0 };&#xD;
+		gbl_panel_1.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel_1.rowWeights = new double[] { 0.0, Double.MIN_VALUE };&#xD;
+		panel_1.setLayout(gbl_panel_1);&#xD;
+&#xD;
+		JLabel lblNewLabel = new JLabel(&quot;Nombre de editorial&quot;);&#xD;
+		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();&#xD;
+		gbc_lblNewLabel.insets = new Insets(0, 0, 0, 5);&#xD;
+		gbc_lblNewLabel.gridx = 2;&#xD;
+		gbc_lblNewLabel.gridy = 0;&#xD;
+		panel_1.add(lblNewLabel, gbc_lblNewLabel);&#xD;
+&#xD;
+		nombre = new JTextField();&#xD;
+		GridBagConstraints gbc_nombre = new GridBagConstraints();&#xD;
+		gbc_nombre.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc_nombre.gridx = 5;&#xD;
+		gbc_nombre.gridy = 0;&#xD;
+		panel_1.add(nombre, gbc_nombre);&#xD;
+		nombre.setColumns(10);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8ji0L0vEeuoGL0ngivwkg" name="Altaeditorial" method="_UBLkIL0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8ji0b0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8ji0r0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8ji070vEeuoGL0ngivwkg" type="_T8i7wL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8kJ4L0vEeuoGL0ngivwkg" name="Altasubtipos">
+        <ownedComment xmi:id="_UBNZVr0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de alta un autor nuevo&#xD;
+en la base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA1l4b0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBDBQb0vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBY_gb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBDBQ70vEeuoGL0ngivwkg" name="nombre" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBY_hL0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBLkIr0vEeuoGL0ngivwkg" name="Altasubtipos" specification="_T8kw8L0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBLkI70vEeuoGL0ngivwkg" type="_T8kJ4L0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Alta autor&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 446, 174);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JLabel Tipo = new JLabel(&quot;Tipo&quot;);&#xD;
+		GridBagConstraints gbc_Tipo = new GridBagConstraints();&#xD;
+		gbc_Tipo.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_Tipo.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_Tipo.gridx = 1;&#xD;
+		gbc_Tipo.gridy = 5;&#xD;
+&#xD;
+		panel.add(Tipo, gbc_Tipo);&#xD;
+&#xD;
+		JComboBox _tipo = new JComboBox();&#xD;
+		GridBagConstraints gbc__tipo = new GridBagConstraints();&#xD;
+		gbc__tipo.gridwidth = 2;&#xD;
+		gbc__tipo.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__tipo.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__tipo.gridx = 3;&#xD;
+		gbc__tipo.gridy = 5;&#xD;
+		_tipo.removeAllItems();&#xD;
+		_tipo.addItem(&quot;&quot;);&#xD;
+		String consulta3 = &quot;select tipo from tipos&quot;;&#xD;
+		ArrayList&lt;String> listado3 = llenarLista(consulta3);&#xD;
+		for (int i = 0; i &lt; listado3.size(); i++) {&#xD;
+			_tipo.addItem(listado3.get(i));&#xD;
+		}&#xD;
+		panel.add(_tipo, gbc__tipo);&#xD;
+		JLabel Nombre = new JLabel(&quot;Nombre&quot;);&#xD;
+		GridBagConstraints gbc_Nombre = new GridBagConstraints();&#xD;
+		gbc_Nombre.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_Nombre.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_Nombre.gridx = 2;&#xD;
+		gbc_Nombre.gridy = 2;&#xD;
+		panel.add(Nombre, gbc_Nombre);&#xD;
+&#xD;
+		nombre = new JTextField();&#xD;
+		GridBagConstraints gbc_nombre = new GridBagConstraints();&#xD;
+		gbc_nombre.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc_nombre.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc_nombre.gridx = 4;&#xD;
+		gbc_nombre.gridy = 2;&#xD;
+		panel.add(nombre, gbc_nombre);&#xD;
+		nombre.setColumns(10);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+					PreparedStatement sentencia;&#xD;
+					String subtipo = nombre.getText();&#xD;
+					String tipo = _tipo.getSelectedItem().toString();&#xD;
+					sentencia = conexion.prepareStatement(&#xD;
+							&quot;insert into subtipos(tipo,subtipo) values (?,?)&quot;);&#xD;
+					sentencia.setString(2, subtipo);&#xD;
+					sentencia.setString(1, tipo);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Subtipo añadido&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (NumberFormatException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error en la inserción&quot;, &quot;ERROR&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error en la inserción&quot;, &quot;ERROR&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+&#xD;
+			}&#xD;
+		});&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBLkJL0vEeuoGL0ngivwkg" name="llenarLista" specification="_T8kw9L0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBLkJb0vEeuoGL0ngivwkg" name="consulta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_UBLkJr0vEeuoGL0ngivwkg" type="_UAZhAb0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>ArrayList&lt;String> listado = new ArrayList&lt;String>();&#xD;
+&#xD;
+		try {&#xD;
+			Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);&#xD;
+			Connection conexion = DriverManager.getConnection(&quot;jdbc:mysql://localhost/comics?serverTimezone=UTC&quot;,&#xD;
+					&quot;root&quot;, &quot;chios&quot;);&#xD;
+&#xD;
+			Statement sentencia = conexion.createStatement();&#xD;
+&#xD;
+			ResultSet resultado = sentencia.executeQuery(consulta);&#xD;
+&#xD;
+			ResultSetMetaData metadata = resultado.getMetaData();&#xD;
+			int numberOfColumns = metadata.getColumnCount();&#xD;
+			while (resultado.next()) {&#xD;
+				int i = 1;&#xD;
+				while (i &lt;= numberOfColumns) {&#xD;
+					listado.add(resultado.getString(i++));&#xD;
+				}&#xD;
+			}&#xD;
+			resultado.close();&#xD;
+			sentencia.close();&#xD;
+			conexion.close();&#xD;
+&#xD;
+		} catch (SQLException e) {&#xD;
+&#xD;
+			JOptionPane.showMessageDialog(null, &quot;Error en el acceso a base de datos&quot;, &quot;Error&quot;,&#xD;
+					JOptionPane.PLAIN_MESSAGE);&#xD;
+		}&#xD;
+&#xD;
+		return listado;&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8kw8L0vEeuoGL0ngivwkg" name="Altasubtipos" method="_UBLkIr0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8kw8b0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8kw8r0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8kw870vEeuoGL0ngivwkg" type="_T8kJ4L0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_T8kw9L0vEeuoGL0ngivwkg" name="llenarLista" isStatic="true" method="_UBLkJL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_T8kw9b0vEeuoGL0ngivwkg" name="consulta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_UA1l4L0vEeuoGL0ngivwkg" type="_UAZhAb0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8nNML0vEeuoGL0ngivwkg" name="Altatipos">
+        <ownedComment xmi:id="_UBNZV70vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de alta un autor nuevo&#xD;
+en la base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA2M8L0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBDBRb0vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBZmkb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBDoUb0vEeuoGL0ngivwkg" name="nombre" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBaNoL0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBLkJ70vEeuoGL0ngivwkg" name="Altatipos" specification="_T8n0QL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBLkKL0vEeuoGL0ngivwkg" type="_T8nNML0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Alta tipo&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 446, 174);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JLabel Nombre = new JLabel(&quot;Nombre&quot;);&#xD;
+		GridBagConstraints gbc_Nombre = new GridBagConstraints();&#xD;
+		gbc_Nombre.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_Nombre.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_Nombre.gridx = 2;&#xD;
+		gbc_Nombre.gridy = 2;&#xD;
+		panel.add(Nombre, gbc_Nombre);&#xD;
+&#xD;
+		nombre = new JTextField();&#xD;
+		GridBagConstraints gbc_nombre = new GridBagConstraints();&#xD;
+		gbc_nombre.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc_nombre.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc_nombre.gridx = 4;&#xD;
+		gbc_nombre.gridy = 2;&#xD;
+		panel.add(nombre, gbc_nombre);&#xD;
+		nombre.setColumns(10);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+					String tipo = nombre.getText();&#xD;
+&#xD;
+					sentencia = conexion.prepareStatement(&quot;insert into tipos (tipo) values(?)&quot;);&#xD;
+					sentencia.setString(1, tipo);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Tipo añadido&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (NumberFormatException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error en la inserción&quot;, &quot;ERROR&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error en la inserción&quot;, &quot;ERROR&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+&#xD;
+			}&#xD;
+		});&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8n0QL0vEeuoGL0ngivwkg" name="Altatipos" method="_UBLkJ70vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8n0Qb0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8n0Qr0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8n0Q70vEeuoGL0ngivwkg" type="_T8nNML0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8obUL0vEeuoGL0ngivwkg" name="Bajaautor">
+        <ownedComment xmi:id="_UBOAYL0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de baja un autor en la&#xD;
+base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA20AL0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBDoU70vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBaNo70vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBLkKb0vEeuoGL0ngivwkg" name="Bajaautor" specification="_T8pCYL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBLkKr0vEeuoGL0ngivwkg" type="_T8obUL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Baja autor&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 139);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+&#xD;
+		JComboBox _autor = new JComboBox();&#xD;
+		GridBagConstraints gbc__autor = new GridBagConstraints();&#xD;
+		gbc__autor.gridwidth = 7;&#xD;
+		gbc__autor.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__autor.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__autor.gridx = 6;&#xD;
+		gbc__autor.gridy = 2;&#xD;
+		_autor.removeAllItems();&#xD;
+&#xD;
+		JLabel autor_1 = new JLabel(&quot;Autor&quot;);&#xD;
+		GridBagConstraints gbc_autor_1 = new GridBagConstraints();&#xD;
+		gbc_autor_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_autor_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_autor_1.gridx = 1;&#xD;
+		gbc_autor_1.gridy = 2;&#xD;
+		panel.add(autor_1, gbc_autor_1);&#xD;
+		_autor.addItem(&quot;&quot;);&#xD;
+		String consulta = &quot;select * from autores&quot;;&#xD;
+		ArrayList&lt;String> listado = ComboBoxFiller.llenarLista(consulta);&#xD;
+		for (int i = 0; i &lt; listado.size(); i++) {&#xD;
+			_autor.addItem(listado.get(i));&#xD;
+		}&#xD;
+		panel.add(_autor, gbc__autor);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+&#xD;
+					String autor = _autor.getSelectedItem().toString();&#xD;
+					sentencia = conexion.prepareStatement(&quot;delete from autores where autor=?&quot;);&#xD;
+					sentencia.setString(1, autor);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Autor borrado&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error al borrar el autor.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8pCYL0vEeuoGL0ngivwkg" name="Bajaautor" method="_UBLkKb0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8pCYb0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8pCYr0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8pCY70vEeuoGL0ngivwkg" type="_T8obUL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8ppcL0vEeuoGL0ngivwkg" name="Bajacoleccion">
+        <ownedComment xmi:id="_UBOAYb0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de baja un una&#xD;
+colección en la base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 20-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA20Ab0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBDoVb0vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBa0sb0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBLkK70vEeuoGL0ngivwkg" name="Bajacoleccion" specification="_T8qQgL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBLkLL0vEeuoGL0ngivwkg" type="_T8ppcL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Baja colección&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 139);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+&#xD;
+		JComboBox _autor = new JComboBox();&#xD;
+		GridBagConstraints gbc__autor = new GridBagConstraints();&#xD;
+		gbc__autor.gridwidth = 7;&#xD;
+		gbc__autor.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__autor.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__autor.gridx = 6;&#xD;
+		gbc__autor.gridy = 2;&#xD;
+		_autor.removeAllItems();&#xD;
+&#xD;
+		JLabel autor_1 = new JLabel(&quot;Colección&quot;);&#xD;
+		GridBagConstraints gbc_autor_1 = new GridBagConstraints();&#xD;
+		gbc_autor_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_autor_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_autor_1.gridx = 1;&#xD;
+		gbc_autor_1.gridy = 2;&#xD;
+		panel.add(autor_1, gbc_autor_1);&#xD;
+		_autor.addItem(&quot;&quot;);&#xD;
+		String consulta = &quot;select * from colecciones&quot;;&#xD;
+		ArrayList&lt;String> listado = ComboBoxFiller.llenarLista(consulta);&#xD;
+		for (int i = 0; i &lt; listado.size(); i++) {&#xD;
+			_autor.addItem(listado.get(i));&#xD;
+		}&#xD;
+		panel.add(_autor, gbc__autor);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+&#xD;
+					String autor = _autor.getSelectedItem().toString();&#xD;
+					sentencia = conexion.prepareStatement(&quot;delete from colecciones where coleccion=?&quot;);&#xD;
+					sentencia.setString(1, autor);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Colección borrada&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error al borrar la colección.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8qQgL0vEeuoGL0ngivwkg" name="Bajacoleccion" method="_UBLkK70vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8qQgb0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8qQgr0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8qQg70vEeuoGL0ngivwkg" type="_T8ppcL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8q3kL0vEeuoGL0ngivwkg" name="Bajacomic">
+        <ownedComment xmi:id="_UBOAYr0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de baja un comic en la&#xD;
+base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA3bEL0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBEPYb0vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBbbwL0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBLkLb0vEeuoGL0ngivwkg" name="Bajacomic" specification="_T8reoL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBLkLr0vEeuoGL0ngivwkg" type="_T8q3kL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Baja comic&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 139);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+&#xD;
+		JComboBox _autor = new JComboBox();&#xD;
+		GridBagConstraints gbc__autor = new GridBagConstraints();&#xD;
+		gbc__autor.gridwidth = 7;&#xD;
+		gbc__autor.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__autor.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__autor.gridx = 6;&#xD;
+		gbc__autor.gridy = 2;&#xD;
+		_autor.removeAllItems();&#xD;
+&#xD;
+		JLabel autor_1 = new JLabel(&quot;Comic&quot;);&#xD;
+		GridBagConstraints gbc_autor_1 = new GridBagConstraints();&#xD;
+		gbc_autor_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_autor_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_autor_1.gridx = 1;&#xD;
+		gbc_autor_1.gridy = 2;&#xD;
+		panel.add(autor_1, gbc_autor_1);&#xD;
+		_autor.addItem(&quot;&quot;);&#xD;
+		String consulta = &quot;select Nombre from comics&quot;;&#xD;
+		ArrayList&lt;String> listado = ComboBoxFiller.llenarLista(consulta);&#xD;
+		for (int i = 0; i &lt; listado.size(); i++) {&#xD;
+			_autor.addItem(listado.get(i));&#xD;
+		}&#xD;
+		panel.add(_autor, gbc__autor);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+&#xD;
+					String autor = _autor.getSelectedItem().toString();&#xD;
+					sentencia = conexion.prepareStatement(&quot;delete from comics where Nombre=?&quot;);&#xD;
+					sentencia.setString(1, autor);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Comic borrado&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error al borrar el comic.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8reoL0vEeuoGL0ngivwkg" name="Bajacomic" method="_UBLkLb0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8reob0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8reor0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8reo70vEeuoGL0ngivwkg" type="_T8q3kL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8sFsL0vEeuoGL0ngivwkg" name="Bajaeditorial">
+        <ownedComment xmi:id="_UBOAY70vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de baja una editorial de&#xD;
+la base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 20-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA3bEb0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBEPY70vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBbbw70vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBLkL70vEeuoGL0ngivwkg" name="Bajaeditorial" specification="_T8sswL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBLkML0vEeuoGL0ngivwkg" type="_T8sFsL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Baja editorial&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 139);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+&#xD;
+		JComboBox _autor = new JComboBox();&#xD;
+		GridBagConstraints gbc__autor = new GridBagConstraints();&#xD;
+		gbc__autor.gridwidth = 7;&#xD;
+		gbc__autor.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__autor.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__autor.gridx = 6;&#xD;
+		gbc__autor.gridy = 2;&#xD;
+		_autor.removeAllItems();&#xD;
+&#xD;
+		JLabel autor_1 = new JLabel(&quot;Editorial&quot;);&#xD;
+		GridBagConstraints gbc_autor_1 = new GridBagConstraints();&#xD;
+		gbc_autor_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_autor_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_autor_1.gridx = 1;&#xD;
+		gbc_autor_1.gridy = 2;&#xD;
+		panel.add(autor_1, gbc_autor_1);&#xD;
+		_autor.addItem(&quot;&quot;);&#xD;
+		String consulta = &quot;select * from editoriales&quot;;&#xD;
+		ArrayList&lt;String> listado = ComboBoxFiller.llenarLista(consulta);&#xD;
+		for (int i = 0; i &lt; listado.size(); i++) {&#xD;
+			_autor.addItem(listado.get(i));&#xD;
+		}&#xD;
+		panel.add(_autor, gbc__autor);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+&#xD;
+					String autor = _autor.getSelectedItem().toString();&#xD;
+					sentencia = conexion.prepareStatement(&quot;delete from editoriales where editorial=?&quot;);&#xD;
+					sentencia.setString(1, autor);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Editorial borrada&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error al borrar la editorial.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8sswL0vEeuoGL0ngivwkg" name="Bajaeditorial" method="_UBLkL70vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8sswb0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8sswr0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8ssw70vEeuoGL0ngivwkg" type="_T8sFsL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8tT0L0vEeuoGL0ngivwkg" name="Bajasubtipos">
+        <ownedComment xmi:id="_UBOAZL0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de baja un autor en la&#xD;
+base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA4CIL0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBEPZb0vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBcC0b0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBMLML0vEeuoGL0ngivwkg" name="Bajasubtipos" specification="_T8t64L0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBMLMb0vEeuoGL0ngivwkg" type="_T8tT0L0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Baja subtipos&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 139);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+&#xD;
+		JComboBox _autor = new JComboBox();&#xD;
+		GridBagConstraints gbc__autor = new GridBagConstraints();&#xD;
+		gbc__autor.gridwidth = 7;&#xD;
+		gbc__autor.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__autor.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__autor.gridx = 6;&#xD;
+		gbc__autor.gridy = 2;&#xD;
+		_autor.removeAllItems();&#xD;
+&#xD;
+		JLabel autor_1 = new JLabel(&quot;Subtipo&quot;);&#xD;
+		GridBagConstraints gbc_autor_1 = new GridBagConstraints();&#xD;
+		gbc_autor_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_autor_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_autor_1.gridx = 1;&#xD;
+		gbc_autor_1.gridy = 2;&#xD;
+		panel.add(autor_1, gbc_autor_1);&#xD;
+		_autor.addItem(&quot;&quot;);&#xD;
+		String consulta = &quot;select subtipo from subtipos&quot;;&#xD;
+		ArrayList&lt;String> listado = ComboBoxFiller.llenarLista(consulta);&#xD;
+		for (int i = 0; i &lt; listado.size(); i++) {&#xD;
+			_autor.addItem(listado.get(i));&#xD;
+		}&#xD;
+		panel.add(_autor, gbc__autor);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+&#xD;
+					String autor = _autor.getSelectedItem().toString();&#xD;
+					sentencia = conexion.prepareStatement(&quot;delete from subtipos where subtipo=?&quot;);&#xD;
+					sentencia.setString(1, autor);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Subtipo borrado&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error al borrar el subtipo.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8t64L0vEeuoGL0ngivwkg" name="Bajasubtipos" method="_UBMLML0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8t64b0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8t64r0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8t6470vEeuoGL0ngivwkg" type="_T8tT0L0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8uh8L0vEeuoGL0ngivwkg" name="Bajatipos">
+        <ownedComment xmi:id="_UBOAZb0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de baja un tipo en la&#xD;
+base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA4CIb0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBE2cb0vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBcp4L0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBMLMr0vEeuoGL0ngivwkg" name="Bajatipos" specification="_T8vJAL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBMLM70vEeuoGL0ngivwkg" type="_T8uh8L0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Baja tipos&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 139);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+&#xD;
+		JComboBox _autor = new JComboBox();&#xD;
+		GridBagConstraints gbc__autor = new GridBagConstraints();&#xD;
+		gbc__autor.gridwidth = 7;&#xD;
+		gbc__autor.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__autor.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__autor.gridx = 6;&#xD;
+		gbc__autor.gridy = 2;&#xD;
+		_autor.removeAllItems();&#xD;
+&#xD;
+		JLabel autor_1 = new JLabel(&quot;Tipos&quot;);&#xD;
+		GridBagConstraints gbc_autor_1 = new GridBagConstraints();&#xD;
+		gbc_autor_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_autor_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_autor_1.gridx = 1;&#xD;
+		gbc_autor_1.gridy = 2;&#xD;
+		panel.add(autor_1, gbc_autor_1);&#xD;
+		_autor.addItem(&quot;&quot;);&#xD;
+		String consulta = &quot;select * from tipos&quot;;&#xD;
+		ArrayList&lt;String> listado = ComboBoxFiller.llenarLista(consulta);&#xD;
+		for (int i = 0; i &lt; listado.size(); i++) {&#xD;
+			_autor.addItem(listado.get(i));&#xD;
+		}&#xD;
+		panel.add(_autor, gbc__autor);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+&#xD;
+					String autor = _autor.getSelectedItem().toString();&#xD;
+					sentencia = conexion.prepareStatement(&quot;delete from tipos where tipo=?&quot;);&#xD;
+					sentencia.setString(1, autor);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Tipo borrado&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error al borrar el tipo.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8vJAL0vEeuoGL0ngivwkg" name="Bajatipos" method="_UBMLMr0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8vJAb0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8vJAr0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8vJA70vEeuoGL0ngivwkg" type="_T8uh8L0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8vwEL0vEeuoGL0ngivwkg" name="Consultacomics">
+        <ownedComment xmi:id="_UBOAZr0vEeuoGL0ngivwkg">
+          <body>Clase que nos permite listar en un informe los comics existentes dentro de la base de datos&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA4pML0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBE2c70vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBcp470vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBMLNL0vEeuoGL0ngivwkg" name="Consultacomics" specification="_T8wXIL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBMLNb0vEeuoGL0ngivwkg" type="_T8vwEL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Consulta de los comics&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 104);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		&#xD;
+		JLabel lblNewLabel = new JLabel(&quot;Generar informe con todos los comics guardados&quot;);&#xD;
+		panel.add(lblNewLabel);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+		public void actionPerformed(ActionEvent e) {&#xD;
+			try {&#xD;
+				Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+			String rutaInforme = System.getProperty(&quot;user.dir&quot;) + System.getProperty(&quot;file.separator&quot;);&#xD;
+			rutaInforme += &quot;Comics.jasper&quot;;&#xD;
+			JasperReport informeVacio;&#xD;
+			&#xD;
+				informeVacio = (JasperReport) JRLoader.loadObjectFromFile(rutaInforme);&#xD;
+&#xD;
+				JasperPrint informeConDatos = JasperFillManager.fillReport(informeVacio, null, conexion);&#xD;
+				JasperViewer visor = new JasperViewer(informeConDatos);&#xD;
+				&#xD;
+				visor.setVisible(true);&#xD;
+			} catch (JRException e1) {&#xD;
+				e1.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+		});&#xD;
+&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8wXIL0vEeuoGL0ngivwkg" name="Consultacomics" method="_UBMLNL0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8wXIb0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8wXIr0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8wXI70vEeuoGL0ngivwkg" type="_T8vwEL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8w-ML0vEeuoGL0ngivwkg" name="Consultaleidos">
+        <ownedComment xmi:id="_UBOAZ70vEeuoGL0ngivwkg">
+          <body>Clase construida mediante window builder que nos permite generar un informe donde vemos los comics que hemos leído&#xD;
+@author Cristian Barallobre&#xD;
+@version 20-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA4pMb0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBE2db0vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBdQ8b0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBMLNr0vEeuoGL0ngivwkg" name="Consultaleidos" specification="_T8w-Mb0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBMLN70vEeuoGL0ngivwkg" type="_T8w-ML0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Consulta de los comics leídos.&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 105);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+		&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		&#xD;
+		JLabel lblNewLabel = new JLabel(&quot;Generar informe de los comics leídos.&quot;);&#xD;
+		panel.add(lblNewLabel);&#xD;
+		&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+		&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+		public void actionPerformed(ActionEvent e) {&#xD;
+			try {&#xD;
+				Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+			String rutaInforme = System.getProperty(&quot;user.dir&quot;) + System.getProperty(&quot;file.separator&quot;);&#xD;
+			rutaInforme += &quot;Leidos.jasper&quot;;&#xD;
+			JasperReport informeVacio;&#xD;
+			&#xD;
+				informeVacio = (JasperReport) JRLoader.loadObjectFromFile(rutaInforme);&#xD;
+&#xD;
+				JasperPrint informeConDatos = JasperFillManager.fillReport(informeVacio, null, conexion);&#xD;
+				JasperViewer visor = new JasperViewer(informeConDatos);&#xD;
+				&#xD;
+				visor.setVisible(true);&#xD;
+			} catch (JRException e1) {&#xD;
+				e1.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+		});&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8w-Mb0vEeuoGL0ngivwkg" name="Consultaleidos" method="_UBMLNr0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8xlQL0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8xlQb0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8xlQr0vEeuoGL0ngivwkg" type="_T8w-ML0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8yMUL0vEeuoGL0ngivwkg" name="Consultanoleidos">
+        <ownedComment xmi:id="_UBOAaL0vEeuoGL0ngivwkg">
+          <body>Clase construida mediante window builder que nos permite generar un informe donde vemos los comics que tenemso y aún no hemos leído&#xD;
+@author Cristian Barallobre&#xD;
+@version 20-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA5QQL0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBFdgb0vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBdQ9L0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBMLOL0vEeuoGL0ngivwkg" name="Consultanoleidos" specification="_T8yMUb0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBMLOb0vEeuoGL0ngivwkg" type="_T8yMUL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Consulta de todos los comics no leídos.&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 450, 105);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+		&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		&#xD;
+		JLabel lblNewLabel = new JLabel(&quot;Generar informe de los comics no leídos.&quot;);&#xD;
+		panel.add(lblNewLabel);&#xD;
+		&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+		&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+		public void actionPerformed(ActionEvent e) {&#xD;
+			try {&#xD;
+			&#xD;
+			Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+			String rutaInforme = System.getProperty(&quot;user.dir&quot;) + System.getProperty(&quot;file.separator&quot;);&#xD;
+			rutaInforme += &quot;Noleidos.jasper&quot;;&#xD;
+			JasperReport informeVacio;&#xD;
+			&#xD;
+				informeVacio = (JasperReport) JRLoader.loadObjectFromFile(rutaInforme);&#xD;
+&#xD;
+				JasperPrint informeConDatos = JasperFillManager.fillReport(informeVacio, null, conexion);&#xD;
+				JasperViewer visor = new JasperViewer(informeConDatos);&#xD;
+				&#xD;
+				visor.setVisible(true);&#xD;
+			} catch (JRException e1) {&#xD;
+				e1.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+		});&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar,contentPane);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T8yMUb0vEeuoGL0ngivwkg" name="Consultanoleidos" method="_UBMLOL0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T8yzYL0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T8yzYb0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T8yzYr0vEeuoGL0ngivwkg" type="_T8yMUL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T8zacL0vEeuoGL0ngivwkg" name="Modificacioncomic">
+        <ownedComment xmi:id="_UBOAab0vEeuoGL0ngivwkg">
+          <body>Clase construida con windowbuilder que nos permite dar de alta un nuevo comic&#xD;
+en la base de datos&#xD;
+&#xD;
+@author Cristian Barallobre&#xD;
+@version 19-05-2021&#xD;
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_UA53UL0vEeuoGL0ngivwkg" general="_UAavIb0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBFdg70vEeuoGL0ngivwkg" name="contentPane" visibility="private" type="_UAavI70vEeuoGL0ngivwkg" association="_UBd4Ab0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBFdhb0vEeuoGL0ngivwkg" name="_isbn" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBd4BL0vEeuoGL0ngivwkg"/>
+        <ownedAttribute xmi:id="_UBGEkb0vEeuoGL0ngivwkg" name="_nombre" visibility="private" type="_UAb9QL0vEeuoGL0ngivwkg" association="_UBefEb0vEeuoGL0ngivwkg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_UBMLOr0vEeuoGL0ngivwkg" name="Modificacioncomic" specification="_T80BgL0vEeuoGL0ngivwkg">
+          <ownedParameter xmi:id="_UBMLO70vEeuoGL0ngivwkg" type="_T8zacL0vEeuoGL0ngivwkg" direction="return"/>
+          <language>java</language>
+          <body>setTitle(&quot;Alta de comics&quot;);&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 453, 348);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(new BorderLayout(0, 0));&#xD;
+		setContentPane(contentPane);&#xD;
+&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		contentPane.add(panel_1, BorderLayout.SOUTH);&#xD;
+&#xD;
+		JButton aceptar = new JButton(&quot;Aceptar&quot;);&#xD;
+		panel_1.add(aceptar);&#xD;
+&#xD;
+		JButton cancelar = new JButton(&quot;Atrás&quot;);&#xD;
+		panel_1.add(cancelar);&#xD;
+		BotonAtras.irAtras(cancelar, panel_1);&#xD;
+		JPanel panel = new JPanel();&#xD;
+		contentPane.add(panel, BorderLayout.CENTER);&#xD;
+		GridBagLayout gbl_panel = new GridBagLayout();&#xD;
+		gbl_panel.columnWidths = new int[] { 30, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };&#xD;
+		gbl_panel.columnWeights = new double[] { 0.0, 0.0, 1.0, 1.0, 1.0, Double.MIN_VALUE };&#xD;
+		gbl_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };&#xD;
+		panel.setLayout(gbl_panel);&#xD;
+&#xD;
+		JLabel nombre = new JLabel(&quot;Nombre&quot;);&#xD;
+		GridBagConstraints gbc_nombre = new GridBagConstraints();&#xD;
+		gbc_nombre.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_nombre.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_nombre.gridx = 1;&#xD;
+		gbc_nombre.gridy = 1;&#xD;
+		panel.add(nombre, gbc_nombre);&#xD;
+&#xD;
+		_nombre = new JTextField();&#xD;
+		_nombre.setColumns(10);&#xD;
+		GridBagConstraints gbc__nombre = new GridBagConstraints();&#xD;
+		gbc__nombre.gridwidth = 2;&#xD;
+		gbc__nombre.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__nombre.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__nombre.gridx = 3;&#xD;
+		gbc__nombre.gridy = 1;&#xD;
+		panel.add(_nombre, gbc__nombre);&#xD;
+&#xD;
+		JLabel isbn_1 = new JLabel(&quot;ISBN&quot;);&#xD;
+		GridBagConstraints gbc_isbn_1 = new GridBagConstraints();&#xD;
+		gbc_isbn_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_isbn_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_isbn_1.gridx = 1;&#xD;
+		gbc_isbn_1.gridy = 2;&#xD;
+		panel.add(isbn_1, gbc_isbn_1);&#xD;
+&#xD;
+		JComboBox _isbn_1 = new JComboBox();&#xD;
+		GridBagConstraints gbc__isbn_1 = new GridBagConstraints();&#xD;
+		gbc__isbn_1.gridwidth = 2;&#xD;
+		gbc__isbn_1.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__isbn_1.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__isbn_1.gridx = 3;&#xD;
+		gbc__isbn_1.gridy = 2;&#xD;
+		_isbn_1.removeAllItems();&#xD;
+		_isbn_1.addItem(&quot;&quot;);&#xD;
+		String consulta0 = &quot;select isbn from comics&quot;;&#xD;
+		ArrayList&lt;String> listado0 = ComboBoxFiller.llenarLista(consulta0);&#xD;
+		for (int i = 0; i &lt; listado0.size(); i++) {&#xD;
+			_isbn_1.addItem(listado0.get(i));&#xD;
+		}&#xD;
+		panel.add(_isbn_1, gbc__isbn_1);&#xD;
+&#xD;
+		JLabel autor_1 = new JLabel(&quot;Autor&quot;);&#xD;
+		GridBagConstraints gbc_autor_1 = new GridBagConstraints();&#xD;
+		gbc_autor_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_autor_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_autor_1.gridx = 1;&#xD;
+		gbc_autor_1.gridy = 3;&#xD;
+		panel.add(autor_1, gbc_autor_1);&#xD;
+&#xD;
+		JComboBox _autor = new JComboBox();&#xD;
+		GridBagConstraints gbc__autor = new GridBagConstraints();&#xD;
+		gbc__autor.gridwidth = 2;&#xD;
+		gbc__autor.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__autor.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__autor.gridx = 3;&#xD;
+		gbc__autor.gridy = 3;&#xD;
+		_autor.removeAllItems();&#xD;
+		_autor.addItem(&quot;&quot;);&#xD;
+		String consulta = &quot;select * from autores&quot;;&#xD;
+		ArrayList&lt;String> listado = ComboBoxFiller.llenarLista(consulta);&#xD;
+		for (int i = 0; i &lt; listado.size(); i++) {&#xD;
+			_autor.addItem(listado.get(i));&#xD;
+		}&#xD;
+		panel.add(_autor, gbc__autor);&#xD;
+&#xD;
+		JLabel editorial_1 = new JLabel(&quot;Editorial&quot;);&#xD;
+		GridBagConstraints gbc_editorial_1 = new GridBagConstraints();&#xD;
+		gbc_editorial_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_editorial_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_editorial_1.gridx = 1;&#xD;
+		gbc_editorial_1.gridy = 4;&#xD;
+		panel.add(editorial_1, gbc_editorial_1);&#xD;
+&#xD;
+		JComboBox _editorial = new JComboBox();&#xD;
+		GridBagConstraints gbc__editorial = new GridBagConstraints();&#xD;
+		gbc__editorial.gridwidth = 2;&#xD;
+		gbc__editorial.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__editorial.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__editorial.gridx = 3;&#xD;
+		gbc__editorial.gridy = 4;&#xD;
+		_editorial.removeAllItems();&#xD;
+		_editorial.addItem(&quot;&quot;);&#xD;
+		String consulta2 = &quot;select * from editoriales&quot;;&#xD;
+		ArrayList&lt;String> listado2 = ComboBoxFiller.llenarLista(consulta2);&#xD;
+		for (int i = 0; i &lt; listado2.size(); i++) {&#xD;
+			_editorial.addItem(listado2.get(i));&#xD;
+		}&#xD;
+		panel.add(_editorial, gbc__editorial);&#xD;
+&#xD;
+		JLabel Tipo = new JLabel(&quot;Tipo&quot;);&#xD;
+		GridBagConstraints gbc_Tipo = new GridBagConstraints();&#xD;
+		gbc_Tipo.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_Tipo.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_Tipo.gridx = 1;&#xD;
+		gbc_Tipo.gridy = 5;&#xD;
+&#xD;
+		panel.add(Tipo, gbc_Tipo);&#xD;
+&#xD;
+		JComboBox _tipo = new JComboBox();&#xD;
+		GridBagConstraints gbc__tipo = new GridBagConstraints();&#xD;
+		gbc__tipo.gridwidth = 2;&#xD;
+		gbc__tipo.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__tipo.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__tipo.gridx = 3;&#xD;
+		gbc__tipo.gridy = 5;&#xD;
+		_tipo.removeAllItems();&#xD;
+		_tipo.addItem(&quot;&quot;);&#xD;
+		String consulta3 = &quot;select * from tipos&quot;;&#xD;
+		ArrayList&lt;String> listado3 = ComboBoxFiller.llenarLista(consulta3);&#xD;
+		for (int i = 0; i &lt; listado3.size(); i++) {&#xD;
+			_tipo.addItem(listado3.get(i));&#xD;
+		}&#xD;
+		panel.add(_tipo, gbc__tipo);&#xD;
+&#xD;
+		JLabel subtipo = new JLabel(&quot;Subtipo&quot;);&#xD;
+		GridBagConstraints gbc_subtipo = new GridBagConstraints();&#xD;
+		gbc_subtipo.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_subtipo.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_subtipo.gridx = 1;&#xD;
+		gbc_subtipo.gridy = 6;&#xD;
+		panel.add(subtipo, gbc_subtipo);&#xD;
+&#xD;
+		JComboBox _subtipo = new JComboBox();&#xD;
+		GridBagConstraints gbc__subtipo = new GridBagConstraints();&#xD;
+		gbc__subtipo.gridwidth = 2;&#xD;
+		gbc__subtipo.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__subtipo.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__subtipo.gridx = 3;&#xD;
+		gbc__subtipo.gridy = 6;&#xD;
+		panel.add(_subtipo, gbc__subtipo);&#xD;
+&#xD;
+		JLabel coleccion_1 = new JLabel(&quot;Colecci\u00F3n&quot;);&#xD;
+		GridBagConstraints gbc_coleccion_1 = new GridBagConstraints();&#xD;
+		gbc_coleccion_1.anchor = GridBagConstraints.EAST;&#xD;
+		gbc_coleccion_1.insets = new Insets(0, 0, 5, 5);&#xD;
+		gbc_coleccion_1.gridx = 1;&#xD;
+		gbc_coleccion_1.gridy = 7;&#xD;
+		panel.add(coleccion_1, gbc_coleccion_1);&#xD;
+&#xD;
+		JComboBox _coleccion = new JComboBox();&#xD;
+		GridBagConstraints gbc__coleccion = new GridBagConstraints();&#xD;
+		gbc__coleccion.gridwidth = 2;&#xD;
+		gbc__coleccion.insets = new Insets(0, 0, 5, 0);&#xD;
+		gbc__coleccion.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__coleccion.gridx = 3;&#xD;
+		gbc__coleccion.gridy = 7;&#xD;
+		_coleccion.removeAllItems();&#xD;
+		_coleccion.addItem(&quot;&quot;);&#xD;
+		String consulta4 = &quot;select * from colecciones&quot;;&#xD;
+		ArrayList&lt;String> listado4 = ComboBoxFiller.llenarLista(consulta4);&#xD;
+		for (int i = 0; i &lt; listado4.size(); i++) {&#xD;
+			_coleccion.addItem(listado4.get(i));&#xD;
+		}&#xD;
+		panel.add(_coleccion, gbc__coleccion);&#xD;
+&#xD;
+		JLabel leido_1 = new JLabel(&quot;Le\u00EDdo&quot;);&#xD;
+		GridBagConstraints gbc_leido_1 = new GridBagConstraints();&#xD;
+		gbc_leido_1.anchor = GridBagConstraints.BASELINE_TRAILING;&#xD;
+		gbc_leido_1.insets = new Insets(0, 0, 0, 5);&#xD;
+		gbc_leido_1.gridx = 1;&#xD;
+		gbc_leido_1.gridy = 8;&#xD;
+		panel.add(leido_1, gbc_leido_1);&#xD;
+&#xD;
+		JComboBox _leido = new JComboBox();&#xD;
+		GridBagConstraints gbc__leido = new GridBagConstraints();&#xD;
+		gbc__leido.gridwidth = 2;&#xD;
+		gbc__leido.fill = GridBagConstraints.HORIZONTAL;&#xD;
+		gbc__leido.gridx = 3;&#xD;
+		gbc__leido.gridy = 8;&#xD;
+		_leido.addItem(&quot;si&quot;);&#xD;
+		_leido.addItem(&quot;no&quot;);&#xD;
+		panel.add(_leido, gbc__leido);&#xD;
+&#xD;
+		aceptar.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+&#xD;
+				try {&#xD;
+					Connection conexion = AccesoBaseDatos.conexionBaseDatos();&#xD;
+&#xD;
+					PreparedStatement sentencia;&#xD;
+					PreparedStatement sentencia2;&#xD;
+					String nombre = _nombre.getText();&#xD;
+					String isbn = _isbn_1.getSelectedItem().toString();&#xD;
+					String autor = _autor.getSelectedItem().toString();&#xD;
+					String editorial = _editorial.getSelectedItem().toString();&#xD;
+					String tipo = _tipo.getSelectedItem().toString();&#xD;
+					String coleccion = _coleccion.getSelectedItem().toString();&#xD;
+&#xD;
+					int leido;&#xD;
+					if ((_leido.getSelectedItem().toString()).equals(&quot;si&quot;)) {&#xD;
+						leido = 1;&#xD;
+					} else {&#xD;
+						leido = 0;&#xD;
+					}&#xD;
+&#xD;
+					sentencia = conexion.prepareStatement(&#xD;
+							&quot;update comics set autor=?,editorial=?,tipo=?,coleccion=?,nombre=? where isbn=?&quot;);&#xD;
+&#xD;
+					sentencia.setString(6, isbn);&#xD;
+					sentencia.setString(1, autor);&#xD;
+					sentencia.setString(2, editorial);&#xD;
+					sentencia.setString(3, tipo);&#xD;
+					sentencia.setString(4, coleccion);&#xD;
+					sentencia.setString(5, nombre);&#xD;
+					sentencia.execute();&#xD;
+&#xD;
+					sentencia.close();&#xD;
+&#xD;
+					Date objDate = new Date();&#xD;
+					String strDateFormat = &quot;yyyy-MM-dd&quot;;&#xD;
+					SimpleDateFormat objSDF = new SimpleDateFormat(strDateFormat);&#xD;
+					String fechaFinal = objSDF.format(objDate);&#xD;
+&#xD;
+					Date fechaLeido = java.sql.Date.valueOf(fechaFinal);&#xD;
+&#xD;
+					sentencia2 = conexion.prepareStatement(&quot;update leidos set leido=?,fecha=? where id_leido=?&quot;);&#xD;
+					sentencia2.setString(3, isbn);&#xD;
+					sentencia2.setInt(1, leido);&#xD;
+					sentencia2.setDate(2, (java.sql.Date) fechaLeido);&#xD;
+					sentencia2.execute();&#xD;
+					sentencia2.close();&#xD;
+&#xD;
+					conexion.close();&#xD;
+&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Comic añadido&quot;, &quot;Comicteca&quot;, JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (NumberFormatException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Error introduciendo parámetros&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (SQLException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Ha introducido mal algún dato.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				} catch (IllegalArgumentException e1) {&#xD;
+					JOptionPane.showMessageDialog(null, &quot;Ha introducido mal algún dato.&quot;, &quot;ERROR&quot;,&#xD;
+							JOptionPane.PLAIN_MESSAGE);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_T80BgL0vEeuoGL0ngivwkg" name="Modificacioncomic" method="_UBMLOr0vEeuoGL0ngivwkg">
+          <eAnnotations xmi:id="_T80Bgb0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_T80Bgr0vEeuoGL0ngivwkg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_T80Bg70vEeuoGL0ngivwkg" type="_T8zacL0vEeuoGL0ngivwkg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBTf8L0vEeuoGL0ngivwkg" name="" memberEnd="_UBTf8b0vEeuoGL0ngivwkg _UA-v0L0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBTf8b0vEeuoGL0ngivwkg" name="" type="_T8dcML0vEeuoGL0ngivwkg" association="_UBTf8L0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBUHAb0vEeuoGL0ngivwkg" name="" memberEnd="_UBUHAr0vEeuoGL0ngivwkg _UA_W4b0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBUHAr0vEeuoGL0ngivwkg" name="" type="_T8dcML0vEeuoGL0ngivwkg" association="_UBUHAb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBUuEb0vEeuoGL0ngivwkg" name="" memberEnd="_UBUuEr0vEeuoGL0ngivwkg _UA_98b0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBUuEr0vEeuoGL0ngivwkg" name="" type="_T8dcML0vEeuoGL0ngivwkg" association="_UBUuEb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBVVIb0vEeuoGL0ngivwkg" name="" memberEnd="_UBVVIr0vEeuoGL0ngivwkg _UA_9870vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBVVIr0vEeuoGL0ngivwkg" name="" type="_T8fRYL0vEeuoGL0ngivwkg" association="_UBVVIb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBVVJL0vEeuoGL0ngivwkg" name="" memberEnd="_UBVVJb0vEeuoGL0ngivwkg _UBAlAb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBVVJb0vEeuoGL0ngivwkg" name="" type="_T8fRYL0vEeuoGL0ngivwkg" association="_UBVVJL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBV8Mb0vEeuoGL0ngivwkg" name="" memberEnd="_UBV8Mr0vEeuoGL0ngivwkg _UBAlA70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBV8Mr0vEeuoGL0ngivwkg" name="" type="_T8gfgL0vEeuoGL0ngivwkg" association="_UBV8Mb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBWjQb0vEeuoGL0ngivwkg" name="" memberEnd="_UBWjQr0vEeuoGL0ngivwkg _UBBMEb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBWjQr0vEeuoGL0ngivwkg" name="" type="_T8gfgL0vEeuoGL0ngivwkg" association="_UBWjQb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBWjRL0vEeuoGL0ngivwkg" name="" memberEnd="_UBWjRb0vEeuoGL0ngivwkg _UBBME70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBWjRb0vEeuoGL0ngivwkg" name="" type="_T8htoL0vEeuoGL0ngivwkg" association="_UBWjRL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBXKUb0vEeuoGL0ngivwkg" name="" memberEnd="_UBXKUr0vEeuoGL0ngivwkg _UBBzIb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBXKUr0vEeuoGL0ngivwkg" name="" type="_T8htoL0vEeuoGL0ngivwkg" association="_UBXKUb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBXxYb0vEeuoGL0ngivwkg" name="" memberEnd="_UBXxYr0vEeuoGL0ngivwkg _UBBzI70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBXxYr0vEeuoGL0ngivwkg" name="" type="_T8htoL0vEeuoGL0ngivwkg" association="_UBXxYb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBXxZL0vEeuoGL0ngivwkg" name="" memberEnd="_UBXxZb0vEeuoGL0ngivwkg _UBCaM70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBXxZb0vEeuoGL0ngivwkg" name="" type="_T8i7wL0vEeuoGL0ngivwkg" association="_UBXxZL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBYYcb0vEeuoGL0ngivwkg" name="" memberEnd="_UBYYcr0vEeuoGL0ngivwkg _UBCaNb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBYYcr0vEeuoGL0ngivwkg" name="" type="_T8i7wL0vEeuoGL0ngivwkg" association="_UBYYcb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBY_gb0vEeuoGL0ngivwkg" name="" memberEnd="_UBY_gr0vEeuoGL0ngivwkg _UBDBQb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBY_gr0vEeuoGL0ngivwkg" name="" type="_T8kJ4L0vEeuoGL0ngivwkg" association="_UBY_gb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBY_hL0vEeuoGL0ngivwkg" name="" memberEnd="_UBY_hb0vEeuoGL0ngivwkg _UBDBQ70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBY_hb0vEeuoGL0ngivwkg" name="" type="_T8kJ4L0vEeuoGL0ngivwkg" association="_UBY_hL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBZmkb0vEeuoGL0ngivwkg" name="" memberEnd="_UBZmkr0vEeuoGL0ngivwkg _UBDBRb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBZmkr0vEeuoGL0ngivwkg" name="" type="_T8nNML0vEeuoGL0ngivwkg" association="_UBZmkb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBaNoL0vEeuoGL0ngivwkg" name="" memberEnd="_UBaNob0vEeuoGL0ngivwkg _UBDoUb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBaNob0vEeuoGL0ngivwkg" name="" type="_T8nNML0vEeuoGL0ngivwkg" association="_UBaNoL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBaNo70vEeuoGL0ngivwkg" name="" memberEnd="_UBaNpL0vEeuoGL0ngivwkg _UBDoU70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBaNpL0vEeuoGL0ngivwkg" name="" type="_T8obUL0vEeuoGL0ngivwkg" association="_UBaNo70vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBa0sb0vEeuoGL0ngivwkg" name="" memberEnd="_UBa0sr0vEeuoGL0ngivwkg _UBDoVb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBa0sr0vEeuoGL0ngivwkg" name="" type="_T8ppcL0vEeuoGL0ngivwkg" association="_UBa0sb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBbbwL0vEeuoGL0ngivwkg" name="" memberEnd="_UBbbwb0vEeuoGL0ngivwkg _UBEPYb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBbbwb0vEeuoGL0ngivwkg" name="" type="_T8q3kL0vEeuoGL0ngivwkg" association="_UBbbwL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBbbw70vEeuoGL0ngivwkg" name="" memberEnd="_UBbbxL0vEeuoGL0ngivwkg _UBEPY70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBbbxL0vEeuoGL0ngivwkg" name="" type="_T8sFsL0vEeuoGL0ngivwkg" association="_UBbbw70vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBcC0b0vEeuoGL0ngivwkg" name="" memberEnd="_UBcC0r0vEeuoGL0ngivwkg _UBEPZb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBcC0r0vEeuoGL0ngivwkg" name="" type="_T8tT0L0vEeuoGL0ngivwkg" association="_UBcC0b0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBcp4L0vEeuoGL0ngivwkg" name="" memberEnd="_UBcp4b0vEeuoGL0ngivwkg _UBE2cb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBcp4b0vEeuoGL0ngivwkg" name="" type="_T8uh8L0vEeuoGL0ngivwkg" association="_UBcp4L0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBcp470vEeuoGL0ngivwkg" name="" memberEnd="_UBcp5L0vEeuoGL0ngivwkg _UBE2c70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBcp5L0vEeuoGL0ngivwkg" name="" type="_T8vwEL0vEeuoGL0ngivwkg" association="_UBcp470vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBdQ8b0vEeuoGL0ngivwkg" name="" memberEnd="_UBdQ8r0vEeuoGL0ngivwkg _UBE2db0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBdQ8r0vEeuoGL0ngivwkg" name="" type="_T8w-ML0vEeuoGL0ngivwkg" association="_UBdQ8b0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBdQ9L0vEeuoGL0ngivwkg" name="" memberEnd="_UBdQ9b0vEeuoGL0ngivwkg _UBFdgb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBdQ9b0vEeuoGL0ngivwkg" name="" type="_T8yMUL0vEeuoGL0ngivwkg" association="_UBdQ9L0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBd4Ab0vEeuoGL0ngivwkg" name="" memberEnd="_UBd4Ar0vEeuoGL0ngivwkg _UBFdg70vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBd4Ar0vEeuoGL0ngivwkg" name="" type="_T8zacL0vEeuoGL0ngivwkg" association="_UBd4Ab0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBd4BL0vEeuoGL0ngivwkg" name="" memberEnd="_UBd4Bb0vEeuoGL0ngivwkg _UBFdhb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBd4Bb0vEeuoGL0ngivwkg" name="" type="_T8zacL0vEeuoGL0ngivwkg" association="_UBd4BL0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UBefEb0vEeuoGL0ngivwkg" name="" memberEnd="_UBefEr0vEeuoGL0ngivwkg _UBGEkb0vEeuoGL0ngivwkg">
+        <ownedEnd xmi:id="_UBefEr0vEeuoGL0ngivwkg" name="" type="_T8zacL0vEeuoGL0ngivwkg" association="_UBefEb0vEeuoGL0ngivwkg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_T8LIUL0vEeuoGL0ngivwkg" name="net">
+      <packagedElement xmi:type="uml:Package" xmi:id="_T8LIUb0vEeuoGL0ngivwkg" name="sf">
+        <packagedElement xmi:type="uml:Package" xmi:id="_T8LIUr0vEeuoGL0ngivwkg" name="jasperreports">
+          <packagedElement xmi:type="uml:Package" xmi:id="_T8LIU70vEeuoGL0ngivwkg" name="engine">
+            <packagedElement xmi:type="uml:Package" xmi:id="_T8LIVL0vEeuoGL0ngivwkg" name="util">
+              <packagedElement xmi:type="uml:Class" xmi:id="_UAoxkb0vEeuoGL0ngivwkg" name="JRLoader"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_UAnjcL0vEeuoGL0ngivwkg" name="JRException"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_UAnjcr0vEeuoGL0ngivwkg" name="JasperFillManager"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_UAoKgL0vEeuoGL0ngivwkg" name="JasperPrint"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_UAoKgr0vEeuoGL0ngivwkg" name="JasperReport"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_T8LIVb0vEeuoGL0ngivwkg" name="view">
+            <packagedElement xmi:type="uml:Class" xmi:id="_UAoxk70vEeuoGL0ngivwkg" name="JasperViewer"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_Tx7nML0vEeuoGL0ngivwkg">
+      <eAnnotations xmi:id="_Tx7nMb0vEeuoGL0ngivwkg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_Tx7nMr0vEeuoGL0ngivwkg" base_Package="_TrvfoL0vEeuoGL0ngivwkg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Generics xmi:id="_T8lYAL0vEeuoGL0ngivwkg" genericsValue="String" base_Element="_T8kw9L0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Generics xmi:id="_T83r4L0vEeuoGL0ngivwkg" genericsValue="String" base_Element="_T83E0b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAY58b0vEeuoGL0ngivwkg" base_Element="_UAY58L0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAZhAL0vEeuoGL0ngivwkg" base_Element="_UAY58r0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAZhAr0vEeuoGL0ngivwkg" base_Element="_UAZhAb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAaIEL0vEeuoGL0ngivwkg" base_Element="_UAZhA70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAavIL0vEeuoGL0ngivwkg" base_Element="_UAaIEb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAavIr0vEeuoGL0ngivwkg" base_Element="_UAavIb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAbWML0vEeuoGL0ngivwkg" base_Element="_UAavI70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAbWMr0vEeuoGL0ngivwkg" base_Element="_UAbWMb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAbWNL0vEeuoGL0ngivwkg" base_Element="_UAbWM70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAb9Qb0vEeuoGL0ngivwkg" base_Element="_UAb9QL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAb9Q70vEeuoGL0ngivwkg" base_Element="_UAb9Qr0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAckUL0vEeuoGL0ngivwkg" base_Element="_UAb9RL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAckUr0vEeuoGL0ngivwkg" base_Element="_UAckUb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAdLYL0vEeuoGL0ngivwkg" base_Element="_UAckU70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAdLYr0vEeuoGL0ngivwkg" base_Element="_UAdLYb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAdycL0vEeuoGL0ngivwkg" base_Element="_UAdLY70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAdycr0vEeuoGL0ngivwkg" base_Element="_UAdycb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAdydL0vEeuoGL0ngivwkg" base_Element="_UAdyc70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAeZgb0vEeuoGL0ngivwkg" base_Element="_UAeZgL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAfAkb0vEeuoGL0ngivwkg" base_Element="_UAfAkL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAfnob0vEeuoGL0ngivwkg" base_Element="_UAfnoL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAgOsL0vEeuoGL0ngivwkg" base_Element="_UAfnor0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAgOsr0vEeuoGL0ngivwkg" base_Element="_UAgOsb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAg1wL0vEeuoGL0ngivwkg" base_Element="_UAgOs70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAg1wr0vEeuoGL0ngivwkg" base_Element="_UAg1wb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAhc0L0vEeuoGL0ngivwkg" base_Element="_UAg1w70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAhc0r0vEeuoGL0ngivwkg" base_Element="_UAhc0b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAluQb0vEeuoGL0ngivwkg" base_Element="_UAluQL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAnjcb0vEeuoGL0ngivwkg" base_Element="_UAnjcL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAnjc70vEeuoGL0ngivwkg" base_Element="_UAnjcr0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAoKgb0vEeuoGL0ngivwkg" base_Element="_UAoKgL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAoxkL0vEeuoGL0ngivwkg" base_Element="_UAoKgr0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAoxkr0vEeuoGL0ngivwkg" base_Element="_UAoxkb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAoxlL0vEeuoGL0ngivwkg" base_Element="_UAoxk70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAqmwb0vEeuoGL0ngivwkg" base_Element="_UAqmwL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UArN0L0vEeuoGL0ngivwkg" base_Element="_UAqmwr0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UArN0r0vEeuoGL0ngivwkg" base_Element="_UArN0b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UArN1L0vEeuoGL0ngivwkg" base_Element="_UArN070vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAr04L0vEeuoGL0ngivwkg" base_Element="_UArN1b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAr04r0vEeuoGL0ngivwkg" base_Element="_UAr04b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAsb8L0vEeuoGL0ngivwkg" base_Element="_UAr0470vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAsb8r0vEeuoGL0ngivwkg" base_Element="_UAsb8b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAsb9L0vEeuoGL0ngivwkg" base_Element="_UAsb870vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAtDAL0vEeuoGL0ngivwkg" base_Element="_UAsb9b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UAtDAr0vEeuoGL0ngivwkg" base_Element="_UAtDAb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UA_W4L0vEeuoGL0ngivwkg" base_Element="_UA-v0L0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UA_98L0vEeuoGL0ngivwkg" base_Element="_UA_W4b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UA_98r0vEeuoGL0ngivwkg" base_Element="_UA_98b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBAlAL0vEeuoGL0ngivwkg" base_Element="_UA_9870vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBAlAr0vEeuoGL0ngivwkg" base_Element="_UBAlAb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBBMEL0vEeuoGL0ngivwkg" base_Element="_UBAlA70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBBMEr0vEeuoGL0ngivwkg" base_Element="_UBBMEb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBBzIL0vEeuoGL0ngivwkg" base_Element="_UBBME70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBBzIr0vEeuoGL0ngivwkg" base_Element="_UBBzIb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBCaML0vEeuoGL0ngivwkg" base_Element="_UBBzI70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBCaMr0vEeuoGL0ngivwkg" base_Element="_UBCaMb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBCaNL0vEeuoGL0ngivwkg" base_Element="_UBCaM70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBDBQL0vEeuoGL0ngivwkg" base_Element="_UBCaNb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBDBQr0vEeuoGL0ngivwkg" base_Element="_UBDBQb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBDBRL0vEeuoGL0ngivwkg" base_Element="_UBDBQ70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBDoUL0vEeuoGL0ngivwkg" base_Element="_UBDBRb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBDoUr0vEeuoGL0ngivwkg" base_Element="_UBDoUb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBDoVL0vEeuoGL0ngivwkg" base_Element="_UBDoU70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBEPYL0vEeuoGL0ngivwkg" base_Element="_UBDoVb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBEPYr0vEeuoGL0ngivwkg" base_Element="_UBEPYb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBEPZL0vEeuoGL0ngivwkg" base_Element="_UBEPY70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBE2cL0vEeuoGL0ngivwkg" base_Element="_UBEPZb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBE2cr0vEeuoGL0ngivwkg" base_Element="_UBE2cb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBE2dL0vEeuoGL0ngivwkg" base_Element="_UBE2c70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBFdgL0vEeuoGL0ngivwkg" base_Element="_UBE2db0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBFdgr0vEeuoGL0ngivwkg" base_Element="_UBFdgb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBFdhL0vEeuoGL0ngivwkg" base_Element="_UBFdg70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBGEkL0vEeuoGL0ngivwkg" base_Element="_UBFdhb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBGEkr0vEeuoGL0ngivwkg" base_Element="_UBGEkb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBGroL0vEeuoGL0ngivwkg" base_Element="_UBGEk70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_UBGror0vEeuoGL0ngivwkg" base_Property="_UBGrob0vEeuoGL0ngivwkg" siblings="_UBOAa70vEeuoGL0ngivwkg _UBOncb0vEeuoGL0ngivwkg _UBOndL0vEeuoGL0ngivwkg" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBGro70vEeuoGL0ngivwkg" base_Element="_UBGrob0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_UBGrpb0vEeuoGL0ngivwkg" base_Property="_UBGrpL0vEeuoGL0ngivwkg" siblings="_UBPOgL0vEeuoGL0ngivwkg" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBHSsL0vEeuoGL0ngivwkg" base_Element="_UBGrpL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_UBHSsr0vEeuoGL0ngivwkg" base_Property="_UBHSsb0vEeuoGL0ngivwkg" siblings="_UBPOg70vEeuoGL0ngivwkg" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBHSs70vEeuoGL0ngivwkg" base_Element="_UBHSsb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_UBHStb0vEeuoGL0ngivwkg" base_Property="_UBHStL0vEeuoGL0ngivwkg" siblings="_UBP1kb0vEeuoGL0ngivwkg" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBHStr0vEeuoGL0ngivwkg" base_Element="_UBHStL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBH5wb0vEeuoGL0ngivwkg" base_Element="_UBH5wL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBH5w70vEeuoGL0ngivwkg" base_Element="_UBH5wr0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBH5xb0vEeuoGL0ngivwkg" base_Element="_UBH5xL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBIg0b0vEeuoGL0ngivwkg" base_Element="_UBIg0L0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBIg070vEeuoGL0ngivwkg" base_Element="_UBIg0r0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBIg1b0vEeuoGL0ngivwkg" base_Element="_UBIg1L0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBJH4L0vEeuoGL0ngivwkg" base_Element="_UBIg1r0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBJH4r0vEeuoGL0ngivwkg" base_Element="_UBJH4b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBJH5L0vEeuoGL0ngivwkg" base_Element="_UBJH470vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBJH5r0vEeuoGL0ngivwkg" base_Element="_UBJH5b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBJu8L0vEeuoGL0ngivwkg" base_Element="_UBJH570vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBJu8r0vEeuoGL0ngivwkg" base_Element="_UBJu8b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBJu9L0vEeuoGL0ngivwkg" base_Element="_UBJu870vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_UBOAbL0vEeuoGL0ngivwkg" base_Property="_UBOAa70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBOncL0vEeuoGL0ngivwkg" base_Element="_UBOAa70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_UBOncr0vEeuoGL0ngivwkg" base_Property="_UBOncb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBOnc70vEeuoGL0ngivwkg" base_Element="_UBOncb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_UBOndb0vEeuoGL0ngivwkg" base_Property="_UBOndL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBOndr0vEeuoGL0ngivwkg" base_Element="_UBOndL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_UBPOgb0vEeuoGL0ngivwkg" base_Property="_UBPOgL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBPOgr0vEeuoGL0ngivwkg" base_Element="_UBPOgL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_UBPOhL0vEeuoGL0ngivwkg" base_Property="_UBPOg70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBP1kL0vEeuoGL0ngivwkg" base_Element="_UBPOg70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_UBP1kr0vEeuoGL0ngivwkg" base_Property="_UBP1kb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_UBP1k70vEeuoGL0ngivwkg" base_Element="_UBP1kb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBUHAL0vEeuoGL0ngivwkg" base_Element="_UBTf8L0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBUuEL0vEeuoGL0ngivwkg" base_Element="_UBUHAb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBVVIL0vEeuoGL0ngivwkg" base_Element="_UBUuEb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBVVI70vEeuoGL0ngivwkg" base_Element="_UBVVIb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBV8ML0vEeuoGL0ngivwkg" base_Element="_UBVVJL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBWjQL0vEeuoGL0ngivwkg" base_Element="_UBV8Mb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBWjQ70vEeuoGL0ngivwkg" base_Element="_UBWjQb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBXKUL0vEeuoGL0ngivwkg" base_Element="_UBWjRL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBXxYL0vEeuoGL0ngivwkg" base_Element="_UBXKUb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBXxY70vEeuoGL0ngivwkg" base_Element="_UBXxYb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBYYcL0vEeuoGL0ngivwkg" base_Element="_UBXxZL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBY_gL0vEeuoGL0ngivwkg" base_Element="_UBYYcb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBY_g70vEeuoGL0ngivwkg" base_Element="_UBY_gb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBZmkL0vEeuoGL0ngivwkg" base_Element="_UBY_hL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBZmk70vEeuoGL0ngivwkg" base_Element="_UBZmkb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBaNor0vEeuoGL0ngivwkg" base_Element="_UBaNoL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBa0sL0vEeuoGL0ngivwkg" base_Element="_UBaNo70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBa0s70vEeuoGL0ngivwkg" base_Element="_UBa0sb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBbbwr0vEeuoGL0ngivwkg" base_Element="_UBbbwL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBcC0L0vEeuoGL0ngivwkg" base_Element="_UBbbw70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBcC070vEeuoGL0ngivwkg" base_Element="_UBcC0b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBcp4r0vEeuoGL0ngivwkg" base_Element="_UBcp4L0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBdQ8L0vEeuoGL0ngivwkg" base_Element="_UBcp470vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBdQ870vEeuoGL0ngivwkg" base_Element="_UBdQ8b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBd4AL0vEeuoGL0ngivwkg" base_Element="_UBdQ9L0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBd4A70vEeuoGL0ngivwkg" base_Element="_UBd4Ab0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBefEL0vEeuoGL0ngivwkg" base_Element="_UBd4BL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBfGIL0vEeuoGL0ngivwkg" base_Element="_UBefEb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBfGI70vEeuoGL0ngivwkg" base_Element="_UBfGIb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBftML0vEeuoGL0ngivwkg" base_Element="_UBfGJL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBftM70vEeuoGL0ngivwkg" base_Element="_UBftMb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBgUQL0vEeuoGL0ngivwkg" base_Element="_UBftNL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBgUQ70vEeuoGL0ngivwkg" base_Element="_UBgUQb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBg7Ur0vEeuoGL0ngivwkg" base_Element="_UBg7UL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBhiYL0vEeuoGL0ngivwkg" base_Element="_UBg7U70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBhiY70vEeuoGL0ngivwkg" base_Element="_UBhiYb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBiJcL0vEeuoGL0ngivwkg" base_Element="_UBhiZL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBiwgL0vEeuoGL0ngivwkg" base_Element="_UBiJcb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBiwg70vEeuoGL0ngivwkg" base_Element="_UBiwgb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBjXkL0vEeuoGL0ngivwkg" base_Element="_UBiwhL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBjXk70vEeuoGL0ngivwkg" base_Element="_UBjXkb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBj-oL0vEeuoGL0ngivwkg" base_Element="_UBjXlL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBj-o70vEeuoGL0ngivwkg" base_Element="_UBj-ob0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBj-pr0vEeuoGL0ngivwkg" base_Element="_UBj-pL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBklsr0vEeuoGL0ngivwkg" base_Element="_UBklsL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBkltb0vEeuoGL0ngivwkg" base_Element="_UBkls70vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBlMwL0vEeuoGL0ngivwkg" base_Element="_UBkltr0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBlMw70vEeuoGL0ngivwkg" base_Element="_UBlMwb0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBlz0L0vEeuoGL0ngivwkg" base_Element="_UBlMxL0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBlz070vEeuoGL0ngivwkg" base_Element="_UBlz0b0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBlz1r0vEeuoGL0ngivwkg" base_Element="_UBlz1L0vEeuoGL0ngivwkg"/>
+  <UMLLabProfile:Reference xmi:id="_UBma4b0vEeuoGL0ngivwkg" base_Element="_UBlz170vEeuoGL0ngivwkg"/>
+</xmi:XMI>

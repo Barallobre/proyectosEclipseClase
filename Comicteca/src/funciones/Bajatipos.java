@@ -46,7 +46,7 @@ public class Bajatipos extends JFrame {
 
 	private JPanel contentPane;
 
-	public Bajatipos() throws ClassNotFoundException {
+	public Bajatipos()  {
 		setTitle("Baja tipos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 139);

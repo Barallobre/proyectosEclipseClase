@@ -47,7 +47,7 @@ public class Bajacomic extends JFrame {
 
 	private JPanel contentPane;
 
-	public Bajacomic() throws ClassNotFoundException {
+	public Bajacomic()  {
 		setTitle("Baja comic");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 139);

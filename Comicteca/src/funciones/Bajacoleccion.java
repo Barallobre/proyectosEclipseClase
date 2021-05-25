@@ -43,7 +43,7 @@ public class Bajacoleccion extends JFrame {
 
 	private JPanel contentPane;
 
-	public Bajacoleccion() throws ClassNotFoundException {
+	public Bajacoleccion()  {
 		setTitle("Baja colección");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 139);

@@ -46,7 +46,7 @@ public class Bajaautor extends JFrame {
 
 	private JPanel contentPane;
 
-	public Bajaautor() throws ClassNotFoundException {
+	public Bajaautor()  {
 		setTitle("Baja autor");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 139);

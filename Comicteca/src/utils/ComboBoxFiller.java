@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 public class ComboBoxFiller {
-	public static ArrayList<String> llenarLista(String consulta) throws ClassNotFoundException {
+	public static ArrayList<String> llenarLista(String consulta)  {
 
 		ArrayList<String> listado = new ArrayList<String>();
 		

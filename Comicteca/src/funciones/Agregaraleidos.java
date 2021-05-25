@@ -49,8 +49,8 @@ public class Agregaraleidos extends JFrame {
 	private JTextField _isbn;
 	private JTextField _nombre;
 
-	public Agregaraleidos() throws ClassNotFoundException {
-		setTitle("Alta de comics");
+	public Agregaraleidos()  {
+		setTitle("Alta de comics como leidos o no leidos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 446, 241);
 		contentPane = new JPanel();

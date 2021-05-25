@@ -9,14 +9,9 @@ public class VaciadoYLlenadoCombo {
 		param.removeAllItems();
 		param.addItem("");
 		ArrayList<String> listado;
-		try {
-			listado = ComboBoxFiller.llenarLista(consulta);
-			for (int i = 0; i < listado.size(); i++) {
-				param.addItem(listado.get(i));
-			}
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		listado = ComboBoxFiller.llenarLista(consulta);
+		for (int i = 0; i < listado.size(); i++) {
+			param.addItem(listado.get(i));
 		}
 
 	}

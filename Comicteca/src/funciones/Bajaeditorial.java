@@ -43,7 +43,7 @@ public class Bajaeditorial extends JFrame {
 
 	private JPanel contentPane;
 
-	public Bajaeditorial() throws ClassNotFoundException {
+	public Bajaeditorial()  {
 		setTitle("Baja editorial");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 139);
