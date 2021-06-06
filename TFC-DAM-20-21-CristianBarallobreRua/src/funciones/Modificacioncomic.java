@@ -206,6 +206,11 @@ public class Modificacioncomic extends JFrame {
 		gbc__subtipo.fill = GridBagConstraints.HORIZONTAL;
 		gbc__subtipo.gridx = 3;
 		gbc__subtipo.gridy = 6;
+		String consulta33 = "select * from subtipos";
+		ArrayList<String> listado33 = ComboBoxFiller.llenarLista(consulta33);
+		for (int i = 0; i < listado33.size(); i++) {
+			_subtipo.addItem(listado33.get(i));
+		}
 		panel.add(_subtipo, gbc__subtipo);
 
 		JLabel coleccion_1 = new JLabel("Colecci\u00F3n");
