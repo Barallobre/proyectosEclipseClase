@@ -104,12 +104,15 @@ public class Bajacomic extends JFrame {
 					Connection conexion = AccesoBaseDatos.conexionBaseDatos();
 
 					PreparedStatement sentencia;
-
+					PreparedStatement sentencia2;
 					String autor = _autor.getSelectedItem().toString();
+					sentencia2 = conexion.prepareStatement("delete from leidos where isbn=(select isbn from comics where Nombre=?)");
+					sentencia2.setString(1, autor);
+					sentencia2.execute();
 					sentencia = conexion.prepareStatement("delete from comics where Nombre=?");
 					sentencia.setString(1, autor);
 					sentencia.execute();
-
+					sentencia2.close();
 					sentencia.close();
 					conexion.close();
 
