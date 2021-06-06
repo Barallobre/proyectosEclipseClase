@@ -206,7 +206,7 @@ public class Modificacioncomic extends JFrame {
 		gbc__subtipo.fill = GridBagConstraints.HORIZONTAL;
 		gbc__subtipo.gridx = 3;
 		gbc__subtipo.gridy = 6;
-		String consulta33 = "select * from subtipos";
+		String consulta33 = "select subtipo from subtipos";
 		ArrayList<String> listado33 = ComboBoxFiller.llenarLista(consulta33);
 		for (int i = 0; i < listado33.size(); i++) {
 			_subtipo.addItem(listado33.get(i));
@@ -264,12 +264,19 @@ public class Modificacioncomic extends JFrame {
 					PreparedStatement sentencia;
 					PreparedStatement sentencia2;
 					String nombre = _nombre.getText();
+					System.out.println(nombre);
 					String isbn = _isbn_1.getSelectedItem().toString();
+					System.out.println(isbn);
 					String autor = _autor.getSelectedItem().toString();
+					System.out.println(autor);
 					String editorial = _editorial.getSelectedItem().toString();
+					System.out.println(editorial);
 					String tipo = _tipo.getSelectedItem().toString();
+					System.out.println(tipo);
 					String coleccion = _coleccion.getSelectedItem().toString();
-
+					System.out.println(coleccion);
+					String subtipo = _subtipo.getSelectedItem().toString();
+					System.out.println(subtipo);
 					int leido;
 					if ((_leido.getSelectedItem().toString()).equals("si")) {
 						leido = 1;
@@ -278,14 +285,16 @@ public class Modificacioncomic extends JFrame {
 					}
 
 					sentencia = conexion.prepareStatement(
-							"update comics set autor=?,editorial=?,tipo=?,coleccion=?,nombre=? where isbn=?");
+							"update comics set autor=?,editorial=?,tipo=?,coleccion=?,nombre=?,subtipo=? where isbn=?");
 
-					sentencia.setString(6, isbn);
+					
 					sentencia.setString(1, autor);
 					sentencia.setString(2, editorial);
 					sentencia.setString(3, tipo);
 					sentencia.setString(4, coleccion);
 					sentencia.setString(5, nombre);
+					sentencia.setString(6, subtipo);
+					sentencia.setString(7, isbn);
 					sentencia.execute();
 
 					sentencia.close();
@@ -297,7 +306,7 @@ public class Modificacioncomic extends JFrame {
 
 					Date fechaLeido = java.sql.Date.valueOf(fechaFinal);
 
-					sentencia2 = conexion.prepareStatement("update leidos set leido=?,fecha=? where id_leido=?");
+					sentencia2 = conexion.prepareStatement("update leidos set leido=?,fecha=? where isbn=?");
 					sentencia2.setString(3, isbn);
 					sentencia2.setInt(1, leido);
 					sentencia2.setDate(2, (java.sql.Date) fechaLeido);
